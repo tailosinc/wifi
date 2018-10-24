@@ -1,0 +1,770 @@
+/*
+ * Copyright (c) 2005-2008 Sam Leffler, Errno Consulting
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ * 1. Redistributions of source code must retain the above copyright
+ *    notice, this list of conditions and the following disclaimer.
+ * 2. Redistributions in binary form must reproduce the above copyright
+ *    notice, this list of conditions and the following disclaimer in the
+ *    documentation and/or other materials provided with the distribution.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+ * IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ * OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+ * IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+ * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+ * NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ * DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+ * THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
+
+#ifdef _FREEBSD__
+#include <sys/cdefs.h>
+__FBSDID("$FreeBSD: src/sys/net80211/ieee80211_regdomain.c,v 1.13 2009/02/19 05:21:54 sam Exp $");
+
+/*
+ * IEEE 802.11 regdomain support.
+ */
+#include "opt_wlan.h"
+
+#include <sys/param.h>
+#include <sys/systm.h> 
+#include <sys/kernel.h>
+ 
+#include <sys/socket.h>
+
+#include <net/if.h>
+#include <net/if_media.h>
+#endif
+
+#include <net80211/ieee80211_var.h>
+#include <net80211/ieee80211_regdomain.h>
+
+static void
+null_getradiocaps(struct ieee80211com *ic, int maxchan,
+	int *n, struct ieee80211_channel *c)
+{
+	/* just feed back the current channel list */
+	if (maxchan > ic->ic_nchans)
+		maxchan = ic->ic_nchans;
+	memcpy(c, ic->ic_channels, maxchan*sizeof(struct ieee80211_channel));
+	*n = maxchan;
+}
+
+static int
+null_setregdomain(struct ieee80211com *ic,
+	struct ieee80211_regdomain *rd,
+	int nchans, struct ieee80211_channel chans[])
+{
+	return 0;		/* accept anything */
+}
+
+void
+ieee80211_regdomain_attach(struct ieee80211com *ic)
+{
+	if (ic->ic_regdomain.regdomain == 0 &&
+	    ic->ic_regdomain.country == CTRY_DEFAULT) {
+//		ic->ic_regdomain.country = CTRY_UNITED_STATES;	/* XXX */
+//		ic->ic_regdomain.regdomain = SKU_FCC;
+//		ic->ic_regdomain.location = ' ';		/* both */
+//		ic->ic_regdomain.isocc[0] = 'U';		/* XXX */
+//		ic->ic_regdomain.isocc[1] = 'S';		/* XXX */
+		/* NB: driver calls ieee80211_init_channels or similar */
+	}
+	ic->ic_getradiocaps = null_getradiocaps;
+	ic->ic_setregdomain = null_setregdomain;
+}
+
+void
+ieee80211_regdomain_detach(struct ieee80211com *ic)
+{
+	if (ic->ic_countryie != NULL) {
+		free(ic->ic_countryie, M_80211_NODE_IE);
+		ic->ic_countryie = NULL;
+	}
+}
+
+void
+ieee80211_regdomain_vattach(struct ieee80211vap *vap)
+{
+}
+
+void
+ieee80211_regdomain_vdetach(struct ieee80211vap *vap)
+{
+}
+
+static void
+addchan(struct ieee80211com *ic, int ieee, int flags)
+{
+	struct ieee80211_channel *c;
+
+	c = &ic->ic_channels[ic->ic_nchans++];			/*ic->ic_nchans will contain the no.of channels after completetion of all calls to this func*/
+	c->ic_freq = ieee80211_ieee2mhz(ieee, flags);
+	c->ic_ieee = ieee;
+	c->ic_flags = flags; /* : Use these flags to set the mode */
+	c->ic_extieee = 0;
+  c->scan_on = 1;
+}
+
+static REG_DOMAIN us_regdom = {
+  5,
+  {
+    /* IEEE 802.11b/g, channels 1..11 */
+    {11, 1, 11, 30, 1},
+    /* IEEE 802.11a, channel 36 */
+    /*802.11a, 16dBm, 5.15 - 5.25GHz */
+    {4, 36, 48, 30, 1| IEEE80211_CHAN_5G_B1}, 
+    /* IEEE 802.11a, channels 52..64 */
+    /*802.11a document says 200mW, 23dBm, 5.25 - 5.35 */
+    {4, 52, 64, 30, (IEEE80211_CHAN_PASSIVE | IEEE80211_CHAN_DFS | IEEE80211_CHAN_5G_B2)}, /* Radar detection */
+    /* 100 - 140 channels */        
+    {11, 100, 140, 30, (IEEE80211_CHAN_PASSIVE | IEEE80211_CHAN_DFS | IEEE80211_CHAN_5G_B3)}, /* Radar detection */    
+    /*verified, 802.11k document - 1000mW 30dBm, 11a doc says 800mW ~29.03 */
+    {5, 149, 165, 30, 1 | IEEE80211_CHAN_5G_B4}, 
+  }
+};
+
+static REG_DOMAIN jpn_regdom = {
+   6,
+  {
+    /* IEEE 802.11b/g, channels 1..14 */
+    {14, 1, 14, 30, 1},
+    /* IEEE 802.11a, channels 34..48 */
+    {4, 36, 48, 30, 1| IEEE80211_CHAN_5G_B1},
+    /* IEEE 802.11a, channels 52..64 */
+    {4, 52, 64, 30, (IEEE80211_CHAN_PASSIVE | IEEE80211_CHAN_DFS | IEEE80211_CHAN_5G_B2)},/* Radar detection */
+    /* 100 - 144 channels */        
+    {11, 100, 140, 30, (IEEE80211_CHAN_PASSIVE | IEEE80211_CHAN_DFS | IEEE80211_CHAN_5G_B3)},
+    /* 184 - 196 11J channels */
+    {4, 184, 196, 30, 1 | IEEE80211_CHAN_11J},
+    /* 11J channels 8-16 */
+    {3, 8, 16, 30,1 |  IEEE80211_CHAN_11J}, 
+#if 0
+    	/* 1811J channels 7-9 */
+    {3, 183, 185, 23, 1 | IEEE80211_CHAN_11J },
+    {3, 187, 189, 23, 1 | IEEE80211_CHAN_11J },
+    {3, 7, 9, 23,1 |  IEEE80211_CHAN_11J}, 
+    /* 11J channel 11 */
+    {1, 11, 11, 23,1 |  IEEE80211_CHAN_11J}, 
+#endif
+  }
+};
+
+static REG_DOMAIN eu_regdom = {
+   5,
+  {
+     /* IEEE 802.11b/g, channels 1..13 */
+     {13,  1, 13, 30, 1},
+     /* IEEE 802.11a, channel 36 to 48 */ 
+     {4, 36, 48, 30, (1 | IEEE80211_CHAN_5G_B1)},
+     /* IEEE 802.11a, channels 52..64 */
+     {4, 52, 64, 30, (IEEE80211_CHAN_PASSIVE | IEEE80211_CHAN_DFS | IEEE80211_CHAN_5G_B2)}, /* Radar detection */
+     /* 100 - 140 channels */        
+     {11, 100, 140, 30, (IEEE80211_CHAN_PASSIVE | IEEE80211_CHAN_DFS | IEEE80211_CHAN_5G_B3)},         
+     /* 149 - 165 channels */
+     {5, 149, 165, 30, 1 | IEEE80211_CHAN_5G_B4}, 
+  }
+};
+
+static REG_DOMAIN china_regdom = {
+  4,
+  {
+    /* IEEE 802.11b/g, channels 1..11 */
+    {13, 1, 13, 30, 1},
+    /* IEEE 802.11a, channel 36 */
+    /*802.11a, 16dBm, 5.15 - 5.25GHz */
+    {4, 36, 48, 30, 1| IEEE80211_CHAN_5G_B1}, 
+    /* IEEE 802.11a, channels 52..64 */
+    /*802.11a document says 200mW, 23dBm, 5.25 - 5.35 */
+    {4, 52, 64, 30, (IEEE80211_CHAN_PASSIVE | IEEE80211_CHAN_DFS| IEEE80211_CHAN_5G_B2)}, /* Radar detection */
+    /*verified, 802.11k document - 1000mW 30dBm, 11a doc says 800mW ~29.03 */
+    {5, 149, 165, 30, 1| IEEE80211_CHAN_5G_B3}, 
+  }
+};
+
+static REG_DOMAIN taiwan_regdom = {
+  5,
+  {
+    /* IEEE 802.11b/g, channels 1..11 */
+    {13, 1, 13, 30, 1},
+    /* IEEE 802.11a, channel 36 */
+    /*802.11a, 16dBm, 5.15 - 5.25GHz */
+    {4, 36, 48, 30, 1 | IEEE80211_CHAN_5G_B1}, 
+    /* IEEE 802.11a, channels 52..64 */
+    /*802.11a document says 200mW, 23dBm, 5.25 - 5.35 */
+    {3, 56, 64, 30, (IEEE80211_CHAN_PASSIVE | IEEE80211_CHAN_DFS | IEEE80211_CHAN_5G_B2)}, /* Radar detection */
+    /* 100 - 140 channels */        
+    {11, 100, 140, 30, 1 | IEEE80211_CHAN_5G_B3},     
+    /*verified, 802.11k document - 1000mW 30dBm, 11a doc says 800mW ~29.03 */
+    {5, 149, 165, 30, 1 | IEEE80211_CHAN_5G_B4}, 
+  }
+};
+
+static REG_DOMAIN korean_regdom = {
+  5,
+  {
+    /* IEEE 802.11b/g, channels 1..11 */
+    {13, 1, 13, 30, 1},
+    /* IEEE 802.11a, channel 36 */
+    /*802.11a, 16dBm, 5.15 - 5.25GHz */
+    {4, 36, 48, 30, 1}, 
+    /* IEEE 802.11a, channels 52..64 */
+    /*802.11a document says 200mW, 23dBm, 5.25 - 5.35 */
+    {4, 52, 64, 30, 1}, /* Radar detection */
+    /* 100 - 140 channels */        
+    {8, 100, 128, 30, 1},     
+    /*verified, 802.11k document - 1000mW 30dBm, 11a doc says 800mW ~29.03 */
+    {5, 149, 165, 30, 1}, 
+  }
+};
+
+
+static REG_DOMAIN world_regdom = {
+  5,
+  {
+     /* IEEE 802.11b/g, channels 1..11 */
+     {13,  1,  13, 30, IEEE80211_CHAN_PASSIVE},
+     /* IEEE 802.11a, channel 36 to 48*/ 
+     {4, 36,   48, 30, IEEE80211_CHAN_PASSIVE},
+     /* IEEE 802.11a, channel 52 to 64*/ 
+     /* channel 52 to 64*/ 
+     {4, 52,   64, 30, IEEE80211_CHAN_PASSIVE}, /* Radar detection */
+     /* 100 - 140 channels */        
+     {11, 100, 140, 30, IEEE80211_CHAN_PASSIVE}, /* Radar detection */        
+     /* IEEE 802.11a, channel 149 to 157*/ 
+     {5, 149, 165, 30, IEEE80211_CHAN_PASSIVE},
+  }
+};
+
+#define FCC    0x00
+#define ETSI   0x01
+#define TELEC  0x02
+#define WORLD   0x03
+#define KCC    0x04
+#define SRRC   0x05
+#define TAIWAN 0x06
+
+/* This is Regulatory Domain Table */
+static REG_TABLE regdm_table[] = {
+   { FCC, /* US FCC */
+     &us_regdom
+   },
+   { ETSI, /* EU */ 
+     &eu_regdom
+   },
+   { TELEC, /* Japan */ 
+     &jpn_regdom
+   },
+   { WORLD, /* World wide Reg domain */ 
+     &world_regdom
+   },  
+   {	KCC,
+	   &korean_regdom
+   },
+   { SRRC, /* China domain */ 
+     &china_regdom
+   },  
+   { TAIWAN, /* Taiwan domain */ 
+     &taiwan_regdom
+   }  
+   /* Add any additional domains, if required */        
+};
+/*
+ * Setup the channel list for the specified regulatory domain,
+ * country code, and operating modes.  This interface is used
+ * when a driver does not obtain the channel list from another
+ * source (such as firmware).
+ */
+int
+ieee80211_init_channels(struct ieee80211com *ic,
+	const struct ieee80211_regdomain *rd, const uint8_t bands[])
+{
+#if 0
+	int i;
+
+	/* XXX just do something for now */
+	ic->ic_nchans = 0;
+	if (isset(bands, IEEE80211_MODE_11B) ||
+	    isset(bands, IEEE80211_MODE_11G)) {
+		int maxchan = 11;
+		if (rd != NULL && rd->ecm)
+			maxchan = 14;
+		for (i = 1; i <= maxchan; i++) {
+			if (isset(bands, IEEE80211_MODE_11B))
+				addchan(ic, i, IEEE80211_CHAN_B);
+			if (isset(bands, IEEE80211_MODE_11G))
+				addchan(ic, i, IEEE80211_CHAN_G);
+		}
+	}
+	if (isset(bands, IEEE80211_MODE_11A)) {
+		for (i = 36; i <= 64; i += 4)
+			addchan(ic, i, IEEE80211_CHAN_A);
+		for (i = 100; i <= 140; i += 4)
+			addchan(ic, i, IEEE80211_CHAN_A);
+		for (i = 149; i <= 161; i += 4)
+			addchan(ic, i, IEEE80211_CHAN_A);
+	}
+#endif
+
+	int i=0 , j, k;
+	uint8_t num_sets;
+  	uint32_t flags;
+	REG_DOMAIN *country;
+	
+	country = regdm_table[rd->pad[0]].reg_ptr;
+	if(rd->pad[1] & BAND_5GHZ)
+	{
+		/*scan 2.4/ 5Ghz in case of 03 modules */
+		num_sets = country->elements;
+	}
+	else
+	{
+		/*scan 2.4Ghz in case of 02 modules */
+		num_sets = 1;
+	}
+	ic->ic_nchans = 0;
+
+	for(j = 0; j < num_sets; j++) {
+		i = country->sets[j].first;
+		flags = country->sets[j].scan_type;
+		for (k = 0; k < country->sets[j].no_of_channels; k++) {
+			ic->ic_channels[ic->ic_nchans].ic_maxregpower = country->sets[j].max_pwr;
+			if(((i >= 1) && (i <= 16)) && (ic->band_to_scan & 0x1)) {
+				if((country->sets[j].scan_type & IEEE80211_CHAN_11J)) {
+					flags |= ( IEEE80211_CHAN_A | IEEE80211_CHAN_HT20 );
+					addchan(ic, i, flags);
+				} else {
+					/* : Evaluate the mode from the band parameter*/
+					flags |= (IEEE80211_CHAN_B |
+							// IEEE80211_CHAN_PUREG |
+							IEEE80211_CHAN_HT20 | 
+							IEEE80211_CHAN_G);
+					addchan(ic, i, flags);
+				}
+
+			} else if(((i >= 36) && (i <= 196)) && (ic->band_to_scan & 0x2)) {
+				flags |= ( IEEE80211_CHAN_A | IEEE80211_CHAN_HT20 );
+				addchan(ic, i, flags);
+			}
+			if( country->sets[j].no_of_channels == 1 )
+				break;
+			i += (country->sets[j].last-country->sets[j].first)/(country->sets[j].no_of_channels-1);
+		}
+	}
+
+	if (rd != NULL)
+		ic->ic_regdomain = *rd;
+
+	return 0;
+}
+
+static __inline int
+chancompar(const void *a, const void *b)
+{
+	const struct ieee80211_channel *ca = a;
+	const struct ieee80211_channel *cb = b;
+
+	return (ca->ic_freq == cb->ic_freq) ?
+		(ca->ic_flags & IEEE80211_CHAN_ALL) -
+		    (cb->ic_flags & IEEE80211_CHAN_ALL) :
+		ca->ic_freq - cb->ic_freq;
+}
+
+/*
+ * Insertion sort.
+ */
+#define swap_t(_a, _b, _size) {			\
+	uint8_t *s = _b;			\
+	int i = _size;				\
+	do {					\
+		uint8_t tmp = *_a;		\
+		*_a++ = *s;			\
+		*s++ = tmp;			\
+	} while (--i);				\
+	_a -= _size;				\
+}
+
+static void
+sort_channels(void *a, size_t n, size_t size)
+{
+	uint8_t *aa = a;
+	uint8_t *ai, *t;
+
+	KASSERT(n > 0, ("no channels"));
+	for (ai = aa+size; --n >= 1; ai += size)
+		for (t = ai; t > aa; t -= size) {
+			uint8_t *u = t - size;
+			if (chancompar(u, t) <= 0)
+				break;
+#ifdef __LINUX__
+			swap_t(u, t, size);
+#else
+			swap(u, t, size);
+#endif
+		}
+}
+#ifdef __LINUX__
+#undef swap_t
+#else
+#undef swap
+#endif
+
+/*
+ * Order channels w/ the same frequency so that
+ * b < g < htg and a < hta.  This is used to optimize
+ * channel table lookups and some user applications
+ * may also depend on it (though they should not).
+ */
+void
+ieee80211_sort_channels(struct ieee80211_channel chans[], int nchans)
+{
+	if (nchans > 0)
+		sort_channels(chans, nchans, sizeof(struct ieee80211_channel));
+}
+
+struct ieee80211_appie *
+ieee80211_alloc_supported_chan(struct ieee80211com *ic)
+{
+#define	CHAN_UNINTERESTING \
+    (IEEE80211_CHAN_TURBO | IEEE80211_CHAN_STURBO | \
+     IEEE80211_CHAN_HALF | IEEE80211_CHAN_QUARTER)
+	/* XXX what about auto? */
+	/* flag set of channels to be excluded (band added below) */
+	static const int skipflags[IEEE80211_MODE_MAX] = {
+	    [IEEE80211_MODE_AUTO]	= CHAN_UNINTERESTING,
+	    [IEEE80211_MODE_11A]	= CHAN_UNINTERESTING,
+	    [IEEE80211_MODE_11B]	= CHAN_UNINTERESTING,
+	    [IEEE80211_MODE_11G]	= CHAN_UNINTERESTING,
+	    [IEEE80211_MODE_FH]		= CHAN_UNINTERESTING
+					| IEEE80211_CHAN_OFDM
+					| IEEE80211_CHAN_CCK
+					| IEEE80211_CHAN_DYN,
+	    [IEEE80211_MODE_TURBO_A]	= CHAN_UNINTERESTING,
+	    [IEEE80211_MODE_TURBO_G]	= CHAN_UNINTERESTING,
+	    [IEEE80211_MODE_STURBO_A]	= CHAN_UNINTERESTING,
+	    [IEEE80211_MODE_HALF]	= IEEE80211_CHAN_TURBO
+					| IEEE80211_CHAN_STURBO,
+	    [IEEE80211_MODE_QUARTER]	= IEEE80211_CHAN_TURBO
+					| IEEE80211_CHAN_STURBO,
+	    [IEEE80211_MODE_11NA]	= CHAN_UNINTERESTING,
+	    [IEEE80211_MODE_11NG]	= CHAN_UNINTERESTING,
+	};
+	uint8_t nextchan, chans[IEEE80211_CHAN_BYTES], *frm;
+	struct ieee80211_appie *aie;
+	struct ieee80211_supported_chan_ie *ie;
+	int i, skip, nruns;
+
+	aie = malloc(IEEE80211_COUNTRY_MAX_SIZE, M_80211_NODE_IE,
+	    M_NOWAIT | M_ZERO);
+	if (aie == NULL) {
+		if_printf(ic->ic_ifp,
+		    "%s: unable to allocate memory for country ie\n", __func__);
+		/* XXX stat */
+		return NULL;
+	}
+	ie = (struct ieee80211_supported_chan_ie *) aie->ie_data;
+	ie->ie = IEEE80211_ELEMID_SUPPCHAN;
+
+	frm = (uint8_t *)&ie->band[0];
+	nextchan = 0;			/* NB: impossible channel # */
+	nruns = 0;
+	memset(chans, 0, sizeof(chans));
+	skip = skipflags[ieee80211_chan2mode(ic->ic_bsschan)];
+	if (IEEE80211_IS_CHAN_5GHZ(ic->ic_bsschan))
+		skip |= IEEE80211_CHAN_2GHZ;
+	else if (IEEE80211_IS_CHAN_2GHZ(ic->ic_bsschan))
+		skip |= IEEE80211_CHAN_5GHZ;
+	for (i = 0; i < ic->ic_nchans; i++) {
+		const struct ieee80211_channel *c = &ic->ic_channels[i];
+
+		if (isset(chans, c->ic_ieee))		/* suppress dup's */
+			continue;
+		if (c->ic_flags & skip)			/* skip band, etc. */
+			continue;
+		setbit(chans, c->ic_ieee);
+		if (c->ic_ieee != nextchan ||
+		    c->ic_maxregpower != frm[-1]) {	/* new run */
+			if (nruns == IEEE80211_COUNTRY_MAX_BANDS) {
+				if_printf(ic->ic_ifp, "%s: country ie too big, "
+				    "runs > max %d, truncating\n",
+				    __func__, IEEE80211_COUNTRY_MAX_BANDS);
+				/* XXX stat? fail? */
+				break;
+			}
+			frm[0] = c->ic_ieee;		/* starting channel # */
+			frm[1] = 1;			/* # channels in run */
+			frm += 2;
+			nextchan = c->ic_ieee + 1;	/* overflow? */
+			nruns++;
+		} else {				/* extend run */
+			frm[-2]++;
+			nextchan++;
+		}
+	}
+	ie->len = frm - ((uint8_t *)&ie->band[0]);
+	if (ie->len & 1) {		/* Zero pad to multiple of 2 */
+		ie->len++;
+		*frm++ = 0;
+	}
+	aie->ie_len = frm - aie->ie_data;
+
+	return aie;
+#undef CHAN_UNINTERESTING
+}
+
+/*
+ * Allocate and construct a Country Information IE.
+ */
+struct ieee80211_appie *
+ieee80211_alloc_countryie(struct ieee80211com *ic)
+{
+#define	CHAN_UNINTERESTING \
+    (IEEE80211_CHAN_TURBO | IEEE80211_CHAN_STURBO | \
+     IEEE80211_CHAN_HALF | IEEE80211_CHAN_QUARTER)
+	/* XXX what about auto? */
+	/* flag set of channels to be excluded (band added below) */
+	static const int skipflags[IEEE80211_MODE_MAX] = {
+	    [IEEE80211_MODE_AUTO]	= CHAN_UNINTERESTING,
+	    [IEEE80211_MODE_11A]	= CHAN_UNINTERESTING,
+	    [IEEE80211_MODE_11B]	= CHAN_UNINTERESTING,
+	    [IEEE80211_MODE_11G]	= CHAN_UNINTERESTING,
+	    [IEEE80211_MODE_FH]		= CHAN_UNINTERESTING
+					| IEEE80211_CHAN_OFDM
+					| IEEE80211_CHAN_CCK
+					| IEEE80211_CHAN_DYN,
+	    [IEEE80211_MODE_TURBO_A]	= CHAN_UNINTERESTING,
+	    [IEEE80211_MODE_TURBO_G]	= CHAN_UNINTERESTING,
+	    [IEEE80211_MODE_STURBO_A]	= CHAN_UNINTERESTING,
+	    [IEEE80211_MODE_HALF]	= IEEE80211_CHAN_TURBO
+					| IEEE80211_CHAN_STURBO,
+	    [IEEE80211_MODE_QUARTER]	= IEEE80211_CHAN_TURBO
+					| IEEE80211_CHAN_STURBO,
+	    [IEEE80211_MODE_11NA]	= CHAN_UNINTERESTING,
+	    [IEEE80211_MODE_11NG]	= CHAN_UNINTERESTING,
+	};
+	const struct ieee80211_regdomain *rd = &ic->ic_regdomain;
+	uint8_t nextchan, chans[IEEE80211_CHAN_BYTES], *frm;
+	struct ieee80211_appie *aie;
+	struct ieee80211_country_ie *ie;
+	int i, skip, nruns;
+
+	aie = malloc(IEEE80211_COUNTRY_MAX_SIZE, M_80211_NODE_IE,
+	    M_NOWAIT | M_ZERO);
+	if (aie == NULL) {
+		if_printf(ic->ic_ifp,
+		    "%s: unable to allocate memory for country ie\n", __func__);
+		/* XXX stat */
+		return NULL;
+	}
+	ie = (struct ieee80211_country_ie *) aie->ie_data;
+	ie->ie = IEEE80211_ELEMID_COUNTRY;
+	if (rd->isocc[0] == '\0') {
+		if_printf(ic->ic_ifp, "no ISO country string for cc %d; "
+			"using blanks\n", rd->country);
+		ie->cc[0] = ie->cc[1] = ' ';
+	} else {
+		ie->cc[0] = rd->isocc[0];
+		ie->cc[1] = rd->isocc[1];
+	}
+	/* 
+	 * Indoor/Outdoor portion of country string:
+	 *     'I' indoor only
+	 *     'O' outdoor only
+	 *     ' ' all enviroments
+	 */
+	ie->cc[2] = (rd->location == 'I' ? 'I' :
+		     rd->location == 'O' ? 'O' : ' ');
+	/* 
+	 * Run-length encoded channel+max tx power info.
+	 */
+	frm = (uint8_t *)&ie->band[0];
+	nextchan = 0;			/* NB: impossible channel # */
+	nruns = 0;
+	memset(chans, 0, sizeof(chans));
+	skip = skipflags[ieee80211_chan2mode(ic->ic_bsschan)];
+	if (IEEE80211_IS_CHAN_5GHZ(ic->ic_bsschan))
+		skip |= IEEE80211_CHAN_2GHZ;
+	else if (IEEE80211_IS_CHAN_2GHZ(ic->ic_bsschan))
+		skip |= IEEE80211_CHAN_5GHZ;
+	for (i = 0; i < ic->ic_nchans; i++) {
+		const struct ieee80211_channel *c = &ic->ic_channels[i];
+
+		if (isset(chans, c->ic_ieee))		/* suppress dup's */
+			continue;
+		if (c->ic_flags & skip)			/* skip band, etc. */
+			continue;
+		setbit(chans, c->ic_ieee);
+		if (c->ic_ieee != nextchan ||
+		    c->ic_maxregpower != frm[-1]) {	/* new run */
+			if (nruns == IEEE80211_COUNTRY_MAX_BANDS) {
+				if_printf(ic->ic_ifp, "%s: country ie too big, "
+				    "runs > max %d, truncating\n",
+				    __func__, IEEE80211_COUNTRY_MAX_BANDS);
+				/* XXX stat? fail? */
+				break;
+			}
+			frm[0] = c->ic_ieee;		/* starting channel # */
+			frm[1] = 1;			/* # channels in run */
+			frm[2] = c->ic_maxregpower;	/* tx power cap */
+			frm += 3;
+			nextchan = c->ic_ieee + 1;	/* overflow? */
+			nruns++;
+		} else {				/* extend run */
+			frm[-2]++;
+			nextchan++;
+		}
+	}
+	ie->len = frm - ie->cc;
+	if (ie->len & 1) {		/* Zero pad to multiple of 2 */
+		ie->len++;
+		*frm++ = 0;
+	}
+	aie->ie_len = frm - aie->ie_data;
+
+	return aie;
+#undef CHAN_UNINTERESTING
+}
+
+static int
+allvapsdown(struct ieee80211com *ic)
+{
+	struct ieee80211vap *vap;
+
+	IEEE80211_LOCK_ASSERT(ic);
+	TAILQ_FOREACH(vap, &ic->ic_vaps, iv_next)
+		if (vap->iv_state != IEEE80211_S_INIT)
+			return 0;
+	return 1;
+}
+
+int
+ieee80211_setregdomain(struct ieee80211vap *vap,
+    struct ieee80211_regdomain_req *reg)
+{
+	struct ieee80211com *ic = vap->iv_ic;
+	struct ieee80211_channel *c;
+	int desfreq = 0, desflags = 0;		/* XXX silence gcc complaint */
+	int error, i;
+
+	if (reg->rd.location != 'I' && reg->rd.location != 'O' &&
+	    reg->rd.location != ' ') {
+		IEEE80211_DPRINTF(vap, IEEE80211_MSG_IOCTL,
+		    "%s: invalid location 0x%x\n", __func__, reg->rd.location);
+		return EINVAL;
+	}
+	if (reg->rd.isocc[0] == '\0' || reg->rd.isocc[1] == '\0') {
+		IEEE80211_DPRINTF(vap, IEEE80211_MSG_IOCTL,
+		    "%s: invalid iso cc 0x%x:0x%x\n", __func__,
+		    reg->rd.isocc[0], reg->rd.isocc[1]);
+		return EINVAL;
+	}
+	if (reg->chaninfo.ic_nchans > IEEE80211_CHAN_MAX) {
+		IEEE80211_DPRINTF(vap, IEEE80211_MSG_IOCTL,
+		    "%s: too many channels %u, max %u\n", __func__,
+		    reg->chaninfo.ic_nchans, IEEE80211_CHAN_MAX);
+		return EINVAL;
+	}
+	/*
+	 * Calculate freq<->IEEE mapping and default max tx power
+	 * for channels not setup.  The driver can override these
+	 * setting to reflect device properties/requirements.
+	 */
+	for (i = 0; i < reg->chaninfo.ic_nchans; i++) {
+		c = &reg->chaninfo.ic_chans[i];
+		if (c->ic_freq == 0 || c->ic_flags == 0) {
+			IEEE80211_DPRINTF(vap, IEEE80211_MSG_IOCTL,
+			    "%s: invalid channel spec at [%u]\n", __func__, i);
+			return EINVAL;
+		}
+		if (c->ic_maxregpower == 0) {
+			IEEE80211_DPRINTF(vap, IEEE80211_MSG_IOCTL,
+			    "%s: invalid channel spec, zero maxregpower, "
+			    "freq %u flags 0x%x\n", __func__,
+			    c->ic_freq, c->ic_flags);
+			return EINVAL;
+		}
+		if (c->ic_ieee == 0)
+			c->ic_ieee = ieee80211_mhz2ieee(c->ic_freq,c->ic_flags);
+		if (IEEE80211_IS_CHAN_HT40(c) && c->ic_extieee == 0)
+			c->ic_extieee = ieee80211_mhz2ieee(c->ic_freq +
+			    (IEEE80211_IS_CHAN_HT40U(c) ? 20 : -20),
+			    c->ic_flags);
+		if (c->ic_maxpower == 0)
+			c->ic_maxpower = 2*c->ic_maxregpower;
+	}
+	IEEE80211_LOCK(ic);
+	/* XXX bandaid; a running vap will likely crash */
+	if (!allvapsdown(ic)) {
+		IEEE80211_UNLOCK(ic);
+		IEEE80211_DPRINTF(vap, IEEE80211_MSG_IOCTL,
+		    "%s: reject: vaps are running\n", __func__);
+		return EBUSY;
+	}
+	error = ic->ic_setregdomain(ic, &reg->rd,
+	    reg->chaninfo.ic_nchans, reg->chaninfo.ic_chans);
+	if (error != 0) {
+		IEEE80211_UNLOCK(ic);
+		IEEE80211_DPRINTF(vap, IEEE80211_MSG_IOCTL,
+		    "%s: driver rejected request, error %u\n", __func__, error);
+		return error;
+	}
+	/*
+	 * Commit: copy in new channel table and reset media state.
+	 * On return the state machines will be clocked so all vaps
+	 * will reset their state.
+	 *
+	 * XXX ic_bsschan is marked undefined, must have vap's in
+	 *     INIT state or we blow up forcing stations off
+	 */
+	/*
+	 * Save any desired channel for restore below.  Note this
+	 * needs to be done for all vaps but for now we only do
+	 * the one where the ioctl is issued.
+	 */
+	if (vap->iv_des_chan != IEEE80211_CHAN_ANYC) {
+		desfreq = vap->iv_des_chan->ic_freq;
+		desflags = vap->iv_des_chan->ic_flags;
+	}
+	/* regdomain parameters */
+	memcpy(&ic->ic_regdomain, &reg->rd, sizeof(reg->rd));
+	/* channel table */
+	memcpy(ic->ic_channels, reg->chaninfo.ic_chans,
+	    reg->chaninfo.ic_nchans * sizeof(struct ieee80211_channel));
+	ic->ic_nchans = reg->chaninfo.ic_nchans;
+
+	if (ic->ic_nchans < IEEE80211_CHAN_MAX) {
+		memset(&ic->ic_channels[ic->ic_nchans], 0,
+	    	       (IEEE80211_CHAN_MAX - ic->ic_nchans) *
+		       sizeof(struct ieee80211_channel));
+	}
+	ieee80211_media_init(ic);
+
+	/*
+	 * Invalidate channel-related state.
+	 */
+	if (ic->ic_countryie != NULL) {
+		free(ic->ic_countryie, M_80211_NODE_IE);
+		ic->ic_countryie = NULL;
+	}
+
+	if (ic->ic_supported_chan != NULL) {
+		free(ic->ic_supported_chan, M_80211_NODE_IE);
+		ic->ic_supported_chan = NULL;
+	}
+	ieee80211_scan_flush(vap);
+	ieee80211_dfs_reset(ic);
+	if (vap->iv_des_chan != IEEE80211_CHAN_ANYC) {
+		c = ieee80211_find_channel(ic, desfreq, desflags);
+		/* NB: may be NULL if not present in new channel list */
+		vap->iv_des_chan = (c != NULL) ? c : IEEE80211_CHAN_ANYC;
+	}
+	IEEE80211_UNLOCK(ic);
+
+	return 0;
+}

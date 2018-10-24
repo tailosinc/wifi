@@ -1,0 +1,101 @@
+mainmenu_name "OneBox Linux Driver Configuration"
+
+#
+# Platform Selection
+#
+#choice 'Platform Type' \
+ #        "x86_Platform        CONFIG_X86_PLATFORM \
+  #        IMX_ANDROID_Platform      CONFIG_IMX_ANDROID_PLATFORM \
+   #       IMX_LINUX_Platform        CONFIG_IMX_LINUX_PLATFORM"
+
+bool  'USB Interface support'  ENABLE_USB
+bool  'SDIO Interface support'  ENABLE_SDIO
+
+#Operating system selection
+choice 'Operating System' \
+	"Linux    RSI_CONFIG_LINUX \
+	 Android  RSI_CONFIG_ANDROID"
+
+# channel width selection
+#choice 'Channel Width selection' \
+ #        "20        CONFIG_CHW_20 \
+  #        20/40    CONFIG_CHW_20_40"
+
+#choice 'Bluetooth Stack' \
+#         "GENL_BTSTACK  USE_GENL_BT_STACK
+#          BLUEZ_BTSTACK   USE_BLUEZ_BT_STACK"           
+
+##############################################################
+#########################   HAL  #############################
+##############################################################
+
+#choice 'Regulatory Domain' \
+#         "UNITED_STATES  REGION_US"           
+#          EUROPE         REGION_EU            
+#          JAPAN          REGION_JAPAN        
+#          WORLD_WIDE_REGIONS  REGION_OTHERS"        
+#
+# Enable NL80211 interface in supplicant
+#
+#choice 'NL80211 SUPPORT' \
+#       "NL80211 ONEBOX_CONFIG_NL80211"           
+
+bool  'NL80211 support'  ONEBOX_CONFIG_NL80211
+
+bool  'HOSTAPD support'  HOSTAPD_SUPPORT
+
+bool 'WIFI' ENABLE_WLAN
+bool 'BLUETOOTH' ENABLE_BT
+bool 'ZIGBEE' ENABLE_ZIGB
+
+
+#
+# Enable Debugging
+#
+
+#bool  'Debugging Support' ONEBOX_DEBUG_ENABLE
+
+#
+# Enable RSI SDIO Multi Block Support
+#bool 'RSI SDIO Multi Block Support' RSI_SDIO_MULTI_BLOCK_SUPPORT
+
+#
+# Enable Deep sleep Mode
+#
+#bool 'Enable Deep sleep' ENABLE_DEEP_SLEEP
+
+
+
+
+###########################################################################
+################################ net80211 #################################
+###########################################################################
+
+
+#
+# Enable Peer to Peer Support
+#
+#bool 'Peer to Peer Support' ENABLE_P2P_SUPPORT_NET
+
+
+#
+# Enable INET
+#
+#bool 'INET' INET
+
+#
+# Enable debugging
+#
+#bool 'IEEE80211 Debugging ' IEEE80211_DEBUG
+
+#
+# Enable Rx_DC_Offset
+#
+#bool 'Rx_DC_Offset' ONEBOX_ENABLE_RX_DC_OFFSET
+
+#
+# Enable SSB_CAL
+#
+#bool 'SSB_CAL' ONEBOX_ENABLE_SSB_CAL
+
+

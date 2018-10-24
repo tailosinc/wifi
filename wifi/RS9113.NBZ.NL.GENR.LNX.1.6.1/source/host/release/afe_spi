@@ -1,0 +1,32 @@
+#define MODEM_PLL_CONFIG_IO_BASE_ADDR 0x41138000
+#Driver executes MODEM_PLL_WRITE(ADDR,DATA)    *(volatile uint16 *)(MODEM_PLL_CONFIG_IO_BASE_ADDR + ( ADDR << 2 )) = DATA
+#0 <= Address < 0x2000
+#0 <= value <= 0xFFFF
+#Data	value to write	0 <= value <= 0xFFFF
+onebox=`ls /proc/ |grep onebox-hal`
+read_write=$1
+Address=$2
+value=$3
+if [ "$read_write" == 1 ];
+then
+echo $read_write $Address $value >/proc/$onebox/modem_pll
+elif [ "$read_write" == 0 ];
+then
+echo $read_write $Address >/proc/$onebox/modem_pll
+cat /proc/$onebox/master_read_write
+#echo "`dmesg |grep R-Data`"
+else
+echo "Usage"
+echo "./afe_spi write address value"
+echo "1- write ;address [0 - 0x2000] ; value [0 - 0xFFFF]"
+echo " "
+echo "<eg> ./afe_spi 1 0x2000 0xff " 
+echo " "
+echo "./afe_spi read address "
+echo "0- read ;address [0 - 0x2000]"
+echo " "
+echo "<eg> ./afe_spi 0 0x2000"
+echo " "
+fi
+
+

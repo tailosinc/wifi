@@ -1,0 +1,39 @@
+#0 <= Address < 0x2000
+#0 <= value <= 0xFFFF
+#Data	value to write	0 <= value <= 0xFFFF
+onebox=`ls /proc/ |grep onebox-hal`
+read_write=$1
+Address=$2
+value=$3
+if [ "$read_write" == 1 ];
+then
+if [ "$#" -eq 3 ]
+then
+echo $read_write $Address $value >/proc/$onebox/soc_pll
+else
+echo "Invalid Agruments"
+echo "./soc_pll_reg write address value"
+fi
+elif [ "$read_write" == 0 ];
+then
+if [ "$#" -eq 2 ]
+then
+echo $read_write $Address >/proc/$onebox/soc_pll
+cat /proc/$onebox/master_read_write
+else
+echo "Invalid Agruments"
+echo "./soc_pll_reg read address "
+fi
+else
+echo "Usage"
+echo "./soc_pll_reg write address value"
+echo "1- write ;address [0 - 0x2000] ; value [0 - 0xFFFF]"
+echo " "
+echo "<eg> ./soc_pll_reg 1 0x2000 0xff " 
+echo " "
+echo "./soc_pll_reg read address "
+echo "0- read ;address [0 - 0x2000]"
+echo " "
+echo "<eg> ./soc_pll_reg 0 0x2000"
+echo " "
+fi

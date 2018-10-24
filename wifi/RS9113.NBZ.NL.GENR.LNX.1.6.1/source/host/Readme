@@ -1,0 +1,14 @@
+.
+├── APPS
+├── bt              BT driver source code.
+├── common_hal      Common layer through which BT & WiFi talk to OS BUS layer.
+├── config          Driver menuconfig.
+├── Makefile        Driver makefile.
+├── mod_files       After build .ko is kept here.
+├── Readme          High level Readme.
+├── release         Contains all config files.
+├── utils           Variuos util source code.
+├── wlan            WLAN driver source code.
+└── zigbee          ZigBee driver source code.
+
+9 directories, 2 files

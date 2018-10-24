@@ -1,0 +1,95 @@
+//////////////////////////////////////////////////////////////////////////////////////////////
+// Following gudielines to be followed
+// 
+// 1) use // to comment a line
+// 2) value of any parameter should be given immediately after the '=' sign without any space
+//  
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+
+RSI_SERVER_MAC=192.168.70.165
+
+RSI_MODULE_VERSION=60
+
+RSI_MODULE_VERSION_WMCU=10
+
+RSI_RF_CHIP_VERSION=13
+
+RSI_DIGI_CHIP_VERSION=12
+
+RSI_FLASH_CHECK=1
+
+RSI_GPIO_BYPASS=0
+
+//For SOCKET BOARD
+
+CABLE_LOSS_TYPE=0   //0-socket 1-EVB
+
+CABLE_LOSS_2G=0   //MAX VALUE MUST BE +/-3		
+
+CABLE_LOSS_5G_1=0	//MAX VALUE MUST BE +/-3		
+
+CABLE_LOSS_5G_2=0	//MAX VALUE MUST BE +/-3		
+
+CABLE_LOSS_5G_3=0	//MAX VALUE MUST BE +/-3		
+
+CABLE_LOSS_5G_4=0	//MAX VALUE MUST BE +/-3		
+
+//For EVB
+
+CABLE_LOSS_EVB_2G=0
+
+CABLE_LOSS_EVB_5G_1=0
+
+CABLE_LOSS_EVB_5G_2=0
+
+CABLE_LOSS_EVB_5G_3=0
+
+CABLE_LOSS_EVB_5G_4=0
+
+//KINDLY DONT MODIFY ANY OF THE FOLLOWING CONFIGURATIONS UNLESS ASKED TO!!
+
+//EEPROM Type is 1: Micron Flash 0: Eon Flash
+RSI_EEPROM_TYPE=1
+
+RSI_FLASH_SIZE=4096
+
+RSI_MODULE_APPEND=5
+
+RSI_EEPROM_VERSION=7
+
+RSI_MAC_LOG=0
+
+RSI_MFG_SW_VERSION=34
+
+//first 3 bytes of mac address
+RSI_VENDOR_ID=0023A7
+
+//set to 1 or 0 to enable or disable file logging
+//RSI_LOG_ENABLED=1
+
+//WIFI MAc Address Start mac cmpltd
+RSI_WLAN_START_MAC_ID=000000
+
+//WIFI Mac Address End   //cmpltd 
+RSI_WLAN_END_MAC_ID=0000ff
+
+//BT MAC Address Start mac
+RSI_BT_START_MAC_ID=0
+
+//BT MAC Address End  
+RSI_BT_END_MAC_ID=ff
+
+//Zigbee MAc Address Start mac
+RSI_ZIGBEE_START_MAC_ID=0
+
+//Zigbee Mac Address End  
+RSI_ZIGBEE_END_MAC_ID=ff
+
+// NUM of WLAN Mac Addresses  
+RSI_NUM_OF_WLAN_MAC_IDS=04
+
+//run all tests
+CONTINUE_ON_FAILURE=0
+//upgrade eeprom
+PROMPT_EEPROM_UPGRADE=1

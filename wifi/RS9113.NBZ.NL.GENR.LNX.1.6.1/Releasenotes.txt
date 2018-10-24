@@ -1,0 +1,802 @@
+ Release           : RS9113.NBZ.NL.GENR.LNX.1.6.1
+ Date              : May 7 2018
+_______________________________________________________________
+ 	Copyright (C) Redpine Signals, Inc 2017
+_______________________________________________________________
+
+Release Status:
+===================
+	Test         ( )
+	Alpha        ( )
+	Beta         ( )
+	Production   (X)
+
+Supported Hardware:
+=======================
+RS9113-NBZ-XXX Modules With SDIO / USB Interface
+
+Supported Software:
+=======================
+Kernel versions from 2.6.30 to 4.11
+
+Change log for Release 1.6.1 (WiFi, WiFi+BT/BLE, Zigbee)
+=============================================================
+
+New Features:
+=============
+NONE.
+
+
+Changes / Issues fixed
+======================
+
+WLAN:
+1. UAPSD IOCTL is changed. Added one extra argument of MAX SERVICE PERIOD length. Same updates can be found in TRM as well.
+2. Enhancements in the device power save.
+3. Fix for WEP shared key authentication mode.
+4. Addressed memory leaks/ Crash fixes in driver for some corner cases in Wi-Fi.
+5. Performance and stability fixes in AP and STA mode.
+6. Add support in PER mode for the two modules connected to same host.
+7. Addressed Wi-Fi security functional issues in AP mode when AP is switched from security to OPEN mode without unloading module.
+
+BT:
+==
+1. BT PER mode bug fixes.
+2. Addressed BT stability issues
+3. Added changes to imporve BLE scanning performance.
+4. Addressed BT Classic Multiple slave connection issues.
+5. Fixed issues on Multiple module support in BT.
+6. Addressed memory leaks/ Crash fixes in driver for some corner cases in Bluetooth.
+
+
+WLAN Limitations/Features NOT Supported:
+----------------------------------------
+1) Fragmentation is not supported.
+2) TX AMSDU is not supported.
+3) AMSDU's within AMPDU is not supported.
+4) Observed host gets stuck during scan on IMX51 Platform.
+5) Access Point mode through CFG80211 is supported for kernels greater than 3.3.
+6) Client mode through CFG80211 is supported from  2.6.38 kernel version.
+7) DFS Master through CFG80211 is supported for kernel versions greater than 3.11.
+8) WiFi Direct Mode through CFG80211 is not supported.
+9) Roaming through CFG80211 is supported in kernels greater than 3.11.
+10) In coex mode, wlan driver will not inserted if the BLE advertise interval is configured greater than 6sec in power save.
+11) ACS is not supported in 5Ghz.
+12) EAP-TLS with hostapd-2.6 is not supported.
+
+Bluetooth Recommendations:
+---------------------------------------------
+1) In BLE, recommended range of Connection Interval in
+   i)  Power Save - 100ms to 1.28sec.
+   ii) BT Classic + BLE Dual Mode is >= 200ms.
+   iii)WLAN + BLE coex - 30ms to 4sec
+2) In BLE, during Connection, equal values of Scan Interval and Scan Window is not recommended.
+3) In BT Classic, recommended value of Sniff Interval during Power Save is limited to 100ms(<= 100).
+4) In WLAN + BT Classic coex, for BT file transfer to work fine, recommended value of WLAN protocol DTIM is more 
+    than 3 and Beacon Interval is more than 200ms.
+
+
+Bluetooth Limitations/Features NOT Supported:
+---------------------------------------------
+1) BT Sniff mode does not work if BT multiple slaves feature is enabled
+2) When BT multiple slaves feature is enabled, Master to slave role switch will not happen
+3) In BLE, if Advertising/Scanning are in progress, and the device moves to Slave/Master role,
+   Advertising/Scanning will be stopped. Provide respective commands to start Advertising/Scanning 
+   while being in Slave/Master role.
+4) In WLAN + BLE coex, if BLE Connection is established with small Connection Interval(< 15ms),
+    simultaneous roles (i.e. Master/Slave + Advertising/Scanning) are not supported. 
+5) Power save is not supported in BT dual mode
+6) Observed glitches in BT audio in coex mode when WiFi is connected
+7) Simultaneous slave & Master roles (Scatternet) is not supported
+
+Zigbee Known Issues :
+---------------------
+1) In particular scenarios, coex switching is not happening in the WiFi+Zigbee coex mode.
+
+
+
+ Release           : RS9113.NBZ.NL.GENR.LNX.1.6.0
+ Date              : Nov 22st 2017
+_______________________________________________________________
+ 	Copyright (C) Redpine Signals, Inc 2017
+_______________________________________________________________
+
+Release Status:
+===================
+	Test         ( )
+	Alpha        ( )
+	Beta         ( )
+	Production   (X)
+
+Supported Hardware:
+=======================
+RS9113-NBZ-XXX Modules With SDIO / USB Interface
+
+Supported Software:
+=======================
+Kernel versions from 2.6.30 to 4.12
+
+Change log for Release 1.6.0 (WiFi, WiFi+BT/BLE)
+=============================================================
+
+New Features:
+=============
+
+
+
+Changes / Issues fixed
+======================
+
+WLAN:
+
+BT:
+==
+1. Added a feature bitmap (BIT(1) - i.e, value: 0x2) in the driver script to enable BT multiple slaves 
+   Need to enable this bit for BT multiple slaves feature
+2. Slave pairing inconsistency issue in coex mode
+
+
+
+WLAN Limitations/Features NOT Supported:
+----------------------------------------
+1) Fragmentation is not supported.
+2) TX AMSDU is not supported.
+3) AMSDU's within AMPDU is not supported.
+4) Observed host gets stuck during scan on IMX51 Platform.
+5) Access Point mode through CFG80211 is supported for kernels greater than 3.3.
+6) Client mode through CFG80211 is supported from  2.6.38 kernel version.
+7) DFS Master through CFG80211 is supported for kernel versions greater than 3.11.
+8) WiFi Direct Mode through CFG80211 is not supported.
+9) Roaming through CFG80211 is supported in kernels greater than 3.11.
+10) In coex mode, wlan driver will not inserted if the BLE advertise interval is configured greater than 6sec in power save.
+
+Bluetooth Recommendations:
+---------------------------------------------
+1) In BLE, recommended range of Connection Interval in
+   i)  Power Save - 100ms to 1.28sec.
+   ii) BT Classic + BLE Dual Mode is >= 200ms.
+   iii)WLAN + BLE coex - 30ms to 4sec
+2) In BLE, during Connection, equal values of Scan Interval and Scan Window is not recommended.
+3) In BT Classic, recommended value of Sniff Interval during Power Save is limited to 100ms(<= 100).
+4) In WLAN + BT Classic coex, for BT file transfer to work fine, recommended value of WLAN protocol DTIM is more 
+    than 3 and Beacon Interval is more than 200ms.
+
+
+Bluetooth Limitations/Features NOT Supported:
+---------------------------------------------
+1) BT Sniff mode does not work if BT multiple slaves feature is enabled
+2) When BT multiple slaves feature is enabled, Master to slave role switch will not happen
+3) In BLE, if Advertising/Scanning are in progress, and the device moves to Slave/Master role,
+   Advertising/Scanning will be stopped. Provide respective commands to start Advertising/Scanning 
+   while being in Slave/Master role.
+4) In WLAN + BLE coex, if BLE Connection is established with small Connection Interval(< 15ms),
+    simultaneous roles (i.e. Master/Slave + Advertising/Scanning) are not supported. 
+5) Power save is not supported in BT dual mode
+6) Observed glitches in BT audio in coex mode when WiFi is connected
+7) Simultaneous slave & Master roles (Scatternet) is not supported
+
+Zigbee Known Issues :
+---------------------
+1) In particular scenarios, coex switching is not happening in the WiFi+Zigbee coex mode.
+
+
+Release           : RS9113.NBZ.NL.GENR.LNX.1.5.6
+ Date              : Sep 1st 2017
+_______________________________________________________________
+ 	Copyright (C) Redpine Signals, Inc 2017
+_______________________________________________________________
+
+Release Status:
+===================
+	Test         ( )
+	Alpha        ( )
+	Beta         ( )
+	Production   (X)
+
+Supported Hardware:
+=======================
+RS9113-NBZ-XXX Modules With SDIO / USB Interface
+
+Supported Software:
+=======================
+Kernel versions from 2.6.30 to 4.12
+
+Change log for Release 1.5.6 (WiFi, WiFi+BT/BLE)
+=============================================================
+
+New Features:
+=============
+
+
+
+Changes / Issues fixed
+======================
+
+WLAN:
+
+BT:
+==
+1. Added a feature bitmap (BIT(1) - i.e, value: 0x2) in the driver script to enable BT multiple slaves 
+   Need to enable this bit for BT multiple slaves feature
+2. Slave pairing inconsistency issue in coex mode
+
+
+
+WLAN Limitations/Features NOT Supported:
+----------------------------------------
+1) Fragmentation is not supported.
+2) TX AMSDU is not supported.
+3) AMSDU's within AMPDU is not supported.
+4) Observed host gets stuck during scan on IMX51 Platform.
+5) Access Point mode through CFG80211 is supported for kernels greater than 3.3.
+6) Client mode through CFG80211 is supported from  2.6.38 kernel version.
+7) DFS Master through CFG80211 is supported for kernel versions greater than 3.11.
+8) WiFi Direct Mode through CFG80211 is not supported.
+9) Roaming through CFG80211 is supported in kernels greater than 3.11.
+10) In coex mode, wlan driver will not inserted if the BLE advertise interval is configured greater than 6sec in power save.
+
+Bluetooth Recommendations:
+---------------------------------------------
+1) In BLE, recommended range of Connection Interval in
+   i)  Power Save - 100ms to 1.28sec.
+   ii) BT Classic + BLE Dual Mode is >= 200ms.
+   iii)WLAN + BLE coex - 30ms to 4sec
+2) In BLE, during Connection, equal values of Scan Interval and Scan Window is not recommended.
+3) In BT Classic, recommended value of Sniff Interval during Power Save is limited to 100ms(<= 100).
+4) In WLAN + BT Classic coex, for BT file transfer to work fine, recommended value of WLAN protocol DTIM is more 
+    than 3 and Beacon Interval is more than 200ms.
+
+
+Bluetooth Limitations/Features NOT Supported:
+---------------------------------------------
+1) BT Sniff mode does not work if BT multiple slaves feature is enabled
+2) When BT multiple slaves feature is enabled, Master to slave role switch will not happen
+3) In BLE, if Advertising/Scanning are in progress, and the device moves to Slave/Master role,
+   Advertising/Scanning will be stopped. Provide respective commands to start Advertising/Scanning 
+   while being in Slave/Master role.
+4) In WLAN + BLE coex, if BLE Connection is established with small Connection Interval(< 15ms),
+    simultaneous roles (i.e. Master/Slave + Advertising/Scanning) are not supported. 
+5) Power save is not supported in BT dual mode
+6) Observed glitches in BT audio in coex mode when WiFi is connected
+7) Simultaneous slave & Master roles (Scatternet) is not supported
+
+Zigbee Known Issues :
+---------------------
+1) In particular scenarios, coex switching is not happening in the WiFi+Zigbee coex mode.
+
+
+_______________________________________________________________
+ Release           : RS9113.NBZ.NL.GENR.LNX.1.5.5
+ Date              : July 14th 2017
+_______________________________________________________________
+ 	Copyright (C) Redpine Signals, Inc 2017
+_______________________________________________________________
+
+Release Status:
+===================
+	Test         ( )
+	Alpha        ( )
+	Beta         ( )
+	Production   (X)
+
+Supported Hardware:
+=======================
+RS9113-NBZ-XXX Modules With SDIO / USB Interface
+
+Supported Software:
+=======================
+Kernel versions from 2.6.30 to 4.5-rc4
+
+Change log for Release 1.5.5 (WiFi, WiFi+BT/BLE)
+===============================================================
+
+
+New Features:
+=============
+
+COMMON
+=======
+Support added to have compatibility with old(LC-XXX) and New modules(LC-XXX-N).
+
+WLAN
+=====
+1)Support added for Auto channels selection feature.
+
+
+Changes / Issues fixed
+======================
+
+WLAN
+=====
+1)Support added configurable option for supported rates in AP mode.
+2)Updated tx power tables in firmware as per certification results.
+3)Configurable option of Transmit power selection to compliant spectral mask test.
+4)Resolved the connectivity issues in powersave mode at low temparatures by modifying the LDO settling timings.
+5)Throughput Enhancement for HPM module by finetuning the Transmit powers.
+
+
+BT
+==
+1)File transfer interopobility fixes with Packet size of 1021 support.
+2)BLE HID mouse connectivity stability for multiple times code changes.
+3)Bluetooth Radio enhancements for the windows driver yellow bang issues.
+4)Throughput enhancements.  
+
+WLAN Limitations/Features NOT Supported:
+----------------------------------------
+1) Fragmentation is not supported.
+2) TX AMSDU is not supported.
+3) AMSDU's within AMPDU is not supported.
+4) Observed host gets stuck during scan on IMX51 Platform.
+5) Access Point mode through CFG80211 is supported for kernels greater than 3.3.
+6) Client mode through CFG80211 is supported from  2.6.38 kernel version.
+7) DFS Master through CFG80211 is supported for kernel versions greater than 3.11.
+8) WiFi Direct Mode through CFG80211 is not supported.
+9) Roaming through CFG80211 is supported in kernels greater than 3.11.
+10) In coex mode, wlan driver will not inserted if the BLE advertise interval is configured greater than 6sec in power save.
+
+Bluetooth Recommendations:
+---------------------------------------------
+1) In BLE, recommended range of Connection Interval in
+   i)  Power Save - 100ms to 1.28sec.
+   ii) BT Classic + BLE Dual Mode is >= 200ms.
+   iii)WLAN + BLE coex - 30ms to 4sec
+2) In BLE, during Connection, equal values of Scan Interval and Scan Window is not recommended.
+3) In BT Classic, recommended value of Sniff Interval during Power Save is limited to 100ms(<= 100).
+4) In WLAN + BT Classic coex, for BT file transfer to work fine, recommended value of WLAN protocol DTIM is more 
+    than 3 and Beacon Interval is more than 200ms.
+
+
+Bluetooth Limitations/Features NOT Supported:
+---------------------------------------------
+1) BT Sniff mode does not work if BT multiple slaves feature is enabled
+2) When BT multiple slaves feature is enabled, Master to slave role switch will not happen
+3) In WLAN + BT Classic coex, file reception in BT may not happen for large files
+4) In BLE, if device is acting as Master/Slave, Scan Window (in set_scan_params and create_connection command)
+   shall be less than the exisitng Connection Interval.
+5) In BLE, if Advertising/Scanning are in progress, and the device moves to Slave/Master role,
+   Advertising/Scanning will be stopped. Provide respective commands to start Advertising/Scanning 
+   while being in Slave/Master role.
+6) In WLAN + BLE coex, if BLE Connection is established with small Connection Interval(< 15ms),
+    simultaneous roles (i.e. Master/Slave + Advertising/Scanning) are not supported. 
+7) In WLAN + BT Classic, file transfer may not happen with multiple slaves.
+8) Power save is not supported in BT dual mode.
+9) Observed glitches in BT audio in coex mode
+10) Simultaneous slave & Master roles (Scatternet) is not supported
+
+Zigbee Known Issues :
+---------------------
+1) In particular scenarios, coex switching is not happening in the WiFi+Zigbee coex mode.
+
+
+
+
+
+=================================================================
+Change log for Release 1.5.3 (WiFi, WiFi+BT/BLE, WiFi+ZB images)
+===============================================================
+
+
+New Features:
+============
+
+WLAN
+=====
+1) Support for setting powersave feature via iw command.
+2) Support for using NL80211 with the latest supplicant is documented in TRM in Appendix F.
+
+BLE
+===
+1. BLE 3 simultaneous slaves support
+
+Changes / Issues fixed
+======================
+
+WLAN
+=====
+
+1)CE-5582  Kernel crashes 
+2)CE-5456  Kernel crashes 
+3)CE-4739  Scan result by wpa_supplicant 
+4)CE-5353  wpa_supplicant connection bug 
+5)CE-5085  Receive sensitivity and RSSI 
+6)CE-5629  When cancel iw dev wifi0 scan, and next try no response
+7)CE-5630  Scan is unstable 
+8)CE-5622  Kernel Dies on running wpa_supplicant
+9)CE-5628  scan tools leads to busy/ crash
+10)CE-5631 Kernel Crash by start_sta.sh in Mentor SD image
+11)CE-5861 AP BEACON TIME, FAILURE ANALYSIS 
+12)CE-5583 iwlist scan results in no results
+13)CE-5884 2 of 60 are failed with Yamaha AP
+14)CE-6057 To obtain Chip Revision and software revision (n-Link)
+15)CE-5921 Fix the documentation if redpine cannot support the command syntax
+16)CE-5841 ifconfig up/down scenario 　
+17)CE-5678 (RS9113 not able to send in 150mbps rate)
+18)CE-5763- Monitor mode support with Nl80211 interface
+19)CE-6062 Concurrent mode support with Nl80211 
+
+BT
+==
+1. CE-4579 Data pause seen when attempting pair devices over BT
+2. Resolved role switch issues. Also, role switch is enabled by default
+3. BT interop connectivity issues like BT philips headset
+4. Added a feature bitmap to enable/disable BT multiple slaves
+5. File transfer issues with BT multiple slaves 
+6. BT on/off issues
+
+ZIGBEE
+======
+
+WLAN Limitations/Features NOT Supported:
+----------------------------------------
+1) Fragmentation is not supported.
+2) TX AMSDU is not supported.
+3) AMSDU's within AMPDU is not supported.
+4) Observed host gets stuck during scan on IMX51 Platform.
+5) Access Point mode through CFG80211 is supported for kernels greater than 3.3.
+6) Client mode through CFG80211 is supported from  2.6.38 kernel version.
+7) DFS Master through CFG80211 is supported for kernel versions greater than 3.11.
+8) WiFi Direct Mode through CFG80211 is not supported.
+9) Roaming through CFG80211 is supported in kernels greater than 3.11.
+10) In coex mode, wlan driver will not inserted if the BLE advertise interval is configured greater than 6sec in power save.
+
+Bluetooth Recommendations:
+---------------------------------------------
+1) In BLE, recommended range of Connection Interval in
+   i)  Power Save - 100ms to 1.28sec.
+   ii) BT Classic + BLE Dual Mode is >= 200ms.
+   iii)WLAN + BLE coex - 30ms to 4sec
+2) In BLE, during Connection, equal values of Scan Interval and Scan Window is not recommended.
+3) In BT Classic, recommended value of Sniff Interval during Power Save is limited to 100ms(<= 100).
+4) In WLAN + BT Classic coex, for BT file transfer to work fine, recommended value of WLAN protocol DTIM is more 
+    than 3 and Beacon Interval is more than 200ms.
+
+
+Bluetooth Limitations/Features NOT Supported:
+---------------------------------------------
+1) BT Sniff mode does not work if BT multiple slaves feature is enabled
+2) When BT multiple slaves feature is enabled, Master to slave role switch will not happen
+3) In WLAN + BT Classic coex, file reception in BT may not happen for large files
+4) In BLE, if device is acting as Master/Slave, Scan Window (in set_scan_params and create_connection command)
+   shall be less than the exisitng Connection Interval.
+5) In BLE, if Advertising/Scanning are in progress, and the device moves to Slave/Master role,
+   Advertising/Scanning will be stopped. Provide respective commands to start Advertising/Scanning 
+   while being in Slave/Master role.
+6) In WLAN + BLE coex, if BLE Connection is established with small Connection Interval(< 15ms),
+    simultaneous roles (i.e. Master/Slave + Advertising/Scanning) are not supported. 
+7) In WLAN + BT Classic, file transfer may not happen with multiple slaves.
+8) Power save is not supported in BT dual mode.
+9) Observed glitches in BT audio in coex mode
+10) Simultaneous slave & Master roles (Scatternet) is not supported
+
+
+
+Zigbee Known Issues :
+---------------------
+1) In particular scenarios, coex switching is not happening in the WiFi+Zigbee coex mode.
+
+===============================================================
+Change log for Release 1.5.2 (WiFi, WiFi+BT/BLE, WiFi+ZB images)
+===============================================================
+
+WLAN
+=====
+
+New Features:
+============
+
+Changes / Issues fixed
+======================
+1.   CE-3730  ti am335x beagleboneblack USB issue [RS9113-S1N)
+2.   CE-3724  Failure while initializing driver
+3.   CE-3342  Unable to re-connect to an AP
+4.   CE-4110  Kernel panic seen
+5.   CE-3478  UDP packets lost
+6.   CE-4113  Uninstall open source driver 
+7.   CE-3904  System crash when Simplifi unit is tested with Samsung s7
+8.   CE-4414  AP unable to operate in 5Ghz band when hostapd is used
+9.   CE-4244  Current HPM software 2G & 5G rate vs max power tables are wrong. performance will not be good with these values.
+10.  CE-4245  Rx calibration flow does not consider HPM module related antenna selects and external LNA
+11.  CE-4246  Autorate fallback is not proper
+12.  CE-4069  Unable to connect to AP in client mode
+13   CE-3965  Barco fix for long reconnection times, WLAN-3189 - Junk IE's in CCX V1 bug fixes.
+14   CE-4740  fix for Hostapd still available after stop
+15   CE-4157  Txpower changes to display proper output power and bit rate in driver.
+16   CE-4689  WPA2-PSK association failure  with Netgear and Xirrus AP's.
+17   CE-4760  ADDBA setup failures b/w RS9113 modules with TID 0.
+18   CE-4740  fix for Hostapd still available after stop
+19   CE-5058  Fix for iw dev wifi0 scan resulting bad dBm values.
+
+Known Issues:
+============
+Observed multicast queue getting full and beacons are not seen in regression testing
+Observed channel switching is not happening using the iwpriv command, which is provided to change channel during radar detection.
+Observed crash while running supplicant in STA+BT+BLE with NL interface in automation
+Observed crash while disconnecting BLE in STA+BT+BLE with NL interface in automation
+Observed crash while removing driver in STA+BT+BLE with NL interface in automation
+Observed crash while removing driver in sta+bt with nl mode using automation scripts
+Observed CMD52 errors in LP power save mode, while removing the driver during scanning
+Observed RSSI is not correctly updating in iw dev (interface) link command
+
+Bluetooth
+=========
+
+New Features:
+============
+
+Changes / Issues fixed
+======================
+1. CE-4129  RS9113 Bluetooth Frequency Hop Synchronization, SPP NG issue 
+2. CE-3858 	[lthonway] The BT WIFI station
+3. CE-3037  Bluetooth RS9113 does not associate with kernel every pair of keyboard
+4. CE-4447 	Bluetooth encryption
+5. CE-4098  LE slave disconnect issue fix
+6. CE-5341  Added role switch enable/disable support from host
+7. CE-4764  Improved RSSI value computation
+
+Zigbee
+=======
+
+New Features:
+============
+
+Changes / Issues fixed
+======================
+
+
+WLAN Limitations/Features NOT Supported:
+----------------------------------------
+1) Fragmentation is not supported.
+2) TX AMSDU is not supported.
+3) AMSDU's within AMPDU is not supported.
+4) Observed host gets stuck during scan on IMX51 Platform.
+5) Access Point mode through CFG80211 is supported for kernels greater than 3.3.
+6) Client mode through CFG80211 is supported from  2.6.38 kernel version.
+7) DFS Master through CFG80211 is supported for kernel versions greater than 3.11.
+8) WiFi Direct Mode through CFG80211 is not supported.
+9) Roaming through CFG80211 is supported in kernels greater than 3.11.
+10) In coex mode, wlan driver will not inserted if the BLE advertise interval is configured greater than 6sec in power save.
+
+Bluetooth Recommendations:
+---------------------------------------------
+1) In BLE, recommended range of Connection Interval in
+   i)  Power Save - 100ms to 1.28sec.
+   ii) BT Classic + BLE Dual Mode is >= 200ms.
+   iii)WLAN + BLE coex - 30ms to 4sec
+2) In BLE, during Connection, equal values of Scan Interval and Scan Window is not recommended.
+3) In BT Classic, recommended value of Sniff Interval during Power Save is limited to 100ms(<= 100).
+4) In WLAN + BT Classic coex, for BT file transfer to work fine, recommended value of WLAN protocol DTIM is more 
+    than 3 and Beacon Interval is more than 200ms.
+
+
+Bluetooth Limitations/Features NOT Supported:
+---------------------------------------------
+1) In WLAN + BT Classic coex, file reception in BT may not happen for large files.
+2) In BLE, if device is acting as Master/Slave, Scan Window (in set_scan_params and create_connection command)
+   shall be less than the exisitng Connection Interval.
+3) In BLE, if Advertising/Scanning are in progress, and the device moves to Slave/Master role,
+   Advertising/Scanning will be stopped. Provide respective commands to start Advertising/Scanning 
+   while being in Slave/Master role.
+4) In WLAN + BLE coex, if BLE Connection is established with small Connection Interval(< 15ms),
+    simultaneous roles (i.e. Master/Slave + Advertising/Scanning) are not supported. 
+5) In WLAN + BT Classic, file transfer may not happen with multiple slaves.
+6) Power save is not supported in BT dual mode.
+
+
+Zigbee Known Issues :
+---------------------
+1) In particular scenarios, coex switching is not happening in the WiFi+Zigbee coex mode.
+
+
+_______________________________________________________________
+ Release           : RS9113.NBZ.NL.GENR.LNX.1.5.1
+ Date              : August 9th 2016
+_______________________________________________________________
+ 	Copyright (C) Redpine Signals, Inc 2016
+_______________________________________________________________
+
+Release Status:
+===================
+	Test         ( )
+	Alpha        ( )
+	Beta         (X)
+	Production   ( )
+
+Supported Hardware:
+=======================
+RS9113-NBZ-XXX Modules With SDIO / USB Interface
+
+Supported Software:
+=======================
+Kernel versions from 2.6.30 to 4.5-rc4
+
+Change log for Release 1.5.1 (WiFi, WiFi+BT/BLE, WiFi+ZB images)
+===============================================================
+
+WLAN
+=====
+
+New Features:
+============
+1. Added 11J Feature for AP/ STA mode for all 20Mhz channels
+2. Added support for CCX V1 and CCX V2(CCKM and TPC)
+
+Changes / Issues fixed
+======================
+1. Observed Crash while running co-ex mode(wifi+bt_classic) with ulp powersave
+2. Common issue that the customers are facing during cross compilation when NL80211 & HOSTAPD is enabled in the driver config file
+3. Observed crash while running throughput test cases using automation	in WLAN alone
+
+Bluetooth
+=========
+
+New Features:
+============
+1. #CE-3260:	Support added to configure the Tx power level for BT inquiry
+2. #CE-3137, #CE-2761 Added support for Multiple Slaves (2 slaves) in BT classic 
+
+
+Changes / Issues fixed
+======================
+1. #CE-3800: BLE Local name, which is set by user is not observed on remote device properly
+
+Zigbee
+=======
+
+New Features:
+============
+
+Changes / Issues fixed
+======================
+
+
+WLAN Limitations/Features NOT Supported:
+----------------------------------------
+1) Fragmentation is not supported.
+2) TX AMSDU is not supported.
+3) AMSDU's within AMPDU is not supported.
+4) Observed host gets stuck during scan on IMX51 Platform.
+5) Access Point mode through CFG80211 is supported for kernels greater than 3.3.
+6) Client mode through CFG80211 is supported from  2.6.38 kernel version.
+7) DFS Master through CFG80211 is supported for kernel versions greater than 3.11.
+8) WiFi Direct Mode through CFG80211 is not supported.
+9) Roaming through CFG80211 is supported in kernels greater than 3.11.
+10) In coex mode, wlan driver will not inserted if the BLE advertise interval is configured greater than 6sec in power save.
+
+Bluetooth Recommendations:
+---------------------------------------------
+1) In BLE, recommended range of Connection Interval in
+   i)  Power Save - 100ms to 1.28sec.
+   ii) BT Classic + BLE Dual Mode is >= 200ms.
+   iii)WLAN + BLE coex - 30ms to 4sec
+2) In BLE, during Connection, equal values of Scan Interval and Scan Window is not recommended.
+3) In BT Classic, recommended value of Sniff Interval during Power Save is limited to 100ms(<= 100).
+4) In WLAN + BT Classic coex, for BT file transfer to work fine, recommended value of WLAN protocol DTIM is more 
+    than 3 and Beacon Interval is more than 200ms.
+
+
+Bluetooth Limitations/Features NOT Supported:
+---------------------------------------------
+1) In WLAN + BT Classic coex, file reception in BT may not happen for large files.
+2) In BLE, if device is acting as Master/Slave, Scan Window (in set_scan_params and create_connection command)
+   shall be less than the exisitng Connection Interval.
+3) In BLE, if Advertising/Scanning are in progress, and the device moves to Slave/Master role,
+   Advertising/Scanning will be stopped. Provide respective commands to start Advertising/Scanning 
+   while being in Slave/Master role.
+4) In WLAN + BLE coex, if BLE Connection is established with small Connection Interval(< 15ms),
+    simultaneous roles (i.e. Master/Slave + Advertising/Scanning) are not supported. 
+
+
+Zigbee Known Issues :
+---------------------
+1) In particular scenarios, coex switching is not happening in the WiFi+Zigbee coex mode.
+
+
+______________________________________________________________
+Release           : RS9113.NBZ.NL.GENR.LNX.1.5.0
+ Date              : July 25th 2016
+_______________________________________________________________
+ 	Copyright (C) Redpine Signals, Inc 2016
+_______________________________________________________________
+
+Release Status:
+===================
+	Test         ( )
+	Alpha        ( )
+	Beta         ( )
+	Production   (X)
+
+Supported Hardware:
+=======================
+RS9113-NBZ-XXX Modules With SDIO / USB Interface
+
+Supported Software:
+=======================
+Kernel versions from 2.6.30 to 4.5-rc4
+
+Change log for Release 1.5.0 (WiFi, WiFi+BT/BLE, WiFi+ZB images)
+===============================================================
+
+1. #CE-3201 - Support for STA + BT dual mode 
+2. #CE-2736 - Driver support for higher kernel vesions [from 4.2 to 4.5-rc4] 
+
+WLAN
+=====
+
+New Features:
+============
+1. Added command for configuring management rate. Refer section 5.2 in RS9113-n-Link_Software_TRM-v1.5.0.pdf for command Usage
+
+Changes / Issues fixed
+======================
+1. 40Mhz is disabled by Default. Refer section 5.2 in RS9113-n-Link_Software_TRM-v1.5.0.pdf for enabling 40Mhz support
+2. #CE-3523 - Turning RS9113 into RF test mode (driver_mode=2) is working only in coex_mode=1, not working in coex mode 9
+3. #CE-3479 - UDP packet loss and throughput issues in 2.4GHz
+4. FCC,ETSI, TELEC and SRRC region base frequency selection is not proper in 5G bands and with DFS some channels are missed
+5. New programming values taken to resolve range and throughput issues in WLAN 
+
+Bluetooth
+=========
+
+New Features:
+============
+1. Role switch feature in BT classic
+
+
+Changes / Issues fixed
+======================
+1. CE-3037 - BT keyboard (Logitech_k490, Logitech_ipadkeyboardcase Y-R0023, Havit) and mouse (Logitech) pairing issues
+
+
+Zigbee
+=======
+
+New Features:
+============
+- 
+
+Changes / Issues fixed
+======================
+
+
+WLAN Limitations/Features NOT Supported:
+----------------------------------------
+1) Fragmentation is not supported.
+2) TX AMSDU is not supported.
+3) AMSDU's within AMPDU is not supported.
+4) Observed host gets stuck during scan on IMX51 Platform.
+5) Access Point mode through CFG80211 is supported for kernels greater than 3.3.
+6) Client mode through CFG80211 is supported from  2.6.38 kernel version.
+7) DFS Master through CFG80211 is supported for kernel versions greater than 3.11.
+8) WiFi Direct Mode through CFG80211 is not supported.
+9) Roaming through CFG80211 is supported in kernels greater than 3.11.
+10) In coex mode,wlan driver will not insert if the advertise interval is
+   greater than 6sec in power save.
+
+Bluetooth Recommendations:
+---------------------------------------------
+1) In BLE, recommended range of Connection Interval in
+   i)  Power Save - 100ms to 1.28sec.
+   ii) BT Classic + BLE Dual Mode is 200ms.
+   iii)WLAN + BLE coex - 30ms to 4sec
+2) In BLE, during Connection, equal values of Scan Interval and Scan Window is not recommended.
+3) In BT Classic, recommended value of Sniff Interval during Power Save is limited to 100ms(<= 100).
+4) In WLAN + BT Classic coex, for BT file transfer to work fine, recommended value of WLAN protocol DTIM is more 
+    than 3 and Beacon Interval is more than 200ms.
+
+
+Bluetooth Limitations/Features NOT Supported:
+---------------------------------------------
+1) In WLAN + BT Classic coex, file reception in BT may not happen for large files.
+2) In BLE, if device is acting as Master/Slave, Scan Window (in set_scan_params and create_connection command)
+   shall be less than the exisitng Connection Interval.
+3) In BLE, if Advertising/Scanning are in progress, and the device moves to Slave/Master role,
+   Advertising/Scanning will be stopped. Provide respective commands to start Advertising/Scanning 
+   while being in Slave/Master role.
+4) In WLAN + BLE coex, if BLE Connection is established with small Connection Interval(< 15ms),
+    simultaneous roles (i.e. Master/Slave + Advertising/Scanning) are not supported. 
+
+
+Zigbee Known Issues :
+---------------------
+1) In particular scenarios, coex switching is not happening in the WiFi+Zigbee coex mode.

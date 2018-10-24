@@ -1,0 +1,50 @@
+Step 1: help,h,? will give you the list of command and their pupose.
+		
+		eg: help
+
+	to get help for particular command <command> <help>
+
+		eg: Init_stack help
+
+Init_stack help
+Command Received: Init_stack help
+Received Command is Init_stack
+Argument count 1
+Command 'Init_stack help' Not Supported 
+
+Usage:
+	Init_stack
+
+Example:
+	Init_stack	(it inits stack for zigbee)
+
+	
+
+Step 2: Verify your interface type
+
+Application designed to support interface type
+
+    Interface_number 	Interface_type
+	    0 ----------- ttyUSB0
+	    1 ----------- ttyUSB1
+	    2 ----------- ttyACM0
+	    3 ----------- ttyACM1
+Step 3: Execute the application by following type
+		
+	eg: ./rsi_wsc_zigb_app <Interface_number> <baud_rate - 115200>
+
+Step 4: There is a option for simple data transfermation between coordinator and router.
+	
+	i)  Enter start_coord for coordinator and then follow the Reply messages.
+	ii) Enter start_rout for router and then follow the Reply messages.
+
+Step 5: This application will shows the TX and RX messages if you want you can enable by following command setdebugmask.
+
+Step 6: This application creates log file with time stamp.
+
+Step 7: After child joined completed with coordinator then send data.
+
+Step 8: To pause the data transfermation use command p 
+
+Step 9: To resume the data transfermation use command r.
+

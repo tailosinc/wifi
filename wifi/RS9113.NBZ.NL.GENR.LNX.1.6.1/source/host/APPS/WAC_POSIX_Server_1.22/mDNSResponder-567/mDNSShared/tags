@@ -1,0 +1,2115 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AF_DNSSD	dnssd_ipc.h	78;"	d
+AF_DNSSD	dnssd_ipc.h	84;"	d
+AF_LOCAL	dnsextd.c	60;"	d	file:
+AF_LOCAL	dnssd_ipc.h	97;"	d
+AF_MDNS	dnssd_clientstub.c	52;"	d	file:
+AF_MDNS	dnssd_clientstub.c	88;"	d	file:
+ALL_INTERFACES	Java/DNSSD.java	/^    public static final int     ALL_INTERFACES = 0;$/;"	f	class:DNSSD
+ALREADY_REGISTERED	Java/DNSSDException.java	/^    public static final int		ALREADY_REGISTERED        = -65547;$/;"	f	class:DNSSDException
+ASSIGNLINK	GenLinkedList.c	32;"	d	file:
+AUTO_CALLBACKS	Java/JNISupport.c	29;"	d	file:
+AbortUnlinkAndFree	uds_daemon.c	/^mDNSlocal void AbortUnlinkAndFree(request_state *req)$/;"	f
+AcceptTCPConnection	dnsextd.c	/^AcceptTCPConnection$/;"	f
+AddAutoBrowseDomain	uds_daemon.c	/^mDNSlocal void AddAutoBrowseDomain(const mDNSu32 uid, const domainname *const name)$/;"	f
+AddRecord	Java/DNSSD.java	/^	protected native int	AddRecord( int flags, int rrType, byte[] rData, int ttl, AppleDNSRecord destObj);$/;"	m	class:AppleRegistration
+AddSourceToEventLoop	dnsextd.c	/^mDNSlocal mStatus AddSourceToEventLoop( DaemonInfo * self, TCPSocket *sock, EventCallback callback, void *context )$/;"	f
+AddToHead	GenLinkedList.c	/^void        AddToHead( GenLinkedList *pList, void *elem)$/;"	f
+AddToTail	GenLinkedList.c	/^void        AddToTail( GenLinkedList *pList, void *elem)$/;"	f
+AlignDown	CommonServices.h	638;"	d
+AlignUp	CommonServices.h	646;"	d
+AllocateSubTypes	uds_daemon.c	/^mDNSexport AuthRecord *AllocateSubTypes(mDNSs32 NumSubTypes, char *p, char **AnonData)$/;"	f
+AlwaysAppendSearchDomains	uds_daemon.c	/^mDNSBool AlwaysAppendSearchDomains = mDNSfalse;$/;"	v
+AnonData	uds_daemon.c	/^            const mDNSu8 *AnonData;$/;"	m	struct:request_state::__anon24::__anon25	file:
+AnonData	uds_daemon.c	/^            mDNSBool AnonData;$/;"	m	struct:request_state::__anon24::__anon26	file:
+AnonDataToString	uds_daemon.c	/^mDNSlocal char *AnonDataToString(const mDNSu8 *ad, int adlen, char *adstr, int adstrlen)$/;"	f
+AnonInfoAnswersQuestion	dnsextd.c	/^int AnonInfoAnswersQuestion(const ResourceRecord *const rr, const DNSQuestion *const q) { ( void ) rr; ( void ) q; return 1;}$/;"	f
+AnonInfoToString	uds_daemon.c	/^mDNSlocal char *AnonInfoToString(AnonymousInfo *ai, char *anonstr, int anstrlen)$/;"	f
+AnswerList	dnsextd.h	/^    AnswerListElem *AnswerList;$/;"	m	struct:LLQEntry
+AnswerListElem	dnsextd.h	/^typedef struct AnswerListElem$/;"	s
+AnswerListElem	dnsextd.h	/^} AnswerListElem;$/;"	t	typeref:struct:AnswerListElem
+AnswerQuestion	dnsextd.c	/^mDNSlocal CacheRecord *AnswerQuestion(DaemonInfo *d, AnswerListElem *e)$/;"	f
+AnswerTable	dnsextd.h	/^    AnswerListElem *AnswerTable[LLQ_TABLESIZE];$/;"	m	struct:__anon7
+AnswerTableCount	dnsextd.h	/^    int AnswerTableCount;$/;"	m	struct:__anon7
+AppCallback	dnssd_clientstub.c	/^    DNSServiceRegisterRecordReply AppCallback;$/;"	m	struct:_DNSRecordRef_t	file:
+AppCallback	dnssd_clientstub.c	/^    void             *AppCallback;      \/\/ Client callback function and context$/;"	m	struct:_DNSServiceRef_t	file:
+AppCallback	dnssd_clientstub.c	/^    void             *AppCallback;      \/\/ Client callback function and context$/;"	m	struct:__anon13	file:
+AppContext	dnssd_clientstub.c	/^    void             *AppContext;$/;"	m	struct:_DNSServiceRef_t	file:
+AppContext	dnssd_clientstub.c	/^    void             *AppContext;$/;"	m	struct:__anon13	file:
+AppContext	dnssd_clientstub.c	/^    void *AppContext;$/;"	m	struct:_DNSRecordRef_t	file:
+AppendNewSearchDomain	uds_daemon.c	/^mDNSlocal int AppendNewSearchDomain(mDNS *const m, DNSQuestion *question)$/;"	f
+AppleBrowser	Java/DNSSD.java	/^	public			AppleBrowser( int flags, int ifIndex, String regType, String domain, BrowseListener client)$/;"	m	class:AppleBrowser
+AppleBrowser	Java/DNSSD.java	/^class	AppleBrowser extends AppleService$/;"	c
+AppleDNSRecord	Java/DNSSD.java	/^	public			AppleDNSRecord( AppleService owner)$/;"	m	class:AppleDNSRecord
+AppleDNSRecord	Java/DNSSD.java	/^class	AppleDNSRecord implements DNSRecord$/;"	c
+AppleDNSSD	Java/DNSSD.java	/^class	AppleDNSSD extends DNSSD$/;"	c
+AppleDNSSDException	Java/DNSSD.java	/^	public						AppleDNSSDException( int errorCode) { fErrorCode = errorCode; }$/;"	m	class:AppleDNSSDException
+AppleDNSSDException	Java/DNSSD.java	/^class	AppleDNSSDException extends DNSSDException$/;"	c
+AppleDomainEnum	Java/DNSSD.java	/^	public			AppleDomainEnum( int flags, int ifIndex, DomainListener client)$/;"	m	class:AppleDomainEnum
+AppleDomainEnum	Java/DNSSD.java	/^class	AppleDomainEnum extends AppleService$/;"	c
+AppleQuery	Java/DNSSD.java	/^	public			AppleQuery( int flags, int ifIndex, String serviceName, int rrtype,$/;"	m	class:AppleQuery
+AppleQuery	Java/DNSSD.java	/^class	AppleQuery extends AppleService$/;"	c
+AppleRecordRegistrar	Java/DNSSD.java	/^	public			AppleRecordRegistrar( RegisterRecordListener listener)$/;"	m	class:AppleRecordRegistrar
+AppleRecordRegistrar	Java/DNSSD.java	/^class	AppleRecordRegistrar extends AppleService implements DNSSDRecordRegistrar$/;"	c
+AppleRegistration	Java/DNSSD.java	/^	public			AppleRegistration( int flags, int ifIndex, String serviceName, String regType, String domain,$/;"	m	class:AppleRegistration
+AppleRegistration	Java/DNSSD.java	/^class	AppleRegistration extends AppleService implements DNSSDRegistration$/;"	c
+AppleResolver	Java/DNSSD.java	/^	public			AppleResolver( int flags, int ifIndex, String serviceName, String regType,$/;"	m	class:AppleResolver
+AppleResolver	Java/DNSSD.java	/^class	AppleResolver extends AppleService$/;"	c
+AppleService	Java/DNSSD.java	/^	public					AppleService(BaseListener listener)	{ fNativeContext = 0; fListener = listener; }$/;"	m	class:AppleService
+AppleService	Java/DNSSD.java	/^class	AppleService implements DNSSDService, Runnable$/;"	c
+AssignOffsetLink	GenLinkedList.c	/^static void AssignOffsetLink( void *elem, void *link, size_t linkOffset)$/;"	f	file:
+AutoBrowseDomains	uds_daemon.c	/^mDNSexport DNameListElem *AutoBrowseDomains;        \/\/ List created from those local-only PTR records plus records we get from the network$/;"	v
+AutoRegistrationDomains	uds_daemon.c	/^mDNSexport DNameListElem *AutoRegistrationDomains;  \/\/ Domains where we automatically register for empty-string registrations$/;"	v
+AutomaticBrowseDomainChange	uds_daemon.c	/^mDNSlocal void AutomaticBrowseDomainChange(mDNS *const m, DNSQuestion *q, const ResourceRecord *const answer, QC_result AddRecord)$/;"	f
+BADKEY	Java/DNSSDException.java	/^    public static final int		BADKEY                    = -65561;$/;"	f	class:DNSSDException
+BADSIG	Java/DNSSDException.java	/^    public static final int		BADSIG                    = -65560;$/;"	f	class:DNSSDException
+BADTIME	Java/DNSSDException.java	/^    public static final int		BADTIME                   = -65559;$/;"	f	class:DNSSDException
+BAD_FLAGS	Java/DNSSDException.java	/^    public static final int		BAD_FLAGS                 = -65543;$/;"	f	class:DNSSDException
+BAD_INTERFACE_INDEX	Java/DNSSDException.java	/^    public static final int		BAD_INTERFACE_INDEX       = -65552;$/;"	f	class:DNSSDException
+BAD_PARAM	Java/DNSSDException.java	/^    public static final int		BAD_PARAM                 = -65540;$/;"	f	class:DNSSDException
+BAD_REFERENCE	Java/DNSSDException.java	/^    public static final int		BAD_REFERENCE             = -65541;$/;"	f	class:DNSSDException
+BAD_STATE	Java/DNSSDException.java	/^    public static final int		BAD_STATE                 = -65542;$/;"	f	class:DNSSDException
+BROWSE_DOMAINS	Java/DNSSD.java	/^	public static final int		BROWSE_DOMAINS = ( 1 << 6 );$/;"	f	class:DNSSD
+BackLinkOffset	GenLinkedList.h	/^           BackLinkOffset;$/;"	m	struct:GenDoubleLinkedList
+BaseListener	Java/BaseListener.java	/^public interface BaseListener$/;"	i
+BeginEnum	Java/DNSSD.java	/^	protected native int	BeginEnum( int flags, int ifIndex);$/;"	m	class:AppleDomainEnum
+BeginRegister	Java/DNSSD.java	/^	protected native int	BeginRegister( int ifIndex, int flags, String serviceName, String regType,$/;"	m	class:AppleRegistration
+BlockForData	Java/DNSSD.java	/^	protected native int	BlockForData();$/;"	m	class:AppleService
+BrowseListener	Java/BrowseListener.java	/^public interface BrowseListener extends BaseListener$/;"	i
+CALLBACK_COMPAT	CommonServices.h	558;"	d
+CALLBACK_COMPAT	CommonServices.h	560;"	d
+CHECK_WCF_FUNCTION	uds_daemon.c	70;"	d	file:
+COMMON_SERVICES_NEEDS_BOOL	CommonServices.h	857;"	d
+COMMON_SERVICES_NEEDS_BOOL	CommonServices.h	859;"	d
+COMMON_SERVICES_NEEDS_BOOL	CommonServices.h	876;"	d
+COMPILER_HAS_EXCEPTIONS	DebugServices.c	2749;"	d	file:
+CONFIG_FILE	dnsextd.c	76;"	d	file:
+CR	CommonServices.h	414;"	d
+CRCR	CommonServices.h	421;"	d
+CRLF	CommonServices.h	420;"	d
+CRSTR	CommonServices.h	418;"	d
+CStr255	CommonServices.h	/^typedef char CStr255[ 256 ];$/;"	t
+CTL_PATH_PREFIX	dnssd_clientstub.c	106;"	d	file:
+Callback	Java/JNISupport.c	/^    jmethodID Callback;$/;"	m	struct:OpContext	file:
+Callback2	Java/JNISupport.c	/^    jmethodID Callback2;$/;"	m	struct:OpContext	file:
+CallbackHeader	dnssd_clientstub.c	/^} CallbackHeader;$/;"	t	typeref:struct:__anon12	file:
+CallbackWithError	dnssd_clientstub.c	/^static void CallbackWithError(DNSServiceRef sdRef, DNSServiceErrorType error)$/;"	f	file:
+CaseErrorString	DebugServices.c	1625;"	d	file:
+CaseErrorStringify	DebugServices.c	1626;"	d	file:
+CaseErrorStringifyHardCode	DebugServices.c	1627;"	d	file:
+ChallengeSent	dnsextd.h	/^    ChallengeSent   = 1,$/;"	e	enum:__anon6
+CheckForMixedRegistrations	uds_daemon.c	/^mDNSlocal mDNSBool CheckForMixedRegistrations(domainname *regtype, domainname *domain, mDNSBool AnonData)$/;"	f
+ChopSubTypes	uds_daemon.c	/^mDNSexport mDNSs32 ChopSubTypes(char *regtype, char **AnonData)$/;"	f
+ClearUpdateSRV	dnsextd.c	1009;"	d	file:
+ClientObj	Java/JNISupport.c	/^    jobject ClientObj;$/;"	m	struct:OpContext	file:
+CompileTimeAssertionCheck_dnssd_clientlib	dnssd_clientlib.c	/^struct CompileTimeAssertionCheck_dnssd_clientlib$/;"	s	file:
+CompileTimeAssertionChecks_DNS_SD	dns_sd.h	/^struct CompileTimeAssertionChecks_DNS_SD$/;"	s
+CompileTimeAssertionChecks_dnssd_ipc	dnssd_ipc.h	/^struct CompileTimeAssertionChecks_dnssd_ipc$/;"	s
+CompileTimeAssertionChecks_uds_daemon	uds_daemon.c	/^struct CompileTimeAssertionChecks_uds_daemon$/;"	s	file:
+ConnectToServer	dnsextd.c	/^mDNSlocal TCPSocket *ConnectToServer(DaemonInfo *d)$/;"	f
+ConnectToServer	dnssd_clientstub.c	/^static DNSServiceErrorType ConnectToServer(DNSServiceRef *ref, DNSServiceFlags flags, uint32_t op, ProcessReplyFn ProcessReply, void *AppCallback, void *AppContext)$/;"	f	file:
+ConnectionResponse	dnssd_clientstub.c	/^static void ConnectionResponse(DNSServiceOp *const sdr, const CallbackHeader *const cbh, const char *const data, const char *const end)$/;"	f	file:
+ConstructName	Java/DNSSD.java	/^	protected native int	ConstructName( String serviceName, String regType, String domain, String[] pOut);$/;"	m	class:AppleDNSSD
+Context	Java/JNISupport.c	/^    OpContext       *Context;$/;"	m	struct:RecordRegistrationRef	file:
+ConvertHeaderBytes	dnssd_ipc.c	/^void ConvertHeaderBytes(ipc_msg_hdr *hdr)$/;"	f
+CopyCacheRecord	dnsextd.c	/^mDNSlocal CacheRecord *CopyCacheRecord(const CacheRecord *orig, domainname *name)$/;"	f
+CountExistingRegistrations	uds_daemon.c	/^mDNSexport int CountExistingRegistrations(domainname *srv, mDNSIPPort port)$/;"	f
+CountPeerRegistrations	uds_daemon.c	/^mDNSexport int CountPeerRegistrations(mDNS *const m, ServiceRecordSet *const srs)$/;"	f
+CreateBrowser	Java/DNSSD.java	/^	protected native int	CreateBrowser( int flags, int ifIndex, String regType, String domain);$/;"	m	class:AppleBrowser
+CreateConnection	Java/DNSSD.java	/^	protected native int	CreateConnection();$/;"	m	class:AppleRecordRegistrar
+CreateQuery	Java/DNSSD.java	/^	protected native int	CreateQuery( int flags, int ifIndex, String serviceName, int rrtype, int rrclass);$/;"	m	class:AppleQuery
+CreateResolver	Java/DNSSD.java	/^	protected native int	CreateResolver( int flags, int ifIndex, String serviceName, String regType,$/;"	m	class:AppleResolver
+DEBUG	DebugServices.h	46;"	d
+DEBUG_C99_VA_ARGS	DebugServices.h	75;"	d
+DEBUG_C99_VA_ARGS	DebugServices.h	78;"	d
+DEBUG_C99_VA_ARGS	DebugServices.h	82;"	d
+DEBUG_C99_VA_ARGS	DebugServices.h	85;"	d
+DEBUG_CORE_SERVICE_ASSERTS_ENABLED	DebugServices.h	155;"	d
+DEBUG_CORE_SERVICE_ASSERTS_ENABLED	DebugServices.h	157;"	d
+DEBUG_EXPORT	DebugServices.h	436;"	d
+DEBUG_EXPORT	DebugServices.h	438;"	d
+DEBUG_FPRINTF_ENABLED	DebugServices.h	101;"	d
+DEBUG_FPRINTF_ENABLED	DebugServices.h	103;"	d
+DEBUG_GNU_VA_ARGS	DebugServices.h	76;"	d
+DEBUG_GNU_VA_ARGS	DebugServices.h	79;"	d
+DEBUG_GNU_VA_ARGS	DebugServices.h	83;"	d
+DEBUG_GNU_VA_ARGS	DebugServices.h	86;"	d
+DEBUG_IDEBUG_ENABLED	DebugServices.h	144;"	d
+DEBUG_KPRINTF_ENABLED	DebugServices.h	128;"	d
+DEBUG_LOCAL	DebugServices.h	401;"	d
+DEBUG_LOCAL	DebugServices.h	403;"	d
+DEBUG_MAC_OS_X_IOLOG_ENABLED	DebugServices.h	118;"	d
+DEBUG_OVERRIDE_APPLE_MACROS	DebugServices.h	56;"	d
+DEBUG_STATIC	DebugServices.h	418;"	d
+DEBUG_STATIC	DebugServices.h	420;"	d
+DEBUG_UNUSED	DebugServices.h	369;"	d
+DEBUG_USE_ONLY	DebugServices.h	384;"	d
+DEBUG_USE_ONLY	DebugServices.h	386;"	d
+DEFAULT	Java/DNSSD.java	/^	public static final int		DEFAULT = ( 1 << 2 );$/;"	f	class:DNSSD
+DLLAddToHead	GenLinkedList.c	/^void            DLLAddToHead( GenDoubleLinkedList *pList, void *elem)$/;"	f
+DLLRemoveFromList	GenLinkedList.c	/^void            DLLRemoveFromList( GenDoubleLinkedList *pList, void *elem)$/;"	f
+DNSRecord	Java/DNSRecord.java	/^public interface	DNSRecord$/;"	i
+DNSRecord	dnssd_clientstub.c	/^typedef struct _DNSRecordRef_t DNSRecord;$/;"	t	typeref:struct:_DNSRecordRef_t	file:
+DNSRecordRef	dns_sd.h	/^typedef struct _DNSRecordRef_t *DNSRecordRef;$/;"	t	typeref:struct:_DNSRecordRef_t
+DNSSD	Java/DNSSD.java	/^	protected						DNSSD() {}	\/\/ prevent direct instantiation$/;"	m	class:DNSSD
+DNSSD	Java/DNSSD.java	/^abstract public class	DNSSD$/;"	c
+DNSSDException	Java/DNSSDException.java	/^abstract public class	DNSSDException extends Exception$/;"	c
+DNSSDRecordRegistrar	Java/DNSSDRecordRegistrar.java	/^public interface	DNSSDRecordRegistrar extends DNSSDService$/;"	i
+DNSSDRegistration	Java/DNSSDRegistration.java	/^public interface	DNSSDRegistration extends DNSSDService$/;"	i
+DNSSDService	Java/DNSSDService.java	/^public interface	DNSSDService$/;"	i
+DNSSD_API	dns_sd.h	86;"	d
+DNSSD_API	dns_sd.h	88;"	d
+DNSSD_CLIENT_MAXTRIES	dnssd_clientstub.c	94;"	d	file:
+DNSSD_CLIENT_TIMEOUT	dnssd_clientstub.c	103;"	d	file:
+DNSSD_IPC_H	dnssd_ipc.h	30;"	d
+DNSServiceAddRecord	dnssd_clientshim.c	/^DNSServiceErrorType DNSServiceAddRecord$/;"	f
+DNSServiceAddRecord	dnssd_clientstub.c	/^DNSServiceErrorType DNSSD_API DNSServiceAddRecord$/;"	f
+DNSServiceBrowse	dnssd_clientshim.c	/^DNSServiceErrorType DNSServiceBrowse$/;"	f
+DNSServiceBrowse	dnssd_clientstub.c	/^DNSServiceErrorType DNSSD_API DNSServiceBrowse$/;"	f
+DNSServiceBrowseDispose	dnssd_clientshim.c	/^static void DNSServiceBrowseDispose(mDNS_DirectOP *op)$/;"	f	file:
+DNSServiceBrowseReply	dns_sd.h	/^typedef void (DNSSD_API *DNSServiceBrowseReply)$/;"	t
+DNSServiceConstructFullName	dnssd_clientlib.c	/^DNSServiceErrorType DNSSD_API DNSServiceConstructFullName$/;"	f
+DNSServiceCreateConnection	dnssd_clientshim.c	/^DNSServiceErrorType DNSServiceCreateConnection(DNSServiceRef *sdRef)$/;"	f
+DNSServiceCreateConnection	dnssd_clientstub.c	/^DNSServiceErrorType DNSSD_API DNSServiceCreateConnection(DNSServiceRef *sdRef)$/;"	f
+DNSServiceCreateDelegateConnection	dnssd_clientstub.c	/^DNSServiceErrorType DNSSD_API DNSServiceCreateDelegateConnection(DNSServiceRef *sdRef, int32_t pid, uuid_t uuid)$/;"	f
+DNSServiceDomainEnumReply	dns_sd.h	/^typedef void (DNSSD_API *DNSServiceDomainEnumReply)$/;"	t
+DNSServiceEnumerateDomains	dnssd_clientshim.c	/^DNSServiceErrorType DNSServiceEnumerateDomains$/;"	f
+DNSServiceEnumerateDomains	dnssd_clientstub.c	/^DNSServiceErrorType DNSSD_API DNSServiceEnumerateDomains$/;"	f
+DNSServiceErrorType	dns_sd.h	/^typedef int32_t DNSServiceErrorType;$/;"	t
+DNSServiceFlags	dns_sd.h	/^typedef uint32_t DNSServiceFlags;$/;"	t
+DNSServiceGetAddrInfo	dnssd_clientshim.c	/^DNSServiceErrorType DNSSD_API DNSServiceGetAddrInfo($/;"	f
+DNSServiceGetAddrInfo	dnssd_clientstub.c	/^DNSServiceErrorType DNSSD_API DNSServiceGetAddrInfo$/;"	f
+DNSServiceGetAddrInfoDispose	dnssd_clientshim.c	/^static void DNSServiceGetAddrInfoDispose(mDNS_DirectOP *op)$/;"	f	file:
+DNSServiceGetAddrInfoReply	dns_sd.h	/^typedef void (DNSSD_API *DNSServiceGetAddrInfoReply)$/;"	t
+DNSServiceGetAddrInfoResponse	dnssd_clientshim.c	/^static void DNSSD_API DNSServiceGetAddrInfoResponse($/;"	f	file:
+DNSServiceGetPID	dnssd_clientstub.c	/^DNSServiceErrorType DNSSD_API DNSServiceGetPID(const uint16_t srcport, int32_t *pid)$/;"	f
+DNSServiceGetProperty	dnssd_clientstub.c	/^DNSServiceErrorType DNSSD_API DNSServiceGetProperty(const char *property, void *result, uint32_t *size)$/;"	f
+DNSServiceNATPortMappingCreate	dnssd_clientstub.c	/^DNSServiceErrorType DNSSD_API DNSServiceNATPortMappingCreate$/;"	f
+DNSServiceNATPortMappingReply	dns_sd.h	/^typedef void (DNSSD_API *DNSServiceNATPortMappingReply)$/;"	t
+DNSServiceOp	dnssd_clientstub.c	/^typedef struct _DNSServiceRef_t DNSServiceOp;$/;"	t	typeref:struct:_DNSServiceRef_t	file:
+DNSServiceProcessResult	dnssd_clientshim.c	/^DNSServiceErrorType DNSServiceProcessResult(DNSServiceRef sdRef)$/;"	f
+DNSServiceProcessResult	dnssd_clientstub.c	/^DNSServiceErrorType DNSSD_API DNSServiceProcessResult(DNSServiceRef sdRef)$/;"	f
+DNSServiceProtocol	dns_sd.h	/^typedef uint32_t DNSServiceProtocol;$/;"	t
+DNSServiceProtocol	uds_daemon.c	4087;"	d	file:
+DNSServiceQueryRecord	dnssd_clientshim.c	/^DNSServiceErrorType DNSServiceQueryRecord$/;"	f
+DNSServiceQueryRecord	dnssd_clientstub.c	/^DNSServiceErrorType DNSSD_API DNSServiceQueryRecord$/;"	f
+DNSServiceQueryRecordDispose	dnssd_clientshim.c	/^static void DNSServiceQueryRecordDispose(mDNS_DirectOP *op)$/;"	f	file:
+DNSServiceQueryRecordReply	dns_sd.h	/^typedef void (DNSSD_API *DNSServiceQueryRecordReply)$/;"	t
+DNSServiceQueryRecordResponse	dnssd_clientshim.c	/^mDNSlocal void DNSServiceQueryRecordResponse(mDNS *const m, DNSQuestion *question, const ResourceRecord *const answer, QC_result AddRecord)$/;"	f
+DNSServiceReconfirmRecord	dnssd_clientshim.c	/^DNSServiceErrorType DNSSD_API DNSServiceReconfirmRecord$/;"	f
+DNSServiceReconfirmRecord	dnssd_clientstub.c	/^DNSServiceErrorType DNSSD_API DNSServiceReconfirmRecord$/;"	f
+DNSServiceRef	dns_sd.h	/^typedef struct _DNSServiceRef_t *DNSServiceRef;$/;"	t	typeref:struct:_DNSServiceRef_t
+DNSServiceRefDeallocate	dnssd_clientshim.c	/^void DNSServiceRefDeallocate(DNSServiceRef sdRef)$/;"	f
+DNSServiceRefDeallocate	dnssd_clientstub.c	/^void DNSSD_API DNSServiceRefDeallocate(DNSServiceRef sdRef)$/;"	f
+DNSServiceRefSockFD	dnssd_clientshim.c	/^int DNSServiceRefSockFD(DNSServiceRef sdRef)$/;"	f
+DNSServiceRefSockFD	dnssd_clientstub.c	/^int DNSSD_API DNSServiceRefSockFD(DNSServiceRef sdRef)$/;"	f
+DNSServiceRefValid	dnssd_clientstub.c	132;"	d	file:
+DNSServiceRegister	dnssd_clientshim.c	/^DNSServiceErrorType DNSServiceRegister$/;"	f
+DNSServiceRegister	dnssd_clientstub.c	/^DNSServiceErrorType DNSSD_API DNSServiceRegister$/;"	f
+DNSServiceRegisterDispose	dnssd_clientshim.c	/^static void DNSServiceRegisterDispose(mDNS_DirectOP *op)$/;"	f	file:
+DNSServiceRegisterRecord	dnssd_clientshim.c	/^DNSServiceErrorType DNSServiceRegisterRecord$/;"	f
+DNSServiceRegisterRecord	dnssd_clientstub.c	/^DNSServiceErrorType DNSSD_API DNSServiceRegisterRecord$/;"	f
+DNSServiceRegisterRecordReply	dns_sd.h	/^typedef void (DNSSD_API *DNSServiceRegisterRecordReply)$/;"	t
+DNSServiceRegisterReply	dns_sd.h	/^typedef void (DNSSD_API *DNSServiceRegisterReply)$/;"	t
+DNSServiceRemoveRecord	dnssd_clientshim.c	/^DNSServiceErrorType DNSServiceRemoveRecord$/;"	f
+DNSServiceRemoveRecord	dnssd_clientstub.c	/^DNSServiceErrorType DNSSD_API DNSServiceRemoveRecord$/;"	f
+DNSServiceResolve	dnssd_clientshim.c	/^DNSServiceErrorType DNSServiceResolve$/;"	f
+DNSServiceResolve	dnssd_clientstub.c	/^DNSServiceErrorType DNSSD_API DNSServiceResolve$/;"	f
+DNSServiceResolveDispose	dnssd_clientshim.c	/^static void DNSServiceResolveDispose(mDNS_DirectOP *op)$/;"	f	file:
+DNSServiceResolveReply	dns_sd.h	/^typedef void (DNSSD_API *DNSServiceResolveReply)$/;"	t
+DNSServiceSetDefaultDomainForUser	dnssd_clientstub.c	/^DNSServiceErrorType DNSSD_API DNSServiceSetDefaultDomainForUser(DNSServiceFlags flags, const char *domain)$/;"	f
+DNSServiceSetDispatchQueue	dnssd_clientstub.c	/^DNSServiceErrorType DNSSD_API DNSServiceSetDispatchQueue$/;"	f
+DNSServiceSleepKeepalive	dnssd_clientstub.c	/^DNSServiceErrorType DNSSD_API DNSServiceSleepKeepalive$/;"	f
+DNSServiceSleepKeepaliveReply	dns_sd.h	/^typedef void (DNSSD_API *DNSServiceSleepKeepaliveReply)$/;"	t
+DNSServiceUpdateRecord	dnssd_clientshim.c	/^DNSServiceErrorType DNSServiceUpdateRecord$/;"	f
+DNSServiceUpdateRecord	dnssd_clientstub.c	/^DNSServiceErrorType DNSSD_API DNSServiceUpdateRecord$/;"	f
+DNSZone	dnsextd.h	/^typedef struct DNSZone$/;"	s
+DNSZone	dnsextd.h	/^} DNSZone;$/;"	t	typeref:struct:DNSZone
+DNSZoneSpecType	dnsextd.h	/^typedef enum DNSZoneSpecType$/;"	g
+DNSZoneSpecType	dnsextd.h	/^} DNSZoneSpecType;$/;"	t	typeref:enum:DNSZoneSpecType
+DOUBLENAT	Java/DNSSDException.java	/^    public static final int		DOUBLENAT                 = -65558;$/;"	f	class:DNSSDException
+DaemonInfo	dnsextd.h	/^} DaemonInfo;$/;"	t	typeref:struct:__anon7
+DebugAssertOutputHandler	DebugServices.c	/^DebugAssertOutputHandler($/;"	f	file:
+DebugExtractTaskLevelInterruptDepth	DebugServices.h	264;"	d
+DebugExtractTaskLevelInterruptLevel	DebugServices.h	261;"	d
+DebugFPrintFInit	DebugServices.c	/^static OSStatus DebugFPrintFInit( DebugOutputTypeFlags inFlags, const char *inFilename )$/;"	f	file:
+DebugFPrintFPrint	DebugServices.c	/^static void DebugFPrintFPrint( char *inData, size_t inSize )$/;"	f	file:
+DebugFinalize	DebugServices.c	/^DEBUG_EXPORT void       DebugFinalize( void )$/;"	f
+DebugFlags	DebugServices.h	/^typedef uint32_t DebugFlags;$/;"	t
+DebugGetErrorString	DebugServices.c	/^DEBUG_EXPORT const char *   DebugGetErrorString( int_least32_t inErrorCode, char *inBuffer, size_t inBufferSize )$/;"	f
+DebugGetProperty	DebugServices.c	/^DEBUG_EXPORT OSStatus   DebugGetProperty( DebugPropertyTag inTag, ... )$/;"	f
+DebugHexDump	DebugServices.c	/^DebugHexDump($/;"	f
+DebugInitialize	DebugServices.c	/^DEBUG_EXPORT OSStatus   DebugInitialize( DebugOutputType inType, ... )$/;"	f
+DebugIsPrint	DebugServices.c	73;"	d	file:
+DebugKPrintFPrint	DebugServices.c	/^static void DebugKPrintFPrint( char *inData, size_t inSize )$/;"	f	file:
+DebugLevel	DebugServices.h	/^typedef int32_t DebugLevel;$/;"	t
+DebugLogMsg	DebugServices.h	1258;"	d
+DebugLogMsg	DebugServices.h	1268;"	d
+DebugLogMsg	DebugServices.h	1271;"	d
+DebugMacOSXIOLogPrint	DebugServices.c	/^static void DebugMacOSXIOLogPrint( char *inData, size_t inSize )$/;"	f	file:
+DebugMacOSXLogFunctionPtr	DebugServices.c	/^typedef int ( *DebugMacOSXLogFunctionPtr )( const char *inFormat, ... );$/;"	t	file:
+DebugMacOSXLogInit	DebugServices.c	/^static OSStatus DebugMacOSXLogInit( void )$/;"	f	file:
+DebugMacOSXLogPrint	DebugServices.c	/^static void DebugMacOSXLogPrint( char *inData, size_t inSize )$/;"	f	file:
+DebugNSLog	DebugServices.h	1234;"	d
+DebugNSLog	DebugServices.h	1236;"	d
+DebugNSLog	DebugServices.h	1238;"	d
+DebugNSLog	DebugServices.h	1242;"	d
+DebugNSLog	DebugServices.h	1244;"	d
+DebugNSLog	DebugServices.h	1246;"	d
+DebugNumVersionToString	DebugServices.c	/^static char *   DebugNumVersionToString( uint32_t inVersion, char *inString )$/;"	f	file:
+DebugOutputFunctionPtr	DebugServices.h	/^typedef void ( *DebugOutputFunctionPtr )( char *inData, size_t inSize, void *inContext );$/;"	t
+DebugOutputType	DebugServices.h	/^typedef uint32_t DebugOutputType;$/;"	t
+DebugOutputTypeFlags	DebugServices.h	/^typedef unsigned int DebugOutputTypeFlags;$/;"	t
+DebugPrint	DebugServices.c	/^static OSStatus DebugPrint( DebugLevel inLevel, char *inData, size_t inSize )$/;"	f	file:
+DebugPrintAssert	DebugServices.c	/^DebugPrintAssert($/;"	f
+DebugPrintF	DebugServices.c	/^DEBUG_EXPORT size_t DebugPrintF( DebugLevel inLevel, const char *inFormat, ... )$/;"	f
+DebugPrintFVAList	DebugServices.c	/^DEBUG_EXPORT size_t DebugPrintFVAList( DebugLevel inLevel, const char *inFormat, va_list inArgs )$/;"	f
+DebugPropertyTag	DebugServices.h	/^typedef uint32_t DebugPropertyTag;$/;"	t
+DebugSNPrintF	DebugServices.c	/^DEBUG_EXPORT size_t DebugSNPrintF(char *sbuffer, size_t buflen, const char *fmt, ...)$/;"	f
+DebugSNPrintFVAList	DebugServices.c	/^DEBUG_EXPORT size_t DebugSNPrintFVAList(char *sbuffer, size_t buflen, const char *fmt, va_list arg)$/;"	f
+DebugServicesTest	DebugServices.c	/^DEBUG_EXPORT OSStatus   DebugServicesTest( void )$/;"	f
+DebugSetProperty	DebugServices.c	/^DEBUG_EXPORT OSStatus   DebugSetProperty( DebugPropertyTag inTag, ... )$/;"	f
+DebugTaskLevel	DebugServices.c	/^DEBUG_EXPORT uint32_t   DebugTaskLevel( void )$/;"	f
+DebugWinCharToTCharString	DebugServices.c	/^DebugWinCharToTCharString($/;"	f	file:
+DebugWinEnableConsole	DebugServices.c	/^static void DebugWinEnableConsole( void )$/;"	f	file:
+DebugWindowsDebuggerPrint	DebugServices.c	/^void    DebugWindowsDebuggerPrint( char *inData, size_t inSize )$/;"	f
+DebugWindowsEventLogInit	DebugServices.c	/^static OSStatus DebugWindowsEventLogInit( const char *inName, HMODULE inModule )$/;"	f	file:
+DebugWindowsEventLogPrint	DebugServices.c	/^static void DebugWindowsEventLogPrint( DebugLevel inLevel, char *inData, size_t inSize )$/;"	f	file:
+DebugiDebugInit	DebugServices.c	/^static OSStatus DebugiDebugInit( void )$/;"	f	file:
+DebugiDebugPrint	DebugServices.c	/^static void DebugiDebugPrint( char *inData, size_t inSize )$/;"	f	file:
+DeleteLLQ	dnsextd.c	/^mDNSlocal void DeleteLLQ(DaemonInfo *d, LLQEntry *e)$/;"	f
+DeleteOneRecord	dnsextd.c	/^mDNSlocal void DeleteOneRecord(DaemonInfo *d, CacheRecord *rr, domainname *zname, TCPSocket *sock)$/;"	f
+DeleteRecords	dnsextd.c	/^mDNSlocal void DeleteRecords(DaemonInfo *d, mDNSBool DeleteAll)$/;"	f
+DeregisterLocalOnlyDomainEnumPTR	uds_daemon.c	/^mDNSlocal void DeregisterLocalOnlyDomainEnumPTR(mDNS *m, const domainname *d, int type)$/;"	f
+DomainEndsInDot	dnssd_clientlib.c	/^static int DomainEndsInDot(const char *dom)$/;"	f	file:
+DomainEnumReply	Java/JNISupport.c	/^static void DNSSD_API   DomainEnumReply( DNSServiceRef sdRef _UNUSED, DNSServiceFlags flags, uint32_t interfaceIndex,$/;"	f	file:
+DomainInSearchList	uds_daemon.c	/^mDNSlocal mDNSBool DomainInSearchList(const domainname *domain, mDNSBool excludeLocal)$/;"	f
+DomainListener	Java/DomainListener.java	/^public interface DomainListener extends BaseListener$/;"	i
+Duration	CommonServices.h	/^typedef int32_t Duration;$/;"	t
+ENOTCONN_compat	CommonServices.h	439;"	d
+ENOTCONN_compat	CommonServices.h	451;"	d
+ETIMEDOUT_compat	CommonServices.h	438;"	d
+ETIMEDOUT_compat	CommonServices.h	450;"	d
+EWOULDBLOCK_compat	CommonServices.h	437;"	d
+EWOULDBLOCK_compat	CommonServices.h	449;"	d
+EXPIRATION_INTERVAL	dnsextd.c	74;"	d	file:
+Env	Java/JNISupport.c	/^    JNIEnv          *Env;$/;"	m	struct:OpContext	file:
+Established	dnsextd.h	/^    Established     = 2$/;"	e	enum:__anon6
+EventCallback	dnsextd.h	/^typedef void (*EventCallback)( void * context );$/;"	t
+EventList	dnsextd.h	/^    CacheRecord *EventList;     \/\/ New answers (adds\/removes) to be sent to client$/;"	m	struct:AnswerListElem
+EventSource	dnsextd.h	/^typedef struct EventSource$/;"	s
+EventSource	dnsextd.h	/^} EventSource;$/;"	t	typeref:struct:EventSource
+ExtractBits	CommonServices.h	700;"	d
+FIREWALL	Java/DNSSDException.java	/^    public static final int		FIREWALL                  = -65550;$/;"	f	class:DNSSDException
+FatalError	uds_daemon.c	/^mDNSlocal void FatalError(char *errmsg)$/;"	f
+FindFirstSubType	uds_daemon.c	/^mDNSlocal char *FindFirstSubType(char *p, char **AnonData)$/;"	f
+FindNextSubType	uds_daemon.c	/^mDNSlocal char *FindNextSubType(char *p)$/;"	f
+FindZone	dnsextd.c	/^FindZone$/;"	f
+ForceMCast	uds_daemon.c	/^            mDNSBool ForceMCast;$/;"	m	struct:request_state::__anon24::__anon25	file:
+ForceNaturalAlignment	dns_sd.h	/^typedef union _TXTRecordRef_t { char PrivateData[16]; char *ForceNaturalAlignment; } TXTRecordRef;$/;"	m	union:_TXTRecordRef_t
+FormatLLQOpt	dnsextd.c	/^mDNSlocal void FormatLLQOpt(AuthRecord *opt, int opcode, const mDNSOpaque64 *const id, mDNSs32 lease)$/;"	f
+FormatLeaseReply	dnsextd.c	/^mDNSlocal PktMsg *FormatLeaseReply(DaemonInfo *d, PktMsg *orig, mDNSu32 lease)$/;"	f
+FoundInstance	dnssd_clientshim.c	/^mDNSlocal void FoundInstance(mDNS *const m, DNSQuestion *question, const ResourceRecord *const answer, QC_result AddRecord)$/;"	f
+FoundInstance	uds_daemon.c	/^mDNSlocal void FoundInstance(mDNS *const m, DNSQuestion *question, const ResourceRecord *const answer, QC_result AddRecord)$/;"	f
+FoundServiceInfo	dnssd_clientshim.c	/^mDNSlocal void FoundServiceInfo(mDNS *const m, DNSQuestion *question, const ResourceRecord *const answer, QC_result AddRecord)$/;"	f
+FreeARElemCallback	uds_daemon.c	/^mDNSlocal void FreeARElemCallback(mDNS *const m, AuthRecord *const rr, mStatus result)$/;"	f
+FreeDNSRecords	dnssd_clientstub.c	/^static void FreeDNSRecords(DNSServiceOp *sdRef)$/;"	f	file:
+FreeDNSServiceOp	dnssd_clientstub.c	/^static void FreeDNSServiceOp(DNSServiceOp *x)$/;"	f	file:
+FreeDNSServiceRegistration	dnssd_clientshim.c	/^mDNSlocal void FreeDNSServiceRegistration(mDNS_DirectOP_Register *x)$/;"	f
+FreeExtraRR	uds_daemon.c	/^mDNSexport void FreeExtraRR(mDNS *const m, AuthRecord *const rr, mStatus result)$/;"	f
+FreeTCPContext	dnsextd.c	/^FreeTCPContext$/;"	f
+FwdLinkOffset	GenLinkedList.h	/^    size_t FwdLinkOffset,$/;"	m	struct:GenDoubleLinkedList
+GETLINK	GenLinkedList.c	29;"	d	file:
+GETOFFSET	GenLinkedList.c	189;"	d	file:
+GenDoubleLinkedList	GenLinkedList.h	/^struct  GenDoubleLinkedList$/;"	s
+GenDoubleLinkedList	GenLinkedList.h	/^typedef struct GenDoubleLinkedList GenDoubleLinkedList;$/;"	t	typeref:struct:GenDoubleLinkedList
+GenLLQEvents	dnsextd.c	/^mDNSlocal void GenLLQEvents(DaemonInfo *d)$/;"	f
+GenLinkedList	GenLinkedList.h	/^struct  GenLinkedList$/;"	s
+GenLinkedList	GenLinkedList.h	/^typedef struct GenLinkedList GenLinkedList;$/;"	t	typeref:struct:GenLinkedList
+GenLinkedOffsetList	GenLinkedList.h	/^struct  GenLinkedOffsetList$/;"	s
+GenLinkedOffsetList	GenLinkedList.h	/^typedef struct GenLinkedOffsetList GenLinkedOffsetList;$/;"	t	typeref:struct:GenLinkedOffsetList
+GenerateBonjourBrowserResponse	uds_daemon.c	/^mDNSlocal void GenerateBonjourBrowserResponse(const domainname *const servicename, const mDNSInterfaceID id,$/;"	f
+GenerateNTDResponse	uds_daemon.c	/^mDNSlocal mStatus GenerateNTDResponse(const domainname *const servicename, const mDNSInterfaceID id,$/;"	f
+GetConfigOption	PlatformCommon.c	/^mDNSlocal mDNSBool GetConfigOption(char *dst, const char *option, FILE *f)$/;"	f
+GetHeadPtr	GenLinkedList.c	/^void        *GetHeadPtr( GenLinkedOffsetList *pList)$/;"	f
+GetIfIndexForName	Java/DNSSD.java	/^	protected native int	GetIfIndexForName( String ifName);$/;"	m	class:AppleDNSSD
+GetMcastClients	uds_daemon.c	/^mDNSlocal void GetMcastClients(request_state *req)$/;"	f
+GetNameForIfIndex	Java/DNSSD.java	/^	protected native String	GetNameForIfIndex( int ifIndex);$/;"	m	class:AppleDNSSD
+GetOffsetLink	GenLinkedList.c	/^void        *GetOffsetLink( GenLinkedOffsetList *pList, void *elem)$/;"	f
+GetTailPtr	GenLinkedList.c	/^void        *GetTailPtr( GenLinkedOffsetList *pList)$/;"	f
+HEX_DIGIT_00000000	CommonServices.h	1260;"	d
+HEX_DIGIT_00000001	CommonServices.h	1261;"	d
+HEX_DIGIT_00000010	CommonServices.h	1262;"	d
+HEX_DIGIT_00000011	CommonServices.h	1263;"	d
+HEX_DIGIT_00000100	CommonServices.h	1264;"	d
+HEX_DIGIT_00000101	CommonServices.h	1265;"	d
+HEX_DIGIT_00000110	CommonServices.h	1266;"	d
+HEX_DIGIT_00000111	CommonServices.h	1267;"	d
+HEX_DIGIT_00001000	CommonServices.h	1268;"	d
+HEX_DIGIT_00001001	CommonServices.h	1269;"	d
+HEX_DIGIT_00001010	CommonServices.h	1270;"	d
+HEX_DIGIT_00001011	CommonServices.h	1271;"	d
+HEX_DIGIT_00001100	CommonServices.h	1272;"	d
+HEX_DIGIT_00001101	CommonServices.h	1273;"	d
+HEX_DIGIT_00001110	CommonServices.h	1274;"	d
+HEX_DIGIT_00001111	CommonServices.h	1275;"	d
+HEX_DIGIT_00010000	CommonServices.h	1276;"	d
+HEX_DIGIT_00010001	CommonServices.h	1277;"	d
+HEX_DIGIT_00010010	CommonServices.h	1278;"	d
+HEX_DIGIT_00010011	CommonServices.h	1279;"	d
+HEX_DIGIT_00010100	CommonServices.h	1280;"	d
+HEX_DIGIT_00010101	CommonServices.h	1281;"	d
+HEX_DIGIT_00010110	CommonServices.h	1282;"	d
+HEX_DIGIT_00010111	CommonServices.h	1283;"	d
+HEX_DIGIT_00011000	CommonServices.h	1284;"	d
+HEX_DIGIT_00011001	CommonServices.h	1285;"	d
+HEX_DIGIT_00011010	CommonServices.h	1286;"	d
+HEX_DIGIT_00011011	CommonServices.h	1287;"	d
+HEX_DIGIT_00011100	CommonServices.h	1288;"	d
+HEX_DIGIT_00011101	CommonServices.h	1289;"	d
+HEX_DIGIT_00011110	CommonServices.h	1290;"	d
+HEX_DIGIT_00011111	CommonServices.h	1291;"	d
+HEX_DIGIT_00100000	CommonServices.h	1292;"	d
+HEX_DIGIT_00100001	CommonServices.h	1293;"	d
+HEX_DIGIT_00100010	CommonServices.h	1294;"	d
+HEX_DIGIT_00100011	CommonServices.h	1295;"	d
+HEX_DIGIT_00100100	CommonServices.h	1296;"	d
+HEX_DIGIT_00100101	CommonServices.h	1297;"	d
+HEX_DIGIT_00100110	CommonServices.h	1298;"	d
+HEX_DIGIT_00100111	CommonServices.h	1299;"	d
+HEX_DIGIT_00101000	CommonServices.h	1300;"	d
+HEX_DIGIT_00101001	CommonServices.h	1301;"	d
+HEX_DIGIT_00101010	CommonServices.h	1302;"	d
+HEX_DIGIT_00101011	CommonServices.h	1303;"	d
+HEX_DIGIT_00101100	CommonServices.h	1304;"	d
+HEX_DIGIT_00101101	CommonServices.h	1305;"	d
+HEX_DIGIT_00101110	CommonServices.h	1306;"	d
+HEX_DIGIT_00101111	CommonServices.h	1307;"	d
+HEX_DIGIT_00110000	CommonServices.h	1308;"	d
+HEX_DIGIT_00110001	CommonServices.h	1309;"	d
+HEX_DIGIT_00110010	CommonServices.h	1310;"	d
+HEX_DIGIT_00110011	CommonServices.h	1311;"	d
+HEX_DIGIT_00110100	CommonServices.h	1312;"	d
+HEX_DIGIT_00110101	CommonServices.h	1313;"	d
+HEX_DIGIT_00110110	CommonServices.h	1314;"	d
+HEX_DIGIT_00110111	CommonServices.h	1315;"	d
+HEX_DIGIT_00111000	CommonServices.h	1316;"	d
+HEX_DIGIT_00111001	CommonServices.h	1317;"	d
+HEX_DIGIT_00111010	CommonServices.h	1318;"	d
+HEX_DIGIT_00111011	CommonServices.h	1319;"	d
+HEX_DIGIT_00111100	CommonServices.h	1320;"	d
+HEX_DIGIT_00111101	CommonServices.h	1321;"	d
+HEX_DIGIT_00111110	CommonServices.h	1322;"	d
+HEX_DIGIT_00111111	CommonServices.h	1323;"	d
+HEX_DIGIT_01000000	CommonServices.h	1324;"	d
+HEX_DIGIT_01000001	CommonServices.h	1325;"	d
+HEX_DIGIT_01000010	CommonServices.h	1326;"	d
+HEX_DIGIT_01000011	CommonServices.h	1327;"	d
+HEX_DIGIT_01000100	CommonServices.h	1328;"	d
+HEX_DIGIT_01000101	CommonServices.h	1329;"	d
+HEX_DIGIT_01000110	CommonServices.h	1330;"	d
+HEX_DIGIT_01000111	CommonServices.h	1331;"	d
+HEX_DIGIT_01001000	CommonServices.h	1332;"	d
+HEX_DIGIT_01001001	CommonServices.h	1333;"	d
+HEX_DIGIT_01001010	CommonServices.h	1334;"	d
+HEX_DIGIT_01001011	CommonServices.h	1335;"	d
+HEX_DIGIT_01001100	CommonServices.h	1336;"	d
+HEX_DIGIT_01001101	CommonServices.h	1337;"	d
+HEX_DIGIT_01001110	CommonServices.h	1338;"	d
+HEX_DIGIT_01001111	CommonServices.h	1339;"	d
+HEX_DIGIT_01010000	CommonServices.h	1340;"	d
+HEX_DIGIT_01010001	CommonServices.h	1341;"	d
+HEX_DIGIT_01010010	CommonServices.h	1342;"	d
+HEX_DIGIT_01010011	CommonServices.h	1343;"	d
+HEX_DIGIT_01010100	CommonServices.h	1344;"	d
+HEX_DIGIT_01010101	CommonServices.h	1345;"	d
+HEX_DIGIT_01010110	CommonServices.h	1346;"	d
+HEX_DIGIT_01010111	CommonServices.h	1347;"	d
+HEX_DIGIT_01011000	CommonServices.h	1348;"	d
+HEX_DIGIT_01011001	CommonServices.h	1349;"	d
+HEX_DIGIT_01011010	CommonServices.h	1350;"	d
+HEX_DIGIT_01011011	CommonServices.h	1351;"	d
+HEX_DIGIT_01011100	CommonServices.h	1352;"	d
+HEX_DIGIT_01011101	CommonServices.h	1353;"	d
+HEX_DIGIT_01011110	CommonServices.h	1354;"	d
+HEX_DIGIT_01011111	CommonServices.h	1355;"	d
+HEX_DIGIT_01100000	CommonServices.h	1356;"	d
+HEX_DIGIT_01100001	CommonServices.h	1357;"	d
+HEX_DIGIT_01100010	CommonServices.h	1358;"	d
+HEX_DIGIT_01100011	CommonServices.h	1359;"	d
+HEX_DIGIT_01100100	CommonServices.h	1360;"	d
+HEX_DIGIT_01100101	CommonServices.h	1361;"	d
+HEX_DIGIT_01100110	CommonServices.h	1362;"	d
+HEX_DIGIT_01100111	CommonServices.h	1363;"	d
+HEX_DIGIT_01101000	CommonServices.h	1364;"	d
+HEX_DIGIT_01101001	CommonServices.h	1365;"	d
+HEX_DIGIT_01101010	CommonServices.h	1366;"	d
+HEX_DIGIT_01101011	CommonServices.h	1367;"	d
+HEX_DIGIT_01101100	CommonServices.h	1368;"	d
+HEX_DIGIT_01101101	CommonServices.h	1369;"	d
+HEX_DIGIT_01101110	CommonServices.h	1370;"	d
+HEX_DIGIT_01101111	CommonServices.h	1371;"	d
+HEX_DIGIT_01110000	CommonServices.h	1372;"	d
+HEX_DIGIT_01110001	CommonServices.h	1373;"	d
+HEX_DIGIT_01110010	CommonServices.h	1374;"	d
+HEX_DIGIT_01110011	CommonServices.h	1375;"	d
+HEX_DIGIT_01110100	CommonServices.h	1376;"	d
+HEX_DIGIT_01110101	CommonServices.h	1377;"	d
+HEX_DIGIT_01110110	CommonServices.h	1378;"	d
+HEX_DIGIT_01110111	CommonServices.h	1379;"	d
+HEX_DIGIT_01111000	CommonServices.h	1380;"	d
+HEX_DIGIT_01111001	CommonServices.h	1381;"	d
+HEX_DIGIT_01111010	CommonServices.h	1382;"	d
+HEX_DIGIT_01111011	CommonServices.h	1383;"	d
+HEX_DIGIT_01111100	CommonServices.h	1384;"	d
+HEX_DIGIT_01111101	CommonServices.h	1385;"	d
+HEX_DIGIT_01111110	CommonServices.h	1386;"	d
+HEX_DIGIT_01111111	CommonServices.h	1387;"	d
+HEX_DIGIT_10000000	CommonServices.h	1388;"	d
+HEX_DIGIT_10000001	CommonServices.h	1389;"	d
+HEX_DIGIT_10000010	CommonServices.h	1390;"	d
+HEX_DIGIT_10000011	CommonServices.h	1391;"	d
+HEX_DIGIT_10000100	CommonServices.h	1392;"	d
+HEX_DIGIT_10000101	CommonServices.h	1393;"	d
+HEX_DIGIT_10000110	CommonServices.h	1394;"	d
+HEX_DIGIT_10000111	CommonServices.h	1395;"	d
+HEX_DIGIT_10001000	CommonServices.h	1396;"	d
+HEX_DIGIT_10001001	CommonServices.h	1397;"	d
+HEX_DIGIT_10001010	CommonServices.h	1398;"	d
+HEX_DIGIT_10001011	CommonServices.h	1399;"	d
+HEX_DIGIT_10001100	CommonServices.h	1400;"	d
+HEX_DIGIT_10001101	CommonServices.h	1401;"	d
+HEX_DIGIT_10001110	CommonServices.h	1402;"	d
+HEX_DIGIT_10001111	CommonServices.h	1403;"	d
+HEX_DIGIT_10010000	CommonServices.h	1404;"	d
+HEX_DIGIT_10010001	CommonServices.h	1405;"	d
+HEX_DIGIT_10010010	CommonServices.h	1406;"	d
+HEX_DIGIT_10010011	CommonServices.h	1407;"	d
+HEX_DIGIT_10010100	CommonServices.h	1408;"	d
+HEX_DIGIT_10010101	CommonServices.h	1409;"	d
+HEX_DIGIT_10010110	CommonServices.h	1410;"	d
+HEX_DIGIT_10010111	CommonServices.h	1411;"	d
+HEX_DIGIT_10011000	CommonServices.h	1412;"	d
+HEX_DIGIT_10011001	CommonServices.h	1413;"	d
+HEX_DIGIT_10011010	CommonServices.h	1414;"	d
+HEX_DIGIT_10011011	CommonServices.h	1415;"	d
+HEX_DIGIT_10011100	CommonServices.h	1416;"	d
+HEX_DIGIT_10011101	CommonServices.h	1417;"	d
+HEX_DIGIT_10011110	CommonServices.h	1418;"	d
+HEX_DIGIT_10011111	CommonServices.h	1419;"	d
+HEX_DIGIT_10100000	CommonServices.h	1420;"	d
+HEX_DIGIT_10100001	CommonServices.h	1421;"	d
+HEX_DIGIT_10100010	CommonServices.h	1422;"	d
+HEX_DIGIT_10100011	CommonServices.h	1423;"	d
+HEX_DIGIT_10100100	CommonServices.h	1424;"	d
+HEX_DIGIT_10100101	CommonServices.h	1425;"	d
+HEX_DIGIT_10100110	CommonServices.h	1426;"	d
+HEX_DIGIT_10100111	CommonServices.h	1427;"	d
+HEX_DIGIT_10101000	CommonServices.h	1428;"	d
+HEX_DIGIT_10101001	CommonServices.h	1429;"	d
+HEX_DIGIT_10101010	CommonServices.h	1430;"	d
+HEX_DIGIT_10101011	CommonServices.h	1431;"	d
+HEX_DIGIT_10101100	CommonServices.h	1432;"	d
+HEX_DIGIT_10101101	CommonServices.h	1433;"	d
+HEX_DIGIT_10101110	CommonServices.h	1434;"	d
+HEX_DIGIT_10101111	CommonServices.h	1435;"	d
+HEX_DIGIT_10110000	CommonServices.h	1436;"	d
+HEX_DIGIT_10110001	CommonServices.h	1437;"	d
+HEX_DIGIT_10110010	CommonServices.h	1438;"	d
+HEX_DIGIT_10110011	CommonServices.h	1439;"	d
+HEX_DIGIT_10110100	CommonServices.h	1440;"	d
+HEX_DIGIT_10110101	CommonServices.h	1441;"	d
+HEX_DIGIT_10110110	CommonServices.h	1442;"	d
+HEX_DIGIT_10110111	CommonServices.h	1443;"	d
+HEX_DIGIT_10111000	CommonServices.h	1444;"	d
+HEX_DIGIT_10111001	CommonServices.h	1445;"	d
+HEX_DIGIT_10111010	CommonServices.h	1446;"	d
+HEX_DIGIT_10111011	CommonServices.h	1447;"	d
+HEX_DIGIT_10111100	CommonServices.h	1448;"	d
+HEX_DIGIT_10111101	CommonServices.h	1449;"	d
+HEX_DIGIT_10111110	CommonServices.h	1450;"	d
+HEX_DIGIT_10111111	CommonServices.h	1451;"	d
+HEX_DIGIT_11000000	CommonServices.h	1452;"	d
+HEX_DIGIT_11000001	CommonServices.h	1453;"	d
+HEX_DIGIT_11000010	CommonServices.h	1454;"	d
+HEX_DIGIT_11000011	CommonServices.h	1455;"	d
+HEX_DIGIT_11000100	CommonServices.h	1456;"	d
+HEX_DIGIT_11000101	CommonServices.h	1457;"	d
+HEX_DIGIT_11000110	CommonServices.h	1458;"	d
+HEX_DIGIT_11000111	CommonServices.h	1459;"	d
+HEX_DIGIT_11001000	CommonServices.h	1460;"	d
+HEX_DIGIT_11001001	CommonServices.h	1461;"	d
+HEX_DIGIT_11001010	CommonServices.h	1462;"	d
+HEX_DIGIT_11001011	CommonServices.h	1463;"	d
+HEX_DIGIT_11001100	CommonServices.h	1464;"	d
+HEX_DIGIT_11001101	CommonServices.h	1465;"	d
+HEX_DIGIT_11001110	CommonServices.h	1466;"	d
+HEX_DIGIT_11001111	CommonServices.h	1467;"	d
+HEX_DIGIT_11010000	CommonServices.h	1468;"	d
+HEX_DIGIT_11010001	CommonServices.h	1469;"	d
+HEX_DIGIT_11010010	CommonServices.h	1470;"	d
+HEX_DIGIT_11010011	CommonServices.h	1471;"	d
+HEX_DIGIT_11010100	CommonServices.h	1472;"	d
+HEX_DIGIT_11010101	CommonServices.h	1473;"	d
+HEX_DIGIT_11010110	CommonServices.h	1474;"	d
+HEX_DIGIT_11010111	CommonServices.h	1475;"	d
+HEX_DIGIT_11011000	CommonServices.h	1476;"	d
+HEX_DIGIT_11011001	CommonServices.h	1477;"	d
+HEX_DIGIT_11011010	CommonServices.h	1478;"	d
+HEX_DIGIT_11011011	CommonServices.h	1479;"	d
+HEX_DIGIT_11011100	CommonServices.h	1480;"	d
+HEX_DIGIT_11011101	CommonServices.h	1481;"	d
+HEX_DIGIT_11011110	CommonServices.h	1482;"	d
+HEX_DIGIT_11011111	CommonServices.h	1483;"	d
+HEX_DIGIT_11100000	CommonServices.h	1484;"	d
+HEX_DIGIT_11100001	CommonServices.h	1485;"	d
+HEX_DIGIT_11100010	CommonServices.h	1486;"	d
+HEX_DIGIT_11100011	CommonServices.h	1487;"	d
+HEX_DIGIT_11100100	CommonServices.h	1488;"	d
+HEX_DIGIT_11100101	CommonServices.h	1489;"	d
+HEX_DIGIT_11100110	CommonServices.h	1490;"	d
+HEX_DIGIT_11100111	CommonServices.h	1491;"	d
+HEX_DIGIT_11101000	CommonServices.h	1492;"	d
+HEX_DIGIT_11101001	CommonServices.h	1493;"	d
+HEX_DIGIT_11101010	CommonServices.h	1494;"	d
+HEX_DIGIT_11101011	CommonServices.h	1495;"	d
+HEX_DIGIT_11101100	CommonServices.h	1496;"	d
+HEX_DIGIT_11101101	CommonServices.h	1497;"	d
+HEX_DIGIT_11101110	CommonServices.h	1498;"	d
+HEX_DIGIT_11101111	CommonServices.h	1499;"	d
+HEX_DIGIT_11110000	CommonServices.h	1500;"	d
+HEX_DIGIT_11110001	CommonServices.h	1501;"	d
+HEX_DIGIT_11110010	CommonServices.h	1502;"	d
+HEX_DIGIT_11110011	CommonServices.h	1503;"	d
+HEX_DIGIT_11110100	CommonServices.h	1504;"	d
+HEX_DIGIT_11110101	CommonServices.h	1505;"	d
+HEX_DIGIT_11110110	CommonServices.h	1506;"	d
+HEX_DIGIT_11110111	CommonServices.h	1507;"	d
+HEX_DIGIT_11111000	CommonServices.h	1508;"	d
+HEX_DIGIT_11111001	CommonServices.h	1509;"	d
+HEX_DIGIT_11111010	CommonServices.h	1510;"	d
+HEX_DIGIT_11111011	CommonServices.h	1511;"	d
+HEX_DIGIT_11111100	CommonServices.h	1512;"	d
+HEX_DIGIT_11111101	CommonServices.h	1513;"	d
+HEX_DIGIT_11111110	CommonServices.h	1514;"	d
+HEX_DIGIT_11111111	CommonServices.h	1515;"	d
+HaltOperation	Java/DNSSD.java	/^	protected synchronized native void HaltOperation();$/;"	m	class:AppleService
+HandleRequest	dnsextd.c	/^HandleRequest$/;"	f
+HdrHToN	dnsextd.c	/^mDNSlocal void HdrHToN(PktMsg *pkt)$/;"	f
+HdrNToH	dnsextd.c	/^mDNSlocal void HdrNToH(PktMsg *pkt)$/;"	f
+Head	GenLinkedList.h	/^    size_t Head,$/;"	m	struct:GenLinkedOffsetList
+Head	GenLinkedList.h	/^    void        *Head,$/;"	m	struct:GenDoubleLinkedList
+Head	GenLinkedList.h	/^    void        *Head,$/;"	m	struct:GenLinkedList
+HndlSignal	dnsextd.c	/^mDNSlocal void HndlSignal(int sig)$/;"	f
+IF_NAMESIZE	Java/JNISupport.c	53;"	d	file:
+INCOMPATIBLE	Java/DNSSDException.java	/^    public static final int		INCOMPATIBLE              = -65551;$/;"	f	class:DNSSDException
+INFO_SIGNAL	dnsextd.c	88;"	d	file:
+INFO_SIGNAL	dnsextd.c	90;"	d	file:
+INT16_C	CommonServices.h	802;"	d
+INT32_C	CommonServices.h	806;"	d
+INT64_C	CommonServices.h	811;"	d
+INT64_C	CommonServices.h	813;"	d
+INT8_C	CommonServices.h	798;"	d
+INT8_MIN	CommonServices.h	748;"	d
+INVALID	Java/DNSSDException.java	/^    public static final int		INVALID                   = -65549;$/;"	f	class:DNSSDException
+IPC_FLAGS_NOREPLY	dnssd_ipc.h	105;"	d
+InitDoubleLinkedList	GenLinkedList.c	/^void        InitDoubleLinkedList( GenDoubleLinkedList *pList, size_t fwdLinkOffset,$/;"	f
+InitLeaseTable	dnsextd.c	/^mDNSlocal int InitLeaseTable(DaemonInfo *d)$/;"	f
+InitLibrary	Java/DNSSD.java	/^	protected static native int	InitLibrary( int callerVersion);$/;"	m	class:AppleDNSSD
+InitLinkedList	GenLinkedList.c	/^void        InitLinkedList( GenLinkedList *pList, size_t linkOffset)$/;"	f
+InitLinkedOffsetList	GenLinkedList.c	/^void        InitLinkedOffsetList( GenLinkedOffsetList *pList, size_t linkOffset)$/;"	f
+InsertBits	CommonServices.h	683;"	d
+InterfaceID	uds_daemon.c	/^            mDNSInterfaceID InterfaceID;$/;"	m	struct:request_state::__anon24::__anon26	file:
+InternalTXTRecordSearch	dnssd_clientlib.c	/^static uint8_t *InternalTXTRecordSearch$/;"	f	file:
+IsAligned	CommonServices.h	622;"	d
+IsAuthorized	dnsextd.c	/^mDNSlocal mDNSBool IsAuthorized( DaemonInfo * d, PktMsg * pkt, DomainAuthInfo ** key, mDNSu16 * rcode, mDNSu16 * tcode )$/;"	f
+IsFieldAligned	CommonServices.h	630;"	d
+IsLLQAck	dnsextd.c	/^mDNSlocal mDNSBool IsLLQAck(PktMsg *pkt)$/;"	f
+IsLLQRequest	dnsextd.c	/^mDNSlocal mDNSBool IsLLQRequest(PktMsg *pkt)$/;"	f
+IsNotify	dnsextd.c	/^mDNSlocal mDNSBool IsNotify(PktMsg *pkt)$/;"	f
+IsPublicSRV	dnsextd.c	/^IsPublicSRV$/;"	f
+IsQuery	dnsextd.c	/^mDNSlocal mDNSBool IsQuery( PktMsg * pkt )$/;"	f
+IsUpdate	dnsextd.c	/^mDNSlocal mDNSBool IsUpdate( PktMsg * pkt )$/;"	f
+IsValidSocket	CommonServices.h	440;"	d
+IsValidSocket	CommonServices.h	452;"	d
+JavaObj	Java/JNISupport.c	/^    jobject JavaObj;$/;"	m	struct:OpContext	file:
+Java_com_apple_dnssd_AppleBrowser_CreateBrowser	Java/JNISupport.c	/^JNIEXPORT jint JNICALL Java_com_apple_dnssd_AppleBrowser_CreateBrowser( JNIEnv *pEnv, jobject pThis,$/;"	f
+Java_com_apple_dnssd_AppleDNSRecord_Remove	Java/JNISupport.c	/^JNIEXPORT jint JNICALL Java_com_apple_dnssd_AppleDNSRecord_Remove( JNIEnv *pEnv, jobject pThis)$/;"	f
+Java_com_apple_dnssd_AppleDNSRecord_Update	Java/JNISupport.c	/^JNIEXPORT jint JNICALL Java_com_apple_dnssd_AppleDNSRecord_Update( JNIEnv *pEnv, jobject pThis,$/;"	f
+Java_com_apple_dnssd_AppleDNSSD_ConstructName	Java/JNISupport.c	/^JNIEXPORT jint JNICALL Java_com_apple_dnssd_AppleDNSSD_ConstructName( JNIEnv *pEnv, jobject pThis _UNUSED,$/;"	f
+Java_com_apple_dnssd_AppleDNSSD_GetIfIndexForName	Java/JNISupport.c	/^JNIEXPORT jint JNICALL Java_com_apple_dnssd_AppleDNSSD_GetIfIndexForName( JNIEnv *pEnv, jobject pThis _UNUSED,$/;"	f
+Java_com_apple_dnssd_AppleDNSSD_GetNameForIfIndex	Java/JNISupport.c	/^JNIEXPORT jstring JNICALL Java_com_apple_dnssd_AppleDNSSD_GetNameForIfIndex( JNIEnv *pEnv, jobject pThis _UNUSED,$/;"	f
+Java_com_apple_dnssd_AppleDNSSD_InitLibrary	Java/JNISupport.c	/^JNIEXPORT jint JNICALL Java_com_apple_dnssd_AppleDNSSD_InitLibrary( JNIEnv *pEnv, jclass cls,$/;"	f
+Java_com_apple_dnssd_AppleDNSSD_ReconfirmRecord	Java/JNISupport.c	/^JNIEXPORT void JNICALL Java_com_apple_dnssd_AppleDNSSD_ReconfirmRecord( JNIEnv *pEnv, jobject pThis _UNUSED,$/;"	f
+Java_com_apple_dnssd_AppleDomainEnum_BeginEnum	Java/JNISupport.c	/^JNIEXPORT jint JNICALL Java_com_apple_dnssd_AppleDomainEnum_BeginEnum( JNIEnv *pEnv, jobject pThis,$/;"	f
+Java_com_apple_dnssd_AppleQuery_CreateQuery	Java/JNISupport.c	/^JNIEXPORT jint JNICALL Java_com_apple_dnssd_AppleQuery_CreateQuery( JNIEnv *pEnv, jobject pThis,$/;"	f
+Java_com_apple_dnssd_AppleRecordRegistrar_CreateConnection	Java/JNISupport.c	/^JNIEXPORT jint JNICALL Java_com_apple_dnssd_AppleRecordRegistrar_CreateConnection( JNIEnv *pEnv, jobject pThis)$/;"	f
+Java_com_apple_dnssd_AppleRecordRegistrar_RegisterRecord	Java/JNISupport.c	/^JNIEXPORT jint JNICALL Java_com_apple_dnssd_AppleRecordRegistrar_RegisterRecord( JNIEnv *pEnv, jobject pThis,$/;"	f
+Java_com_apple_dnssd_AppleRegistration_AddRecord	Java/JNISupport.c	/^JNIEXPORT jint JNICALL Java_com_apple_dnssd_AppleRegistration_AddRecord( JNIEnv *pEnv, jobject pThis,$/;"	f
+Java_com_apple_dnssd_AppleRegistration_BeginRegister	Java/JNISupport.c	/^JNIEXPORT jint JNICALL Java_com_apple_dnssd_AppleRegistration_BeginRegister( JNIEnv *pEnv, jobject pThis,$/;"	f
+Java_com_apple_dnssd_AppleResolver_CreateResolver	Java/JNISupport.c	/^JNIEXPORT jint JNICALL Java_com_apple_dnssd_AppleResolver_CreateResolver( JNIEnv *pEnv, jobject pThis,$/;"	f
+Java_com_apple_dnssd_AppleService_BlockForData	Java/JNISupport.c	/^JNIEXPORT jint JNICALL Java_com_apple_dnssd_AppleService_BlockForData( JNIEnv *pEnv, jobject pThis)$/;"	f
+Java_com_apple_dnssd_AppleService_HaltOperation	Java/JNISupport.c	/^JNIEXPORT void JNICALL Java_com_apple_dnssd_AppleService_HaltOperation( JNIEnv *pEnv, jobject pThis)$/;"	f
+Java_com_apple_dnssd_AppleService_ProcessResults	Java/JNISupport.c	/^JNIEXPORT jint JNICALL Java_com_apple_dnssd_AppleService_ProcessResults( JNIEnv *pEnv, jobject pThis)$/;"	f
+KnownAnswers	dnsextd.h	/^    CacheRecord *KnownAnswers;  \/\/ All valid answers delivered to client$/;"	m	struct:AnswerListElem
+LEASETABLE_INIT_NBUCKETS	dnsextd.c	73;"	d	file:
+LF	CommonServices.h	417;"	d
+LFSTR	CommonServices.h	419;"	d
+LISTENQ	dnsextd.c	70;"	d	file:
+LISTENQ	dnssd_ipc.h	81;"	d
+LISTENQ	dnssd_ipc.h	89;"	d
+LLQCompleteHandshake	dnsextd.c	/^mDNSlocal void LLQCompleteHandshake(DaemonInfo *d, LLQEntry *e, LLQOptData *llq, mDNSOpaque16 msgID, TCPSocket *sock)$/;"	f
+LLQEntry	dnsextd.h	/^typedef struct LLQEntry$/;"	s
+LLQEntry	dnsextd.h	/^} LLQEntry;$/;"	t	typeref:struct:LLQEntry
+LLQEventListenSock	dnsextd.h	/^    int LLQEventListenSock;          \/\/ the main thread listening on EventListenSock, indicating that the zone has changed$/;"	m	struct:__anon7
+LLQEventNotifySock	dnsextd.h	/^    int LLQEventNotifySock;          \/\/ Unix domain socket pair - update handling thread writes to EventNotifySock, which wakes$/;"	m	struct:__anon7
+LLQLease	dnsextd.c	/^mDNSlocal mDNSu32 LLQLease(LLQEntry *e)$/;"	f
+LLQRefresh	dnsextd.c	/^mDNSlocal void LLQRefresh(DaemonInfo *d, LLQEntry *e, LLQOptData *llq, mDNSOpaque16 msgID, TCPSocket *sock )$/;"	f
+LLQSetupChallenge	dnsextd.c	/^mDNSlocal void LLQSetupChallenge(DaemonInfo *d, LLQEntry *e, LLQOptData *llq, mDNSOpaque16 msgID)$/;"	f
+LLQState	dnsextd.h	/^} LLQState;$/;"	t	typeref:enum:__anon6
+LLQTable	dnsextd.h	/^    LLQEntry *LLQTable[LLQ_TABLESIZE];  \/\/ !!!KRS change this and RRTable to use a common data structure$/;"	m	struct:__anon7
+LLQ_LEASE_FUDGE	dnsextd.c	82;"	d	file:
+LLQ_MAX_LEASE	dnsextd.c	81;"	d	file:
+LLQ_MIN_LEASE	dnsextd.c	80;"	d	file:
+LLQ_MONITOR_ERR_INTERVAL	dnsextd.c	85;"	d	file:
+LLQ_MONITOR_INTERVAL	dnsextd.c	86;"	d	file:
+LLQ_TABLESIZE	dnsextd.h	31;"	d
+LOCALHOST_ONLY	Java/DNSSD.java	/^    public static final int     LOCALHOST_ONLY = -1;$/;"	f	class:DNSSD
+LOCAL_ONLY_NAME	Java/JNISupport.c	919;"	d	file:
+LOG_CONS	mDNSDebug.c	32;"	d	file:
+LOG_HELPER_BODY	mDNSDebug.c	73;"	d	file:
+LOG_INFO	dnssd_clientstub.c	66;"	d	file:
+LOG_PERROR	mDNSDebug.c	33;"	d	file:
+LOG_PID	mDNSDebug.c	31;"	d	file:
+LOG_WARNING	dnssd_clientstub.c	65;"	d	file:
+LOOPBACK	dnsextd.c	68;"	d	file:
+LightweightOp	uds_daemon.c	4666;"	d	file:
+LinkOffset	GenLinkedList.h	/^    size_t LinkOffset;$/;"	m	struct:GenLinkedList
+LinkOffset	GenLinkedList.h	/^    size_t LinkOffset;$/;"	m	struct:GenLinkedOffsetList
+LocalDomainEnumRecords	uds_daemon.c	/^static ARListElem    *LocalDomainEnumRecords;       \/\/ List of locally-generated PTR records to augment those we learn from the network$/;"	v	file:
+LocateSubordinateRequest	uds_daemon.c	/^mDNSlocal request_state *LocateSubordinateRequest(request_state *request)$/;"	f
+Log	dnsextd.c	/^mDNSlocal void Log(const char *format, ...)$/;"	f
+LogAuthRecords	uds_daemon.c	/^mDNSlocal void LogAuthRecords(mDNS *const m, const mDNSs32 now, AuthRecord *ResourceRecords, int *proxy)$/;"	f
+LogClientInfo	uds_daemon.c	/^mDNSlocal void LogClientInfo(mDNS *const m, request_state *req)$/;"	f
+LogErr	dnsextd.c	/^mDNSlocal void LogErr(const char *fn, const char *operation)$/;"	f
+LogEtcHosts	uds_daemon.c	/^mDNSlocal void LogEtcHosts(mDNS *const m)$/;"	f
+LogLevel	DebugServices.h	/^typedef int32_t LogLevel;$/;"	t
+LogLocalOnlyAuthRecords	uds_daemon.c	/^mDNSlocal void LogLocalOnlyAuthRecords(mDNS *const m)$/;"	f
+LogMDNSStatistics	uds_daemon.c	/^mDNSexport void LogMDNSStatistics(mDNS *const m)$/;"	f
+LogMcast	uds_daemon.h	40;"	d
+LogMcastClientInfo	uds_daemon.c	/^mDNSlocal void LogMcastClientInfo(request_state *req)$/;"	f
+LogMcastNoIdent	uds_daemon.h	41;"	d
+LogMcastQ	uds_daemon.h	38;"	d
+LogMcastQuestion	uds_daemon.c	/^mDNSlocal void LogMcastQuestion(mDNS *const m, const DNSQuestion *const q, request_state *req, q_state status)$/;"	f
+LogMcastS	uds_daemon.h	39;"	d
+LogMcastService	uds_daemon.c	/^mDNSlocal void LogMcastService(mDNS *const m, const AuthRecord *const ar, request_state *req, reg_state status)$/;"	f
+LogMcastStateInfo	uds_daemon.c	/^mDNSexport void LogMcastStateInfo(mDNS *const m, mDNSBool mflag, mDNSBool start, mDNSBool mstatelog)$/;"	f
+LogMsgWithLevelv	mDNSDebug.c	/^mDNSlocal void LogMsgWithLevelv(mDNSLogLevel_t logLevel, const char *format, va_list ptr)$/;"	f
+LogOneAuthRecord	uds_daemon.c	/^mDNSlocal void LogOneAuthRecord(mDNS *const m, const AuthRecord *ar, mDNSs32 now, const char *const ifname)$/;"	f
+LogTimer	uds_daemon.c	5876;"	d	file:
+LookupLLQ	dnsextd.c	/^mDNSlocal LLQEntry *LookupLLQ(DaemonInfo *d, struct sockaddr_in cli, domainname *qname, mDNSu16 qtype, const mDNSOpaque64 *const id)$/;"	f
+MAXCOMLEN	uds_daemon.c	58;"	d	file:
+MAX_ANONYMOUS_DATA	uds_daemon.c	81;"	d	file:
+MAX_CTLPATH	dnssd_ipc.h	91;"	d
+MAX_DOMAIN_NAME	Java/DNSSD.java	/^    public static final int     MAX_DOMAIN_NAME = 1009;$/;"	f	class:DNSSD
+MDNS_TCP_SERVERADDR	dnssd_ipc.h	79;"	d
+MDNS_TCP_SERVERPORT	dnssd_ipc.h	80;"	d
+MDNS_UDS_SERVERPATH	dnssd_ipc.h	86;"	d
+MDNS_UDS_SERVERPATH_ENVVAR	dnssd_ipc.h	88;"	d
+MIN_OPENFILES	uds_daemon.c	5035;"	d	file:
+MORE_COMING	Java/DNSSD.java	/^	public static final int		MORE_COMING = ( 1 << 0 );$/;"	f	class:DNSSD
+MSG_PAD_BYTES	uds_daemon.c	301;"	d	file:
+Max	CommonServices.h	665;"	d
+Min	CommonServices.h	655;"	d
+MySend	dnsextd.c	/^mDNSlocal int MySend(TCPSocket *sock, const void *msg, int len)$/;"	f
+NAME_CONFLICT	Java/DNSSDException.java	/^    public static final int		NAME_CONFLICT             = -65548;$/;"	f	class:DNSSDException
+NATPORTMAPPINGDISABLED	Java/DNSSDException.java	/^    public static final int		NATPORTMAPPINGDISABLED    = -65565;$/;"	f	class:DNSSDException
+NATPORTMAPPINGUNSUPPORTED	Java/DNSSDException.java	/^    public static final int		NATPORTMAPPINGUNSUPPORTED = -65564;$/;"	f	class:DNSSDException
+NATTRAVERSAL	Java/DNSSDException.java	/^    public static final int		NATTRAVERSAL              = -65557;$/;"	f	class:DNSSDException
+NATinfo	uds_daemon.c	/^            NATTraversalInfo NATinfo;$/;"	m	struct:request_state::__anon24::__anon28	file:
+NOAUTH	Java/DNSSDException.java	/^    public static final int		NOAUTH                    = -65555;$/;"	f	class:DNSSDException
+NOSUCHKEY	Java/DNSSDException.java	/^    public static final int		NOSUCHKEY                 = -65556;$/;"	f	class:DNSSDException
+NOSUCHRECORD	Java/DNSSDException.java	/^    public static final int		NOSUCHRECORD              = -65554;$/;"	f	class:DNSSDException
+NOT_INITIALIZED	Java/DNSSDException.java	/^    public static final int		NOT_INITIALIZED           = -65545;$/;"	f	class:DNSSDException
+NO_AUTO_RENAME	Java/DNSSD.java	/^	public static final int		NO_AUTO_RENAME = ( 1 << 3 );$/;"	f	class:DNSSD
+NO_CACHE	Java/DNSSDException.java	/^    public static final int		NO_CACHE                  = -65546;$/;"	f	class:DNSSDException
+NO_ERROR	Java/DNSSDException.java	/^    public static final int		NO_ERROR                  =  0;$/;"	f	class:DNSSDException
+NO_MEMORY	Java/DNSSDException.java	/^    public static final int		NO_MEMORY                 = -65539;$/;"	f	class:DNSSDException
+NO_SUCH_NAME	Java/DNSSDException.java	/^    public static final int		NO_SUCH_NAME              = -65538;$/;"	f	class:DNSSDException
+NO_WCF	uds_daemon.c	74;"	d	file:
+NewContext	Java/JNISupport.c	/^static OpContext    *NewContext( JNIEnv *pEnv, jobject owner,$/;"	f	file:
+NewLLQ	dnsextd.c	/^mDNSlocal LLQEntry *NewLLQ(DaemonInfo *d, struct sockaddr_in cli, domainname *qname, mDNSu16 qtype, mDNSu32 lease )$/;"	f
+NewRequest	uds_daemon.c	/^mDNSlocal request_state *NewRequest(void)$/;"	f
+NumVersionBuild	CommonServices.h	1182;"	d
+NumVersionExtractBugFix	CommonServices.h	1192;"	d
+NumVersionExtractMajor	CommonServices.h	1189;"	d
+NumVersionExtractMinor	CommonServices.h	1191;"	d
+NumVersionExtractMinorAndBugFix	CommonServices.h	1190;"	d
+NumVersionExtractRevision	CommonServices.h	1194;"	d
+NumVersionExtractStage	CommonServices.h	1193;"	d
+OSStatus	CommonServices.h	/^typedef int32_t OSStatus;$/;"	t
+OffsetAddToHead	GenLinkedList.c	/^void        OffsetAddToHead( GenLinkedOffsetList *pList, void *elem)$/;"	f
+OffsetAddToTail	GenLinkedList.c	/^void        OffsetAddToTail( GenLinkedOffsetList *pList, void *elem)$/;"	f
+OffsetRemoveFromList	GenLinkedList.c	/^int     OffsetRemoveFromList( GenLinkedOffsetList *pList, void *elem)$/;"	f
+OffsetReplaceElem	GenLinkedList.c	/^int         OffsetReplaceElem( GenLinkedOffsetList *pList, void *elemInList, void *newElem)$/;"	f
+OpContext	Java/JNISupport.c	/^struct  OpContext$/;"	s	file:
+OpContext	Java/JNISupport.c	/^typedef struct OpContext OpContext;$/;"	t	typeref:struct:OpContext	file:
+P2P_NAME	Java/JNISupport.c	920;"	d	file:
+PID_FILE	uds_daemon.c	307;"	d	file:
+PID_FILE	uds_daemon.c	47;"	d	file:
+PktMsg	dnsextd.h	/^} PktMsg;$/;"	t	typeref:struct:__anon5
+PrintCachedRecords	uds_daemon.c	/^mDNSlocal void PrintCachedRecords(mDNS *const m, const CacheRecord *cr, mDNSu32 slot, const mDNSu32 remain, const char *ifname, mDNSu32 *CacheUsed)$/;"	f
+PrintHelp	dnsextd.c	/^mDNSlocal void PrintHelp(void)$/;"	f
+PrintLLQAnswers	dnsextd.c	/^mDNSlocal void PrintLLQAnswers(DaemonInfo *d)$/;"	f
+PrintLLQTable	dnsextd.c	/^mDNSlocal void PrintLLQTable(DaemonInfo *d)$/;"	f
+PrintLeaseTable	dnsextd.c	/^mDNSlocal void PrintLeaseTable(DaemonInfo *d)$/;"	f
+PrintLog	dnsextd.c	/^mDNSlocal void PrintLog(const char *buffer)$/;"	f
+PrintOneCacheRecord	uds_daemon.c	/^mDNSlocal void PrintOneCacheRecord(mDNS *const m, const CacheRecord *cr, mDNSu32 slot, const mDNSu32 remain, const char *ifname, mDNSu32 *CacheUsed)$/;"	f
+PrintUsage	dnsextd.c	/^mDNSlocal void PrintUsage(void)$/;"	f
+PrivateData	dns_sd.h	/^typedef union _TXTRecordRef_t { char PrivateData[16]; char *ForceNaturalAlignment; } TXTRecordRef;$/;"	m	union:_TXTRecordRef_t
+ProcessArgs	dnsextd.c	/^mDNSlocal int ProcessArgs(int argc, char *argv[], DaemonInfo *d)$/;"	f
+ProcessReply	dnssd_clientstub.c	/^    ProcessReplyFn ProcessReply;        \/\/ Function pointer to the code to handle received messages$/;"	m	struct:_DNSServiceRef_t	file:
+ProcessReplyFn	dnssd_clientstub.c	/^typedef void (*ProcessReplyFn)(DNSServiceOp *const sdr, const CallbackHeader *const cbh, const char *msg, const char *const end);$/;"	t	file:
+ProcessResults	Java/DNSSD.java	/^	protected native int	ProcessResults();$/;"	m	class:AppleService
+ProgramName	dnsextd.c	/^mDNSexport const char ProgramName[] = "dnsextd";$/;"	v
+ProgramName	uds_daemon.c	/^mDNSexport const char ProgramName[] = "mDNSResponder";$/;"	v
+PutUpdateSRV	dnsextd.c	/^mDNSlocal mDNSu8 *PutUpdateSRV(DaemonInfo *d, DNSZone * zone, PktMsg *pkt, mDNSu8 *ptr, char *regtype, mDNSIPPort port, mDNSBool registration)$/;"	f
+QueryListener	Java/QueryListener.java	/^public interface QueryListener extends BaseListener$/;"	i
+RECV_BUFLEN	dnsextd.c	72;"	d	file:
+REFUSED	Java/DNSSDException.java	/^    public static final int		REFUSED                   = -65553;$/;"	f	class:DNSSDException
+REGISTRATION_DOMAINS	Java/DNSSD.java	/^	public static final int		REGISTRATION_DOMAINS = ( 1 << 7 );$/;"	f	class:DNSSD
+RRTableElem	dnsextd.h	/^typedef struct RRTableElem$/;"	s
+RRTableElem	dnsextd.h	/^} RRTableElem;$/;"	t	typeref:struct:RRTableElem
+ReadDDNSSettingsFromConfFile	PlatformCommon.c	/^mDNSexport void ReadDDNSSettingsFromConfFile(mDNS *const m, const char *const filename, domainname *const hostname, domainname *const domain, mDNSBool *DomainDiscoveryDisabled)$/;"	f
+ReconfirmRecord	Java/DNSSD.java	/^	protected native void	ReconfirmRecord( int flags, int ifIndex, String fullName, int rrtype,$/;"	m	class:AppleDNSSD
+RecordObj	Java/JNISupport.c	/^    jobject RecordObj;$/;"	m	struct:RecordRegistrationRef	file:
+RecordOrientedOp	uds_daemon.c	4662;"	d	file:
+RecordRegistrationRef	Java/JNISupport.c	/^struct RecordRegistrationRef$/;"	s	file:
+RecordRegistrationRef	Java/JNISupport.c	/^typedef struct RecordRegistrationRef RecordRegistrationRef;$/;"	t	typeref:struct:RecordRegistrationRef	file:
+RecordTypeName	uds_daemon.c	/^mDNSlocal char *RecordTypeName(mDNSu8 rtype)$/;"	f
+RecvLLQ	dnsextd.c	/^mDNSlocal int RecvLLQ( DaemonInfo *d, PktMsg *pkt, TCPSocket *sock )$/;"	f
+RecvNotify	dnsextd.c	/^RecvNotify$/;"	f
+RecvPacket	dnsextd.c	/^RecvPacket$/;"	f
+RecvTCPMessage	dnsextd.c	/^RecvTCPMessage$/;"	f
+RecvUDPMessage	dnsextd.c	/^RecvUDPMessage$/;"	f
+RegCallback	dnssd_clientshim.c	/^mDNSlocal void RegCallback(mDNS *const m, ServiceRecordSet *const sr, mStatus result)$/;"	f
+RegisterListener	Java/RegisterListener.java	/^public interface RegisterListener extends BaseListener$/;"	i
+RegisterLocalOnlyDomainEnumPTR	uds_daemon.c	/^mDNSlocal void RegisterLocalOnlyDomainEnumPTR(mDNS *m, const domainname *d, int type)$/;"	f
+RegisterRecord	Java/DNSSD.java	/^	protected native int	RegisterRecord( int flags, int ifIndex, String fullname, int rrtype,$/;"	m	class:AppleRecordRegistrar
+RegisterRecordListener	Java/RegisterRecordListener.java	/^public interface RegisterRecordListener extends BaseListener$/;"	i
+RegisterRecordReply	Java/JNISupport.c	/^static void DNSSD_API   RegisterRecordReply( DNSServiceRef sdRef _UNUSED,$/;"	f	file:
+RehashTable	dnsextd.c	/^mDNSlocal void RehashTable(DaemonInfo *d)$/;"	f
+Remove	Java/DNSSD.java	/^	protected native int	Remove();$/;"	m	class:AppleDNSRecord
+RemoveFromList	GenLinkedList.c	/^int     RemoveFromList( GenLinkedList *pList, void *elem)$/;"	f
+RemoveSourceFromEventLoop	dnsextd.c	/^mDNSlocal mStatus RemoveSourceFromEventLoop( DaemonInfo * self, TCPSocket *sock )$/;"	f
+ReplaceElem	GenLinkedList.c	/^int         ReplaceElem( GenLinkedList *pList, void *elemInList, void *newElem)$/;"	f
+ReportError	Java/JNISupport.c	/^static void         ReportError( JNIEnv *pEnv, jobject target, jobject service, DNSServiceErrorType err)$/;"	f	file:
+ReportTime	uds_daemon.c	/^            mDNSs32 ReportTime;$/;"	m	struct:request_state::__anon24::__anon31	file:
+ReqExt	uds_daemon.c	/^            mDNSIPPort ReqExt;              \/\/ External port we originally requested, for logging purposes$/;"	m	struct:request_state::__anon24::__anon28	file:
+RequestReceived	dnsextd.h	/^    RequestReceived = 0,$/;"	e	enum:__anon6
+ResolveListener	Java/ResolveListener.java	/^public interface ResolveListener extends BaseListener$/;"	i
+RetryQuestionWithSearchDomains	uds_daemon.c	/^mDNSlocal mDNSBool RetryQuestionWithSearchDomains(mDNS *const m, DNSQuestion *question, request_state *req, QC_result AddRecord)$/;"	f
+RmvAutoBrowseDomain	uds_daemon.c	/^mDNSlocal void RmvAutoBrowseDomain(const mDNSu32 uid, const domainname *const name)$/;"	f
+RoundUp	CommonServices.h	614;"	d
+Run	dnsextd.c	/^mDNSlocal int Run(DaemonInfo *d)$/;"	f
+SAME_INADDR	dnsextd.c	93;"	d	file:
+SCPrefBrowseDomains	uds_daemon.c	/^static DNameListElem *SCPrefBrowseDomains;          \/\/ List of automatic browsing domains read from SCPreferences for "empty string" browsing$/;"	v	file:
+SERVICENOTRUNNING	Java/DNSSDException.java	/^    public static final int		SERVICENOTRUNNING         = -65563;$/;"	f	class:DNSSDException
+SHARED	Java/DNSSD.java	/^	public static final int		SHARED = ( 1 << 4 );$/;"	f	class:DNSSD
+SOCKADDR_IS_IP_LINK_LOCAL	CommonServices.h	518;"	d
+SOCKADDR_IS_IP_LINK_LOCAL	CommonServices.h	524;"	d
+SOCKADDR_IS_IP_LOOPBACK	CommonServices.h	498;"	d
+SOCKADDR_IS_IP_LOOPBACK	CommonServices.h	505;"	d
+SRS_PORT	uds_daemon.h	30;"	d
+SRV	dnssd_clientshim.c	/^    const ResourceRecord   *SRV;$/;"	m	struct:__anon10	file:
+SRV_TTL	dnsextd.c	75;"	d	file:
+STRINGIFY	Java/JNISupport.c	1068;"	d	file:
+STRINGIFY	dnssd_clientlib.c	362;"	d	file:
+STRINGIFY_ARGUMENT_WITHOUT_EXPANSION	Java/JNISupport.c	1067;"	d	file:
+STRINGIFY_ARGUMENT_WITHOUT_EXPANSION	dnssd_clientlib.c	361;"	d	file:
+SafeGetUTFChars	Java/JNISupport.c	/^static const char*  SafeGetUTFChars( JNIEnv *pEnv, jstring str)$/;"	f	file:
+SafeReleaseUTFChars	Java/JNISupport.c	/^static void         SafeReleaseUTFChars( JNIEnv *pEnv, jstring str, const char *buff)$/;"	f	file:
+SendAdditionalQuery	uds_daemon.c	/^mDNSlocal mStatus SendAdditionalQuery(DNSQuestion *q, request_state *request, mStatus err)$/;"	f
+SendEvents	dnsextd.c	/^mDNSlocal void SendEvents(DaemonInfo *d, LLQEntry *e)$/;"	f
+SendLLQ	dnsextd.c	/^mDNSlocal int SendLLQ(DaemonInfo *d, PktMsg *pkt, struct sockaddr_in dst, TCPSocket *sock)$/;"	f
+SendPacket	dnsextd.c	/^mDNSlocal int SendPacket(TCPSocket *sock, PktMsg *pkt)$/;"	f
+SendServiceRemovalNotification	uds_daemon.c	/^mDNSlocal void SendServiceRemovalNotification(ServiceRecordSet *const srs)$/;"	f
+ServiceBrowseReply	Java/JNISupport.c	/^static void DNSSD_API   ServiceBrowseReply( DNSServiceRef sdRef _UNUSED, DNSServiceFlags flags, uint32_t interfaceIndex,$/;"	f	file:
+ServiceQueryReply	Java/JNISupport.c	/^static void DNSSD_API   ServiceQueryReply( DNSServiceRef sdRef _UNUSED, DNSServiceFlags flags, uint32_t interfaceIndex,$/;"	f	file:
+ServiceRef	Java/JNISupport.c	/^    DNSServiceRef ServiceRef;$/;"	m	struct:OpContext	file:
+ServiceRegisterReply	Java/JNISupport.c	/^static void DNSSD_API   ServiceRegisterReply( DNSServiceRef sdRef _UNUSED, DNSServiceFlags flags,$/;"	f	file:
+ServiceResolveReply	Java/JNISupport.c	/^static void DNSSD_API   ServiceResolveReply( DNSServiceRef sdRef _UNUSED, DNSServiceFlags flags, uint32_t interfaceIndex,$/;"	f	file:
+SetAnswerList	dnsextd.c	/^mDNSlocal void SetAnswerList(DaemonInfo *d, LLQEntry *e)$/;"	f
+SetPrefsBrowseDomains	uds_daemon.c	/^mDNSlocal void SetPrefsBrowseDomains(mDNS *m, DNameListElem *browseDomains, mDNSBool add)$/;"	f
+SetPublicSRV	dnsextd.c	/^SetPublicSRV$/;"	f
+SetQuestionPolicy	uds_daemon.c	/^mDNSlocal void SetQuestionPolicy(DNSQuestion *q, request_state *req)$/;"	f
+SetUpdateSRV	dnsextd.c	/^mDNSlocal int SetUpdateSRV(DaemonInfo *d)$/;"	f
+SetZone	dnsextd.c	/^SetZone$/;"	f
+SetupCallbackState	Java/JNISupport.c	/^static void SetupCallbackState( JNIEnv **ppEnv _UNUSED)$/;"	f	file:
+SetupCallbackState	Java/JNISupport.c	/^static void SetupCallbackState( JNIEnv **ppEnv)$/;"	f	file:
+SetupSockets	dnsextd.c	/^SetupSockets$/;"	f
+ShouldDeliverNegativeResponse	uds_daemon.c	/^mDNSlocal mDNSBool ShouldDeliverNegativeResponse(mDNS *const m, DNSQuestion *question)$/;"	f
+SleepKAContext	dnssd_clientstub.c	/^} SleepKAContext;$/;"	t	typeref:struct:__anon13	file:
+SleepKeepaliveCallback	dnssd_clientstub.c	/^static void DNSSD_API SleepKeepaliveCallback(DNSServiceRef sdRef, DNSRecordRef rec, const DNSServiceFlags flags,$/;"	f	file:
+SocketRef	CommonServices.h	/^typedef SOCKET SocketRef;$/;"	t
+SocketRef	CommonServices.h	/^typedef int SocketRef;$/;"	t
+Stringify	CommonServices.h	734;"	d
+StringifyExpansion	CommonServices.h	735;"	d
+SuccessfulUpdateTransaction	dnsextd.c	/^mDNSlocal mDNSBool SuccessfulUpdateTransaction(PktMsg *request, PktMsg *reply)$/;"	f
+SystemUID	uds_daemon.c	79;"	d	file:
+TARGET_API_MAC_OSX_KERNEL	CommonServices.h	51;"	d
+TARGET_API_MAC_OSX_KERNEL	CommonServices.h	53;"	d
+TARGET_BUILD_MAIN	CommonServices.h	279;"	d
+TARGET_CPU_MIPS	CommonServices.h	321;"	d
+TARGET_CPU_MIPS	CommonServices.h	323;"	d
+TARGET_CPU_PPC	CommonServices.h	301;"	d
+TARGET_CPU_PPC	CommonServices.h	303;"	d
+TARGET_CPU_X86	CommonServices.h	311;"	d
+TARGET_CPU_X86	CommonServices.h	313;"	d
+TARGET_LANGUAGE_C_LIKE	CommonServices.h	284;"	d
+TARGET_LANGUAGE_C_LIKE	CommonServices.h	286;"	d
+TARGET_OS_FREEBSD	CommonServices.h	61;"	d
+TARGET_OS_FREEBSD	CommonServices.h	63;"	d
+TARGET_OS_LINUX	CommonServices.h	71;"	d
+TARGET_OS_LINUX	CommonServices.h	73;"	d
+TARGET_OS_MAC	CommonServices.h	45;"	d
+TARGET_OS_PALM	CommonServices.h	91;"	d
+TARGET_OS_PALM	CommonServices.h	93;"	d
+TARGET_OS_SOLARIS	CommonServices.h	81;"	d
+TARGET_OS_SOLARIS	CommonServices.h	83;"	d
+TARGET_OS_VXWORKS	CommonServices.h	104;"	d
+TARGET_OS_VXWORKS	CommonServices.h	106;"	d
+TARGET_OS_WIN32	CommonServices.h	117;"	d
+TARGET_OS_WIN32	CommonServices.h	119;"	d
+TARGET_OS_WINDOWS_CE	CommonServices.h	128;"	d
+TARGET_OS_WINDOWS_CE	CommonServices.h	130;"	d
+TARGET_RT_BIG_ENDIAN	CommonServices.h	221;"	d
+TARGET_RT_BIG_ENDIAN	CommonServices.h	361;"	d
+TARGET_RT_BIG_ENDIAN	CommonServices.h	363;"	d
+TARGET_RT_BIG_ENDIAN	CommonServices.h	369;"	d
+TARGET_RT_BIG_ENDIAN	CommonServices.h	371;"	d
+TARGET_RT_BYTE_ORDER	CommonServices.h	399;"	d
+TARGET_RT_BYTE_ORDER	CommonServices.h	401;"	d
+TARGET_RT_BYTE_ORDER_BIG_ENDIAN	CommonServices.h	390;"	d
+TARGET_RT_BYTE_ORDER_LITTLE_ENDIAN	CommonServices.h	394;"	d
+TARGET_RT_LITTLE_ENDIAN	CommonServices.h	218;"	d
+TARGET_RT_LITTLE_ENDIAN	CommonServices.h	347;"	d
+TARGET_RT_LITTLE_ENDIAN	CommonServices.h	349;"	d
+TARGET_RT_LITTLE_ENDIAN	CommonServices.h	377;"	d
+TARGET_RT_LITTLE_ENDIAN	CommonServices.h	379;"	d
+TCPContext	dnsextd.c	/^} TCPContext;$/;"	t	typeref:struct:__anon3	file:
+TCPMessageHandler	dnsextd.c	/^TCPMessageHandler$/;"	f
+TCP_SOCKET_FLAGS	dnsextd.c	77;"	d	file:
+TRANSIENT	Java/DNSSDException.java	/^    public static final int		TRANSIENT                 = -65562;$/;"	f	class:DNSSDException
+TXT	dnssd_clientshim.c	/^    const ResourceRecord   *TXT;$/;"	m	struct:__anon10	file:
+TXTRecord	Java/TXTRecord.java	/^	public		TXTRecord( byte[] initBytes) $/;"	m	class:TXTRecord
+TXTRecord	Java/TXTRecord.java	/^	public		TXTRecord() $/;"	m	class:TXTRecord
+TXTRecord	Java/TXTRecord.java	/^public class	TXTRecord$/;"	c
+TXTRecordContainsKey	dnssd_clientlib.c	/^int DNSSD_API TXTRecordContainsKey$/;"	f
+TXTRecordCreate	dnssd_clientlib.c	/^void DNSSD_API TXTRecordCreate$/;"	f
+TXTRecordDeallocate	dnssd_clientlib.c	/^void DNSSD_API TXTRecordDeallocate(TXTRecordRef *txtRecord)$/;"	f
+TXTRecordGetBytesPtr	dnssd_clientlib.c	/^const void * DNSSD_API TXTRecordGetBytesPtr(const TXTRecordRef *txtRecord) { return(txtRec->buffer); }$/;"	f
+TXTRecordGetCount	dnssd_clientlib.c	/^uint16_t DNSSD_API TXTRecordGetCount$/;"	f
+TXTRecordGetItemAtIndex	dnssd_clientlib.c	/^DNSServiceErrorType DNSSD_API TXTRecordGetItemAtIndex$/;"	f
+TXTRecordGetLength	dnssd_clientlib.c	/^uint16_t DNSSD_API TXTRecordGetLength  (const TXTRecordRef *txtRecord) { return(txtRec->datalen); }$/;"	f
+TXTRecordGetValuePtr	dnssd_clientlib.c	/^const void * DNSSD_API TXTRecordGetValuePtr$/;"	f
+TXTRecordRef	dns_sd.h	/^typedef union _TXTRecordRef_t { char PrivateData[16]; char *ForceNaturalAlignment; } TXTRecordRef;$/;"	t	typeref:union:_TXTRecordRef_t
+TXTRecordRefRealType	dnssd_clientlib.c	/^} TXTRecordRefRealType;$/;"	t	typeref:struct:_TXTRecordRefRealType	file:
+TXTRecordRemoveValue	dnssd_clientlib.c	/^DNSServiceErrorType DNSSD_API TXTRecordRemoveValue$/;"	f
+TXTRecordSetValue	dnssd_clientlib.c	/^DNSServiceErrorType DNSSD_API TXTRecordSetValue$/;"	f
+TXT_RECORD_INDEX	dnssd_ipc.h	101;"	d
+TYPE_BOOL	CommonServices.h	896;"	d
+TYPE_LONGLONG_NATIVE	CommonServices.h	919;"	d
+TYPE_LONGLONG_NATIVE	CommonServices.h	921;"	d
+Tail	GenLinkedList.h	/^           Tail;$/;"	m	struct:GenLinkedOffsetList
+Tail	GenLinkedList.h	/^    *Tail;$/;"	m	struct:GenDoubleLinkedList
+Tail	GenLinkedList.h	/^    *Tail;$/;"	m	struct:GenLinkedList
+TeardownCallbackState	Java/JNISupport.c	/^static void TeardownCallbackState( void )$/;"	f	file:
+ThrowOnErr	Java/DNSSD.java	/^	protected void			ThrowOnErr( int rc) throws DNSSDException$/;"	m	class:AppleDNSRecord
+ThrowOnErr	Java/DNSSD.java	/^	protected void			ThrowOnErr( int rc) throws DNSSDException$/;"	m	class:AppleService
+TriggerEventCompletion	dnsextd.c	/^void TriggerEventCompletion() {}$/;"	f
+UDPContext	dnsextd.c	/^} UDPContext;$/;"	t	typeref:struct:__anon2	file:
+UDPMessageHandler	dnsextd.c	/^UDPMessageHandler$/;"	f
+UDPServerTransaction	dnsextd.c	/^UDPServerTransaction(const DaemonInfo *d, const PktMsg *request, PktMsg *reply, mDNSBool *trunc)$/;"	f
+UINT16_C	CommonServices.h	822;"	d
+UINT32_C	CommonServices.h	826;"	d
+UINT64_C	CommonServices.h	831;"	d
+UINT64_C	CommonServices.h	833;"	d
+UINT8_C	CommonServices.h	818;"	d
+UNIQUE	Java/DNSSD.java	/^	public static final int		UNIQUE = ( 1 << 5 );$/;"	f	class:DNSSD
+UNKNOWN	Java/DNSSDException.java	/^    public static final int		UNKNOWN                   = -65537;$/;"	f	class:DNSSDException
+UNSUPPORTED	Java/DNSSDException.java	/^    public static final int		UNSUPPORTED               = -65544;$/;"	f	class:DNSSDException
+Update	Java/DNSSD.java	/^	protected native int	Update( int flags, byte[] rData, int ttl);$/;"	m	class:AppleDNSRecord
+UpdateAnswerList	dnsextd.c	/^mDNSlocal void *UpdateAnswerList(void *args)$/;"	f
+UpdateAnswerListArgs	dnsextd.c	/^} UpdateAnswerListArgs;$/;"	t	typeref:struct:__anon4	file:
+UpdateDeviceInfoRecord	uds_daemon.c	/^mDNSlocal void UpdateDeviceInfoRecord(mDNS *const m)$/;"	f
+UpdateLLQ	dnsextd.c	/^mDNSlocal void UpdateLLQ(DaemonInfo *d, LLQEntry *e, LLQOptData *llq, mDNSOpaque16 msgID, TCPSocket *sock )$/;"	f
+UpdateLeaseTable	dnsextd.c	/^mDNSlocal void UpdateLeaseTable(PktMsg *pkt, DaemonInfo *d, mDNSs32 lease)$/;"	f
+UpdateSRV	dnsextd.c	/^mDNSlocal int UpdateSRV(DaemonInfo *d, mDNSBool registration)$/;"	f
+UseTCP	dnsextd.h	/^    mDNSBool UseTCP;            \/\/ Use TCP if UDP would cause truncation$/;"	m	struct:AnswerListElem
+VALID_MSAD_SRV	uds_daemon.c	3012;"	d	file:
+VALID_MSAD_SRV_TRANSPORT	uds_daemon.c	3011;"	d	file:
+VERSION	dnssd_ipc.h	104;"	d
+VLog	dnsextd.c	/^mDNSlocal void VLog(const char *format, ...)$/;"	f
+ValidatorBits	dnssd_clientstub.c	131;"	d	file:
+VersionString_SCCS	Java/JNISupport.c	/^const char VersionString_SCCS[] = "@(#) libjdns_sd " STRINGIFY(mDNSResponderVersion) " (" __DATE__ " " __TIME__ ")";$/;"	v
+VersionString_SCCS_libdnssd	dnssd_clientlib.c	/^const char VersionString_SCCS_libdnssd[] = "@(#) libdns_sd " STRINGIFY(mDNSResponderVersion) " (" __DATE__ " " __TIME__ ")";$/;"	v
+WIN32_LEAN_AND_MEAN	CommonServices.h	247;"	d
+WIN32_WINDOWS	CommonServices.h	239;"	d
+ZoneHandlesName	dnsextd.c	/^ZoneHandlesName$/;"	f
+_Bool	CommonServices.h	865;"	d
+_DNSRecordRef_t	dnssd_clientstub.c	/^struct _DNSRecordRef_t$/;"	s	file:
+_DNSServiceRef_t	dnssd_clientstub.c	/^struct _DNSServiceRef_t$/;"	s	file:
+_DNS_SD_H	dns_sd.h	69;"	d
+_DNS_SD_LIBDISPATCH	dns_sd.h	79;"	d
+_SSIZE_T	dnssd_clientstub.c	42;"	d	file:
+_TXTRecordRefRealType	dnssd_clientlib.c	/^typedef struct _TXTRecordRefRealType$/;"	s	file:
+_TXTRecordRef_t	dns_sd.h	/^typedef union _TXTRecordRef_t { char PrivateData[16]; char *ForceNaturalAlignment; } TXTRecordRef;$/;"	u
+_UNUSED	Java/JNISupport.c	71;"	d	file:
+_UNUSED	Java/JNISupport.c	73;"	d	file:
+_UNUSED	dns_sd.h	113;"	d
+_WIN32_WINDOWS	CommonServices.h	243;"	d
+_WSPIAPI_COUNTOF	CommonServices.h	144;"	d
+__COMMON_SERVICES__	CommonServices.h	25;"	d
+__DEBUG_SERVICES__	DebugServices.h	25;"	d
+__GenLinkedList__	GenLinkedList.h	19;"	d
+__ROUTINE__	DebugServices.h	62;"	d
+__ROUTINE__	DebugServices.h	64;"	d
+__ROUTINE__	DebugServices.h	66;"	d
+__ROUTINE__	DebugServices.h	68;"	d
+__bool_true_false_are_defined	CommonServices.h	890;"	d
+__crashreporter_info__	dnsextd.c	/^const char *__crashreporter_info__ = mDNSResponderVersionString_SCCS + 5;$/;"	v
+_beginthreadex_compat	CommonServices.h	536;"	d
+_beginthreadex_compat	CommonServices.h	542;"	d
+_constructFullName	Java/DNSSD.java	/^	abstract protected String		_constructFullName( String serviceName, String regType, String domain)$/;"	m	class:DNSSD
+_constructFullName	Java/DNSSD.java	/^	protected String			_constructFullName( String serviceName, String regType, String domain)$/;"	m	class:AppleDNSSD
+_createRecordRegistrar	Java/DNSSD.java	/^	abstract protected DNSSDRecordRegistrar	_createRecordRegistrar( RegisterRecordListener listener)$/;"	m	class:DNSSD
+_createRecordRegistrar	Java/DNSSD.java	/^	protected DNSSDRecordRegistrar	_createRecordRegistrar( RegisterRecordListener listener)$/;"	m	class:AppleDNSSD
+_dnsextd_h	dnsextd.h	20;"	d
+_endthreadex_compat	CommonServices.h	540;"	d
+_endthreadex_compat	CommonServices.h	543;"	d
+_enumerateDomains	Java/DNSSD.java	/^	abstract protected DNSSDService	_enumerateDomains( int flags, int ifIndex, DomainListener listener)$/;"	m	class:DNSSD
+_enumerateDomains	Java/DNSSD.java	/^	protected DNSSDService		_enumerateDomains( int flags, int ifIndex, DomainListener listener)$/;"	m	class:AppleDNSSD
+_getIfIndexForName	Java/DNSSD.java	/^	abstract protected int			_getIfIndexForName( String ifName);$/;"	m	class:DNSSD
+_getIfIndexForName	Java/DNSSD.java	/^	protected int				_getIfIndexForName( String ifName)$/;"	m	class:AppleDNSSD
+_getNameForIfIndex	Java/DNSSD.java	/^	abstract protected String		_getNameForIfIndex( int ifIndex);$/;"	m	class:DNSSD
+_getNameForIfIndex	Java/DNSSD.java	/^	protected String			_getNameForIfIndex( int ifIndex)$/;"	m	class:AppleDNSSD
+_makeBrowser	Java/DNSSD.java	/^	abstract protected DNSSDService	_makeBrowser( int flags, int ifIndex, String regType, String domain, BrowseListener listener)$/;"	m	class:DNSSD
+_makeBrowser	Java/DNSSD.java	/^	protected DNSSDService	_makeBrowser( int flags, int ifIndex, String regType, String domain, BrowseListener client)$/;"	m	class:AppleDNSSD
+_queryRecord	Java/DNSSD.java	/^	abstract protected DNSSDService	_queryRecord( int flags, int ifIndex, String serviceName, int rrtype,$/;"	m	class:DNSSD
+_queryRecord	Java/DNSSD.java	/^	protected DNSSDService		_queryRecord( int flags, int ifIndex, String serviceName, int rrtype,$/;"	m	class:AppleDNSSD
+_reconfirmRecord	Java/DNSSD.java	/^	abstract protected void			_reconfirmRecord( int flags, int ifIndex, String fullName, int rrtype,$/;"	m	class:DNSSD
+_reconfirmRecord	Java/DNSSD.java	/^	protected void				_reconfirmRecord( int flags, int ifIndex, String fullName, int rrtype,$/;"	m	class:AppleDNSSD
+_register	Java/DNSSD.java	/^	abstract protected DNSSDRegistration	_register( int flags, int ifIndex, String serviceName, String regType,$/;"	m	class:DNSSD
+_register	Java/DNSSD.java	/^	protected DNSSDRegistration	_register( int flags, int ifIndex, String serviceName, String regType,$/;"	m	class:AppleDNSSD
+_resolve	Java/DNSSD.java	/^	abstract protected DNSSDService	_resolve( int flags, int ifIndex, String serviceName, String regType,$/;"	m	class:DNSSD
+_resolve	Java/DNSSD.java	/^	protected DNSSDService	_resolve( int flags, int ifIndex, String serviceName, String regType,$/;"	m	class:AppleDNSSD
+a	dnsextd.c	/^    AnswerListElem *a;$/;"	m	struct:__anon4	file:
+abort_request	uds_daemon.c	/^mDNSlocal void abort_request(request_state *req)$/;"	f
+addRecord	Java/DNSSD.java	/^	public DNSRecord	addRecord( int flags, int rrType, byte[] rData, int ttl)$/;"	m	class:AppleRegistration
+addRecord	Java/DNSSDRegistration.java	/^	DNSRecord		addRecord( int flags, int rrType, byte[] rData, int ttl)$/;"	m	interface:DNSSDRegistration
+add_domain_to_browser	uds_daemon.c	/^mDNSlocal mStatus add_domain_to_browser(request_state *info, const domainname *d)$/;"	f
+add_record_request	dnssd_ipc.h	/^    add_record_request,$/;"	e	enum:__anon20
+add_record_to_service	uds_daemon.c	/^mDNSlocal mStatus add_record_to_service(request_state *request, service_instance *instance, mDNSu16 rrtype, mDNSu16 rdlen, const char *rdata, mDNSu32 ttl)$/;"	f
+addr	dnsextd.h	/^    struct sockaddr_in addr;            \/\/ the address we will bind to$/;"	m	struct:__anon7	typeref:struct:__anon7::sockaddr_in
+addresscontent	dnsextd_parser.y	/^addresscontent:$/;"	l
+addressstatement	dnsextd_parser.y	/^addressstatement:$/;"	l
+addressstatements	dnsextd_parser.y	/^addressstatements:$/;"	l
+addrinfo	uds_daemon.c	/^        } addrinfo;$/;"	m	union:request_state::__anon24	typeref:struct:request_state::__anon24::__anon27	file:
+addrinfo_reply_op	dnssd_ipc.h	/^    addrinfo_reply_op$/;"	e	enum:__anon21
+addrinfo_request	dnssd_ipc.h	/^    addrinfo_request,$/;"	e	enum:__anon20
+addrinfo_termination_callback	uds_daemon.c	/^mDNSlocal void addrinfo_termination_callback(request_state *request)$/;"	f
+all_requests	uds_daemon.c	/^static request_state *all_requests = NULL;$/;"	v	file:
+allowremotequery	uds_daemon.c	/^            mDNSBool allowremotequery;      \/\/ Respond to unicast queries from outside the local link?$/;"	m	struct:request_state::__anon24::__anon26	file:
+ans	uds_daemon.c	/^            mDNSu8 ans;$/;"	m	struct:request_state::__anon24::__anon30	file:
+append_reply	uds_daemon.c	/^mDNSlocal void append_reply(request_state *req, reply_state *rep)$/;"	f
+assert0	dns_sd.h	/^    char assert0[(sizeof(union _TXTRecordRef_t) == 16) ? 1 : -1];$/;"	m	struct:CompileTimeAssertionChecks_DNS_SD
+assert0	dnssd_clientlib.c	/^    char assert0[(sizeof(TXTRecordRefRealType) <= 16) ? 1 : -1];$/;"	m	struct:CompileTimeAssertionCheck_dnssd_clientlib	file:
+assert0	dnssd_ipc.h	/^    char assert0[(sizeof(client_context_t) ==  8) ? 1 : -1];$/;"	m	struct:CompileTimeAssertionChecks_dnssd_ipc
+assert1	dnssd_ipc.h	/^    char assert1[(sizeof(ipc_msg_hdr)      == 28) ? 1 : -1];$/;"	m	struct:CompileTimeAssertionChecks_dnssd_ipc
+autoname	dnssd_clientshim.c	/^    mDNSBool autoname;                      \/\/ Set if this name is tied to the Computer Name$/;"	m	struct:__anon8	file:
+autoname	uds_daemon.c	/^            mDNSBool autoname;              \/\/ Set if this name is tied to the Computer Name$/;"	m	struct:request_state::__anon24::__anon26	file:
+autorename	dnssd_clientshim.c	/^    mDNSBool autorename;                    \/\/ Set if we just got a name conflict and now need to automatically pick a new name$/;"	m	struct:__anon8	file:
+autorename	uds_daemon.c	/^            mDNSBool autorename;            \/\/ Set if this client wants us to automatically rename on conflict$/;"	m	struct:request_state::__anon24::__anon26	file:
+binary_16	CommonServices.h	1240;"	d
+binary_16_hex	CommonServices.h	1242;"	d
+binary_16_hex_wrap	CommonServices.h	1241;"	d
+binary_32	CommonServices.h	1251;"	d
+binary_32_hex	CommonServices.h	1253;"	d
+binary_32_hex_wrap	CommonServices.h	1252;"	d
+binary_4	CommonServices.h	1220;"	d
+binary_4_hex	CommonServices.h	1222;"	d
+binary_4_hex_wrap	CommonServices.h	1221;"	d
+binary_8	CommonServices.h	1230;"	d
+binary_8_hex	CommonServices.h	1232;"	d
+binary_8_hex_wrap	CommonServices.h	1231;"	d
+block	dnsextd_parser.y	/^block: $/;"	l
+bool	CommonServices.h	/^typedef int bool;$/;"	t
+bool	CommonServices.h	883;"	d
+browse	Java/DNSSD.java	/^	public static DNSSDService	browse( String regType, BrowseListener listener)$/;"	m	class:DNSSD
+browse	Java/DNSSD.java	/^	public static DNSSDService	browse( int flags, int ifIndex, String regType, String domain, BrowseListener listener)$/;"	m	class:DNSSD
+browse_reply_op	dnssd_ipc.h	/^    browse_reply_op,$/;"	e	enum:__anon21
+browse_request	dnssd_ipc.h	/^    browse_request,$/;"	e	enum:__anon20
+browse_termination_callback	uds_daemon.c	/^mDNSlocal void browse_termination_callback(request_state *info)$/;"	f
+browser	uds_daemon.c	/^        } browser;$/;"	m	union:request_state::__anon24	typeref:struct:request_state::__anon24::__anon25	file:
+browser_t	uds_daemon.c	/^typedef struct browser_t$/;"	s	file:
+browser_t	uds_daemon.c	/^} browser_t;$/;"	t	typeref:struct:browser_t	file:
+browsers	uds_daemon.c	/^            browser_t *browsers;$/;"	m	struct:request_state::__anon24::__anon25	file:
+buffer	dnssd_clientlib.c	/^    uint8_t  *buffer;       \/\/ Pointer to data$/;"	m	struct:_TXTRecordRefRealType	file:
+buflen	dnssd_clientlib.c	/^    uint16_t buflen;        \/\/ Length of buffer$/;"	m	struct:_TXTRecordRefRealType	file:
+build_domainname_from_strings	uds_daemon.c	/^mDNSlocal int build_domainname_from_strings(domainname *srv, char *name, char *regtype, char *domain)$/;"	f
+callExternalHelpers	uds_daemon.c	/^mDNSlocal mDNSBool callExternalHelpers(mDNSInterfaceID InterfaceID, const domainname *const domain, DNSServiceFlags flags)$/;"	f
+callback	dnsextd.h	/^    EventCallback callback;$/;"	m	struct:EventSource
+callback	dnssd_clientshim.c	/^    DNSServiceBrowseReply callback;$/;"	m	struct:__anon9	file:
+callback	dnssd_clientshim.c	/^    DNSServiceQueryRecordReply callback;$/;"	m	struct:__anon11	file:
+callback	dnssd_clientshim.c	/^    DNSServiceRegisterReply callback;$/;"	m	struct:__anon8	file:
+callback	dnssd_clientshim.c	/^    DNSServiceResolveReply callback;$/;"	m	struct:__anon10	file:
+cancel_request	dnssd_ipc.h	/^    cancel_request = 63$/;"	e	enum:__anon20
+cb_err	dnssd_clientstub.c	/^    DNSServiceErrorType cb_err;$/;"	m	struct:__anon12	file:
+cb_flags	dnssd_clientstub.c	/^    DNSServiceFlags cb_flags;$/;"	m	struct:__anon12	file:
+cb_interface	dnssd_clientstub.c	/^    uint32_t cb_interface;$/;"	m	struct:__anon12	file:
+cfgfile	dnsextd.c	/^static char *   cfgfile   = NULL;$/;"	v	file:
+check	DebugServices.h	550;"	d
+check	DebugServices.h	554;"	d
+check	DebugServices.h	563;"	d
+check_compile_time	DebugServices.h	503;"	d
+check_compile_time_code	DebugServices.h	530;"	d
+check_noerr	DebugServices.h	613;"	d
+check_noerr	DebugServices.h	617;"	d
+check_noerr	DebugServices.h	630;"	d
+check_noerr_string	DebugServices.h	648;"	d
+check_noerr_string	DebugServices.h	652;"	d
+check_noerr_string	DebugServices.h	665;"	d
+check_ptr_overlap	DebugServices.h	705;"	d
+check_string	DebugServices.h	581;"	d
+check_string	DebugServices.h	585;"	d
+check_string	DebugServices.h	595;"	d
+check_translated_errno	DebugServices.h	681;"	d
+check_translated_errno	DebugServices.h	695;"	d
+cli	dnsextd.h	/^    struct sockaddr_in cli;   \/\/ clien'ts source address$/;"	m	struct:LLQEntry	typeref:struct:LLQEntry::sockaddr_in
+cli	dnsextd.h	/^    struct sockaddr_in cli;   \/\/ client's source address$/;"	m	struct:RRTableElem	typeref:struct:RRTableElem::sockaddr_in
+cliaddr	dnsextd.c	/^    struct sockaddr_in cliaddr;$/;"	m	struct:__anon2	typeref:struct:__anon2::sockaddr_in	file:
+cliaddr	dnsextd.c	/^    struct sockaddr_in cliaddr;$/;"	m	struct:__anon3	typeref:struct:__anon3::sockaddr_in	file:
+clientnotified	uds_daemon.c	/^    mDNSBool clientnotified;        \/\/ Has client been notified of successful registration yet?$/;"	m	struct:service_instance	file:
+close_compat	CommonServices.h	434;"	d
+close_compat	CommonServices.h	446;"	d
+com.apple.dnssd	Java/BaseListener.java	/^package	com.apple.dnssd;$/;"	p
+com.apple.dnssd	Java/BrowseListener.java	/^package	com.apple.dnssd;$/;"	p
+com.apple.dnssd	Java/DNSRecord.java	/^package	com.apple.dnssd;$/;"	p
+com.apple.dnssd	Java/DNSSD.java	/^package	com.apple.dnssd;$/;"	p
+com.apple.dnssd	Java/DNSSDException.java	/^package	com.apple.dnssd;$/;"	p
+com.apple.dnssd	Java/DNSSDRecordRegistrar.java	/^package	com.apple.dnssd;$/;"	p
+com.apple.dnssd	Java/DNSSDRegistration.java	/^package	com.apple.dnssd;$/;"	p
+com.apple.dnssd	Java/DNSSDService.java	/^package	com.apple.dnssd;$/;"	p
+com.apple.dnssd	Java/DomainListener.java	/^package	com.apple.dnssd;$/;"	p
+com.apple.dnssd	Java/QueryListener.java	/^package	com.apple.dnssd;$/;"	p
+com.apple.dnssd	Java/RegisterListener.java	/^package	com.apple.dnssd;$/;"	p
+com.apple.dnssd	Java/RegisterRecordListener.java	/^package	com.apple.dnssd;$/;"	p
+com.apple.dnssd	Java/ResolveListener.java	/^package	com.apple.dnssd;$/;"	p
+com.apple.dnssd	Java/TXTRecord.java	/^package	com.apple.dnssd;$/;"	p
+command	dnsextd_parser.y	/^command:$/;"	l
+commands	dnsextd_parser.y	/^commands:$/;"	l
+connect_callback	uds_daemon.c	/^mDNSlocal void connect_callback(int fd, short filter, void *info)$/;"	f
+connection_delegate_request	dnssd_ipc.h	/^    connection_delegate_request,$/;"	e	enum:__anon20
+connection_request	dnssd_ipc.h	/^    connection_request = 1, \/\/ connected socket via DNSServiceConnect()$/;"	e	enum:__anon20
+connection_termination	uds_daemon.c	/^mDNSlocal void connection_termination(request_state *request)$/;"	f
+constructFullName	Java/DNSSD.java	/^	public static String		constructFullName( String serviceName, String regType, String domain)$/;"	m	class:DNSSD
+contains	Java/TXTRecord.java	/^	public boolean	contains( String key)$/;"	m	class:TXTRecord
+context	dnsextd.h	/^    void                *   context;$/;"	m	struct:EventSource
+context	dnssd_clientshim.c	/^    void                       *context;$/;"	m	struct:__anon11	file:
+context	dnssd_clientshim.c	/^    void                   *context;$/;"	m	struct:__anon10	file:
+context	dnssd_clientshim.c	/^    void                   *context;$/;"	m	struct:__anon8	file:
+context	dnssd_clientshim.c	/^    void                   *context;$/;"	m	struct:__anon9	file:
+createRecordRegistrar	Java/DNSSD.java	/^	public static DNSSDRecordRegistrar	createRecordRegistrar( RegisterRecordListener listener)$/;"	m	class:DNSSD
+create_hdr	dnssd_clientstub.c	/^static ipc_msg_hdr *create_hdr(uint32_t op, size_t *len, char **data_start, int SeparateReturnSocket, DNSServiceOp *ref)$/;"	f	file:
+create_reply	uds_daemon.c	/^mDNSlocal reply_state *create_reply(const reply_op_t op, const size_t datalen, request_state *const request)$/;"	f
+d	dnsextd.c	/^    DaemonInfo *d;$/;"	m	struct:__anon2	file:
+d	dnsextd.c	/^    DaemonInfo *d;$/;"	m	struct:__anon3	file:
+d	dnsextd.c	/^    DaemonInfo *d;$/;"	m	struct:__anon4	file:
+daemon	dnsextd.c	23;"	d	file:
+daemon	dnsextd.c	43;"	d	file:
+data_bytes	uds_daemon.c	/^    mDNSu32 data_bytes;             \/\/ bytes of message data already read$/;"	m	struct:request_state	file:
+datalen	dnssd_clientlib.c	/^    uint16_t datalen;       \/\/ Length currently in use$/;"	m	struct:_TXTRecordRefRealType	file:
+debug_add	DebugServices.h	448;"	d
+debug_add	DebugServices.h	450;"	d
+debug_get_property	DebugServices.h	1341;"	d
+debug_get_property	DebugServices.h	1343;"	d
+debug_get_property	DebugServices.h	1345;"	d
+debug_get_property	DebugServices.h	1349;"	d
+debug_get_property	DebugServices.h	1351;"	d
+debug_get_property	DebugServices.h	1353;"	d
+debug_initialize	DebugServices.h	1297;"	d
+debug_initialize	DebugServices.h	1299;"	d
+debug_initialize	DebugServices.h	1301;"	d
+debug_initialize	DebugServices.h	1305;"	d
+debug_initialize	DebugServices.h	1307;"	d
+debug_initialize	DebugServices.h	1309;"	d
+debug_perform	DebugServices.h	460;"	d
+debug_perform	DebugServices.h	462;"	d
+debug_print_assert	DebugServices.h	1171;"	d
+debug_print_assert	DebugServices.h	1174;"	d
+debug_set_property	DebugServices.h	1369;"	d
+debug_set_property	DebugServices.h	1371;"	d
+debug_set_property	DebugServices.h	1373;"	d
+debug_set_property	DebugServices.h	1377;"	d
+debug_set_property	DebugServices.h	1379;"	d
+debug_set_property	DebugServices.h	1381;"	d
+debug_string	DebugServices.h	1149;"	d
+debug_string	DebugServices.h	1153;"	d
+debug_string	DebugServices.h	1160;"	d
+debug_terminate	DebugServices.h	1324;"	d
+debug_terminate	DebugServices.h	1326;"	d
+default_domain	uds_daemon.c	/^            mDNSBool default_domain;$/;"	m	struct:request_state::__anon24::__anon25	file:
+default_domain	uds_daemon.c	/^            mDNSBool default_domain;$/;"	m	struct:request_state::__anon24::__anon26	file:
+default_local	uds_daemon.c	/^    mDNSBool default_local;         \/\/ is this the "local." from an empty-string registration?$/;"	m	struct:service_instance	file:
+deliver_request	dnssd_clientstub.c	/^static DNSServiceErrorType deliver_request(ipc_msg_hdr *hdr, DNSServiceOp *sdr)$/;"	f	file:
+deliver_request_bailout	dnssd_clientstub.c	597;"	d	file:
+disp_queue	dnssd_clientstub.c	/^    dispatch_queue_t disp_queue;$/;"	m	struct:_DNSServiceRef_t	file:
+disp_source	dnssd_clientstub.c	/^    dispatch_source_t disp_source;$/;"	m	struct:_DNSServiceRef_t	file:
+disposefn	dnssd_clientshim.c	/^    mDNS_DirectOP_Dispose      *disposefn;$/;"	m	struct:__anon11	file:
+disposefn	dnssd_clientshim.c	/^    mDNS_DirectOP_Dispose  *disposefn;$/;"	m	struct:__anon10	file:
+disposefn	dnssd_clientshim.c	/^    mDNS_DirectOP_Dispose  *disposefn;$/;"	m	struct:__anon8	file:
+disposefn	dnssd_clientshim.c	/^    mDNS_DirectOP_Dispose  *disposefn;$/;"	m	struct:__anon9	file:
+disposefn	dnssd_clientshim.c	/^    mDNS_DirectOP_Dispose  *disposefn;$/;"	m	struct:mDNS_DirectOP_struct	file:
+dlog	DebugServices.h	1185;"	d
+dlog	DebugServices.h	1187;"	d
+dlog	DebugServices.h	1189;"	d
+dlog	DebugServices.h	1193;"	d
+dlog	DebugServices.h	1195;"	d
+dlog	DebugServices.h	1197;"	d
+dloghex	DebugServices.h	1556;"	d
+dloghex	DebugServices.h	1560;"	d
+dlogmem	DebugServices.h	1220;"	d
+dlogmem	DebugServices.h	1223;"	d
+dlogv	DebugServices.h	1208;"	d
+dlogv	DebugServices.h	1210;"	d
+dnssd_ECONNRESET	dnssd_ipc.h	43;"	d
+dnssd_ECONNRESET	dnssd_ipc.h	68;"	d
+dnssd_EINTR	dnssd_ipc.h	42;"	d
+dnssd_EINTR	dnssd_ipc.h	67;"	d
+dnssd_EPIPE	dnssd_ipc.h	69;"	d
+dnssd_EWOULDBLOCK	dnssd_ipc.h	41;"	d
+dnssd_EWOULDBLOCK	dnssd_ipc.h	66;"	d
+dnssd_InvalidSocket	dnssd_ipc.h	39;"	d
+dnssd_InvalidSocket	dnssd_ipc.h	64;"	d
+dnssd_SocketValid	dnssd_ipc.h	40;"	d
+dnssd_SocketValid	dnssd_ipc.h	65;"	d
+dnssd_close	dnssd_ipc.h	46;"	d
+dnssd_close	dnssd_ipc.h	72;"	d
+dnssd_errno	dnssd_ipc.h	47;"	d
+dnssd_errno	dnssd_ipc.h	73;"	d
+dnssd_htonl	uds_daemon.c	/^mDNSlocal mDNSu32 dnssd_htonl(mDNSu32 l)$/;"	f
+dnssd_sock_t	dnssd_ipc.h	44;"	d
+dnssd_sock_t	dnssd_ipc.h	70;"	d
+dnssd_sockaddr_t	dnssd_ipc.h	82;"	d
+dnssd_sockaddr_t	dnssd_ipc.h	92;"	d
+dnssd_socklen_t	dnssd_ipc.h	45;"	d
+dnssd_socklen_t	dnssd_ipc.h	71;"	d
+dnssd_strerror	dnssd_ipc.h	48;"	d
+dnssd_strerror	dnssd_ipc.h	74;"	d
+domain	uds_daemon.c	/^    domainname domain;$/;"	m	struct:browser_t	file:
+domain	uds_daemon.c	/^    domainname domain;$/;"	m	struct:service_instance	file:
+domainFound	Java/DomainListener.java	/^	void	domainFound( DNSSDService domainEnum, int flags, int ifIndex, String domain);$/;"	m	interface:DomainListener
+domainLost	Java/DomainListener.java	/^	void	domainLost( DNSSDService domainEnum, int flags, int ifIndex, String domain);$/;"	m	interface:DomainListener
+dumptable	dnsextd.c	/^static mDNSBool dumptable = 0;$/;"	v	file:
+ensure	DebugServices.h	1089;"	d
+ensure_noerr	DebugServices.h	1091;"	d
+ensure_noerr_string	DebugServices.h	1092;"	d
+ensure_string	DebugServices.h	1090;"	d
+ensure_translated_errno	DebugServices.h	1093;"	d
+enum_result_callback	uds_daemon.c	/^mDNSlocal void enum_result_callback(mDNS *const m,$/;"	f
+enum_termination_callback	uds_daemon.c	/^mDNSlocal void enum_termination_callback(request_state *request)$/;"	f
+enumerateDomains	Java/DNSSD.java	/^	public static DNSSDService	enumerateDomains( int flags, int ifIndex, DomainListener listener)$/;"	m	class:DNSSD
+enumeration	uds_daemon.c	/^        } enumeration;$/;"	m	union:request_state::__anon24	typeref:struct:request_state::__anon24::__anon29	file:
+enumeration_reply_op	dnssd_ipc.h	/^    enumeration_reply_op = 64,$/;"	e	enum:__anon21
+enumeration_request	dnssd_ipc.h	/^    enumeration_request,$/;"	e	enum:__anon20
+errno_compat	CommonServices.h	435;"	d
+errno_compat	CommonServices.h	447;"	d
+error	uds_daemon.c	/^    DNSServiceErrorType error;      \/\/ Note: This field is in NETWORK byte order$/;"	m	struct:__anon32	file:
+errsd	uds_daemon.c	/^    dnssd_sock_t errsd;$/;"	m	struct:request_state	file:
+eventSources	dnsextd.h	/^    GenLinkedList eventSources;     \/\/ linked list of EventSource's$/;"	m	struct:__anon7
+exit	dnsextd_parser.y	/^exit:$/;"	l
+expire	dnsextd.h	/^    long expire;              \/\/ expiration time, in seconds since epoch$/;"	m	struct:RRTableElem
+expire	dnsextd.h	/^    mDNSs32 expire;           \/\/ expiration, absolute, in seconds since epoch$/;"	m	struct:LLQEntry
+external_advertise	uds_daemon.c	/^            mDNSBool external_advertise;$/;"	m	struct:request_state::__anon24::__anon31	file:
+external_advertise	uds_daemon.c	/^    mDNSBool external_advertise;    \/\/ is this is being advertised externally?$/;"	m	struct:service_instance	file:
+external_advertise	uds_daemon.c	/^    mDNSBool external_advertise;$/;"	m	struct:registered_record_entry	file:
+external_connection_release	uds_daemon.h	85;"	d
+external_start_advertising_helper	uds_daemon.c	/^mDNSlocal void external_start_advertising_helper(service_instance *const instance)$/;"	f
+external_start_advertising_service	uds_daemon.h	81;"	d
+external_start_browsing_for_service	uds_daemon.h	79;"	d
+external_start_resolving_service	uds_daemon.h	83;"	d
+external_stop_advertising_helper	uds_daemon.c	/^mDNSlocal void external_stop_advertising_helper(service_instance *const instance)$/;"	f
+external_stop_advertising_service	uds_daemon.h	82;"	d
+external_stop_browsing_for_service	uds_daemon.h	80;"	d
+external_stop_resolving_service	uds_daemon.h	84;"	d
+fBytes	Java/TXTRecord.java	/^	protected byte[]		fBytes;$/;"	f	class:TXTRecord
+fErrorCode	Java/DNSSD.java	/^	protected int			fErrorCode;$/;"	f	class:AppleDNSSDException
+fInstance	Java/DNSSD.java	/^	protected static DNSSD			fInstance;$/;"	f	class:DNSSD
+fListener	Java/DNSSD.java	/^	protected BaseListener fListener;$/;"	f	class:AppleService
+fNativeContext	Java/DNSSD.java	/^	protected long	\/* warning *\/	fNativeContext;		\/\/ Private storage for native side$/;"	f	class:AppleService
+fOwner	Java/DNSSD.java	/^	protected AppleService	fOwner;$/;"	f	class:AppleDNSRecord
+fRecord	Java/DNSSD.java	/^	protected long			fRecord;		\/\/ Really a DNSRecord; sizeof(long) == sizeof(void*) ?$/;"	f	class:AppleDNSRecord
+false	CommonServices.h	873;"	d
+false	CommonServices.h	887;"	d
+fd	dnsextd.h	/^    int fd;$/;"	m	struct:EventSource
+flags	uds_daemon.c	/^            DNSServiceFlags flags;$/;"	m	struct:request_state::__anon24::__anon29	file:
+flags	uds_daemon.c	/^            mDNSu32 flags;$/;"	m	struct:request_state::__anon24::__anon27	file:
+flags	uds_daemon.c	/^    DNSServiceFlags flags;          \/\/ Note: This field is in NETWORK byte order$/;"	m	struct:__anon32	file:
+flags	uds_daemon.c	/^    DNSServiceFlags flags;$/;"	m	struct:request_state	file:
+foreground	dnsextd.c	/^static mDNSBool foreground = 0;$/;"	v	file:
+format_enumeration_reply	uds_daemon.c	/^mDNSlocal reply_state *format_enumeration_reply(request_state *request,$/;"	f
+gDebugAssertOutputHandlerUPP	DebugServices.c	/^static DebugAssertOutputHandlerUPP gDebugAssertOutputHandlerUPP    = NULL;$/;"	v	file:
+gDebugBreakLevel	DebugServices.c	/^static DebugLevel gDebugBreakLevel                = kDebugLevelAssert;$/;"	v	file:
+gDebugCustomOutputContext	DebugServices.c	/^static void *                               gDebugCustomOutputContext       = NULL;$/;"	v	file:
+gDebugCustomOutputFunction	DebugServices.c	/^static DebugOutputFunctionPtr gDebugCustomOutputFunction      = NULL;$/;"	v	file:
+gDebugFPrintFFile	DebugServices.c	/^static FILE *                           gDebugFPrintFFile               = NULL;$/;"	v	file:
+gDebugInitialized	DebugServices.c	/^static bool gDebugInitialized               = false;$/;"	v	file:
+gDebugMacOSXLogFunction	DebugServices.c	/^static DebugMacOSXLogFunctionPtr gDebugMacOSXLogFunction         = NULL;$/;"	v	file:
+gDebugOutputType	DebugServices.c	/^static DebugOutputType gDebugOutputType                = kDebugOutputTypeNone;$/;"	v	file:
+gDebugPrintLevelMax	DebugServices.c	/^static DebugLevel gDebugPrintLevelMax             = kDebugLevelMax;$/;"	v	file:
+gDebugPrintLevelMin	DebugServices.c	/^static DebugLevel gDebugPrintLevelMin             = kDebugLevelInfo;$/;"	v	file:
+gDebugWindowsEventLogEventSource	DebugServices.c	/^static HANDLE gDebugWindowsEventLogEventSource = NULL;$/;"	v	file:
+gJavaVM	Java/JNISupport.c	/^JavaVM      *gJavaVM = NULL;$/;"	v
+g_initWinsock	dnssd_clientstub.c	/^static int g_initWinsock = 0;$/;"	v	file:
+getErrorCode	Java/DNSSD.java	/^	public int					getErrorCode() { return fErrorCode; }$/;"	m	class:AppleDNSSDException
+getErrorCode	Java/DNSSDException.java	/^	abstract public int			getErrorCode();$/;"	m	class:DNSSDException
+getIfIndexForName	Java/DNSSD.java	/^	public static int		getIfIndexForName( String ifName)$/;"	m	class:DNSSD
+getInstance	Java/DNSSD.java	/^	static protected final DNSSD	getInstance()$/;"	m	class:DNSSD
+getKey	Java/TXTRecord.java	/^	public String	getKey( int index)$/;"	m	class:TXTRecord
+getMessage	Java/DNSSD.java	/^	public String				getMessage()$/;"	m	class:AppleDNSSDException
+getNameForIfIndex	Java/DNSSD.java	/^	public static String	getNameForIfIndex( int ifIndex)$/;"	m	class:DNSSD
+getRawBytes	Java/TXTRecord.java	/^	public byte[]	getRawBytes() { return (byte[]) fBytes.clone(); }$/;"	m	class:TXTRecord
+getTXTRecord	Java/DNSSD.java	/^	public DNSRecord	getTXTRecord()$/;"	m	class:AppleRegistration
+getTXTRecord	Java/DNSSDRegistration.java	/^	DNSRecord		getTXTRecord()$/;"	m	interface:DNSSDRegistration
+getValue	Java/TXTRecord.java	/^	public byte[]	getValue( String forKey)$/;"	m	class:TXTRecord
+getValue	Java/TXTRecord.java	/^	public byte[]	getValue( int index)$/;"	m	class:TXTRecord
+getValueAsString	Java/TXTRecord.java	/^	public String	getValueAsString( String forKey)$/;"	m	class:TXTRecord
+getValueAsString	Java/TXTRecord.java	/^	public String	getValueAsString( int index)$/;"	m	class:TXTRecord
+get_error_code	dnssd_ipc.h	203;"	d
+get_flags	dnssd_ipc.h	200;"	d
+get_rdata	dnssd_ipc.c	/^const char *get_rdata(const char **ptr, const char *end, int rdlen)$/;"	f
+get_string	dnssd_ipc.c	/^int get_string(const char **ptr, const char *const end, char *buffer, int buflen)$/;"	f
+get_uint16	dnssd_ipc.c	/^uint16_t get_uint16(const char **ptr, const char *end)$/;"	f
+get_uint32	dnssd_ipc.c	/^uint32_t get_uint32(const char **ptr, const char *end)$/;"	f
+getpid	dnssd_ipc.h	50;"	d
+getpid_request	dnssd_ipc.h	/^    getpid_request,$/;"	e	enum:__anon20
+getproperty_reply_op	dnssd_ipc.h	/^    getproperty_reply_op,   \/\/ New in B4W 1.0.4$/;"	e	enum:__anon21
+getproperty_request	dnssd_ipc.h	/^    getproperty_request,    \/\/ New in B4W 1.0.4$/;"	e	enum:__anon20
+handle_add_request	uds_daemon.c	/^mDNSlocal mStatus handle_add_request(request_state *request)$/;"	f
+handle_addrinfo_request	uds_daemon.c	/^mDNSlocal mStatus handle_addrinfo_request(request_state *request)$/;"	f
+handle_addrinfo_response	dnssd_clientstub.c	/^static void handle_addrinfo_response(DNSServiceOp *const sdr, const CallbackHeader *const cbh, const char *data, const char *const end)$/;"	f	file:
+handle_browse_request	uds_daemon.c	/^mDNSlocal mStatus handle_browse_request(request_state *request)$/;"	f
+handle_browse_response	dnssd_clientstub.c	/^static void handle_browse_response(DNSServiceOp *const sdr, const CallbackHeader *const cbh, const char *data, const char *const end)$/;"	f	file:
+handle_cancel_request	uds_daemon.c	/^mDNSlocal void handle_cancel_request(request_state *request)$/;"	f
+handle_connection_delegate_request	uds_daemon.c	/^mDNSlocal void handle_connection_delegate_request(request_state *request)$/;"	f
+handle_enum_request	uds_daemon.c	/^mDNSlocal mStatus handle_enum_request(request_state *request)$/;"	f
+handle_enumeration_response	dnssd_clientstub.c	/^static void handle_enumeration_response(DNSServiceOp *const sdr, const CallbackHeader *const cbh, const char *data, const char *const end)$/;"	f	file:
+handle_getpid_request	uds_daemon.c	/^mDNSlocal void handle_getpid_request(request_state *request)$/;"	f
+handle_getproperty_request	uds_daemon.c	/^mDNSlocal void handle_getproperty_request(request_state *request)$/;"	f
+handle_port_mapping_request	uds_daemon.c	/^mDNSlocal mStatus handle_port_mapping_request(request_state *request)$/;"	f
+handle_port_mapping_response	dnssd_clientstub.c	/^static void handle_port_mapping_response(DNSServiceOp *const sdr, const CallbackHeader *const cbh, const char *data, const char *const end)$/;"	f	file:
+handle_query_response	dnssd_clientstub.c	/^static void handle_query_response(DNSServiceOp *const sdr, const CallbackHeader *const cbh, const char *data, const char *const end)$/;"	f	file:
+handle_queryrecord_request	uds_daemon.c	/^mDNSlocal mStatus handle_queryrecord_request(request_state *request)$/;"	f
+handle_reconfirm_request	uds_daemon.c	/^mDNSlocal mStatus handle_reconfirm_request(request_state *request)$/;"	f
+handle_regrecord_request	uds_daemon.c	/^mDNSlocal mStatus handle_regrecord_request(request_state *request)$/;"	f
+handle_regservice_request	uds_daemon.c	/^mDNSlocal mStatus handle_regservice_request(request_state *request)$/;"	f
+handle_regservice_response	dnssd_clientstub.c	/^static void handle_regservice_response(DNSServiceOp *const sdr, const CallbackHeader *const cbh, const char *data, const char *const end)$/;"	f	file:
+handle_release_request	uds_daemon.c	/^mDNSlocal mStatus handle_release_request(request_state *request)$/;"	f
+handle_removerecord_request	uds_daemon.c	/^mDNSlocal mStatus handle_removerecord_request(request_state *request)$/;"	f
+handle_resolve_request	uds_daemon.c	/^mDNSlocal mStatus handle_resolve_request(request_state *request)$/;"	f
+handle_resolve_response	dnssd_clientstub.c	/^static void handle_resolve_response(DNSServiceOp *const sdr, const CallbackHeader *const cbh, const char *data, const char *end)$/;"	f	file:
+handle_setdomain_request	uds_daemon.c	/^mDNSlocal mStatus handle_setdomain_request(request_state *request)$/;"	f
+handle_update_request	uds_daemon.c	/^mDNSlocal mStatus handle_update_request(request_state *request)$/;"	f
+hangup	dnsextd.c	/^static mDNSBool hangup    = 0;$/;"	v	file:
+hasAutoCallbacks	Java/DNSSD.java	/^	static public boolean	hasAutoCallbacks;	\/\/ Set by InitLibrary() to value of AUTO_CALLBACKS$/;"	f	class:AppleDNSSD
+hdr	uds_daemon.c	/^    ipc_msg_hdr hdr;$/;"	m	struct:request_state	file:
+hdr_bytes	uds_daemon.c	/^    mDNSu32 hdr_bytes;              \/\/ bytes of header already read$/;"	m	struct:request_state	file:
+hex_digit4	CommonServices.h	1258;"	d
+hex_digit8	CommonServices.h	1257;"	d
+host	dnssd_clientshim.c	/^    domainname host;$/;"	m	struct:__anon8	file:
+host	uds_daemon.c	/^            domainname host;$/;"	m	struct:request_state::__anon24::__anon26	file:
+i_mcount	uds_daemon.c	/^static mDNSu32 i_mcount;   \/\/ sets mcount when McastLogging is enabled(PROF signal is sent)$/;"	v	file:
+id	dnsextd.h	/^    mDNSOpaque64 id;$/;"	m	struct:LLQEntry
+if_indextoname	Java/JNISupport.c	51;"	d	file:
+if_nametoindex	Java/JNISupport.c	52;"	d	file:
+ifi	uds_daemon.c	/^    mDNSu32 ifi;                    \/\/ Note: This field is in NETWORK byte order$/;"	m	struct:__anon32	file:
+includeP2PWithIndexAny	dnssd_clientstub.c	/^static int includeP2PWithIndexAny()$/;"	f	file:
+index	Java/JNISupport.c	63;"	d	file:
+index	Java/JNISupport.c	65;"	d	file:
+inline_compat	CommonServices.h	549;"	d
+inline_compat	CommonServices.h	551;"	d
+insert	Java/TXTRecord.java	/^	protected void	insert( byte[] keyBytes, byte[] value, int index)$/;"	m	class:TXTRecord
+instances	uds_daemon.c	/^            service_instance *instances;$/;"	m	struct:request_state::__anon24::__anon26	file:
+int16_t	CommonServices.h	/^typedef INT16 int16_t;$/;"	t
+int16_t	dns_sd.h	/^typedef INT16 int16_t;$/;"	t
+int32_t	CommonServices.h	/^typedef INT32 int32_t;$/;"	t
+int32_t	dns_sd.h	/^typedef INT32 int32_t;$/;"	t
+int64_t	CommonServices.h	/^typedef __int64 int64_t;$/;"	t
+int64_t	CommonServices.h	/^typedef long long int64_t;$/;"	t
+int8_t	CommonServices.h	/^typedef INT8 int8_t;$/;"	t
+int8_t	dns_sd.h	/^typedef INT8 int8_t;$/;"	t
+int_fast16_t	CommonServices.h	/^typedef int16_t int_fast16_t;$/;"	t
+int_fast32_t	CommonServices.h	/^typedef int32_t int_fast32_t;$/;"	t
+int_fast64_t	CommonServices.h	/^typedef int64_t int_fast64_t;$/;"	t
+int_fast8_t	CommonServices.h	/^typedef int8_t int_fast8_t;$/;"	t
+int_least16_t	CommonServices.h	/^typedef int16_t int_least16_t;$/;"	t
+int_least32_t	CommonServices.h	/^typedef int32_t int_least32_t;$/;"	t
+int_least64_t	CommonServices.h	/^typedef int64_t int_least64_t;$/;"	t
+int_least8_t	CommonServices.h	/^typedef int8_t int_least8_t;$/;"	t
+interface_id	uds_daemon.c	/^            mDNSInterfaceID interface_id;$/;"	m	struct:request_state::__anon24::__anon25	file:
+interface_id	uds_daemon.c	/^            mDNSInterfaceID interface_id;$/;"	m	struct:request_state::__anon24::__anon27	file:
+intptr_t	CommonServices.h	/^typedef long int intptr_t;$/;"	t
+ipc_hdr	dnssd_clientstub.c	/^    ipc_msg_hdr ipc_hdr;$/;"	m	struct:__anon12	file:
+isZonePublic	dnsextd.h	/^    mDNSBool isZonePublic;$/;"	m	struct:__anon5
+kAlreadyCanceledErr	CommonServices.h	1060;"	d
+kAlreadyInitializedErr	CommonServices.h	1055;"	d
+kAttrSep	Java/TXTRecord.java	/^	static final protected byte		kAttrSep = '=';$/;"	f	class:TXTRecord
+kAuthenticationErr	CommonServices.h	1090;"	d
+kBackoffErr	CommonServices.h	1096;"	d
+kBadReferenceErr	CommonServices.h	1076;"	d
+kBusyErr	CommonServices.h	1098;"	d
+kCanceledErr	CommonServices.h	1059;"	d
+kCannotCancelErr	CommonServices.h	1061;"	d
+kChecksumErr	CommonServices.h	1049;"	d
+kCollisionErr	CommonServices.h	1095;"	d
+kCommandErr	CommonServices.h	1043;"	d
+kConnectionErr	CommonServices.h	1089;"	d
+kDNSServiceClass_IN	dns_sd.h	/^    kDNSServiceClass_IN       = 1       \/* Internet *\/$/;"	e	enum:__anon17
+kDNSServiceCompMulticastDNS	dns_sd.h	2639;"	d
+kDNSServiceCompPrivateDNS	dns_sd.h	2638;"	d
+kDNSServiceErr_AlreadyRegistered	dns_sd.h	/^    kDNSServiceErr_AlreadyRegistered         = -65547,$/;"	e	enum:__anon19
+kDNSServiceErr_BadFlags	dns_sd.h	/^    kDNSServiceErr_BadFlags                  = -65543,$/;"	e	enum:__anon19
+kDNSServiceErr_BadInterfaceIndex	dns_sd.h	/^    kDNSServiceErr_BadInterfaceIndex         = -65552,$/;"	e	enum:__anon19
+kDNSServiceErr_BadKey	dns_sd.h	/^    kDNSServiceErr_BadKey                    = -65561,$/;"	e	enum:__anon19
+kDNSServiceErr_BadParam	dns_sd.h	/^    kDNSServiceErr_BadParam                  = -65540,$/;"	e	enum:__anon19
+kDNSServiceErr_BadReference	dns_sd.h	/^    kDNSServiceErr_BadReference              = -65541,$/;"	e	enum:__anon19
+kDNSServiceErr_BadSig	dns_sd.h	/^    kDNSServiceErr_BadSig                    = -65560,$/;"	e	enum:__anon19
+kDNSServiceErr_BadState	dns_sd.h	/^    kDNSServiceErr_BadState                  = -65542,$/;"	e	enum:__anon19
+kDNSServiceErr_BadTime	dns_sd.h	/^    kDNSServiceErr_BadTime                   = -65559,  \/* Codes up to here existed in Tiger *\/$/;"	e	enum:__anon19
+kDNSServiceErr_DoubleNAT	dns_sd.h	/^    kDNSServiceErr_DoubleNAT                 = -65558,$/;"	e	enum:__anon19
+kDNSServiceErr_Firewall	dns_sd.h	/^    kDNSServiceErr_Firewall                  = -65550,$/;"	e	enum:__anon19
+kDNSServiceErr_Incompatible	dns_sd.h	/^    kDNSServiceErr_Incompatible              = -65551,  \/* client library incompatible with daemon *\/$/;"	e	enum:__anon19
+kDNSServiceErr_Invalid	dns_sd.h	/^    kDNSServiceErr_Invalid                   = -65549,$/;"	e	enum:__anon19
+kDNSServiceErr_NATPortMappingDisabled	dns_sd.h	/^    kDNSServiceErr_NATPortMappingDisabled    = -65565,  \/* NAT supports PCP, NAT-PMP or UPnP, but it's disabled by the administrator *\/$/;"	e	enum:__anon19
+kDNSServiceErr_NATPortMappingUnsupported	dns_sd.h	/^    kDNSServiceErr_NATPortMappingUnsupported = -65564,  \/* NAT doesn't support PCP, NAT-PMP or UPnP *\/$/;"	e	enum:__anon19
+kDNSServiceErr_NATTraversal	dns_sd.h	/^    kDNSServiceErr_NATTraversal              = -65557,$/;"	e	enum:__anon19
+kDNSServiceErr_NameConflict	dns_sd.h	/^    kDNSServiceErr_NameConflict              = -65548,$/;"	e	enum:__anon19
+kDNSServiceErr_NoAuth	dns_sd.h	/^    kDNSServiceErr_NoAuth                    = -65555,$/;"	e	enum:__anon19
+kDNSServiceErr_NoError	dns_sd.h	/^    kDNSServiceErr_NoError                   = 0,$/;"	e	enum:__anon19
+kDNSServiceErr_NoMemory	dns_sd.h	/^    kDNSServiceErr_NoMemory                  = -65539,$/;"	e	enum:__anon19
+kDNSServiceErr_NoRouter	dns_sd.h	/^    kDNSServiceErr_NoRouter                  = -65566,  \/* No router currently configured (probably no network connectivity) *\/$/;"	e	enum:__anon19
+kDNSServiceErr_NoSuchKey	dns_sd.h	/^    kDNSServiceErr_NoSuchKey                 = -65556,$/;"	e	enum:__anon19
+kDNSServiceErr_NoSuchName	dns_sd.h	/^    kDNSServiceErr_NoSuchName                = -65538,$/;"	e	enum:__anon19
+kDNSServiceErr_NoSuchRecord	dns_sd.h	/^    kDNSServiceErr_NoSuchRecord              = -65554,$/;"	e	enum:__anon19
+kDNSServiceErr_NotInitialized	dns_sd.h	/^    kDNSServiceErr_NotInitialized            = -65545,$/;"	e	enum:__anon19
+kDNSServiceErr_PollingMode	dns_sd.h	/^    kDNSServiceErr_PollingMode               = -65567,$/;"	e	enum:__anon19
+kDNSServiceErr_Refused	dns_sd.h	/^    kDNSServiceErr_Refused                   = -65553,$/;"	e	enum:__anon19
+kDNSServiceErr_ServiceNotRunning	dns_sd.h	/^    kDNSServiceErr_ServiceNotRunning         = -65563,  \/* Background daemon not running *\/$/;"	e	enum:__anon19
+kDNSServiceErr_Timeout	dns_sd.h	/^    kDNSServiceErr_Timeout                   = -65568$/;"	e	enum:__anon19
+kDNSServiceErr_Transient	dns_sd.h	/^    kDNSServiceErr_Transient                 = -65562,$/;"	e	enum:__anon19
+kDNSServiceErr_Unknown	dns_sd.h	/^    kDNSServiceErr_Unknown                   = -65537,  \/* 0xFFFE FFFF *\/$/;"	e	enum:__anon19
+kDNSServiceErr_Unsupported	dns_sd.h	/^    kDNSServiceErr_Unsupported               = -65544,$/;"	e	enum:__anon19
+kDNSServiceFlagsAdd	dns_sd.h	/^    kDNSServiceFlagsAdd                 = 0x2,$/;"	e	enum:__anon15
+kDNSServiceFlagsAllowRemoteQuery	dns_sd.h	/^    kDNSServiceFlagsAllowRemoteQuery    = 0x200,$/;"	e	enum:__anon15
+kDNSServiceFlagsBackgroundTrafficClass	dns_sd.h	/^    kDNSServiceFlagsBackgroundTrafficClass  = 0x80000,$/;"	e	enum:__anon15
+kDNSServiceFlagsBogus	dns_sd.h	/^    kDNSServiceFlagsBogus                  = 0x200040,$/;"	e	enum:__anon15
+kDNSServiceFlagsBrowseDomains	dns_sd.h	/^    kDNSServiceFlagsBrowseDomains       = 0x40,$/;"	e	enum:__anon15
+kDNSServiceFlagsDefault	dns_sd.h	/^    kDNSServiceFlagsDefault             = 0x4,$/;"	e	enum:__anon15
+kDNSServiceFlagsDenyCellular	dns_sd.h	/^     kDNSServiceFlagsDenyCellular           = 0x8000000,$/;"	e	enum:__anon15
+kDNSServiceFlagsDenyExpensive	dns_sd.h	/^     kDNSServiceFlagsDenyExpensive          = 0x20000000$/;"	e	enum:__anon15
+kDNSServiceFlagsForce	dns_sd.h	/^    kDNSServiceFlagsForce               = 0x800,    \/\/ This flag is deprecated.$/;"	e	enum:__anon15
+kDNSServiceFlagsForceMulticast	dns_sd.h	/^    kDNSServiceFlagsForceMulticast      = 0x400,$/;"	e	enum:__anon15
+kDNSServiceFlagsIncludeAWDL	dns_sd.h	/^    kDNSServiceFlagsIncludeAWDL      = 0x100000,$/;"	e	enum:__anon15
+kDNSServiceFlagsIncludeP2P	dns_sd.h	/^    kDNSServiceFlagsIncludeP2P          = 0x20000,$/;"	e	enum:__anon15
+kDNSServiceFlagsIndeterminate	dns_sd.h	/^    kDNSServiceFlagsIndeterminate          = 0x200080,$/;"	e	enum:__anon15
+kDNSServiceFlagsInsecure	dns_sd.h	/^    kDNSServiceFlagsInsecure               = 0x200020,$/;"	e	enum:__anon15
+kDNSServiceFlagsKnownUnique	dns_sd.h	/^    kDNSServiceFlagsKnownUnique         = 0x800,$/;"	e	enum:__anon15
+kDNSServiceFlagsLongLivedQuery	dns_sd.h	/^    kDNSServiceFlagsLongLivedQuery      = 0x100,$/;"	e	enum:__anon15
+kDNSServiceFlagsMoreComing	dns_sd.h	/^    kDNSServiceFlagsMoreComing          = 0x1,$/;"	e	enum:__anon15
+kDNSServiceFlagsNoAutoRename	dns_sd.h	/^    kDNSServiceFlagsNoAutoRename        = 0x8,$/;"	e	enum:__anon15
+kDNSServiceFlagsNonBrowsable	dns_sd.h	/^    kDNSServiceFlagsNonBrowsable        = 0x2000,$/;"	e	enum:__anon15
+kDNSServiceFlagsRegistrationDomains	dns_sd.h	/^    kDNSServiceFlagsRegistrationDomains = 0x80,$/;"	e	enum:__anon15
+kDNSServiceFlagsReturnIntermediates	dns_sd.h	/^    kDNSServiceFlagsReturnIntermediates = 0x1000,$/;"	e	enum:__anon15
+kDNSServiceFlagsSecure	dns_sd.h	/^    kDNSServiceFlagsSecure                 = 0x200010,$/;"	e	enum:__anon15
+kDNSServiceFlagsServiceIndex	dns_sd.h	/^     kDNSServiceFlagsServiceIndex           = 0x10000000,$/;"	e	enum:__anon15
+kDNSServiceFlagsShareConnection	dns_sd.h	/^    kDNSServiceFlagsShareConnection     = 0x4000,$/;"	e	enum:__anon15
+kDNSServiceFlagsShared	dns_sd.h	/^    kDNSServiceFlagsShared              = 0x10,$/;"	e	enum:__anon15
+kDNSServiceFlagsSuppressUnusable	dns_sd.h	/^    kDNSServiceFlagsSuppressUnusable    = 0x8000,$/;"	e	enum:__anon15
+kDNSServiceFlagsThresholdFinder	dns_sd.h	/^    kDNSServiceFlagsThresholdFinder        = 0x4000000,$/;"	e	enum:__anon15
+kDNSServiceFlagsThresholdOne	dns_sd.h	/^    kDNSServiceFlagsThresholdOne           = 0x2000000,$/;"	e	enum:__anon15
+kDNSServiceFlagsThresholdReached	dns_sd.h	/^    kDNSServiceFlagsThresholdReached       = kDNSServiceFlagsThresholdOne,$/;"	e	enum:__anon15
+kDNSServiceFlagsTimeout	dns_sd.h	/^    kDNSServiceFlagsTimeout            = 0x10000,$/;"	e	enum:__anon15
+kDNSServiceFlagsUnicastResponse	dns_sd.h	/^    kDNSServiceFlagsUnicastResponse        = 0x400000,$/;"	e	enum:__anon15
+kDNSServiceFlagsUnique	dns_sd.h	/^    kDNSServiceFlagsUnique              = 0x20,$/;"	e	enum:__anon15
+kDNSServiceFlagsValidate	dns_sd.h	/^    kDNSServiceFlagsValidate               = 0x200000,$/;"	e	enum:__anon15
+kDNSServiceFlagsValidateOptional	dns_sd.h	/^    kDNSServiceFlagsValidateOptional       = 0x800000,$/;"	e	enum:__anon15
+kDNSServiceFlagsWakeOnResolve	dns_sd.h	/^    kDNSServiceFlagsWakeOnResolve      = 0x40000,$/;"	e	enum:__anon15
+kDNSServiceFlagsWakeOnlyService	dns_sd.h	/^    kDNSServiceFlagsWakeOnlyService        = 0x1000000,$/;"	e	enum:__anon15
+kDNSServiceInterfaceIndexAny	dns_sd.h	770;"	d
+kDNSServiceInterfaceIndexLocalOnly	dns_sd.h	771;"	d
+kDNSServiceInterfaceIndexP2P	dns_sd.h	773;"	d
+kDNSServiceInterfaceIndexUnicast	dns_sd.h	772;"	d
+kDNSServiceMaxDomainName	dns_sd.h	663;"	d
+kDNSServiceMaxServiceName	dns_sd.h	658;"	d
+kDNSServiceOutputFlags	dns_sd.h	508;"	d
+kDNSServiceProperty_DaemonVersion	dns_sd.h	829;"	d
+kDNSServiceProtocol_IPv4	dns_sd.h	/^    kDNSServiceProtocol_IPv4 = 0x01,$/;"	e	enum:__anon16
+kDNSServiceProtocol_IPv6	dns_sd.h	/^    kDNSServiceProtocol_IPv6 = 0x02,$/;"	e	enum:__anon16
+kDNSServiceProtocol_TCP	dns_sd.h	/^    kDNSServiceProtocol_TCP  = 0x20$/;"	e	enum:__anon16
+kDNSServiceProtocol_UDP	dns_sd.h	/^    kDNSServiceProtocol_UDP  = 0x10,$/;"	e	enum:__anon16
+kDNSServiceType_A	dns_sd.h	/^    kDNSServiceType_A          = 1,      \/* Host address. *\/$/;"	e	enum:__anon18
+kDNSServiceType_A6	dns_sd.h	/^    kDNSServiceType_A6         = 38,     \/* IPv6 Address (deprecated) *\/$/;"	e	enum:__anon18
+kDNSServiceType_AAAA	dns_sd.h	/^    kDNSServiceType_AAAA       = 28,     \/* IPv6 Address. *\/$/;"	e	enum:__anon18
+kDNSServiceType_AFSDB	dns_sd.h	/^    kDNSServiceType_AFSDB      = 18,     \/* AFS cell database. *\/$/;"	e	enum:__anon18
+kDNSServiceType_ANY	dns_sd.h	/^    kDNSServiceType_ANY        = 255     \/* Wildcard match. *\/$/;"	e	enum:__anon18
+kDNSServiceType_APL	dns_sd.h	/^    kDNSServiceType_APL        = 42,     \/* Address Prefix List *\/$/;"	e	enum:__anon18
+kDNSServiceType_ATMA	dns_sd.h	/^    kDNSServiceType_ATMA       = 34,     \/* ATM Address *\/$/;"	e	enum:__anon18
+kDNSServiceType_AXFR	dns_sd.h	/^    kDNSServiceType_AXFR       = 252,    \/* Transfer zone of authority. *\/$/;"	e	enum:__anon18
+kDNSServiceType_CERT	dns_sd.h	/^    kDNSServiceType_CERT       = 37,     \/* Certification record *\/$/;"	e	enum:__anon18
+kDNSServiceType_CNAME	dns_sd.h	/^    kDNSServiceType_CNAME      = 5,      \/* Canonical name. *\/$/;"	e	enum:__anon18
+kDNSServiceType_DHCID	dns_sd.h	/^    kDNSServiceType_DHCID      = 49,     \/* DHCP Client Identifier *\/$/;"	e	enum:__anon18
+kDNSServiceType_DNAME	dns_sd.h	/^    kDNSServiceType_DNAME      = 39,     \/* Non-terminal DNAME (for IPv6) *\/$/;"	e	enum:__anon18
+kDNSServiceType_DNSKEY	dns_sd.h	/^    kDNSServiceType_DNSKEY     = 48,     \/* DNSKEY *\/$/;"	e	enum:__anon18
+kDNSServiceType_DS	dns_sd.h	/^    kDNSServiceType_DS         = 43,     \/* Delegation Signer *\/$/;"	e	enum:__anon18
+kDNSServiceType_EID	dns_sd.h	/^    kDNSServiceType_EID        = 31,     \/* Endpoint identifier. *\/$/;"	e	enum:__anon18
+kDNSServiceType_GID	dns_sd.h	/^    kDNSServiceType_GID        = 102,    \/* IANA-Reserved *\/$/;"	e	enum:__anon18
+kDNSServiceType_GPOS	dns_sd.h	/^    kDNSServiceType_GPOS       = 27,     \/* Geographical position (withdrawn). *\/$/;"	e	enum:__anon18
+kDNSServiceType_HINFO	dns_sd.h	/^    kDNSServiceType_HINFO      = 13,     \/* Host information. *\/$/;"	e	enum:__anon18
+kDNSServiceType_HIP	dns_sd.h	/^    kDNSServiceType_HIP        = 55,     \/* Host Identity Protocol *\/$/;"	e	enum:__anon18
+kDNSServiceType_IPSECKEY	dns_sd.h	/^    kDNSServiceType_IPSECKEY   = 45,     \/* IPSECKEY *\/$/;"	e	enum:__anon18
+kDNSServiceType_ISDN	dns_sd.h	/^    kDNSServiceType_ISDN       = 20,     \/* ISDN calling address. *\/$/;"	e	enum:__anon18
+kDNSServiceType_IXFR	dns_sd.h	/^    kDNSServiceType_IXFR       = 251,    \/* Incremental zone transfer. *\/$/;"	e	enum:__anon18
+kDNSServiceType_KEY	dns_sd.h	/^    kDNSServiceType_KEY        = 25,     \/* Security key. *\/$/;"	e	enum:__anon18
+kDNSServiceType_KX	dns_sd.h	/^    kDNSServiceType_KX         = 36,     \/* Key Exchange *\/$/;"	e	enum:__anon18
+kDNSServiceType_LOC	dns_sd.h	/^    kDNSServiceType_LOC        = 29,     \/* Location Information. *\/$/;"	e	enum:__anon18
+kDNSServiceType_MAILA	dns_sd.h	/^    kDNSServiceType_MAILA      = 254,    \/* Transfer mail agent records. *\/$/;"	e	enum:__anon18
+kDNSServiceType_MAILB	dns_sd.h	/^    kDNSServiceType_MAILB      = 253,    \/* Transfer mailbox records. *\/$/;"	e	enum:__anon18
+kDNSServiceType_MB	dns_sd.h	/^    kDNSServiceType_MB         = 7,      \/* Mailbox domain name. *\/$/;"	e	enum:__anon18
+kDNSServiceType_MD	dns_sd.h	/^    kDNSServiceType_MD         = 3,      \/* Mail destination. *\/$/;"	e	enum:__anon18
+kDNSServiceType_MF	dns_sd.h	/^    kDNSServiceType_MF         = 4,      \/* Mail forwarder. *\/$/;"	e	enum:__anon18
+kDNSServiceType_MG	dns_sd.h	/^    kDNSServiceType_MG         = 8,      \/* Mail group member. *\/$/;"	e	enum:__anon18
+kDNSServiceType_MINFO	dns_sd.h	/^    kDNSServiceType_MINFO      = 14,     \/* Mailbox information. *\/$/;"	e	enum:__anon18
+kDNSServiceType_MR	dns_sd.h	/^    kDNSServiceType_MR         = 9,      \/* Mail rename name. *\/$/;"	e	enum:__anon18
+kDNSServiceType_MX	dns_sd.h	/^    kDNSServiceType_MX         = 15,     \/* Mail routing information. *\/$/;"	e	enum:__anon18
+kDNSServiceType_NAPTR	dns_sd.h	/^    kDNSServiceType_NAPTR      = 35,     \/* Naming Authority PoinTeR *\/$/;"	e	enum:__anon18
+kDNSServiceType_NIMLOC	dns_sd.h	/^    kDNSServiceType_NIMLOC     = 32,     \/* Nimrod Locator. *\/$/;"	e	enum:__anon18
+kDNSServiceType_NS	dns_sd.h	/^    kDNSServiceType_NS         = 2,      \/* Authoritative server. *\/$/;"	e	enum:__anon18
+kDNSServiceType_NSAP	dns_sd.h	/^    kDNSServiceType_NSAP       = 22,     \/* NSAP address. *\/$/;"	e	enum:__anon18
+kDNSServiceType_NSAP_PTR	dns_sd.h	/^    kDNSServiceType_NSAP_PTR   = 23,     \/* Reverse NSAP lookup (deprecated). *\/$/;"	e	enum:__anon18
+kDNSServiceType_NSEC	dns_sd.h	/^    kDNSServiceType_NSEC       = 47,     \/* Denial of Existence *\/$/;"	e	enum:__anon18
+kDNSServiceType_NSEC3	dns_sd.h	/^    kDNSServiceType_NSEC3      = 50,     \/* Hashed Authenticated Denial of Existence *\/$/;"	e	enum:__anon18
+kDNSServiceType_NSEC3PARAM	dns_sd.h	/^    kDNSServiceType_NSEC3PARAM = 51,     \/* Hashed Authenticated Denial of Existence *\/$/;"	e	enum:__anon18
+kDNSServiceType_NULL	dns_sd.h	/^    kDNSServiceType_NULL       = 10,     \/* Null resource record. *\/$/;"	e	enum:__anon18
+kDNSServiceType_NXT	dns_sd.h	/^    kDNSServiceType_NXT        = 30,     \/* Next domain (security). *\/$/;"	e	enum:__anon18
+kDNSServiceType_OPT	dns_sd.h	/^    kDNSServiceType_OPT        = 41,     \/* EDNS0 option (meta-RR) *\/$/;"	e	enum:__anon18
+kDNSServiceType_PTR	dns_sd.h	/^    kDNSServiceType_PTR        = 12,     \/* Domain name pointer. *\/$/;"	e	enum:__anon18
+kDNSServiceType_PX	dns_sd.h	/^    kDNSServiceType_PX         = 26,     \/* X.400 mail mapping. *\/$/;"	e	enum:__anon18
+kDNSServiceType_RP	dns_sd.h	/^    kDNSServiceType_RP         = 17,     \/* Responsible person. *\/$/;"	e	enum:__anon18
+kDNSServiceType_RRSIG	dns_sd.h	/^    kDNSServiceType_RRSIG      = 46,     \/* RRSIG *\/$/;"	e	enum:__anon18
+kDNSServiceType_RT	dns_sd.h	/^    kDNSServiceType_RT         = 21,     \/* Router. *\/$/;"	e	enum:__anon18
+kDNSServiceType_SIG	dns_sd.h	/^    kDNSServiceType_SIG        = 24,     \/* Security signature. *\/$/;"	e	enum:__anon18
+kDNSServiceType_SINK	dns_sd.h	/^    kDNSServiceType_SINK       = 40,     \/* Kitchen sink (experimental) *\/$/;"	e	enum:__anon18
+kDNSServiceType_SOA	dns_sd.h	/^    kDNSServiceType_SOA        = 6,      \/* Start of authority zone. *\/$/;"	e	enum:__anon18
+kDNSServiceType_SPF	dns_sd.h	/^    kDNSServiceType_SPF        = 99,     \/* Sender Policy Framework for E-Mail *\/$/;"	e	enum:__anon18
+kDNSServiceType_SRV	dns_sd.h	/^    kDNSServiceType_SRV        = 33,     \/* Server Selection. *\/$/;"	e	enum:__anon18
+kDNSServiceType_SSHFP	dns_sd.h	/^    kDNSServiceType_SSHFP      = 44,     \/* SSH Key Fingerprint *\/$/;"	e	enum:__anon18
+kDNSServiceType_TKEY	dns_sd.h	/^    kDNSServiceType_TKEY       = 249,    \/* Transaction key *\/$/;"	e	enum:__anon18
+kDNSServiceType_TSIG	dns_sd.h	/^    kDNSServiceType_TSIG       = 250,    \/* Transaction signature. *\/$/;"	e	enum:__anon18
+kDNSServiceType_TXT	dns_sd.h	/^    kDNSServiceType_TXT        = 16,     \/* One or more text strings (NOT "zero or more..."). *\/$/;"	e	enum:__anon18
+kDNSServiceType_UID	dns_sd.h	/^    kDNSServiceType_UID        = 101,    \/* IANA-Reserved *\/$/;"	e	enum:__anon18
+kDNSServiceType_UINFO	dns_sd.h	/^    kDNSServiceType_UINFO      = 100,    \/* IANA-Reserved *\/$/;"	e	enum:__anon18
+kDNSServiceType_UNSPEC	dns_sd.h	/^    kDNSServiceType_UNSPEC     = 103,    \/* IANA-Reserved *\/$/;"	e	enum:__anon18
+kDNSServiceType_WKS	dns_sd.h	/^    kDNSServiceType_WKS        = 11,     \/* Well known service. *\/$/;"	e	enum:__anon18
+kDNSServiceType_X25	dns_sd.h	/^    kDNSServiceType_X25        = 19,     \/* X_25 calling address. *\/$/;"	e	enum:__anon18
+kDNSZonePrivate	dnsextd.h	/^    kDNSZonePrivate$/;"	e	enum:DNSZoneSpecType
+kDNSZonePublic	dnsextd.h	/^    kDNSZonePublic,$/;"	e	enum:DNSZoneSpecType
+kDateErr	CommonServices.h	1085;"	d
+kDaysPerWeek	CommonServices.h	1161;"	d
+kDebugFlags16BitSeparator	DebugServices.h	237;"	d
+kDebugFlags32BitOffset	DebugServices.h	233;"	d
+kDebugFlags8BitSeparator	DebugServices.h	236;"	d
+kDebugFlagsNo16ByteHexPad	DebugServices.h	239;"	d
+kDebugFlagsNo32BitSeparator	DebugServices.h	238;"	d
+kDebugFlagsNoASCII	DebugServices.h	234;"	d
+kDebugFlagsNoAddress	DebugServices.h	231;"	d
+kDebugFlagsNoByteCount	DebugServices.h	240;"	d
+kDebugFlagsNoNewLine	DebugServices.h	235;"	d
+kDebugFlagsNoOffset	DebugServices.h	232;"	d
+kDebugFlagsNone	DebugServices.h	230;"	d
+kDebugInDeferredTaskMask	DebugServices.h	/^    kDebugInDeferredTaskMask                = 0x00000020,$/;"	e	enum:__anon1
+kDebugInSecondaryInterruptHandlerMask	DebugServices.h	/^    kDebugInSecondaryInterruptHandlerMask   = 0x00000040,$/;"	e	enum:__anon1
+kDebugInVBLTaskMask	DebugServices.h	/^    kDebugInVBLTaskMask                     = 0x00000010,$/;"	e	enum:__anon1
+kDebugInterruptDepthMask	DebugServices.h	/^    kDebugInterruptDepthMask                = 0x00FF0000$/;"	e	enum:__anon1
+kDebugInterruptDepthShift	DebugServices.h	/^    kDebugInterruptDepthShift               = 16,$/;"	e	enum:__anon1
+kDebugInterruptLevelMask	DebugServices.h	/^    kDebugInterruptLevelMask                = 0x00000007,$/;"	e	enum:__anon1
+kDebugInterruptLevelShift	DebugServices.h	/^    kDebugInterruptLevelShift               = 0,$/;"	e	enum:__anon1
+kDebugLevelAlert	DebugServices.h	296;"	d
+kDebugLevelAssert	DebugServices.h	292;"	d
+kDebugLevelChatty	DebugServices.h	286;"	d
+kDebugLevelCritical	DebugServices.h	295;"	d
+kDebugLevelEmergency	DebugServices.h	297;"	d
+kDebugLevelError	DebugServices.h	294;"	d
+kDebugLevelFlagDebugBreak	DebugServices.h	305;"	d
+kDebugLevelFlagMask	DebugServices.h	303;"	d
+kDebugLevelFlagStackTrace	DebugServices.h	304;"	d
+kDebugLevelInfo	DebugServices.h	289;"	d
+kDebugLevelMask	DebugServices.h	285;"	d
+kDebugLevelMax	DebugServices.h	299;"	d
+kDebugLevelNotice	DebugServices.h	290;"	d
+kDebugLevelRequire	DebugServices.h	293;"	d
+kDebugLevelTrace	DebugServices.h	288;"	d
+kDebugLevelTragic	DebugServices.h	298;"	d
+kDebugLevelVerbose	DebugServices.h	287;"	d
+kDebugLevelWarning	DebugServices.h	291;"	d
+kDebugMPTaskLevelMask	DebugServices.h	/^    kDebugMPTaskLevelMask                   = 0x00000200,   \/\/ There should be a "kMPTaskLevelMask" in Debugging.h.$/;"	e	enum:__anon1
+kDebugOutputTypeCustom	DebugServices.h	170;"	d
+kDebugOutputTypeFPrintF	DebugServices.h	171;"	d
+kDebugOutputTypeFlagsFile	DebugServices.h	204;"	d
+kDebugOutputTypeFlagsStdErr	DebugServices.h	203;"	d
+kDebugOutputTypeFlagsStdOut	DebugServices.h	202;"	d
+kDebugOutputTypeFlagsTypeMask	DebugServices.h	201;"	d
+kDebugOutputTypeKPrintF	DebugServices.h	173;"	d
+kDebugOutputTypeMacOSXIOLog	DebugServices.h	174;"	d
+kDebugOutputTypeMacOSXLog	DebugServices.h	175;"	d
+kDebugOutputTypeMetaConsole	DebugServices.h	186;"	d
+kDebugOutputTypeNone	DebugServices.h	169;"	d
+kDebugOutputTypeWindowsDebugger	DebugServices.h	176;"	d
+kDebugOutputTypeWindowsEventLog	DebugServices.h	177;"	d
+kDebugOutputTypeiDebug	DebugServices.h	172;"	d
+kDebugPageFaultFatalMask	DebugServices.h	/^    kDebugPageFaultFatalMask                = 0x00000100,   \/\/ There should be a "kPageFaultFatalMask" in Debugging.h.$/;"	e	enum:__anon1
+kDebugPropertyTagBreakLevel	DebugServices.h	352;"	d
+kDebugPropertyTagPrintLevel	DebugServices.h	347;"	d
+kDebugPropertyTagPrintLevelMax	DebugServices.h	349;"	d
+kDebugPropertyTagPrintLevelMin	DebugServices.h	344;"	d
+kDebugTCPStates	DebugServices.c	/^const char *        kDebugTCPStates[] =$/;"	v
+kDeletedErr	CommonServices.h	1062;"	d
+kDuplicateErr	CommonServices.h	1066;"	d
+kDurationDay	CommonServices.h	1143;"	d
+kDurationForever	CommonServices.h	1144;"	d
+kDurationHour	CommonServices.h	1142;"	d
+kDurationImmediate	CommonServices.h	1137;"	d
+kDurationMicrosecond	CommonServices.h	1138;"	d
+kDurationMillisecond	CommonServices.h	1139;"	d
+kDurationMinute	CommonServices.h	1141;"	d
+kDurationSecond	CommonServices.h	1140;"	d
+kEndingErr	CommonServices.h	1088;"	d
+kExecutionStateErr	CommonServices.h	1039;"	d
+kFlagErr	CommonServices.h	1077;"	d
+kFormatErr	CommonServices.h	1053;"	d
+kGenericErrorBase	CommonServices.h	1034;"	d
+kGenericErrorEnd	CommonServices.h	1101;"	d
+kHoursPerDay	CommonServices.h	1160;"	d
+kIDErr	CommonServices.h	1044;"	d
+kImmutableErr	CommonServices.h	1067;"	d
+kInProgressErr	CommonServices.h	1030;"	d
+kInUseErr	CommonServices.h	1057;"	d
+kIncompatibleErr	CommonServices.h	1070;"	d
+kIntegrityErr	CommonServices.h	1069;"	d
+kInterfaceVersionCurrent	Java/JNISupport.c	/^    kInterfaceVersionCurrent        \/\/ Must match version in .jar file$/;"	e	enum:__anon22	file:
+kInterfaceVersionOne	Java/JNISupport.c	/^    kInterfaceVersionOne = 1,$/;"	e	enum:__anon22	file:
+kInvalidSocketRef	CommonServices.h	441;"	d
+kInvalidSocketRef	CommonServices.h	453;"	d
+kLogLevelAlert	DebugServices.h	327;"	d
+kLogLevelAll	DebugServices.h	316;"	d
+kLogLevelAssert	DebugServices.h	323;"	d
+kLogLevelChatty	DebugServices.h	317;"	d
+kLogLevelCritical	DebugServices.h	326;"	d
+kLogLevelEmergency	DebugServices.h	328;"	d
+kLogLevelError	DebugServices.h	325;"	d
+kLogLevelInfo	DebugServices.h	320;"	d
+kLogLevelNotice	DebugServices.h	321;"	d
+kLogLevelOff	DebugServices.h	330;"	d
+kLogLevelRequire	DebugServices.h	324;"	d
+kLogLevelTrace	DebugServices.h	319;"	d
+kLogLevelTragic	DebugServices.h	329;"	d
+kLogLevelUninitialized	DebugServices.h	315;"	d
+kLogLevelVerbose	DebugServices.h	318;"	d
+kLogLevelWarning	DebugServices.h	322;"	d
+kMalformedErr	CommonServices.h	1078;"	d
+kMicrosecondsPerMillisecond	CommonServices.h	1152;"	d
+kMicrosecondsPerSecond	CommonServices.h	1151;"	d
+kMillisecondsPerSecond	CommonServices.h	1153;"	d
+kMinutesPerDay	CommonServices.h	1159;"	d
+kMinutesPerHour	CommonServices.h	1158;"	d
+kMismatchErr	CommonServices.h	1084;"	d
+kMonthsPerYear	CommonServices.h	1163;"	d
+kNameErr	CommonServices.h	1080;"	d
+kNanosecondsPerMicrosecond	CommonServices.h	1148;"	d
+kNanosecondsPerMillisecond	CommonServices.h	1149;"	d
+kNanosecondsPerSecond	CommonServices.h	1150;"	d
+kNoAckErr	CommonServices.h	1094;"	d
+kNoAddressAckErr	CommonServices.h	1097;"	d
+kNoErr	CommonServices.h	1029;"	d
+kNoMemoryErr	CommonServices.h	1064;"	d
+kNoResourcesErr	CommonServices.h	1065;"	d
+kNoSpaceErr	CommonServices.h	1099;"	d
+kNotFoundErr	CommonServices.h	1063;"	d
+kNotHandledErr	CommonServices.h	1050;"	d
+kNotInUseErr	CommonServices.h	1056;"	d
+kNotInitializedErr	CommonServices.h	1054;"	d
+kNotReadableErr	CommonServices.h	1074;"	d
+kNotReadyErr	CommonServices.h	1081;"	d
+kNotWritableErr	CommonServices.h	1075;"	d
+kOpenErr	CommonServices.h	1091;"	d
+kOptionErr	CommonServices.h	1037;"	d
+kOverrunErr	CommonServices.h	1087;"	d
+kParamCountErr	CommonServices.h	1042;"	d
+kParamErr	CommonServices.h	1041;"	d
+kPathErr	CommonServices.h	1040;"	d
+kRangeErr	CommonServices.h	1046;"	d
+kReadErr	CommonServices.h	1082;"	d
+kRequestErr	CommonServices.h	1047;"	d
+kResponseErr	CommonServices.h	1048;"	d
+kSecondsPerDay	CommonServices.h	1156;"	d
+kSecondsPerHour	CommonServices.h	1155;"	d
+kSecondsPerMinute	CommonServices.h	1154;"	d
+kSecondsPerWeek	CommonServices.h	1157;"	d
+kSelectorErr	CommonServices.h	1038;"	d
+kSignatureErr	CommonServices.h	1052;"	d
+kSizeCString	CommonServices.h	574;"	d
+kSizeErr	CommonServices.h	1079;"	d
+kSkipErr	CommonServices.h	1093;"	d
+kStateErr	CommonServices.h	1045;"	d
+kTimeoutErr	CommonServices.h	1058;"	d
+kTypeErr	CommonServices.h	1092;"	d
+kUnderrunErr	CommonServices.h	1086;"	d
+kUnexpectedErr	CommonServices.h	1072;"	d
+kUnknownErr	CommonServices.h	1036;"	d
+kUnsupportedDataErr	CommonServices.h	1068;"	d
+kUnsupportedErr	CommonServices.h	1071;"	d
+kValueErr	CommonServices.h	1073;"	d
+kVersionErr	CommonServices.h	1051;"	d
+kVersionStageAlpha	CommonServices.h	1172;"	d
+kVersionStageBeta	CommonServices.h	1173;"	d
+kVersionStageDevelopment	CommonServices.h	1171;"	d
+kVersionStageFinal	CommonServices.h	1174;"	d
+kWeeksPerYear	CommonServices.h	1162;"	d
+kWriteErr	CommonServices.h	1083;"	d
+kacontext	dnssd_clientstub.c	/^    void             *kacontext;$/;"	m	struct:_DNSServiceRef_t	file:
+key	uds_daemon.c	/^    mDNSu32 key;$/;"	m	struct:registered_record_entry	file:
+key_set	dnsextd_parser.y	/^key_set:$/;"	l
+keycontent	dnsextd_parser.y	/^keycontent:$/;"	l
+keystatement	dnsextd_parser.y	/^keystatement:$/;"	l
+keystatements	dnsextd_parser.y	/^keystatements:$/;"	l
+lease	dnsextd.h	/^    mDNSu32 lease;            \/\/ original lease, in seconds$/;"	m	struct:LLQEntry
+len	dnsextd.h	/^    size_t len;$/;"	m	struct:__anon5
+libSystemVersion	dnssd_clientstub.c	/^static int32_t libSystemVersion = 0;$/;"	v	file:
+listenfd	uds_daemon.c	/^static dnssd_sock_t listenfd = dnssd_InvalidSocket;$/;"	v	file:
+llq_addr	dnsextd.h	/^    struct sockaddr_in llq_addr;        \/\/ the address we will receive llq requests on.$/;"	m	struct:__anon7	typeref:struct:__anon7::sockaddr_in
+llq_port	dnsextd.h	/^    mDNSIPPort llq_port;           \/\/ listening port for llq$/;"	m	struct:__anon7
+llq_tcpsd	dnsextd.h	/^    int llq_tcpsd;                      \/\/ listening TCP socket for llq service$/;"	m	struct:__anon7
+llq_udpsd	dnsextd.h	/^    int llq_udpsd;                      \/\/ listening UDP socket for llq service$/;"	m	struct:__anon7
+logcounter	dnssd_clientstub.c	/^    uint32_t logcounter;                \/\/ Counter used to control number of syslog messages we write$/;"	m	struct:_DNSServiceRef_t	file:
+long_long_compat	CommonServices.h	/^typedef __int64 long_long_compat;$/;"	t
+long_long_compat	CommonServices.h	/^typedef signed long long long_long_compat;$/;"	t
+mDNSCoreInitComplete	dnsextd.c	/^void mDNSCoreInitComplete( mDNS * const m, mStatus result) { ( void ) m; ( void ) result; }$/;"	f
+mDNSCoreMachineSleep	dnsextd.c	/^void mDNSCoreMachineSleep(mDNS * const m, mDNSBool wake) { ( void ) m; ( void ) wake; }$/;"	f
+mDNSCoreReceive	dnsextd.c	/^void mDNSCoreReceive(mDNS *const m, void *const msg, const mDNSu8 *const end,$/;"	f
+mDNSIsDigit	dnssd_clientlib.c	51;"	d	file:
+mDNSPlatformSourceAddrForDest	PlatformCommon.c	/^mDNSexport void mDNSPlatformSourceAddrForDest(mDNSAddr *const src, const mDNSAddr *const dst)$/;"	f
+mDNSPlatformWriteDebugMsg	PlatformCommon.c	/^mDNSexport void mDNSPlatformWriteDebugMsg(const char *msg)$/;"	f
+mDNSPlatformWriteLogMsg	PlatformCommon.c	/^mDNSexport void mDNSPlatformWriteLogMsg(const char *ident, const char *buffer, mDNSLogLevel_t loglevel)$/;"	f
+mDNSResponderVersionString	uds_daemon.h	90;"	d
+mDNSResponderVersionString_SCCS	dnsextd.c	/^const char mDNSResponderVersionString_SCCS[] = "@(#) dnsextd " STRINGIFY(mDNSResponderVersion) " (" __DATE__ " " __TIME__ ")";$/;"	v
+mDNSStorage	dnsextd.c	/^mDNS mDNSStorage;$/;"	v
+mDNSStorage	uds_daemon.c	/^mDNSexport mDNS mDNSStorage;$/;"	v
+mDNS_AddDNSServer	dnsextd.c	/^DNSServer *mDNS_AddDNSServer(mDNS *const m, const domainname *d, const mDNSInterfaceID interface, const int serviceID, const mDNSAddr *addr, const mDNSIPPort port, $/;"	f
+mDNS_AddDynDNSHostName	dnsextd.c	/^void mDNS_AddDynDNSHostName(mDNS *m, const domainname *fqdn, mDNSRecordCallback *StatusCallback, const void *StatusContext)$/;"	f
+mDNS_AddSearchDomain	dnsextd.c	/^void mDNS_AddSearchDomain(const domainname *const domain, mDNSInterfaceID InterfaceID) { (void)domain; (void) InterfaceID;}$/;"	f
+mDNS_ConfigChanged	dnsextd.c	/^void mDNS_ConfigChanged(mDNS *const m)  { ( void ) m; }$/;"	f
+mDNS_DebugMode	mDNSDebug.c	/^mDNSexport int mDNS_DebugMode = mDNSfalse;$/;"	v
+mDNS_DebugMode	mDNSDebug.c	/^mDNSexport int mDNS_DebugMode = mDNStrue;$/;"	v
+mDNS_Deregister	dnsextd.c	/^mStatus mDNS_Deregister(mDNS *const m, AuthRecord *const rr) { ( void ) m; ( void ) rr; return 0; }$/;"	f
+mDNS_DeregisterInterface	dnsextd.c	/^void mDNS_DeregisterInterface(mDNS *const m, NetworkInterfaceInfo *set, mDNSBool flapping)$/;"	f
+mDNS_DirectOP	dnssd_clientshim.c	/^typedef struct mDNS_DirectOP_struct mDNS_DirectOP;$/;"	t	typeref:struct:mDNS_DirectOP_struct	file:
+mDNS_DirectOP_Browse	dnssd_clientshim.c	/^} mDNS_DirectOP_Browse;$/;"	t	typeref:struct:__anon9	file:
+mDNS_DirectOP_Dispose	dnssd_clientshim.c	/^typedef void mDNS_DirectOP_Dispose (mDNS_DirectOP *op);$/;"	t	file:
+mDNS_DirectOP_QueryRecord	dnssd_clientshim.c	/^} mDNS_DirectOP_QueryRecord;$/;"	t	typeref:struct:__anon11	file:
+mDNS_DirectOP_Register	dnssd_clientshim.c	/^} mDNS_DirectOP_Register;$/;"	t	typeref:struct:__anon8	file:
+mDNS_DirectOP_Resolve	dnssd_clientshim.c	/^} mDNS_DirectOP_Resolve;$/;"	t	typeref:struct:__anon10	file:
+mDNS_DirectOP_struct	dnssd_clientshim.c	/^struct mDNS_DirectOP_struct$/;"	s	file:
+mDNS_DomainTypeNames	dnsextd.c	/^const char * const mDNS_DomainTypeNames[1] = {};$/;"	v
+mDNS_Execute	dnsextd.c	/^mDNSs32 mDNS_Execute   (mDNS *const m) { ( void ) m; return 0; }$/;"	f
+mDNS_GetDomains	dnsextd.c	/^mStatus mDNS_GetDomains(mDNS *const m, DNSQuestion *const question, mDNS_DomainType DomainType, const domainname *dom,$/;"	f
+mDNS_LoggingEnabled	mDNSDebug.c	/^mDNSexport int mDNS_LoggingEnabled       = 0;$/;"	v
+mDNS_McastLoggingEnabled	mDNSDebug.c	/^mDNSexport int mDNS_McastLoggingEnabled  = 0;$/;"	v
+mDNS_McastTracingEnabled	mDNSDebug.c	/^mDNSexport int mDNS_McastTracingEnabled  = 0; $/;"	v
+mDNS_PacketLoggingEnabled	mDNSDebug.c	/^mDNSexport int mDNS_PacketLoggingEnabled = 0;$/;"	v
+mDNS_Register	dnsextd.c	/^mStatus mDNS_Register(mDNS *const m, AuthRecord *const rr) { ( void ) m; ( void ) rr; return 0; }$/;"	f
+mDNS_RegisterInterface	dnsextd.c	/^mStatus mDNS_RegisterInterface(mDNS *const m, NetworkInterfaceInfo *set, mDNSBool flapping)$/;"	f
+mDNS_RemoveDynDNSHostName	dnsextd.c	/^void mDNS_RemoveDynDNSHostName(mDNS *m, const domainname *fqdn) { ( void ) m; ( void ) fqdn; }$/;"	f
+mDNS_SetFQDN	dnsextd.c	/^void mDNS_SetFQDN(mDNS * const m) { ( void ) m; }$/;"	f
+mDNS_SetPrimaryInterfaceInfo	dnsextd.c	/^void mDNS_SetPrimaryInterfaceInfo(mDNS *m, const mDNSAddr *v4addr,  const mDNSAddr *v6addr, const mDNSAddr *router)$/;"	f
+mDNS_SetSecretForDomain	dnsextd.c	/^mStatus mDNS_SetSecretForDomain(mDNS *m, DomainAuthInfo *info,$/;"	f
+mDNS_StopQuery	dnsextd.c	/^mStatus mDNS_StopQuery(mDNS *const m, DNSQuestion *const question) { ( void ) m; ( void ) question; return 0; }$/;"	f
+mDNS_TimeNow	dnsextd.c	/^mDNSs32 mDNS_TimeNow(const mDNS *const m) { ( void ) m; return 0; }$/;"	f
+mDNS_VACB_Lim	DebugServices.c	1225;"	d	file:
+mDNS_VACB_Remain	DebugServices.c	1226;"	d	file:
+mDNS_VACB_Size	DebugServices.c	1223;"	d	file:
+main	dnsextd.c	/^int main(int argc, char *argv[])$/;"	f
+malloced	dnssd_clientlib.c	/^    uint16_t malloced;  \/\/ Non-zero if buffer was allocated via malloc()$/;"	m	struct:_TXTRecordRefRealType	file:
+markedForDeletion	dnsextd.h	/^    mDNSBool markedForDeletion;$/;"	m	struct:EventSource
+max_index	dnssd_clientstub.c	/^    uint32_t max_index;                 \/\/ Largest assigned record index - 0 if no additional records registered$/;"	m	struct:_DNSServiceRef_t	file:
+mcount	uds_daemon.c	/^static mDNSu32 mcount;     \/\/ tracks the current active mcast operations for McastLogging$/;"	v	file:
+mhdr	uds_daemon.c	/^    ipc_msg_hdr mhdr[1];$/;"	m	struct:reply_state	file:
+more_bytes	dnssd_clientstub.c	/^static int more_bytes(dnssd_sock_t sd)$/;"	f	file:
+moreptr	dnssd_clientstub.c	/^    int              *moreptr;          \/\/ Set while DNSServiceProcessResult working on this particular DNSServiceRef$/;"	m	struct:_DNSServiceRef_t	file:
+msg	dnsextd.h	/^    DNSMessage msg;$/;"	m	struct:__anon5
+msgbuf	uds_daemon.c	/^    char          *msgbuf;          \/\/ pointer to data storage to pass to free()$/;"	m	struct:request_state	file:
+msgend	uds_daemon.c	/^    char          *msgend;          \/\/ pointer to byte after last byte of message$/;"	m	struct:request_state	file:
+msgptr	uds_daemon.c	/^    const char    *msgptr;          \/\/ pointer to data to be read from (may be modified)$/;"	m	struct:request_state	file:
+my_perror	uds_daemon.c	/^mDNSlocal void my_perror(char *errmsg)$/;"	f
+my_recv	dnsextd.c	/^static int my_recv(TCPSocket *sock, void *const buf, const int len, mDNSBool * closed)$/;"	f	file:
+my_throttled_perror	uds_daemon.c	/^mDNSlocal void my_throttled_perror(char *err_msg)$/;"	f
+n_mquests	uds_daemon.c	/^static mDNSu32 n_mquests;  \/\/ tracks the current active mcast questions for McastLogging$/;"	v	file:
+n_mrecords	uds_daemon.c	/^static mDNSu32 n_mrecords; \/\/ tracks the current active mcast records for McastLogging$/;"	v	file:
+name	dnsextd.h	/^    domainname name;          \/\/ name of the record$/;"	m	struct:RRTableElem
+name	dnsextd.h	/^    domainname name;$/;"	m	struct:AnswerListElem
+name	dnsextd.h	/^    domainname name;$/;"	m	struct:DNSZone
+name	dnssd_clientshim.c	/^    domainlabel name;$/;"	m	struct:__anon8	file:
+name	uds_daemon.c	/^            domainlabel name;$/;"	m	struct:request_state::__anon24::__anon26	file:
+nbuckets	dnsextd.h	/^    mDNSs32 nbuckets;          \/\/ buckets allocated$/;"	m	struct:__anon7
+nelems	dnsextd.h	/^    mDNSs32 nelems;            \/\/ elements in table$/;"	m	struct:__anon7
+networkaddress	dnsextd_parser.y	/^networkaddress:$/;"	l
+next	dnsextd.h	/^    struct  EventSource *   next;$/;"	m	struct:EventSource	typeref:struct:EventSource::EventSource
+next	dnsextd.h	/^    struct AnswerListElem *next;$/;"	m	struct:AnswerListElem	typeref:struct:AnswerListElem::AnswerListElem
+next	dnsextd.h	/^    struct DNSZone      *   next;$/;"	m	struct:DNSZone	typeref:struct:DNSZone::DNSZone
+next	dnsextd.h	/^    struct LLQEntry *next;$/;"	m	struct:LLQEntry	typeref:struct:LLQEntry::LLQEntry
+next	dnsextd.h	/^    struct RRTableElem *next;$/;"	m	struct:RRTableElem	typeref:struct:RRTableElem::RRTableElem
+next	dnssd_clientstub.c	/^    DNSServiceOp     *next;             \/\/ For shared connection$/;"	m	struct:_DNSServiceRef_t	file:
+next	uds_daemon.c	/^    request_state *next;$/;"	m	struct:request_state	file:
+next	uds_daemon.c	/^    struct browser_t *next;$/;"	m	struct:browser_t	typeref:struct:browser_t::browser_t	file:
+next	uds_daemon.c	/^    struct registered_record_entry *next;$/;"	m	struct:registered_record_entry	typeref:struct:registered_record_entry::registered_record_entry	file:
+next	uds_daemon.c	/^    struct reply_state *next;       \/\/ If there are multiple unsent replies$/;"	m	struct:reply_state	typeref:struct:reply_state::reply_state	file:
+next	uds_daemon.c	/^    struct service_instance *next;$/;"	m	struct:service_instance	typeref:struct:service_instance::service_instance	file:
+no_reply	uds_daemon.c	/^    int no_reply;                   \/\/ don't send asynchronous replies to client$/;"	m	struct:request_state	file:
+ns_addr	dnsextd.h	/^    struct sockaddr_in ns_addr;         \/\/ the real ns server address$/;"	m	struct:__anon7	typeref:struct:__anon7::sockaddr_in
+num_subtypes	uds_daemon.c	/^            int num_subtypes;$/;"	m	struct:request_state::__anon24::__anon26	file:
+nwriten	uds_daemon.c	/^    mDNSu32 nwriten;$/;"	m	struct:reply_state	file:
+op	dnssd_clientstub.c	/^    uint32_t op;                        \/\/ request_op_t or reply_op_t$/;"	m	struct:_DNSServiceRef_t	file:
+operationFailed	Java/BaseListener.java	/^	void	operationFailed( DNSSDService service, int errorCode);$/;"	m	interface:BaseListener
+options_set	dnsextd_parser.y	/^options_set:$/;"	l
+optionscontent	dnsextd_parser.y	/^optionscontent:$/;"	l
+optionsstatement	dnsextd_parser.y	/^optionsstatement:$/;"	l
+optionsstatements	dnsextd_parser.y	/^optionsstatements:$/;"	l
+origInterfaceID	uds_daemon.c	/^    mDNSInterfaceID origInterfaceID;$/;"	m	struct:registered_record_entry	file:
+packedstruct	dnssd_ipc.h	112;"	d
+packedstruct	dnssd_ipc.h	115;"	d
+packedunion	dnssd_ipc.h	113;"	d
+packedunion	dnssd_ipc.h	116;"	d
+pid_name	uds_daemon.c	/^    char  pid_name[MAXCOMLEN];      \/\/ Client's process name$/;"	m	struct:request_state	file:
+pid_t	uds_daemon.c	/^    typedef unsigned int pid_t;$/;"	t	file:
+pkt	dnsextd.c	/^    PktMsg pkt;$/;"	m	struct:__anon2	file:
+pkt	dnsextd.c	/^    PktMsg pkt;$/;"	m	struct:__anon3	file:
+platform_data	uds_daemon.c	/^    void * platform_data;$/;"	m	struct:request_state	file:
+pm	uds_daemon.c	/^        } pm;$/;"	m	union:request_state::__anon24	typeref:struct:request_state::__anon24::__anon28	file:
+port	uds_daemon.c	/^            mDNSIPPort port;$/;"	m	struct:request_state::__anon24::__anon26	file:
+port_mapping_create_request_callback	uds_daemon.c	/^mDNSlocal void port_mapping_create_request_callback(mDNS *m, NATTraversalInfo *n)$/;"	f
+port_mapping_reply_op	dnssd_ipc.h	/^    port_mapping_reply_op,  \/\/ New in Leopard and B4W 2.0$/;"	e	enum:__anon21
+port_mapping_request	dnssd_ipc.h	/^    port_mapping_request,   \/\/ New in Leopard and B4W 2.0$/;"	e	enum:__anon20
+port_mapping_termination_callback	uds_daemon.c	/^mDNSlocal void port_mapping_termination_callback(request_state *request)$/;"	f
+primary	dnssd_clientstub.c	/^    DNSServiceOp     *primary;          \/\/ For shared connection$/;"	m	struct:_DNSServiceRef_t	file:
+primary	uds_daemon.c	/^    request_state *primary;         \/\/ If this operation is on a shared socket, pointer to primary$/;"	m	struct:request_state	file:
+private_port	dnsextd.h	/^    mDNSIPPort private_port;           \/\/ listening port for private messages$/;"	m	struct:__anon7
+proc	uds_daemon.c	/^struct proc_bsdshortinfo proc;$/;"	v	typeref:struct:proc_bsdshortinfo
+process_id	uds_daemon.c	/^    pid_t process_id;               \/\/ Client's PID value$/;"	m	struct:request_state	file:
+protocol	uds_daemon.c	/^            mDNSu32 protocol;$/;"	m	struct:request_state::__anon24::__anon27	file:
+public_names	dnsextd.h	/^    DNameListElem   *   public_names;   \/\/ list of public SRV names$/;"	m	struct:__anon7
+putRRSetDeletion	dnsextd.c	/^mDNSlocal mDNSu8 *putRRSetDeletion(DNSMessage *msg, mDNSu8 *ptr, mDNSu8 *limit,  ResourceRecord *rr)$/;"	f
+put_error_code	dnssd_ipc.h	202;"	d
+put_flags	dnssd_ipc.h	199;"	d
+put_rdata	dnssd_ipc.c	/^void put_rdata(const int rdlen, const unsigned char *rdata, char **ptr)$/;"	f
+put_string	dnssd_ipc.c	/^int put_string(const char *str, char **ptr)$/;"	f
+put_uint16	dnssd_ipc.c	/^void put_uint16(uint16_t s, char **ptr)$/;"	f
+put_uint32	dnssd_ipc.c	/^void put_uint32(const uint32_t l, char **ptr)$/;"	f
+q	dnssd_clientshim.c	/^    DNSQuestion q;$/;"	m	struct:__anon11	file:
+q	dnssd_clientshim.c	/^    DNSQuestion q;$/;"	m	struct:__anon9	file:
+q	uds_daemon.c	/^            DNSQuestion q;$/;"	m	struct:request_state::__anon24::__anon30	file:
+q	uds_daemon.c	/^    DNSQuestion q;$/;"	m	struct:browser_t	file:
+q2	uds_daemon.c	/^            DNSQuestion *q2;$/;"	m	struct:request_state::__anon24::__anon30	file:
+q4	uds_daemon.c	/^            DNSQuestion q4;$/;"	m	struct:request_state::__anon24::__anon27	file:
+q42	uds_daemon.c	/^            DNSQuestion *q42;$/;"	m	struct:request_state::__anon24::__anon27	file:
+q6	uds_daemon.c	/^            DNSQuestion q6;$/;"	m	struct:request_state::__anon24::__anon27	file:
+q62	uds_daemon.c	/^            DNSQuestion *q62;$/;"	m	struct:request_state::__anon24::__anon27	file:
+qSRV	dnssd_clientshim.c	/^    DNSQuestion qSRV;$/;"	m	struct:__anon10	file:
+qTXT	dnssd_clientshim.c	/^    DNSQuestion qTXT;$/;"	m	struct:__anon10	file:
+q_all	uds_daemon.c	/^            DNSQuestion q_all;$/;"	m	struct:request_state::__anon24::__anon29	file:
+q_default	uds_daemon.c	/^            DNSQuestion q_default;$/;"	m	struct:request_state::__anon24::__anon29	file:
+qname	dnsextd.h	/^    domainname qname;$/;"	m	struct:LLQEntry
+qsrv	uds_daemon.c	/^            DNSQuestion qsrv;$/;"	m	struct:request_state::__anon24::__anon31	file:
+qtxt	uds_daemon.c	/^            DNSQuestion qtxt;$/;"	m	struct:request_state::__anon24::__anon31	file:
+qtype	dnsextd.h	/^    mDNSu16 qtype;$/;"	m	struct:LLQEntry
+queryAnswered	Java/QueryListener.java	/^	void	queryAnswered( DNSSDService query, int flags, int ifIndex, String fullName, $/;"	m	interface:QueryListener
+queryKeys	dnsextd.h	/^    DomainAuthInfo      *   queryKeys;  \/\/ linked list of keys for queries$/;"	m	struct:DNSZone
+queryRecord	Java/DNSSD.java	/^	public static DNSSDService	queryRecord( int flags, int ifIndex, String serviceName, int rrtype,$/;"	m	class:DNSSD
+query_reply_op	dnssd_ipc.h	/^    query_reply_op,$/;"	e	enum:__anon21
+query_request	dnssd_ipc.h	/^    query_request,$/;"	e	enum:__anon20
+queryrecord	uds_daemon.c	/^        } queryrecord;$/;"	m	union:request_state::__anon24	typeref:struct:request_state::__anon24::__anon30	file:
+queryrecord_result_callback	uds_daemon.c	/^mDNSlocal void queryrecord_result_callback(mDNS *const m, DNSQuestion *question, const ResourceRecord *const answer, QC_result AddRecord)$/;"	f
+queryrecord_result_reply	uds_daemon.c	/^mDNSlocal void queryrecord_result_reply(mDNS *const m, request_state *req, DNSQuestion *question, const ResourceRecord *const answer, QC_result AddRecord,$/;"	f
+queryrecord_termination_callback	uds_daemon.c	/^mDNSlocal void queryrecord_termination_callback(request_state *request)$/;"	f
+read_all	dnssd_clientstub.c	/^static int read_all(dnssd_sock_t sd, char *buf, int len)$/;"	f	file:
+read_all_fail	dnssd_clientstub.c	/^enum { read_all_success = 0, read_all_fail = -1, read_all_wouldblock = -2 };$/;"	e	enum:__anon14	file:
+read_all_success	dnssd_clientstub.c	/^enum { read_all_success = 0, read_all_fail = -1, read_all_wouldblock = -2 };$/;"	e	enum:__anon14	file:
+read_all_wouldblock	dnssd_clientstub.c	/^enum { read_all_success = 0, read_all_fail = -1, read_all_wouldblock = -2 };$/;"	e	enum:__anon14	file:
+read_msg	uds_daemon.c	/^mDNSlocal void read_msg(request_state *req)$/;"	f
+read_rr_from_ipc_msg	uds_daemon.c	/^mDNSlocal AuthRecord *read_rr_from_ipc_msg(request_state *request, int GetTTL, int validate_flags)$/;"	f
+rec	dnssd_clientstub.c	/^    DNSRecord        *rec;$/;"	m	struct:_DNSServiceRef_t	file:
+recnext	dnssd_clientstub.c	/^    DNSRecord       *recnext;$/;"	m	struct:_DNSRecordRef_t	file:
+reconfirmRecord	Java/DNSSD.java	/^	public static void		reconfirmRecord( int flags, int ifIndex, String fullName, int rrtype,$/;"	m	class:DNSSD
+reconfirm_record_request	dnssd_ipc.h	/^    reconfirm_record_request,$/;"	e	enum:__anon20
+recordRegistered	Java/RegisterRecordListener.java	/^	void	recordRegistered( DNSRecord record, int flags);$/;"	m	interface:RegisterRecordListener
+record_index	dnssd_clientstub.c	/^    uint32_t record_index;  \/\/ index is unique to the ServiceDiscoveryRef$/;"	m	struct:_DNSRecordRef_t	file:
+recref	dnssd_clientstub.c	/^    DNSRecordRef recref;$/;"	m	struct:_DNSRecordRef_t	file:
+refcount	dnsextd.h	/^    int refcount;$/;"	m	struct:AnswerListElem
+reg_record_reply_op	dnssd_ipc.h	/^    reg_record_reply_op,    \/\/ Up to here is in Tiger and B4W 1.0.3$/;"	e	enum:__anon21
+reg_record_request	dnssd_ipc.h	/^    reg_record_request,     \/\/ reg\/remove record only valid for connected sockets$/;"	e	enum:__anon20
+reg_recs	uds_daemon.c	/^        registered_record_entry *reg_recs;  \/\/ list of registrations for a connection-oriented request$/;"	m	union:request_state::__anon24	file:
+reg_service_reply_op	dnssd_ipc.h	/^    reg_service_reply_op,$/;"	e	enum:__anon21
+reg_service_request	dnssd_ipc.h	/^    reg_service_request,$/;"	e	enum:__anon20
+register	Java/DNSSD.java	/^	public static DNSSDRegistration	register( String serviceName, String regType, int port, RegisterListener listener)$/;"	m	class:DNSSD
+register	Java/DNSSD.java	/^	public static DNSSDRegistration	register( int flags, int ifIndex, String serviceName, String regType,$/;"	m	class:DNSSD
+registerRecord	Java/DNSSD.java	/^	public DNSRecord	registerRecord( int flags, int ifIndex, String fullname, int rrtype,$/;"	m	class:AppleRecordRegistrar
+registerRecord	Java/DNSSDRecordRegistrar.java	/^	public DNSRecord	registerRecord( int flags, int ifIndex, String fullname, int rrtype, $/;"	m	interface:DNSSDRecordRegistrar
+register_service_instance	uds_daemon.c	/^mDNSlocal mStatus register_service_instance(request_state *request, const domainname *domain)$/;"	f
+registered_record_entry	uds_daemon.c	/^typedef struct registered_record_entry$/;"	s	file:
+registered_record_entry	uds_daemon.c	/^} registered_record_entry;$/;"	t	typeref:struct:registered_record_entry	file:
+regrec_client_context	uds_daemon.c	/^    client_context_t regrec_client_context;$/;"	m	struct:registered_record_entry	file:
+regrecord_callback	uds_daemon.c	/^mDNSlocal void regrecord_callback(mDNS *const m, AuthRecord *rr, mStatus result)$/;"	f
+regservice_callback	uds_daemon.c	/^mDNSlocal void regservice_callback(mDNS *const m, ServiceRecordSet *const srs, mStatus result)$/;"	f
+regservice_termination_callback	uds_daemon.c	/^mDNSlocal void regservice_termination_callback(request_state *request)$/;"	f
+regtype	uds_daemon.c	/^            domainname regtype;$/;"	m	struct:request_state::__anon24::__anon25	file:
+release_request	dnssd_ipc.h	/^    release_request,$/;"	e	enum:__anon20
+remove	Java/DNSRecord.java	/^	void			remove()$/;"	m	interface:DNSRecord
+remove	Java/DNSSD.java	/^	public void			remove()$/;"	m	class:AppleDNSRecord
+remove	Java/TXTRecord.java	/^	public int	remove( String key)$/;"	m	class:TXTRecord
+remove_extra	uds_daemon.c	/^mDNSlocal mStatus remove_extra(const request_state *const request, service_instance *const serv, mDNSu16 *const rrtype)$/;"	f
+remove_record	uds_daemon.c	/^mDNSlocal mStatus remove_record(request_state *request)$/;"	f
+remove_record_request	dnssd_ipc.h	/^    remove_record_request,$/;"	e	enum:__anon20
+renameonmemfree	uds_daemon.c	/^    mDNSBool renameonmemfree;       \/\/ Set on config change when we deregister original name$/;"	m	struct:service_instance	file:
+replies	uds_daemon.c	/^    struct reply_state *replies;    \/\/ corresponding (active) reply list$/;"	m	struct:request_state	typeref:struct:request_state::reply_state	file:
+reply_hdr	uds_daemon.c	/^} reply_hdr;$/;"	t	typeref:struct:__anon32	file:
+reply_op_t	dnssd_ipc.h	/^} reply_op_t;$/;"	t	typeref:enum:__anon21
+reply_state	uds_daemon.c	/^typedef struct reply_state$/;"	s	file:
+reply_state	uds_daemon.c	/^} reply_state;$/;"	t	typeref:struct:reply_state	file:
+req_termination_fn	uds_daemon.c	/^typedef void (*req_termination_fn)(request_state *request);$/;"	t	file:
+request	uds_daemon.c	/^    request_state *request;$/;"	m	struct:registered_record_entry	file:
+request	uds_daemon.c	/^    request_state *request;$/;"	m	struct:service_instance	file:
+request_callback	uds_daemon.c	/^mDNSlocal void request_callback(int fd, short filter, void *info)$/;"	f
+request_op_none	dnssd_ipc.h	/^    request_op_none = 0,    \/\/ No request yet received on this connection$/;"	e	enum:__anon20
+request_op_t	dnssd_ipc.h	/^} request_op_t;$/;"	t	typeref:enum:__anon20
+request_state	uds_daemon.c	/^struct request_state$/;"	s	file:
+request_state	uds_daemon.c	/^typedef struct request_state request_state;$/;"	t	typeref:struct:request_state	file:
+require	DebugServices.h	731;"	d
+require	DebugServices.h	734;"	d
+require_action	DebugServices.h	985;"	d
+require_action	DebugServices.h	988;"	d
+require_action_expect	DebugServices.h	1120;"	d
+require_action_expect	DebugServices.h	1133;"	d
+require_action_quiet	DebugServices.h	1012;"	d
+require_action_quiet	DebugServices.h	1015;"	d
+require_action_quiet_expect	DebugServices.h	1121;"	d
+require_action_quiet_expect	DebugServices.h	1134;"	d
+require_action_string	DebugServices.h	1040;"	d
+require_action_string	DebugServices.h	1043;"	d
+require_action_string_expect	DebugServices.h	1122;"	d
+require_action_string_expect	DebugServices.h	1135;"	d
+require_expect	DebugServices.h	1111;"	d
+require_expect	DebugServices.h	1124;"	d
+require_noerr	DebugServices.h	810;"	d
+require_noerr	DebugServices.h	813;"	d
+require_noerr_action	DebugServices.h	928;"	d
+require_noerr_action	DebugServices.h	931;"	d
+require_noerr_action_expect	DebugServices.h	1118;"	d
+require_noerr_action_expect	DebugServices.h	1131;"	d
+require_noerr_action_quiet	DebugServices.h	958;"	d
+require_noerr_action_quiet	DebugServices.h	961;"	d
+require_noerr_action_quiet_expect	DebugServices.h	1119;"	d
+require_noerr_action_quiet_expect	DebugServices.h	1132;"	d
+require_noerr_action_string	DebugServices.h	872;"	d
+require_noerr_action_string	DebugServices.h	875;"	d
+require_noerr_action_string_expect	DebugServices.h	1116;"	d
+require_noerr_action_string_expect	DebugServices.h	1129;"	d
+require_noerr_expect	DebugServices.h	1114;"	d
+require_noerr_expect	DebugServices.h	1127;"	d
+require_noerr_quiet	DebugServices.h	902;"	d
+require_noerr_quiet	DebugServices.h	905;"	d
+require_noerr_quiet_expect	DebugServices.h	1117;"	d
+require_noerr_quiet_expect	DebugServices.h	1130;"	d
+require_noerr_string	DebugServices.h	841;"	d
+require_noerr_string	DebugServices.h	844;"	d
+require_noerr_string_expect	DebugServices.h	1115;"	d
+require_noerr_string_expect	DebugServices.h	1128;"	d
+require_quiet	DebugServices.h	784;"	d
+require_quiet	DebugServices.h	787;"	d
+require_quiet_expect	DebugServices.h	1113;"	d
+require_quiet_expect	DebugServices.h	1126;"	d
+require_string	DebugServices.h	758;"	d
+require_string	DebugServices.h	761;"	d
+require_string_expect	DebugServices.h	1112;"	d
+require_string_expect	DebugServices.h	1125;"	d
+require_throw	DebugServices.h	1069;"	d
+resolve	Java/DNSSD.java	/^	public static DNSSDService	resolve( int flags, int ifIndex, String serviceName, String regType,$/;"	m	class:DNSSD
+resolve	uds_daemon.c	/^        } resolve;$/;"	m	union:request_state::__anon24	typeref:struct:request_state::__anon24::__anon31	file:
+resolve_reply_op	dnssd_ipc.h	/^    resolve_reply_op,$/;"	e	enum:__anon21
+resolve_request	dnssd_ipc.h	/^    resolve_request,$/;"	e	enum:__anon20
+resolve_result_callback	uds_daemon.c	/^mDNSlocal void resolve_result_callback(mDNS *const m, DNSQuestion *question, const ResourceRecord *const answer, QC_result AddRecord)$/;"	f
+resolve_termination_callback	uds_daemon.c	/^mDNSlocal void resolve_termination_callback(request_state *request)$/;"	f
+rhdr	uds_daemon.c	/^    reply_hdr rhdr[1];$/;"	m	struct:reply_state	file:
+rr	dnsextd.h	/^    CacheRecord rr;           \/\/ last field in struct allows for allocation of oversized RRs$/;"	m	struct:RRTableElem
+rr	uds_daemon.c	/^    AuthRecord *rr;             \/\/ Pointer to variable-sized AuthRecord (Why a pointer? Why not just embed it here?)$/;"	m	struct:registered_record_entry	file:
+run	Java/DNSSD.java	/^	public void		run()$/;"	m	class:AppleService
+s	dnssd_clientshim.c	/^    ServiceRecordSet s;$/;"	m	struct:__anon8	file:
+sd	dnsextd.c	/^    int sd;$/;"	m	struct:__anon2	file:
+sd	uds_daemon.c	/^    dnssd_sock_t sd;$/;"	m	struct:request_state	file:
+sdr	dnssd_clientstub.c	/^    DNSServiceOp *sdr;$/;"	m	struct:_DNSRecordRef_t	file:
+send_all	uds_daemon.c	/^mDNSlocal void send_all(dnssd_sock_t s, const char *ptr, int len)$/;"	f
+send_bpf	dnssd_ipc.h	/^    send_bpf,               \/\/ New in SL$/;"	e	enum:__anon20
+send_msg	uds_daemon.c	/^mDNSlocal int send_msg(request_state *const req)$/;"	f
+serviceFound	Java/BrowseListener.java	/^	void	serviceFound( DNSSDService browser, int flags, int ifIndex, $/;"	m	interface:BrowseListener
+serviceLost	Java/BrowseListener.java	/^	void	serviceLost( DNSSDService browser, int flags, int ifIndex,$/;"	m	interface:BrowseListener
+serviceRegistered	Java/RegisterListener.java	/^	void	serviceRegistered( DNSSDRegistration registration, int flags, String serviceName, $/;"	m	interface:RegisterListener
+serviceResolved	Java/ResolveListener.java	/^	void	serviceResolved( DNSSDService resolver, int flags, int ifIndex, String fullName, $/;"	m	interface:ResolveListener
+service_instance	uds_daemon.c	/^typedef struct service_instance$/;"	s	file:
+service_instance	uds_daemon.c	/^} service_instance;$/;"	t	typeref:struct:service_instance	file:
+servicereg	uds_daemon.c	/^        } servicereg;$/;"	m	union:request_state::__anon24	typeref:struct:request_state::__anon24::__anon26	file:
+set	Java/TXTRecord.java	/^	public void	set( String key, String value)$/;"	m	class:TXTRecord
+set	Java/TXTRecord.java	/^	public void	set( String key, byte[] value)$/;"	m	class:TXTRecord
+set_errno_compat	CommonServices.h	436;"	d
+set_errno_compat	CommonServices.h	448;"	d
+set_peer_pid	uds_daemon.c	/^mDNSlocal void set_peer_pid(request_state *request)$/;"	f
+set_waitlimit	dnssd_clientstub.c	/^static int set_waitlimit(dnssd_sock_t sock, int timeout)$/;"	f	file:
+setdomain_request	dnssd_ipc.h	/^    setdomain_request,      \/\/ Up to here is in Tiger and B4W 1.0.3$/;"	e	enum:__anon20
+size	Java/TXTRecord.java	/^	public int	size()$/;"	m	class:TXTRecord
+sizecheck_browser_t	uds_daemon.c	/^    char sizecheck_browser_t              [(sizeof(browser_t)               <= 1096) ? 1 : -1];$/;"	m	struct:CompileTimeAssertionChecks_uds_daemon	file:
+sizecheck_registered_record_entry	uds_daemon.c	/^    char sizecheck_registered_record_entry[(sizeof(registered_record_entry) <=   60) ? 1 : -1];$/;"	m	struct:CompileTimeAssertionChecks_uds_daemon	file:
+sizecheck_reply_hdr	uds_daemon.c	/^    char sizecheck_reply_hdr              [(sizeof(reply_hdr)               <=   12) ? 1 : -1];$/;"	m	struct:CompileTimeAssertionChecks_uds_daemon	file:
+sizecheck_reply_state	uds_daemon.c	/^    char sizecheck_reply_state            [(sizeof(reply_state)             <=   64) ? 1 : -1];$/;"	m	struct:CompileTimeAssertionChecks_uds_daemon	file:
+sizecheck_request_state	uds_daemon.c	/^    char sizecheck_request_state          [(sizeof(request_state)           <= 2000) ? 1 : -1];$/;"	m	struct:CompileTimeAssertionChecks_uds_daemon	file:
+sizecheck_service_instance	uds_daemon.c	/^    char sizecheck_service_instance       [(sizeof(service_instance)        <= 6552) ? 1 : -1];$/;"	m	struct:CompileTimeAssertionChecks_uds_daemon	file:
+sizeof_array	CommonServices.h	582;"	d
+sizeof_element	CommonServices.h	590;"	d
+sizeof_field	CommonServices.h	606;"	d
+sizeof_string	CommonServices.h	598;"	d
+sleep	dnssd_clientstub.c	62;"	d	file:
+sock	dnsextd.c	/^    TCPSocket *sock;           \/\/ socket connected to client$/;"	m	struct:__anon3	file:
+sock	dnsextd.h	/^    TCPSocket *         sock;$/;"	m	struct:EventSource
+sockaddr_mdns	dnssd_clientstub.c	51;"	d	file:
+sockaddr_mdns	dnssd_clientstub.c	87;"	d	file:
+sockaddr_storage	CommonServices.h	486;"	d
+sockfd	dnssd_clientstub.c	/^    dnssd_sock_t sockfd;                \/\/ Connected socket between client and daemon$/;"	m	struct:_DNSServiceRef_t	file:
+socklen_t	CommonServices.h	/^typedef int socklen_t;$/;"	t
+socklen_t	PlatformCommon.c	/^typedef unsigned int socklen_t;$/;"	t	file:
+socklen_t	uds_daemon.c	/^    typedef unsigned int socklen_t;$/;"	t	file:
+src	dnsextd.h	/^    struct sockaddr_in src;$/;"	m	struct:__anon5	typeref:struct:__anon5::sockaddr_in
+srs	uds_daemon.c	/^    ServiceRecordSet srs;           \/\/ note -- variable-sized object -- must be last field in struct$/;"	m	struct:service_instance	file:
+srv	uds_daemon.c	/^            const ResourceRecord *srv;$/;"	m	struct:request_state::__anon24::__anon31	file:
+ss_family	CommonServices.h	487;"	d
+ssize_t	CommonServices.h	/^typedef int ssize_t;$/;"	t
+ssize_t	dnssd_ipc.h	49;"	d
+state	dnsextd.h	/^    LLQState state;$/;"	m	struct:LLQEntry
+statement	dnsextd_parser.y	/^statement:$/;"	l
+statements	dnsextd_parser.y	/^statements:$/;"	l
+stop	Java/DNSSD.java	/^	public void				stop() { this.HaltOperation(); }$/;"	m	class:AppleService
+stop	Java/DNSSDService.java	/^	void		stop();$/;"	m	interface:DNSSDService
+strcasecmp	dnssd_clientlib.c	42;"	d	file:
+strncasecmp	dnssd_clientlib.c	41;"	d	file:
+subtypes	uds_daemon.c	/^    AuthRecord *subtypes;$/;"	m	struct:service_instance	file:
+syslog	dnssd_clientstub.c	/^static void syslog( int priority, const char * message, ...)$/;"	f	file:
+t_complete	uds_daemon.c	/^    t_complete,$/;"	e	enum:__anon23	file:
+t_error	uds_daemon.c	/^    t_error,$/;"	e	enum:__anon23	file:
+t_morecoming	uds_daemon.c	/^    t_morecoming,$/;"	e	enum:__anon23	file:
+t_terminated	uds_daemon.c	/^    t_terminated$/;"	e	enum:__anon23	file:
+t_uninitialized	uds_daemon.c	/^    t_uninitialized,$/;"	e	enum:__anon23	file:
+table	dnsextd.h	/^    RRTableElem **table;       \/\/ hashtable for records with leases$/;"	m	struct:__anon7
+tablelock	dnsextd.h	/^    pthread_mutex_t tablelock; \/\/ mutex for lease table$/;"	m	struct:__anon7
+tcpsd	dnsextd.h	/^    int tcpsd;                          \/\/ listening TCP socket for dns requests$/;"	m	struct:__anon7
+terminate	dnsextd.c	/^static mDNSBool terminate = 0;$/;"	v	file:
+terminate	uds_daemon.c	/^    req_termination_fn terminate;$/;"	m	struct:request_state	file:
+tid	dnsextd.h	/^    pthread_t tid;              \/\/ Allow parallel list updates$/;"	m	struct:AnswerListElem
+time_blocked	uds_daemon.c	/^    mDNSs32 time_blocked;           \/\/ record time of a blocked client$/;"	m	struct:request_state	file:
+tlssd	dnsextd.h	/^    int tlssd;                          \/\/ listening TCP socket for private browsing$/;"	m	struct:__anon7
+toString	Java/TXTRecord.java	/^	public String	toString()$/;"	m	class:TXTRecord
+totallen	uds_daemon.c	/^    mDNSu32 totallen;$/;"	m	struct:reply_state	file:
+transfer_state	uds_daemon.c	/^} transfer_state;$/;"	t	typeref:enum:__anon23	file:
+translate_errno	DebugServices.h	471;"	d
+true	CommonServices.h	872;"	d
+true	CommonServices.h	886;"	d
+ts	uds_daemon.c	/^    transfer_state ts;$/;"	m	struct:request_state	file:
+txt	uds_daemon.c	/^            const ResourceRecord *txt;$/;"	m	struct:request_state::__anon24::__anon31	file:
+txtRec	dnssd_clientlib.c	174;"	d	file:
+txtdata	uds_daemon.c	/^            void *txtdata;$/;"	m	struct:request_state::__anon24::__anon26	file:
+txtlen	uds_daemon.c	/^            mDNSu16 txtlen;$/;"	m	struct:request_state::__anon24::__anon26	file:
+type	dnsextd.h	/^    DNSZoneSpecType type;$/;"	m	struct:DNSZone
+type	dnsextd.h	/^    mDNSu16 type;$/;"	m	struct:AnswerListElem
+type	uds_daemon.c	/^            domainname type;$/;"	m	struct:request_state::__anon24::__anon26	file:
+type_as_string	uds_daemon.c	/^            char type_as_string[MAX_ESCAPED_DOMAIN_NAME];$/;"	m	struct:request_state::__anon24::__anon26	file:
+u	uds_daemon.c	/^    } u;$/;"	m	struct:request_state	typeref:union:request_state::__anon24	file:
+uDNS_SetupDNSConfig	dnsextd.c	/^mStatus uDNS_SetupDNSConfig( mDNS *const m ) { ( void ) m; return 0; }$/;"	f
+udpsd	dnsextd.h	/^    int udpsd;                          \/\/ listening UDP socket for dns requests$/;"	m	struct:__anon7
+udsEventCallback	uds_daemon.h	/^typedef void (*udsEventCallback)(int fd, short filter, void *context);$/;"	t
+uds_socket_setup	uds_daemon.c	/^mDNSlocal mDNSBool uds_socket_setup(dnssd_sock_t skt)$/;"	f
+uds_validatelists	uds_daemon.c	/^mDNSexport void uds_validatelists(void)$/;"	f
+udsserver_automatic_browse_domain_changed	uds_daemon.c	/^mDNSlocal void udsserver_automatic_browse_domain_changed(const DNameListElem *const d, const mDNSBool add)$/;"	f
+udsserver_default_reg_domain_changed	uds_daemon.c	/^mDNSlocal void udsserver_default_reg_domain_changed(const DNameListElem *const d, const mDNSBool add)$/;"	f
+udsserver_exit	uds_daemon.c	/^mDNSexport int udsserver_exit(void)$/;"	f
+udsserver_handle_configchange	uds_daemon.c	/^mDNSexport void udsserver_handle_configchange(mDNS *const m)$/;"	f
+udsserver_idle	uds_daemon.c	/^mDNSexport mDNSs32 udsserver_idle(mDNSs32 nextevent)$/;"	f
+udsserver_info	uds_daemon.c	/^mDNSexport void udsserver_info(mDNS *const m)$/;"	f
+udsserver_init	uds_daemon.c	/^mDNSexport int udsserver_init(dnssd_sock_t skts[], mDNSu32 count)$/;"	f
+uid	dnssd_clientstub.c	/^    client_context_t uid;               \/\/ For shared connection requests, each subordinate DNSServiceRef has its own ID,$/;"	m	struct:_DNSServiceRef_t	file:
+uid	dnssd_clientstub.c	/^    client_context_t uid;  \/\/ For demultiplexing multiple DNSServiceRegisterRecord calls$/;"	m	struct:_DNSRecordRef_t	file:
+uid	uds_daemon.c	/^    mDNSu32 uid;$/;"	m	struct:request_state	file:
+uint16_t	CommonServices.h	/^typedef UINT16 uint16_t;$/;"	t
+uint16_t	dns_sd.h	/^typedef UINT16 uint16_t;$/;"	t
+uint32_t	CommonServices.h	/^typedef UINT32 uint32_t;$/;"	t
+uint32_t	dns_sd.h	/^typedef UINT32 uint32_t;$/;"	t
+uint64_t	CommonServices.h	/^typedef unsigned __int64 uint64_t;$/;"	t
+uint64_t	CommonServices.h	/^typedef unsigned long long uint64_t;$/;"	t
+uint8_t	CommonServices.h	/^typedef UINT8 uint8_t;$/;"	t
+uint8_t	dns_sd.h	/^typedef UINT8 uint8_t;$/;"	t
+uint_fast16_t	CommonServices.h	/^typedef uint16_t uint_fast16_t;$/;"	t
+uint_fast32_t	CommonServices.h	/^typedef uint32_t uint_fast32_t;$/;"	t
+uint_fast64_t	CommonServices.h	/^typedef uint64_t uint_fast64_t;$/;"	t
+uint_fast8_t	CommonServices.h	/^typedef uint8_t uint_fast8_t;$/;"	t
+uint_least16_t	CommonServices.h	/^typedef uint16_t uint_least16_t;$/;"	t
+uint_least32_t	CommonServices.h	/^typedef uint32_t uint_least32_t;$/;"	t
+uint_least64_t	CommonServices.h	/^typedef uint64_t uint_least64_t;$/;"	t
+uint_least8_t	CommonServices.h	/^typedef uint8_t uint_least8_t;$/;"	t
+uintptr_t	CommonServices.h	/^typedef unsigned long int uintptr_t;$/;"	t
+unlink	dnssd_ipc.h	51;"	d
+unlink_and_free_service_instance	uds_daemon.c	/^mDNSlocal void unlink_and_free_service_instance(service_instance *srv)$/;"	f
+unresponsiveness_reports	uds_daemon.c	/^    int unresponsiveness_reports;$/;"	m	struct:request_state	file:
+unsigned_long_long_compat	CommonServices.h	/^typedef unsigned __int64 unsigned_long_long_compat;$/;"	t
+unsigned_long_long_compat	CommonServices.h	/^typedef unsigned long long unsigned_long_long_compat;$/;"	t
+update	Java/DNSRecord.java	/^	void			update( int flags, byte[] rData, int ttl)$/;"	m	interface:DNSRecord
+update	Java/DNSSD.java	/^	public void			update( int flags, byte[] rData, int ttl)$/;"	m	class:AppleDNSRecord
+updateKeys	dnsextd.h	/^    DomainAuthInfo      *   updateKeys; \/\/ linked list of keys for signing deletion updates$/;"	m	struct:DNSZone
+update_callback	uds_daemon.c	/^mDNSlocal void update_callback(mDNS *const m, AuthRecord *const rr, RData *oldrd, mDNSu16 oldrdlen)$/;"	f
+update_record	uds_daemon.c	/^mDNSlocal mStatus update_record(AuthRecord *rr, mDNSu16 rdlen, const char *rdata, mDNSu32 ttl, const mDNSBool *const external_advertise)$/;"	f
+update_record_request	dnssd_ipc.h	/^    update_record_request,$/;"	e	enum:__anon20
+usleep	uds_daemon.c	20;"	d	file:
+uuid	uds_daemon.c	/^    char uuid[UUID_SIZE];$/;"	m	struct:request_state	file:
+v4ans	uds_daemon.c	/^            mDNSu8 v4ans;$/;"	m	struct:request_state::__anon24::__anon27	file:
+v6ans	uds_daemon.c	/^            mDNSu8 v6ans;$/;"	m	struct:request_state::__anon24::__anon27	file:
+validUUID	uds_daemon.c	/^    mDNSBool validUUID;$/;"	m	struct:request_state	file:
+validator	dnssd_clientstub.c	/^    dnssd_sock_t validator;             \/\/ Used to detect memory corruption, double disposals, etc.$/;"	m	struct:_DNSServiceRef_t	file:
+verbose	dnsextd.c	/^static mDNSBool verbose = 0;$/;"	v	file:
+verbosedebugf_	mDNSDebug.c	/^mDNSexport void verbosedebugf_(const char *format, ...)$/;"	f
+win32_if_indextoname	Java/JNISupport.c	/^win32_if_indextoname( DWORD ifIndex, char * nameBuff)$/;"	f	file:
+win32_if_nametoindex	Java/JNISupport.c	/^win32_if_nametoindex( const char * nameStr )$/;"	f	file:
+win32_strerror	dnssd_ipc.c	/^char *win32_strerror(int inErrorCode)$/;"	f
+write_all	dnssd_clientstub.c	/^static int write_all(dnssd_sock_t sd, char *buf, size_t len)$/;"	f	file:
+zone	dnsextd.h	/^    DNSZone * zone;$/;"	m	struct:__anon5
+zone	dnsextd.h	/^    domainname zone;          \/\/ from zone field of update message$/;"	m	struct:RRTableElem
+zone_set	dnsextd_parser.y	/^zone_set:$/;"	l
+zonecontent	dnsextd_parser.y	/^zonecontent:$/;"	l
+zones	dnsextd.h	/^    DNSZone         *   zones;$/;"	m	struct:__anon7
+zonestatement	dnsextd_parser.y	/^zonestatement:$/;"	l
+zonestatements	dnsextd_parser.y	/^zonestatements:$/;"	l

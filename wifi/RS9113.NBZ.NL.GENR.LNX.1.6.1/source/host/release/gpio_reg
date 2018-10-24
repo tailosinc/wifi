@@ -1,0 +1,48 @@
+#./gpio_reg write ID gpio_mode value direction
+#./gpio_reg read ID
+read_write=$1
+ID=$2
+gpio_mode=$3
+value=$4
+direction=$4
+onebox=`ls /proc/ |grep onebox-hal`
+#echo $onebox
+#echo read_write $read_write
+#echo  ID $ID
+#echo  gpio_mode $gpio_mode
+#echo  value $value
+#echo direction $direction
+no_of_bytes=2
+if [ "$read_write" == 1 ];
+then
+if [ "$#" -eq 5 ]
+then
+echo $read_write $ID $gpio_mode $value $ direction  >/proc/$onebox/gpio
+else
+echo "Invalid Agruments"
+echo "./gpio_reg 1 ID gpio_mode value direction"
+fi
+elif [ "$read_write" == 0 ];
+then
+if [ "$#" -eq 2 ]
+then
+echo $read_write $ID >/proc/$onebox/gpio
+cat /proc/$onebox/gpio
+else
+echo "Invalid Agruments"
+echo "For Read: "
+echo "./gpio_reg 0 ID"
+fi
+else
+echo "Usage"
+echo " "
+echo "For Write: "
+echo "./gpio_reg 1 ID gpio_mode value direction"
+echo " "
+echo "For Read: "
+echo "./gpio_reg 0 ID"
+echo " "
+fi
+
+
+

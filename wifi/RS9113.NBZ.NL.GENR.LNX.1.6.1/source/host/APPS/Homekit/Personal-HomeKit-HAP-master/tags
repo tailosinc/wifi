@@ -1,0 +1,1357 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+A	srp/t_client.h	/^  struct t_num A;$/;"	m	struct:t_client	typeref:struct:t_client::t_num
+ALEN	srp/t_client.h	36;"	d
+ALIGN	ed25519-donna/ed25519-donna-portable.h	16;"	d
+ALIGN	ed25519-donna/ed25519-donna-portable.h	23;"	d
+Abuf	srp/t_client.h	/^  unsigned char abuf[ALEN], Abuf[MAXPARAMLEN];$/;"	m	struct:t_client
+Accessory	PHKAccessory.h	/^    Accessory() {}$/;"	f	class:Accessory
+Accessory	PHKAccessory.h	/^class Accessory {$/;"	c
+AccessorySet	PHKAccessory.h	/^    AccessorySet() {$/;"	f	class:AccessorySet
+AccessorySet	PHKAccessory.h	/^class AccessorySet {$/;"	c
+B	srp/t_server.h	/^  struct t_num B;$/;"	m	struct:t_server	typeref:struct:t_server::t_num
+BIG_INTEGER_ERROR	srp/srp_aux.h	52;"	d
+BIG_INTEGER_SUCCESS	srp/srp_aux.h	51;"	d
+BLEN	srp/t_server.h	36;"	d
+Bbuf	srp/t_server.h	/^  unsigned char saltbuf[MAXSALTLEN], bbuf[BLEN], Bbuf[MAXPARAMLEN];$/;"	m	struct:t_server
+BigInteger	srp/srp_aux.h	/^typedef void * BigInteger;$/;"	t
+BigInteger	srp/t_math.c	/^typedef BIGNUM * BigInteger;$/;"	t	file:
+BigInteger	srp/t_math.c	/^typedef BigInt BigInteger;$/;"	t	file:
+BigInteger	srp/t_math.c	/^typedef MP_INT * BigInteger;$/;"	t	file:
+BigInteger	srp/t_math.c	/^typedef gcry_mpi_t BigInteger;$/;"	t	file:
+BigInteger	srp/t_math.c	/^typedef mp_int * BigInteger;$/;"	t	file:
+BigIntegerAdd	srp/t_math.c	/^BigIntegerAdd(result, a1, a2)$/;"	f
+BigIntegerAddInt	srp/t_math.c	/^BigIntegerAddInt(result, a1, a2)$/;"	f
+BigIntegerBitLen	srp/t_math.c	/^BigIntegerBitLen(b)$/;"	f
+BigIntegerByteLen	srp/srp_aux.h	59;"	d
+BigIntegerCheckPrime	srp/t_math.c	/^BigIntegerCheckPrime(n, c)$/;"	f
+BigIntegerClearFree	srp/t_math.c	/^BigIntegerClearFree(b)$/;"	f
+BigIntegerCmp	srp/t_math.c	/^BigIntegerCmp(c1, c2)$/;"	f
+BigIntegerCmpInt	srp/t_math.c	/^BigIntegerCmpInt(c1, c2)$/;"	f
+BigIntegerCtx	srp/srp_aux.h	/^typedef void * BigIntegerCtx;$/;"	t
+BigIntegerCtx	srp/t_math.c	/^typedef BN_CTX * BigIntegerCtx;$/;"	t	file:
+BigIntegerCtx	srp/t_math.c	/^typedef void * BigIntegerCtx;$/;"	t	file:
+BigIntegerCtxFree	srp/t_math.c	/^BigIntegerCtxFree(ctx)$/;"	f
+BigIntegerCtxNew	srp/t_math.c	/^BigIntegerCtxNew()$/;"	f
+BigIntegerDivInt	srp/t_math.c	/^BigIntegerDivInt(result, d, m, c)$/;"	f
+BigIntegerFinalize	srp/t_math.c	/^BigIntegerFinalize()$/;"	f
+BigIntegerFree	srp/t_math.c	/^BigIntegerFree(b)$/;"	f
+BigIntegerFromBytes	srp/t_math.c	/^BigIntegerFromBytes(bytes, length)$/;"	f
+BigIntegerFromInt	srp/t_math.c	/^BigIntegerFromInt(n)$/;"	f
+BigIntegerInitialize	srp/t_math.c	/^BigIntegerInitialize()$/;"	f
+BigIntegerLShift	srp/t_math.c	/^BigIntegerLShift(result, x, bits)$/;"	f
+BigIntegerMod	srp/t_math.c	/^BigIntegerMod(result, d, m, c)$/;"	f
+BigIntegerModAccel	srp/srp_aux.h	/^typedef void * BigIntegerModAccel;$/;"	t
+BigIntegerModAccel	srp/t_math.c	/^typedef BN_MONT_CTX * BigIntegerModAccel;$/;"	t	file:
+BigIntegerModAccel	srp/t_math.c	/^typedef void * BigIntegerModAccel;$/;"	t	file:
+BigIntegerModAccelFree	srp/t_math.c	/^BigIntegerModAccelFree(accel)$/;"	f
+BigIntegerModAccelNew	srp/t_math.c	/^BigIntegerModAccelNew(m, c)$/;"	f
+BigIntegerModExp	srp/t_math.c	/^BigIntegerModExp(r, b, e, m, c, a)$/;"	f
+BigIntegerModInt	srp/t_math.c	/^BigIntegerModInt(d, m, c)$/;"	f
+BigIntegerModMul	srp/t_math.c	/^BigIntegerModMul(r, m1, m2, modulus, c)$/;"	f
+BigIntegerMul	srp/t_math.c	/^BigIntegerMul(result, m1, m2, c)$/;"	f
+BigIntegerMulInt	srp/t_math.c	/^BigIntegerMulInt(result, m1, m2, c)$/;"	f
+BigIntegerOK	srp/srp_aux.h	53;"	d
+BigIntegerReleaseEngine	srp/t_math.c	/^BigIntegerReleaseEngine()$/;"	f
+BigIntegerResult	srp/srp_aux.h	/^typedef int BigIntegerResult;$/;"	t
+BigIntegerSub	srp/t_math.c	/^BigIntegerSub(result, s1, s2)$/;"	f
+BigIntegerSubInt	srp/t_math.c	/^BigIntegerSubInt(result, s1, s2)$/;"	f
+BigIntegerToBytes	srp/t_math.c	/^BigIntegerToBytes(src, dest, destlen)$/;"	f
+BigIntegerToCstr	srp/t_math.c	/^BigIntegerToCstr(BigInteger x, cstr * out)$/;"	f
+BigIntegerToCstrEx	srp/t_math.c	/^BigIntegerToCstrEx(BigInteger x, cstr * out, int len)$/;"	f
+BigIntegerToHex	srp/t_math.c	/^BigIntegerToHex(src, dest, destlen)$/;"	f
+BigIntegerToString	srp/t_math.c	/^BigIntegerToString(src, dest, destlen, radix)$/;"	f
+BigIntegerUseEngine	srp/t_math.c	/^BigIntegerUseEngine(const char * engine)$/;"	f
+CHACHA20_SIMPLE_H	Chacha20/chacha20_simple.h	18;"	d
+COMPILER_CLANG	ed25519-donna/ed25519-donna-portable-identify.h	42;"	d
+COMPILER_GCC	ed25519-donna/ed25519-donna-portable-identify.h	33;"	d
+COMPILER_GCC	ed25519-donna/ed25519-donna-portable-identify.h	35;"	d
+COMPILER_INTEL	ed25519-donna/ed25519-donna-portable-identify.h	29;"	d
+COMPILER_MSVC	ed25519-donna/ed25519-donna-portable-identify.h	26;"	d
+COMPILER_PATHCC	ed25519-donna/ed25519-donna-portable-identify.h	39;"	d
+CONCAT	srp/endXXent.h	/^static void CONCAT(_nsw_end,FUNCOBJENT)(int ptr)$/;"	f
+CONCAT	srp/getXXbyYY.h	/^RETOBJTYPE CONCAT(NSWPREFIX,FUNCNAME)$/;"	f
+CONCAT	srp/nss_defs.h	25;"	d
+CONCAT	srp/setXXent.h	/^static void CONCAT(_nsw_set,FUNCOBJENT)(int ptr)$/;"	f
+CPU_64BITS	ed25519-donna/ed25519-donna-portable-identify.h	88;"	d
+CPU_ALPHA	ed25519-donna/ed25519-donna-portable-identify.h	83;"	d
+CPU_HPPA	ed25519-donna/ed25519-donna-portable-identify.h	79;"	d
+CPU_IA64	ed25519-donna/ed25519-donna-portable-identify.h	57;"	d
+CPU_POWER7	ed25519-donna/ed25519-donna-portable-identify.h	70;"	d
+CPU_PPC	ed25519-donna/ed25519-donna-portable-identify.h	68;"	d
+CPU_PPC32	ed25519-donna/ed25519-donna-portable-identify.h	74;"	d
+CPU_PPC64	ed25519-donna/ed25519-donna-portable-identify.h	72;"	d
+CPU_SPARC	ed25519-donna/ed25519-donna-portable-identify.h	61;"	d
+CPU_SPARC64	ed25519-donna/ed25519-donna-portable-identify.h	63;"	d
+CPU_X86	ed25519-donna/ed25519-donna-portable-identify.h	51;"	d
+CPU_X86	ed25519-donna/ed25519-donna-portable-identify.h	53;"	d
+CPU_X86	ed25519-donna/ed25519-donna-portable-identify.h	55;"	d
+CPU_X86_64	ed25519-donna/ed25519-donna-portable-identify.h	49;"	d
+CRYPTOLIB	srp/NTconfig.h	25;"	d
+CRYPTOLIB	srp/acconfig.h	13;"	d
+Cfree	srp/cstr.c	/^static void Cfree(void * p, void * heap) { free(p); }$/;"	f	file:
+Cmalloc	srp/cstr.c	/^static void * Cmalloc(int n, void * heap) { return malloc(n); }$/;"	f	file:
+Computed	rfc6234-master/sha.h	/^    int Computed;               \/* Is the MAC computed? *\/$/;"	m	struct:HMACContext
+Computed	rfc6234-master/sha.h	/^    int Computed;               \/* Is the key material computed? *\/$/;"	m	struct:HKDFContext
+Corrupted	rfc6234-master/sha.h	/^    int Corrupted;              \/* Cumulative corruption code *\/$/;"	m	struct:HKDFContext
+Corrupted	rfc6234-master/sha.h	/^    int Corrupted;              \/* Cumulative corruption code *\/$/;"	m	struct:HMACContext
+DEFAULT_CONF	srp/t_pwd.h	51;"	d
+DEFAULT_PASSWD	srp/t_pwd.h	50;"	d
+DLLEXPORT	srp/cstr.h	27;"	d
+DLLEXPORT	srp/cstr.h	35;"	d
+DLLEXPORT	srp/t_defines.h	54;"	d
+DLLEXPORT	srp/t_defines.h	62;"	d
+DONNA_INLINE	ed25519-donna/ed25519-donna-portable.h	14;"	d
+DONNA_INLINE	ed25519-donna/ed25519-donna-portable.h	21;"	d
+DONNA_NOINLINE	ed25519-donna/ed25519-donna-portable.h	15;"	d
+DONNA_NOINLINE	ed25519-donna/ed25519-donna-portable.h	22;"	d
+ED25519_32BIT	ed25519-donna/ed25519-donna.h	14;"	d
+ED25519_FN	ed25519-donna/ed25519.c	15;"	d	file:
+ED25519_FN2	ed25519-donna/ed25519.c	14;"	d	file:
+ED25519_FN3	ed25519-donna/ed25519.c	13;"	d	file:
+ED25519_H	ed25519-donna/ed25519.h	2;"	d
+ED25519_SUFFIX	ed25519-donna/ed25519.c	10;"	d	file:
+ENABLE_NISEMU	srp/nys_config.h	58;"	d
+ENABLE_NSW	srp/nys_config.h	50;"	d
+ENABLE_YP	srp/acconfig.h	17;"	d
+ENABLE_YPEMU	srp/nys_config.h	57;"	d
+ENDPREFIX	srp/endXXent.h	34;"	d
+EXPFACTOR	srp/cstr.c	7;"	d	file:
+F	curve25519/curve25519-donna.c	406;"	d	file:
+F	curve25519/curve25519-donna.c	421;"	d	file:
+F	curve25519/curve25519-donna.c	491;"	d	file:
+F	curve25519/curve25519-donna.c	508;"	d	file:
+F	ed25519-donna/curve25519-donna-32bit.h	417;"	d
+F	ed25519-donna/curve25519-donna-32bit.h	430;"	d
+F	ed25519-donna/curve25519-donna-32bit.h	508;"	d
+F	ed25519-donna/curve25519-donna-32bit.h	526;"	d
+FILE_NIS	srp/t_pwd.h	/^  FILE_NIS,	\/* Currently accessing file, use NIS if encountered *\/$/;"	e	enum:fstate
+FILE_ONLY	srp/t_pwd.h	/^  FILE_ONLY,	\/* Ordinary file, don't consult NIS ever *\/$/;"	e	enum:fstate
+FILE_STATE	srp/t_pwd.h	/^} FILE_STATE;$/;"	t	typeref:enum:fstate
+FINALOUT	srp/nys_config.h	35;"	d
+FROMLE	Chacha20/chacha20_simple.h	24;"	d
+FSEPARATOR	srp/t_read.c	34;"	d	file:
+FUNCOBJENT	srp/endXXent.h	/^void CONCAT(CONCAT(NSWPREFIX,end),FUNCOBJENT)(void)$/;"	f
+FUNCOBJENT	srp/getXXent.h	/^RETOBJTYPE CONCAT(CONCAT(NSWPREFIX,get),FUNCOBJENT)(void)$/;"	f
+FUNCOBJENT	srp/setXXent.h	/^void CONCAT(CONCAT(NSWPREFIX,set),FUNCOBJENT)$/;"	f
+GCRYPT	srp/acconfig.h	5;"	d
+GETPREFIX	srp/getXXent.h	34;"	d
+GMP_IMPEXP	srp/t_math.c	60;"	d	file:
+GNU_MP	srp/acconfig.h	3;"	d
+GTTY	srp/t_defines.h	107;"	d
+GTTY	srp/t_defines.h	114;"	d
+GTTY	srp/t_defines.h	120;"	d
+HAVE_INTTYPES_H	srp/config.h	39;"	d
+HAVE_LIBDL	srp/config.h	42;"	d
+HAVE_MEMCPY	srp/NTconfig.h	49;"	d
+HAVE_MEMCPY	srp/config.h	51;"	d
+HAVE_MEMORY_H	srp/config.h	54;"	d
+HAVE_NATIVE_UINT128	ed25519-donna/ed25519-donna-portable.h	31;"	d
+HAVE_NATIVE_UINT128	ed25519-donna/ed25519-donna-portable.h	49;"	d
+HAVE_NATIVE_UINT128	ed25519-donna/ed25519-donna-portable.h	52;"	d
+HAVE_SGTTY_H	srp/config.h	57;"	d
+HAVE_SIGACTION	srp/config.h	60;"	d
+HAVE_STDINT_H	srp/config.h	63;"	d
+HAVE_STDLIB_H	srp/config.h	66;"	d
+HAVE_STRCHR	srp/NTconfig.h	52;"	d
+HAVE_STRCHR	srp/config.h	69;"	d
+HAVE_STRINGS_H	srp/config.h	72;"	d
+HAVE_STRING_H	srp/config.h	75;"	d
+HAVE_SYS_IOCTL_H	srp/config.h	78;"	d
+HAVE_SYS_STAT_H	srp/config.h	81;"	d
+HAVE_SYS_TIME_H	srp/config.h	84;"	d
+HAVE_SYS_TYPES_H	srp/config.h	87;"	d
+HAVE_TERMIOS_H	srp/config.h	90;"	d
+HAVE_UINT128	ed25519-donna/ed25519-donna-portable.h	34;"	d
+HAVE_UINT128	ed25519-donna/ed25519-donna-portable.h	55;"	d
+HAVE_UINT128	ed25519-donna/ed25519-donna-portable.h	72;"	d
+HAVE_UNISTD_H	srp/config.h	96;"	d
+HIGHFIRST	srp/NTconfig.h	27;"	d
+HIGHFIRST	srp/acconfig.h	19;"	d
+HIGHFIRST	srp/config.h	21;"	d
+HKDFContext	rfc6234-master/sha.h	/^typedef struct HKDFContext {$/;"	s
+HKDFContext	rfc6234-master/sha.h	/^} HKDFContext;$/;"	t	typeref:struct:HKDFContext
+HMACContext	rfc6234-master/sha.h	/^typedef struct HMACContext {$/;"	s
+HMACContext	rfc6234-master/sha.h	/^} HMACContext;$/;"	t	typeref:struct:HMACContext
+HomeKitLog	Configuration.h	10;"	d
+HomeKitReplyHeaderLog	Configuration.h	11;"	d
+Homekit_main	Homekit_main.cpp	/^int Homekit_main()$/;"	f
+IN_NIS	srp/t_pwd.h	/^  IN_NIS,	\/* Currently in a '+' entry; use NIS for getXXent *\/$/;"	e	enum:fstate
+IPv4	PHKNetworkIP.h	21;"	d
+IPv6	PHKNetworkIP.h	22;"	d
+LE	Chacha20/chacha20_simple.h	23;"	d
+MATH_PRIV	srp/t_math.c	85;"	d	file:
+MAXB64PARAMLEN	srp/t_pwd.h	38;"	d
+MAXB64SALTLEN	srp/t_pwd.h	44;"	d
+MAXHEXPARAMLEN	srp/t_pwd.h	39;"	d
+MAXOCTPARAMLEN	srp/t_pwd.h	40;"	d
+MAXPARAMBITS	srp/t_pwd.h	36;"	d
+MAXPARAMLEN	srp/t_pwd.h	37;"	d
+MAXSALTLEN	srp/t_pwd.h	43;"	d
+MAXUSERLEN	srp/t_pwd.h	42;"	d
+MCU	Configuration.h	37;"	d
+MIN	Chacha20/chacha20_simple.h	27;"	d
+MINSIZE	srp/cstr.c	8;"	d	file:
+MIN_MOD_BYTES	srp/t_client.h	37;"	d
+MPI	srp/acconfig.h	7;"	d
+NO_FCHMOD	srp/t_defines.h	128;"	d
+NSWO_DBM	srp/nsswitch.h	/^    NSWO_DBM$/;"	e	enum:nsw_type
+NSWO_DNS	srp/nsswitch.h	/^    NSWO_DNS,$/;"	e	enum:nsw_type
+NSWO_FILES	srp/nsswitch.h	/^    NSWO_FILES,$/;"	e	enum:nsw_type
+NSWO_NIS	srp/nsswitch.h	/^    NSWO_NIS,$/;"	e	enum:nsw_type
+NSWO_NISPLUS	srp/nsswitch.h	/^    NSWO_NISPLUS,$/;"	e	enum:nsw_type
+NSWO_RETURN	srp/nsswitch.h	/^    NSWO_RETURN,$/;"	e	enum:nsw_type
+NSWPREFIX	srp/nss_defs.h	29;"	d
+NSWPREFIX	srp/nss_defs.h	32;"	d
+NSW_MAXORDER	srp/nsswitch.h	30;"	d
+NULL	srp/t_misc.c	50;"	d	file:
+NUM_RANDOMS	srp/t_misc.c	286;"	d	file:
+OPENSSL	srp/acconfig.h	1;"	d
+OPENSSL	srp/config.h	3;"	d
+OPENSSL_ENGINE	srp/acconfig.h	15;"	d
+OS_BSD	ed25519-donna/ed25519-donna-portable-identify.h	12;"	d
+OS_LINUX	ed25519-donna/ed25519-donna-portable-identify.h	10;"	d
+OS_MAC	ed25519-donna/ed25519-donna-portable-identify.h	16;"	d
+OS_NIX	ed25519-donna/ed25519-donna-portable-identify.h	8;"	d
+OS_OPENBSD	ed25519-donna/ed25519-donna-portable-identify.h	18;"	d
+OS_OSX	ed25519-donna/ed25519-donna-portable-identify.h	14;"	d
+OS_SOLARIS	ed25519-donna/ed25519-donna-portable-identify.h	5;"	d
+OS_WINDOWS	ed25519-donna/ed25519-donna-portable-identify.h	3;"	d
+P	srp/cstr.h	10;"	d
+P	srp/cstr.h	8;"	d
+P	srp/t_defines.h	35;"	d
+P	srp/t_defines.h	37;"	d
+P	srp/t_read.h	35;"	d
+P	srp/t_read.h	37;"	d
+PACKAGE	srp/NTconfig.h	35;"	d
+PACKAGE	srp/acconfig.h	27;"	d
+PACKAGE	srp/config.h	29;"	d
+PACKAGE	srp/config.h	99;"	d
+PACKAGE_BUGREPORT	srp/config.h	102;"	d
+PACKAGE_NAME	srp/config.h	105;"	d
+PACKAGE_STRING	srp/config.h	108;"	d
+PACKAGE_TARNAME	srp/config.h	111;"	d
+PACKAGE_URL	srp/config.h	114;"	d
+PACKAGE_VERSION	srp/config.h	117;"	d
+PATH_NSWCONF	srp/nsswitch.h	29;"	d
+PHKKeyRecord	PHKControllerRecord.h	/^struct PHKKeyRecord {$/;"	s
+PHKNetworkIP	PHKNetworkIP.cpp	/^PHKNetworkIP::PHKNetworkIP() {$/;"	f	class:PHKNetworkIP
+PHKNetworkIP	PHKNetworkIP.h	/^class PHKNetworkIP {$/;"	c
+PHKNetworkMessage	PHKNetworkIP.cpp	/^PHKNetworkMessage::PHKNetworkMessage(const char *rawData) {$/;"	f	class:PHKNetworkMessage
+PHKNetworkMessage	PHKNetworkIP.h	/^class PHKNetworkMessage {$/;"	c
+PHKNetworkMessageData	PHKNetworkIP.cpp	/^PHKNetworkMessageData::PHKNetworkMessageData(const char *rawData, unsigned short len) {$/;"	f	class:PHKNetworkMessageData
+PHKNetworkMessageData	PHKNetworkIP.h	/^    PHKNetworkMessageData() {}$/;"	f	class:PHKNetworkMessageData
+PHKNetworkMessageData	PHKNetworkIP.h	/^class PHKNetworkMessageData {$/;"	c
+PHKNetworkMessageDataRecord	PHKNetworkIP.h	/^class PHKNetworkMessageDataRecord {$/;"	c
+PHKNetworkResponse	PHKNetworkIP.cpp	/^PHKNetworkResponse::PHKNetworkResponse(unsigned short _responseCode) {$/;"	f	class:PHKNetworkResponse
+PHKNetworkResponse	PHKNetworkIP.h	/^class PHKNetworkResponse {$/;"	c
+PHKNetworkServiceType	PHKNetworkIP.cpp	10;"	d	file:
+POSIX_SIGTYPE	srp/acconfig.h	25;"	d
+POSIX_TERMIOS	srp/acconfig.h	23;"	d
+POSIX_TERMIOS	srp/config.h	25;"	d
+PairSetupState_t	PHKNetworkIP.h	/^} PairSetupState_t;$/;"	t	typeref:enum:__anon3
+PairVerifyState_t	PHKNetworkIP.h	/^} PairVerifyState_t;$/;"	t	typeref:enum:__anon4
+Poly1305Type_t	PHKNetworkIP.h	/^} Poly1305Type_t;$/;"	t	typeref:enum:__anon5
+Poly1305_GenKey	PHKNetworkIP.cpp	/^void connectionInfo::Poly1305_GenKey(const unsigned char * key, uint8_t * buf, uint16_t len, Poly1305Type_t type, char* verify)$/;"	f	class:connectionInfo
+PowerOnTest	Configuration.h	12;"	d
+QUARTERROUND	Chacha20/chacha20_simple.c	54;"	d	file:
+RESPONSE_LEN	srp/t_pwd.h	47;"	d
+RETSIGTYPE	srp/NTconfig.h	11;"	d
+RETSIGTYPE	srp/config.h	120;"	d
+RFC2945_KEY_LEN	srp/srp.h	326;"	d
+RFC2945_RESP_LEN	srp/srp.h	327;"	d
+ROTL32	Chacha20/chacha20_simple.h	21;"	d
+ROTL32	ed25519-donna/ed25519-donna-portable.h	17;"	d
+ROTL32	ed25519-donna/ed25519-donna-portable.h	24;"	d
+ROTR32	ed25519-donna/ed25519-donna-portable.h	18;"	d
+ROTR32	ed25519-donna/ed25519-donna-portable.h	25;"	d
+S1_SWINDOWSIZE	ed25519-donna/ed25519-donna-impl-base.h	246;"	d
+S1_TABLE_SIZE	ed25519-donna/ed25519-donna-impl-base.h	247;"	d
+S2_SWINDOWSIZE	ed25519-donna/ed25519-donna-impl-base.h	248;"	d
+S2_TABLE_SIZE	ed25519-donna/ed25519-donna-impl-base.h	249;"	d
+SALTLEN	srp/t_pwd.h	45;"	d
+SERVER_CTXP	srp/srp6_server.c	60;"	d	file:
+SESSION_KEY_LEN	srp/t_pwd.h	48;"	d
+SETPREFIX	srp/setXXent.h	37;"	d
+SHA1HANDSOFF	srp/NTconfig.h	29;"	d
+SHA1HANDSOFF	srp/acconfig.h	21;"	d
+SHA1HANDSOFF	srp/config.h	23;"	d
+SHA512FinalBits	rfc6234-master/sha.c	/^int SHA512FinalBits(SHACTX *c, const void *data, unsigned int len) {$/;"	f
+SHA512Input	rfc6234-master/sha.c	/^int SHA512Input(SHACTX *c, const void *data, unsigned int len) {$/;"	f
+SHA512Reset	rfc6234-master/sha.c	/^int SHA512Reset(SHACTX *c) {$/;"	f
+SHA512Result	rfc6234-master/sha.c	/^int SHA512Result(SHACTX *c, unsigned char *md) {$/;"	f
+SHACTX	Configuration.h	/^typedef SHA512_CTX SHACTX;$/;"	t
+SHAFinal	Configuration.h	46;"	d
+SHAInit	Configuration.h	44;"	d
+SHAUpdate	Configuration.h	45;"	d
+SHA_BlockSize	Configuration.h	48;"	d
+SHA_DIGESTSIZE	Configuration.h	47;"	d
+SIZEOF_INT	srp/NTconfig.h	40;"	d
+SIZEOF_INT	srp/config.h	123;"	d
+SIZEOF_LONG	srp/NTconfig.h	43;"	d
+SIZEOF_LONG	srp/config.h	126;"	d
+SIZEOF_SHORT	srp/NTconfig.h	46;"	d
+SIZEOF_SHORT	srp/config.h	129;"	d
+SRP	srp/srp.h	/^typedef struct srp_st SRP;$/;"	t	typeref:struct:srp_st
+SRP6_server_method	srp/srp6_server.c	/^SRP6_server_method()$/;"	f
+SRP6a_server_method	srp/srp6_server.c	/^SRP6a_server_method()$/;"	f
+SRP_AUX_H	srp/srp_aux.h	31;"	d
+SRP_CLIENT_PARAM_VERIFY_CB	srp/srp.h	/^typedef SRP_RESULT (_CDECL * SRP_CLIENT_PARAM_VERIFY_CB)(SRP * srp, const unsigned char * mod, int modlen, const unsigned char * gen, int genlen);$/;"	t
+SRP_DEFAULT_MIN_BITS	srp/srp.h	53;"	d
+SRP_ERROR	srp/srp.h	50;"	d
+SRP_FLAG_LEFT_PAD	srp/srp.h	165;"	d
+SRP_FLAG_MOD_ACCEL	srp/srp.h	164;"	d
+SRP_MAGIC_CLIENT	srp/srp.h	160;"	d
+SRP_MAGIC_SERVER	srp/srp.h	161;"	d
+SRP_METHOD	srp/srp.h	/^} SRP_METHOD;$/;"	t	typeref:struct:srp_meth_st
+SRP_OK	srp/srp.h	48;"	d
+SRP_RESULT	srp/srp.h	/^typedef int SRP_RESULT;$/;"	t
+SRP_SECRET_BITS_CB	srp/srp.h	/^typedef int (_CDECL * SRP_SECRET_BITS_CB)(int modsize);$/;"	t
+SRP_SERVER_LOOKUP	srp/srp.h	/^typedef struct srp_server_lu_st SRP_SERVER_LOOKUP;$/;"	t	typeref:struct:srp_server_lu_st
+SRP_SERVER_LOOKUP_METHOD	srp/srp.h	/^} SRP_SERVER_LOOKUP_METHOD;$/;"	t	typeref:struct:srp_s_lu_meth_st
+SRP_SERVER_LOOKUP_new	srp/srp.c	/^SRP_SERVER_LOOKUP_new(SRP_SERVER_LOOKUP_METHOD * meth)$/;"	f
+SRP_SERVER_system_lookup	srp/srp.c	/^SRP_SERVER_system_lookup()$/;"	f
+SRP_SUCCESS	srp/srp.h	49;"	d
+SRP_VERSION_MAJOR	srp/srp.h	42;"	d
+SRP_VERSION_MINOR	srp/srp.h	43;"	d
+SRP_VERSION_PATCHLEVEL	srp/srp.h	44;"	d
+SRP_get_modulus_min_bits	srp/srp.c	/^SRP_get_modulus_min_bits()$/;"	f
+SRP_get_secret_bits	srp/srp.c	/^SRP_get_secret_bits(int modsize)$/;"	f
+SRP_new	srp/srp.c	/^SRP_new(SRP_METHOD * meth)$/;"	f
+STDC_HEADERS	srp/NTconfig.h	14;"	d
+STDC_HEADERS	srp/config.h	132;"	d
+STDPREFIX	srp/nss_defs.h	30;"	d
+STDPREFIX	srp/nss_defs.h	33;"	d
+STTY	srp/t_defines.h	106;"	d
+STTY	srp/t_defines.h	113;"	d
+STTY	srp/t_defines.h	119;"	d
+SerialPortAddr	PHKArduinoLightInterface.c	15;"	d	file:
+Service	PHKAccessory.h	/^    Service(int _uuid): uuid(_uuid) {}$/;"	f	class:Service
+Service	PHKAccessory.h	/^class Service {$/;"	c
+State_M1_SRPStartRequest	PHKNetworkIP.h	/^    State_M1_SRPStartRequest      = 1,$/;"	e	enum:__anon3
+State_M2_SRPStartRespond	PHKNetworkIP.h	/^    State_M2_SRPStartRespond      = 2,$/;"	e	enum:__anon3
+State_M3_SRPVerifyRequest	PHKNetworkIP.h	/^    State_M3_SRPVerifyRequest     = 3,$/;"	e	enum:__anon3
+State_M4_SRPVerifyRespond	PHKNetworkIP.h	/^    State_M4_SRPVerifyRespond     = 4,$/;"	e	enum:__anon3
+State_M5_ExchangeRequest	PHKNetworkIP.h	/^    State_M5_ExchangeRequest      = 5,$/;"	e	enum:__anon3
+State_M6_ExchangeRespond	PHKNetworkIP.h	/^    State_M6_ExchangeRespond      = 6,$/;"	e	enum:__anon3
+State_Pair_Verify_M1	PHKNetworkIP.h	/^    State_Pair_Verify_M1          = 1,$/;"	e	enum:__anon4
+State_Pair_Verify_M2	PHKNetworkIP.h	/^    State_Pair_Verify_M2          = 2,$/;"	e	enum:__anon4
+State_Pair_Verify_M3	PHKNetworkIP.h	/^    State_Pair_Verify_M3          = 3,$/;"	e	enum:__anon4
+State_Pair_Verify_M4	PHKNetworkIP.h	/^    State_Pair_Verify_M4          = 4,$/;"	e	enum:__anon4
+TEMRIO	srp/t_defines.h	115;"	d
+TERMIO	srp/t_defines.h	108;"	d
+TERMIO	srp/t_defines.h	121;"	d
+TIME_WITH_SYS_TIME	srp/config.h	135;"	d
+TOMCRYPT	srp/acconfig.h	9;"	d
+TOMMATH	srp/acconfig.h	11;"	d
+T_CLIENT_H	srp/t_client.h	31;"	d
+T_DEFINES_H	srp/t_defines.h	31;"	d
+T_PWD_H	srp/t_pwd.h	31;"	d
+T_SERVER_H	srp/t_server.h	31;"	d
+Type_Data_With_Length	PHKNetworkIP.h	/^    Type_Data_With_Length         = 2,$/;"	e	enum:__anon5
+Type_Data_Without_Length	PHKNetworkIP.h	/^    Type_Data_Without_Length      = 1,$/;"	e	enum:__anon5
+U32TO8	poly1305-opt-master/poly1305.c	/^U32TO8(unsigned char *p, unsigned long v)$/;"	f	file:
+U32TO8_LE	ed25519-donna/ed25519-donna-portable.h	/^static inline void U32TO8_LE(unsigned char *p, const uint32_t v) {$/;"	f
+U8TO32	poly1305-opt-master/poly1305.c	/^U8TO32(const unsigned char *p)$/;"	f	file:
+U8TO32_LE	ed25519-donna/ed25519-donna-portable.h	/^static inline uint32_t U8TO32_LE(const unsigned char *p) {$/;"	f
+USE_FTIME	srp/t_defines.h	126;"	d
+USE_RENAME	srp/t_defines.h	127;"	d
+USE_SGTTY	srp/t_defines.h	122;"	d
+USE_TERMIO	srp/t_defines.h	116;"	d
+USE_TERMIOS	srp/t_defines.h	109;"	d
+VERSION	srp/NTconfig.h	37;"	d
+VERSION	srp/acconfig.h	29;"	d
+VERSION	srp/config.h	138;"	d
+VERSION	srp/config.h	31;"	d
+WORDS_BIGENDIAN	srp/config.h	144;"	d
+Workbench_hkdf_h	rfc6234-master/hkdf.h	10;"	d
+_CDECL	srp/cstr.h	25;"	d
+_CDECL	srp/cstr.h	33;"	d
+_CDECL	srp/cstr.h	42;"	d
+_CDECL	srp/cstr.h	44;"	d
+_CDECL	srp/t_defines.h	52;"	d
+_CDECL	srp/t_defines.h	60;"	d
+_CDECL	srp/t_defines.h	69;"	d
+_CDECL	srp/t_defines.h	71;"	d
+_CONCAT	srp/nss_defs.h	24;"	d
+_CSTR_H_	srp/cstr.h	2;"	d
+_DLLAPI	srp/cstr.h	24;"	d
+_DLLAPI	srp/cstr.h	32;"	d
+_DLLAPI	srp/cstr.h	40;"	d
+_DLLAPI	srp/t_defines.h	51;"	d
+_DLLAPI	srp/t_defines.h	59;"	d
+_DLLAPI	srp/t_defines.h	67;"	d
+_DLLDECL	srp/cstr.h	19;"	d
+_DLLDECL	srp/t_defines.h	46;"	d
+_ENSWF	srp/nsswitch.h	59;"	d
+_ENSWF	srp/nsswitch.h	61;"	d
+_MSVC15DEXPORT	srp/cstr.h	38;"	d
+_MSVC15DEXPORT	srp/t_defines.h	65;"	d
+_MSVC15EXPORT	srp/cstr.h	22;"	d
+_MSVC15EXPORT	srp/cstr.h	30;"	d
+_MSVC15EXPORT	srp/t_defines.h	49;"	d
+_MSVC15EXPORT	srp/t_defines.h	57;"	d
+_MSVC20EXPORT	srp/cstr.h	23;"	d
+_MSVC20EXPORT	srp/cstr.h	31;"	d
+_MSVC20EXPORT	srp/cstr.h	39;"	d
+_MSVC20EXPORT	srp/t_defines.h	50;"	d
+_MSVC20EXPORT	srp/t_defines.h	58;"	d
+_MSVC20EXPORT	srp/t_defines.h	66;"	d
+_SRP_H_	srp/srp.h	30;"	d
+_TYPE	srp/cstr.h	26;"	d
+_TYPE	srp/cstr.h	34;"	d
+_TYPE	srp/cstr.h	46;"	d
+_TYPE	srp/srp.c	/^_TYPE( SRP_RESULT )$/;"	f
+_TYPE	srp/t_defines.h	53;"	d
+_TYPE	srp/t_defines.h	61;"	d
+_TYPE	srp/t_defines.h	73;"	d
+_T_READ_H_	srp/t_read.h	31;"	d
+__NSSWITCH_H__	srp/nsswitch.h	27;"	d
+__NYS_CONFIG_H__	srp/nys_config.h	25;"	d
+__STDC_LIMIT_MACROS	PHKAccessory.h	12;"	d
+__YPLIB_MISC_H__	srp/yp_misc.h	28;"	d
+_accessories	PHKAccessory.h	/^    vector<Accessory *> _accessories;$/;"	m	class:AccessorySet
+_aid	PHKAccessory.h	/^    int _aid = 0;$/;"	m	class:AccessorySet
+_characteristics	PHKAccessory.h	/^    vector<characteristics *> _characteristics;$/;"	m	class:Service
+_endtcent	srp/t_conf.c	/^_endtcent$/;"	f
+_endtpent	srp/t_pw.c	/^_endtpent$/;"	f
+_gettcent	srp/t_conf.c	/^_gettcent$/;"	f
+_gettcid	srp/t_conf.c	/^_gettcid$/;"	f
+_gettpent	srp/t_pw.c	/^_gettpent$/;"	f
+_gettpnam	srp/t_pw.c	/^_gettpnam$/;"	f
+_manufactuerName	Configuration.h	17;"	d
+_maxVal	PHKAccessory.h	/^    const float _minVal, _maxVal, _step;$/;"	m	class:floatCharacteristics
+_maxVal	PHKAccessory.h	/^    const int _minVal, _maxVal, _step;$/;"	m	class:intCharacteristics
+_minVal	PHKAccessory.h	/^    const float _minVal, _maxVal, _step;$/;"	m	class:floatCharacteristics
+_minVal	PHKAccessory.h	/^    const int _minVal, _maxVal, _step;$/;"	m	class:intCharacteristics
+_services	PHKAccessory.h	/^    vector<Service *>_services;$/;"	m	class:Accessory
+_settcent	srp/t_conf.c	/^_settcent$/;"	f
+_settpent	srp/t_pw.c	/^_settpent$/;"	f
+_socket_v4	PHKNetworkIP.cpp	/^int _socket_v4, _socket_v6;$/;"	v
+_socket_v6	PHKNetworkIP.cpp	/^int _socket_v4, _socket_v6;$/;"	v
+_step	PHKAccessory.h	/^    const float _minVal, _maxVal, _step;$/;"	m	class:floatCharacteristics
+_step	PHKAccessory.h	/^    const int _minVal, _maxVal, _step;$/;"	m	class:intCharacteristics
+_unit	PHKAccessory.h	/^    const unit _unit;$/;"	m	class:floatCharacteristics
+_unit	PHKAccessory.h	/^    const unit _unit;$/;"	m	class:intCharacteristics
+_value	PHKAccessory.h	/^    bool _value;$/;"	m	class:boolCharacteristics
+_value	PHKAccessory.h	/^    float _value;$/;"	m	class:floatCharacteristics
+_value	PHKAccessory.h	/^    int _value;$/;"	m	class:intCharacteristics
+_value	PHKAccessory.h	/^    string _value;$/;"	m	class:stringCharacteristics
+a	ed25519-donna/ed25519-randombytes.h	/^	uint32_t a, b, c;$/;"	m	struct:isaacp_state_t
+a	srp/t_client.h	/^  struct t_num a;$/;"	m	struct:t_client	typeref:struct:t_client::t_num
+abuf	srp/t_client.h	/^  unsigned char abuf[ALEN], Abuf[MAXPARAMLEN];$/;"	m	struct:t_client
+accSet	Accessory.cpp	/^AccessorySet *accSet;$/;"	v
+accSet	Example Accessory Configuration/Fan+Light.cpp	/^AccessorySet *accSet;$/;"	v
+accel	srp/srp.h	/^  BigIntegerModAccel accel;  \/* to accelerate modexp if available *\/$/;"	m	struct:srp_st
+accessoryAtIndex	PHKAccessory.h	/^    Accessory *accessoryAtIndex(int index) {$/;"	f	class:AccessorySet
+accessoryMutex	PHKAccessory.h	/^    pthread_mutex_t accessoryMutex;$/;"	m	class:AccessorySet
+accessorySecretKey	PHKNetworkIP.cpp	/^const unsigned char accessorySecretKey[32] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xC9, 0x0F, 0xDA, 0xA2, 0x21, 0x68, 0xC2, 0x34, 0xC4, 0xC6, 0x62, 0x8B, 0x80, 0xDC, 0x1C, 0xD1, 0x29, 0x02, 0x4E, 0x08, 0x8A, 0x67, 0xCC, 0x74};$/;"	v
+accessoryToControllerKey	PHKNetworkIP.h	/^    uint8_t accessoryToControllerKey[32];$/;"	m	class:connectionInfo
+activate	PHKNetworkIP.h	/^    bool activate = false;$/;"	m	class:PHKNetworkMessageDataRecord
+add128	ed25519-donna/ed25519-donna-portable.h	43;"	d
+add128	ed25519-donna/ed25519-donna-portable.h	64;"	d
+add128	ed25519-donna/ed25519-donna-portable.h	78;"	d
+add128_64	ed25519-donna/ed25519-donna-portable.h	44;"	d
+add128_64	ed25519-donna/ed25519-donna-portable.h	65;"	d
+add128_64	ed25519-donna/ed25519-donna-portable.h	79;"	d
+add256_modm	ed25519-donna/modm-donna-32bit.h	/^add256_modm(bignum256modm r, const bignum256modm x, const bignum256modm y) {$/;"	f
+addAccessory	PHKAccessory.h	/^    void addAccessory(Accessory *acc) {$/;"	f	class:AccessorySet
+addCharacteristics	PHKAccessory.h	/^    void addCharacteristics(Service *ser, characteristics *cha) {$/;"	f	class:Accessory
+addInfoServiceToAccessory	PHKAccessory.cpp	/^void addInfoServiceToAccessory(Accessory *acc, string accName, string manufactuerName, string modelName, string serialNumber, identifyFunction identifyCallback) {$/;"	f
+addNotify	PHKNetworkIP.h	/^    void addNotify(void *target) {$/;"	f	class:connectionInfo
+addRecord	PHKNetworkIP.cpp	/^void PHKNetworkMessageData::addRecord(PHKNetworkMessageDataRecord& record) {$/;"	f	class:PHKNetworkMessageData
+addService	PHKAccessory.h	/^    void addService(Service *ser) {$/;"	f	class:Accessory
+aid	PHKAccessory.h	/^    int aid;$/;"	m	class:Accessory
+aligner	poly1305-opt-master/poly1305.h	/^        size_t aligner;$/;"	m	struct:poly1305_context
+alloc	srp/cstr.h	/^  void * (_CDECL * alloc)(size_t n, void * heap);$/;"	m	struct:cstr_alloc_st
+allocator	srp/cstr.h	/^  cstr_allocator * allocator;$/;"	m	struct:cstr_st
+announce	PHKAccessory.cpp	/^void *announce(void *info) {$/;"	f
+arrayWrap	PHKAccessory.cpp	/^inline string arrayWrap(string *s, unsigned short len) {$/;"	f
+attribute	PHKAccessory.cpp	/^inline string attribute(unsigned short type, unsigned short acclaim, int p, bool value) {$/;"	f
+attribute	PHKAccessory.cpp	/^inline string attribute(unsigned short type, unsigned short acclaim, int p, float value, float minVal, float maxVal, float step, unit valueUnit) {$/;"	f
+attribute	PHKAccessory.cpp	/^inline string attribute(unsigned short type, unsigned short acclaim, int p, int value, int minVal, int maxVal, int step, unit valueUnit) {$/;"	f
+attribute	PHKAccessory.cpp	/^inline string attribute(unsigned short type, unsigned short acclaim, int p, string value, unsigned short len) {$/;"	f
+auth	srp/srp.h	/^  SRP_RESULT (_CDECL * auth)(SRP * srp, const unsigned char * a, int alen);$/;"	m	struct:srp_meth_st
+available	Chacha20/chacha20_simple.h	/^  size_t available;$/;"	m	struct:__anon9
+b	ed25519-donna/ed25519-randombytes.h	/^	uint32_t a, b, c;$/;"	m	struct:isaacp_state_t
+b	srp/t_server.h	/^  struct t_num b;$/;"	m	struct:t_server	typeref:struct:t_server::t_num
+b64table	srp/t_conv.c	/^static char b64table[] =$/;"	v	file:
+b64table	srp/t_math.c	/^static char b64table[] =$/;"	v	file:
+barrett_reduce256_modm	ed25519-donna/modm-donna-32bit.h	/^barrett_reduce256_modm(bignum256modm r, const bignum256modm q1, const bignum256modm r1) {$/;"	f
+batch_heap	ed25519-donna/ed25519-donna-batchverify.h	/^} batch_heap;$/;"	t	typeref:struct:batch_heap_t
+batch_heap_t	ed25519-donna/ed25519-donna-batchverify.h	/^typedef struct batch_heap_t {$/;"	s
+batch_point_buffer	ed25519-donna/ed25519-donna-batchverify.h	/^unsigned char batch_point_buffer[3][32];$/;"	v
+bbuf	srp/t_server.h	/^  unsigned char saltbuf[MAXSALTLEN], bbuf[BLEN], Bbuf[MAXPARAMLEN];$/;"	m	struct:t_server
+bctx	srp/srp.h	/^  BigIntegerCtx bctx;	     \/* to cache temporaries if available *\/$/;"	m	struct:srp_st
+bignum25519	ed25519-donna/curve25519-donna-32bit.h	/^typedef uint32_t bignum25519[10];$/;"	t
+bignum25519align16	ed25519-donna/curve25519-donna-32bit.h	/^typedef uint32_t bignum25519align16[12];$/;"	t
+bignum256modm	ed25519-donna/modm-donna-32bit.h	/^typedef bignum256modm_element_t bignum256modm[9];$/;"	t
+bignum256modm_bits_per_limb	ed25519-donna/modm-donna-32bit.h	15;"	d
+bignum256modm_element_t	ed25519-donna/modm-donna-32bit.h	/^typedef uint32_t bignum256modm_element_t;$/;"	t
+bignum256modm_limb_size	ed25519-donna/modm-donna-32bit.h	16;"	d
+blockSize	rfc6234-master/sha.h	/^    int blockSize;              \/* block size of SHA being used *\/$/;"	m	struct:HMACContext
+boolCharacteristics	PHKAccessory.h	/^    boolCharacteristics(unsigned short _type, int _premission): characteristics(_type, _premission) {}$/;"	f	class:boolCharacteristics
+boolCharacteristics	PHKAccessory.h	/^class boolCharacteristics: public characteristics {$/;"	c
+broadcastInfo	PHKAccessory.cpp	/^struct broadcastInfo {$/;"	s	file:
+broadcastMessage	PHKNetworkIP.cpp	/^void broadcastMessage(void *sender, char *resultData, size_t resultLen) {$/;"	f
+bswap_16	PHKNetworkIP.cpp	/^static inline unsigned short bswap_16(unsigned short x) {$/;"	f	file:
+bswap_32	PHKNetworkIP.cpp	/^static inline unsigned int bswap_32(unsigned int x) {$/;"	f	file:
+bswap_64	PHKNetworkIP.cpp	/^static inline unsigned long long bswap_64(unsigned long long x) {$/;"	f	file:
+btCharType_pairSetup	PHKAccessory.h	/^    btCharType_pairSetup = 0x4C,$/;"	e	enum:__anon6
+btCharType_pairVerify	PHKAccessory.h	/^    btCharType_pairVerify = 0x4E,$/;"	e	enum:__anon6
+btCharType_pairingFeature	PHKAccessory.h	/^    btCharType_pairingFeature = 0x4F,$/;"	e	enum:__anon6
+btCharType_pairings	PHKAccessory.h	/^    btCharType_pairings = 0x50,$/;"	e	enum:__anon6
+btCharType_serviceInstanceID	PHKAccessory.h	/^    btCharType_serviceInstanceID = 0x51,$/;"	e	enum:__anon6
+btServiceType_accessoryInformation	PHKAccessory.h	/^    btServiceType_accessoryInformation = 0xFED3,$/;"	e	enum:__anon6
+btServiceType_camera	PHKAccessory.h	/^    btServiceType_camera            = 0xFEC9,$/;"	e	enum:__anon6
+btServiceType_fan	PHKAccessory.h	/^    btServiceType_fan               = 0xFECB,$/;"	e	enum:__anon6
+btServiceType_garageDoorOpener	PHKAccessory.h	/^    btServiceType_garageDoorOpener  = 0xFECE,$/;"	e	enum:__anon6
+btServiceType_lightBulb	PHKAccessory.h	/^    btServiceType_lightBulb         = 0xFED2,$/;"	e	enum:__anon6
+btServiceType_lockManagement	PHKAccessory.h	/^    btServiceType_lockManagement    = 0xFECF,$/;"	e	enum:__anon6
+btServiceType_lockMechanism	PHKAccessory.h	/^    btServiceType_lockMechanism     = 0xFED0,$/;"	e	enum:__anon6
+btServiceType_microphone	PHKAccessory.h	/^    btServiceType_microphone        = 0xFEC8,$/;"	e	enum:__anon6
+btServiceType_outlet	PHKAccessory.h	/^    btServiceType_outlet            = 0xFECC,$/;"	e	enum:__anon6
+btServiceType_speaker	PHKAccessory.h	/^    btServiceType_speaker           = 0xFEC7,$/;"	e	enum:__anon6
+btServiceType_switch	PHKAccessory.h	/^    btServiceType_switch            = 0xFECD,$/;"	e	enum:__anon6
+buffer	PHKNetworkIP.h	/^    char buffer[4096];$/;"	m	class:connectionInfo
+buffer	ed25519-donna/ed25519-randombytes.h	/^	unsigned char buffer[1024];$/;"	m	struct:isaacp_state_t
+buffer	poly1305-opt-master/poly1305.c	/^    unsigned char buffer[poly1305_block_size];$/;"	m	struct:poly1305_state_internal_t	file:
+buffer	srp/t_truerand.c	/^static unsigned buffer;$/;"	v	file:
+bufp	srp/t_truerand.c	/^char outbuf[1024], *bufp;$/;"	v
+buildTXTRecord	PHKNetworkIP.cpp	/^TXTRecordRef buildTXTRecord() {$/;"	f
+c	ed25519-donna/ed25519-randombytes.h	/^	uint32_t a, b, c;$/;"	m	struct:isaacp_state_t
+cap	srp/cstr.h	/^  int cap;$/;"	m	struct:cstr_st
+carry_final	ed25519-donna/curve25519-donna-32bit.h	497;"	d
+carry_full	ed25519-donna/curve25519-donna-32bit.h	496;"	d
+carry_pass	ed25519-donna/curve25519-donna-32bit.h	453;"	d
+carry_pass	ed25519-donna/curve25519-donna-32bit.h	495;"	d
+carry_pass_final	ed25519-donna/curve25519-donna-32bit.h	468;"	d
+carry_pass_full	ed25519-donna/curve25519-donna-32bit.h	464;"	d
+chacha20_block	Chacha20/chacha20_simple.c	/^void chacha20_block(chacha20_ctx *ctx, uint32_t output[16])$/;"	f
+chacha20_counter_set	Chacha20/chacha20_simple.c	/^void chacha20_counter_set(chacha20_ctx *ctx, uint64_t counter)$/;"	f
+chacha20_ctx	Chacha20/chacha20_simple.h	/^} chacha20_ctx;$/;"	t	typeref:struct:__anon9
+chacha20_decrypt	Chacha20/chacha20_simple.c	/^void chacha20_decrypt(chacha20_ctx *ctx, const uint8_t *in, uint8_t *out, size_t length)$/;"	f
+chacha20_encrypt	Chacha20/chacha20_simple.c	/^void chacha20_encrypt(chacha20_ctx *ctx, const uint8_t *in, uint8_t *out, size_t length)$/;"	f
+chacha20_setup	Chacha20/chacha20_simple.c	/^void chacha20_setup(chacha20_ctx *ctx, const uint8_t *key, size_t length, uint8_t nonce[8])$/;"	f
+chacha20_xor	Chacha20/chacha20_simple.c	/^static inline void chacha20_xor(uint8_t *keystream, const uint8_t **in, uint8_t **out, size_t length)$/;"	f	file:
+changeLightIntensity	Accessory.cpp	/^void changeLightIntensity(int oldValue, int newValue) {$/;"	f
+changeLightPower	Accessory.cpp	/^void changeLightPower(bool oldValue, bool newValue) {$/;"	f
+charType	PHKAccessory.h	/^} charType;$/;"	t	typeref:enum:__anon6
+charType_adminOnlyAccess	PHKAccessory.h	/^    charType_adminOnlyAccess    = 0x1,$/;"	e	enum:__anon6
+charType_airParticulateDensity	PHKAccessory.h	/^    charType_airParticulateDensity = 0x64,$/;"	e	enum:__anon6
+charType_airParticulateSize	PHKAccessory.h	/^    charType_airParticulateSize = 0x65,$/;"	e	enum:__anon6
+charType_airQuality	PHKAccessory.h	/^    charType_airQuality         = 0x95,$/;"	e	enum:__anon6
+charType_alarmCurrentState	PHKAccessory.h	/^    charType_alarmCurrentState  = 0x66,$/;"	e	enum:__anon6
+charType_alarmTargetState	PHKAccessory.h	/^    charType_alarmTargetState   = 0x67,$/;"	e	enum:__anon6
+charType_audioChannels	PHKAccessory.h	/^    charType_audioChannels      = 0x2,$/;"	e	enum:__anon6
+charType_audioCodexName	PHKAccessory.h	/^    charType_audioCodexName     = 0x3,$/;"	e	enum:__anon6
+charType_audioCodexParameter	PHKAccessory.h	/^    charType_audioCodexParameter= 0x4,$/;"	e	enum:__anon6
+charType_audioFeedback	PHKAccessory.h	/^    charType_audioFeedback      = 0x5,$/;"	e	enum:__anon6
+charType_audioPropAttr	PHKAccessory.h	/^    charType_audioPropAttr      = 0x6,$/;"	e	enum:__anon6
+charType_audioValAttr	PHKAccessory.h	/^    charType_audioValAttr       = 0x7,$/;"	e	enum:__anon6
+charType_batteryLevel	PHKAccessory.h	/^    charType_batteryLevel       = 0x68,$/;"	e	enum:__anon6
+charType_brightness	PHKAccessory.h	/^    charType_brightness         = 0x8,$/;"	e	enum:__anon6
+charType_cameraNightVision	PHKAccessory.h	/^    charType_cameraNightVision  = 0x9,$/;"	e	enum:__anon6
+charType_cameraPan	PHKAccessory.h	/^    charType_cameraPan          = 0xA,$/;"	e	enum:__anon6
+charType_cameraTilt	PHKAccessory.h	/^    charType_cameraTilt         = 0xB,$/;"	e	enum:__anon6
+charType_cameraZoom	PHKAccessory.h	/^    charType_cameraZoom         = 0xC,$/;"	e	enum:__anon6
+charType_carbonDioxideDetected	PHKAccessory.h	/^    charType_carbonDioxideDetected = 0x92,$/;"	e	enum:__anon6
+charType_carbonDioxideLevel	PHKAccessory.h	/^    charType_carbonDioxideLevel = 0x93,$/;"	e	enum:__anon6
+charType_carbonDioxidePeakLevel	PHKAccessory.h	/^    charType_carbonDioxidePeakLevel = 0x94,$/;"	e	enum:__anon6
+charType_carbonMonoxideDetected	PHKAccessory.h	/^    charType_carbonMonoxideDetected = 0x69,$/;"	e	enum:__anon6
+charType_carbonMonoxideLevel	PHKAccessory.h	/^    charType_carbonMonoxideLevel = 0x90,$/;"	e	enum:__anon6
+charType_carbonMonoxidePeakLevel	PHKAccessory.h	/^    charType_carbonMonoxidePeakLevel = 0x91,$/;"	e	enum:__anon6
+charType_contactSensorState	PHKAccessory.h	/^    charType_contactSensorState = 0x6A,$/;"	e	enum:__anon6
+charType_coolingThreshold	PHKAccessory.h	/^    charType_coolingThreshold   = 0xD,$/;"	e	enum:__anon6
+charType_currentAmbientLightLevel	PHKAccessory.h	/^    charType_currentAmbientLightLevel = 0x6B,$/;"	e	enum:__anon6
+charType_currentDoorState	PHKAccessory.h	/^    charType_currentDoorState   = 0xE,$/;"	e	enum:__anon6
+charType_currentHeatCoolMode	PHKAccessory.h	/^    charType_currentHeatCoolMode= 0xF,$/;"	e	enum:__anon6
+charType_currentHorizontalTiltAngle	PHKAccessory.h	/^    charType_currentHorizontalTiltAngle = 0x6C,$/;"	e	enum:__anon6
+charType_currentHumidity	PHKAccessory.h	/^    charType_currentHumidity    = 0x10,$/;"	e	enum:__anon6
+charType_currentPosition	PHKAccessory.h	/^    charType_currentPosition    = 0x6D,$/;"	e	enum:__anon6
+charType_currentTemperature	PHKAccessory.h	/^    charType_currentTemperature = 0x11,$/;"	e	enum:__anon6
+charType_currentVerticalTiltAngle	PHKAccessory.h	/^    charType_currentVerticalTiltAngle = 0x6E,$/;"	e	enum:__anon6
+charType_firmwareRevision	PHKAccessory.h	/^    charType_firmwareRevision   = 0x52,$/;"	e	enum:__anon6
+charType_hardwareRevision	PHKAccessory.h	/^    charType_hardwareRevision   = 0x53,$/;"	e	enum:__anon6
+charType_heatingThreshold	PHKAccessory.h	/^    charType_heatingThreshold   = 0x12,$/;"	e	enum:__anon6
+charType_holdPosition	PHKAccessory.h	/^    charType_holdPosition       = 0x6F,$/;"	e	enum:__anon6
+charType_hue	PHKAccessory.h	/^    charType_hue                = 0x13,$/;"	e	enum:__anon6
+charType_identify	PHKAccessory.h	/^    charType_identify           = 0x14,$/;"	e	enum:__anon6
+charType_inputVolume	PHKAccessory.h	/^    charType_inputVolume        = 0x15,$/;"	e	enum:__anon6
+charType_ipCameraStart	PHKAccessory.h	/^    charType_ipCameraStart      = 0x16,$/;"	e	enum:__anon6
+charType_ipCameraStop	PHKAccessory.h	/^    charType_ipCameraStop       = 0x17,$/;"	e	enum:__anon6
+charType_leakDetected	PHKAccessory.h	/^    charType_leakDetected       = 0x70,$/;"	e	enum:__anon6
+charType_lockAutoTimeout	PHKAccessory.h	/^    charType_lockAutoTimeout    = 0x1A,$/;"	e	enum:__anon6
+charType_lockControlPoint	PHKAccessory.h	/^    charType_lockControlPoint   = 0x19,$/;"	e	enum:__anon6
+charType_lockCurrentState	PHKAccessory.h	/^    charType_lockCurrentState   = 0x1D,$/;"	e	enum:__anon6
+charType_lockLastAction	PHKAccessory.h	/^    charType_lockLastAction     = 0x1C,$/;"	e	enum:__anon6
+charType_lockTargetState	PHKAccessory.h	/^    charType_lockTargetState    = 0x1E,$/;"	e	enum:__anon6
+charType_logs	PHKAccessory.h	/^    charType_logs               = 0x1F,$/;"	e	enum:__anon6
+charType_manufactuer	PHKAccessory.h	/^    charType_manufactuer        = 0x20,$/;"	e	enum:__anon6
+charType_modelName	PHKAccessory.h	/^    charType_modelName          = 0x21,$/;"	e	enum:__anon6
+charType_motionDetect	PHKAccessory.h	/^    charType_motionDetect       = 0x22,$/;"	e	enum:__anon6
+charType_obstruction	PHKAccessory.h	/^    charType_obstruction        = 0x24,$/;"	e	enum:__anon6
+charType_occupancyDetected	PHKAccessory.h	/^    charType_occupancyDetected  = 0x71,$/;"	e	enum:__anon6
+charType_on	PHKAccessory.h	/^    charType_on                 = 0x25,$/;"	e	enum:__anon6
+charType_outletInUse	PHKAccessory.h	/^    charType_outletInUse        = 0x26,$/;"	e	enum:__anon6
+charType_outputVolume	PHKAccessory.h	/^    charType_outputVolume       = 0x27,$/;"	e	enum:__anon6
+charType_positionState	PHKAccessory.h	/^    charType_positionState      = 0x72,$/;"	e	enum:__anon6
+charType_programmableSwitchEvent	PHKAccessory.h	/^    charType_programmableSwitchEvent = 0x73,$/;"	e	enum:__anon6
+charType_programmableSwitchOutputState	PHKAccessory.h	/^    charType_programmableSwitchOutputState = 0x74,$/;"	e	enum:__anon6
+charType_reachable	PHKAccessory.h	/^    charType_reachable          = 0x63,$/;"	e	enum:__anon6
+charType_rotationDirection	PHKAccessory.h	/^    charType_rotationDirection  = 0x28,$/;"	e	enum:__anon6
+charType_rotationSpeed	PHKAccessory.h	/^    charType_rotationSpeed      = 0x29,$/;"	e	enum:__anon6
+charType_rtcpAudioClock	PHKAccessory.h	/^    charType_rtcpAudioClock     = 0x2D,$/;"	e	enum:__anon6
+charType_rtcpAudioPayload	PHKAccessory.h	/^    charType_rtcpAudioPayload   = 0x2C,$/;"	e	enum:__anon6
+charType_rtcpExtProp	PHKAccessory.h	/^    charType_rtcpExtProp        = 0x2A,$/;"	e	enum:__anon6
+charType_rtcpProtocol	PHKAccessory.h	/^    charType_rtcpProtocol       = 0x2E,$/;"	e	enum:__anon6
+charType_rtcpVideoPayload	PHKAccessory.h	/^    charType_rtcpVideoPayload   = 0x2B,$/;"	e	enum:__anon6
+charType_saturation	PHKAccessory.h	/^    charType_saturation         = 0x2F,$/;"	e	enum:__anon6
+charType_sensorActive	PHKAccessory.h	/^    charType_sensorActive       = 0x75,$/;"	e	enum:__anon6
+charType_sensorChargingState	PHKAccessory.h	/^    charType_sensorChargingState= 0x8F,$/;"	e	enum:__anon6
+charType_sensorFault	PHKAccessory.h	/^    charType_sensorFault        = 0x77,$/;"	e	enum:__anon6
+charType_sensorJammed	PHKAccessory.h	/^    charType_sensorJammed       = 0x78,$/;"	e	enum:__anon6
+charType_sensorLowBattery	PHKAccessory.h	/^    charType_sensorLowBattery   = 0x79,$/;"	e	enum:__anon6
+charType_sensorTampered	PHKAccessory.h	/^    charType_sensorTampered     = 0x7A,$/;"	e	enum:__anon6
+charType_serialNumber	PHKAccessory.h	/^    charType_serialNumber       = 0x30,$/;"	e	enum:__anon6
+charType_serviceName	PHKAccessory.h	/^    charType_serviceName        = 0x23,$/;"	e	enum:__anon6
+charType_smokeDetected	PHKAccessory.h	/^    charType_smokeDetected      = 0x76,$/;"	e	enum:__anon6
+charType_softwareRevision	PHKAccessory.h	/^    charType_softwareRevision   = 0x54,$/;"	e	enum:__anon6
+charType_srtpCyptoSuite	PHKAccessory.h	/^    charType_srtpCyptoSuite     = 0x31,$/;"	e	enum:__anon6
+charType_targetDoorState	PHKAccessory.h	/^    charType_targetDoorState    = 0x32,$/;"	e	enum:__anon6
+charType_targetHeatCoolMode	PHKAccessory.h	/^    charType_targetHeatCoolMode = 0x33,$/;"	e	enum:__anon6
+charType_targetHorizontalTiltAngle	PHKAccessory.h	/^    charType_targetHorizontalTiltAngle = 0x7B,$/;"	e	enum:__anon6
+charType_targetHumidity	PHKAccessory.h	/^    charType_targetHumidity     = 0x34,$/;"	e	enum:__anon6
+charType_targetPosition	PHKAccessory.h	/^    charType_targetPosition     = 0x7C,$/;"	e	enum:__anon6
+charType_targetTemperature	PHKAccessory.h	/^    charType_targetTemperature  = 0x35,$/;"	e	enum:__anon6
+charType_targetVerticalTiltAngle	PHKAccessory.h	/^    charType_targetVerticalTiltAngle = 0x7D,$/;"	e	enum:__anon6
+charType_temperatureUnit	PHKAccessory.h	/^    charType_temperatureUnit    = 0x36,$/;"	e	enum:__anon6
+charType_version	PHKAccessory.h	/^    charType_version            = 0x37,$/;"	e	enum:__anon6
+charType_videoCodexName	PHKAccessory.h	/^    charType_videoCodexName     = 0x38,$/;"	e	enum:__anon6
+charType_videoCodexPara	PHKAccessory.h	/^    charType_videoCodexPara     = 0x39,$/;"	e	enum:__anon6
+charType_videoMirror	PHKAccessory.h	/^    charType_videoMirror        = 0x3A,$/;"	e	enum:__anon6
+charType_videoPropAttr	PHKAccessory.h	/^    charType_videoPropAttr      = 0x3B,$/;"	e	enum:__anon6
+charType_videoRotation	PHKAccessory.h	/^    charType_videoRotation      = 0x3C,$/;"	e	enum:__anon6
+charType_videoValAttr	PHKAccessory.h	/^    charType_videoValAttr       = 0x3D,$/;"	e	enum:__anon6
+characteristics	PHKAccessory.h	/^    characteristics(unsigned short _type, int _premission): type(_type), premission(_premission) {}$/;"	f	class:characteristics
+characteristics	PHKAccessory.h	/^class characteristics {$/;"	c
+characteristicsAtIndex	PHKAccessory.h	/^    characteristics *characteristicsAtIndex(int index) {$/;"	f	class:Accessory
+characteristicsAtIndex	PHKAccessory.h	/^    virtual characteristics *characteristicsAtIndex(int index) { return _characteristics[index]; }$/;"	f	class:Service
+ckhash	srp/srp6_server.c	/^  SHACTX ckhash;$/;"	m	struct:server_meth_st	file:
+ckhash	srp/t_client.h	/^  SHA1_CTX hash, ckhash;$/;"	m	struct:t_client
+ckhash	srp/t_server.h	/^  SHA1_CTX oldhash, hash, oldckhash, ckhash;$/;"	m	struct:t_server
+clearNotify	PHKNetworkIP.h	/^    void clearNotify() {$/;"	f	class:connectionInfo
+close_on_exit	srp/t_pwd.h	/^  char close_on_exit;$/;"	m	struct:t_conf
+close_on_exit	srp/t_pwd.h	/^  char close_on_exit;$/;"	m	struct:t_pw
+cmult	curve25519/curve25519-donna.c	/^cmult(limb *resultx, limb *resultz, const u8 *n, const limb *q) {$/;"	f	file:
+comment	srp/t_pwd.h	/^  char * comment;$/;"	m	struct:t_preconf
+confinit	srp/t_conf.c	/^confinit()$/;"	f	file:
+connected	PHKNetworkIP.h	/^    bool connected = false;$/;"	m	class:connectionInfo
+connectionInfo	PHKNetworkIP.h	/^class connectionInfo {$/;"	c
+connectionLoop	PHKNetworkIP.cpp	/^void *connectionLoop(void *threadInfo) {$/;"	f
+contract256_modm	ed25519-donna/modm-donna-32bit.h	/^contract256_modm(unsigned char out[32], const bignum256modm in) {$/;"	f
+contract256_slidingwindow_modm	ed25519-donna/modm-donna-32bit.h	/^contract256_slidingwindow_modm(signed char r[256], const bignum256modm s, int windowsize) {$/;"	f
+contract256_window4_modm	ed25519-donna/modm-donna-32bit.h	/^contract256_window4_modm(signed char r[64], const bignum256modm in) {$/;"	f
+controllerID	PHKControllerRecord.h	/^    char controllerID[36];$/;"	m	struct:PHKKeyRecord
+controllerRecords	PHKControllerRecord.cpp	/^vector<PHKKeyRecord>controllerRecords = readIn();$/;"	v
+controllerRecordsAddress	Configuration.h	20;"	d
+controllerToAccessoryKey	PHKNetworkIP.h	/^    uint8_t controllerToAccessoryKey[32];$/;"	m	class:connectionInfo
+copyLine	PHKNetworkIP.cpp	/^const char *copyLine(const char *rawData, char *destination) {$/;"	f
+count	PHKNetworkIP.h	/^    unsigned char count = 0;$/;"	m	class:PHKNetworkMessageData
+count	srp/t_truerand.c	/^static unsigned volatile count$/;"	v	file:
+count	srp/t_truerand.c	/^volatile unsigned long count, ocount, randbuf;$/;"	v
+counter	srp/t_truerand.c	/^static void counter() {$/;"	f	file:
+crecip	curve25519/curve25519-donna.c	/^crecip(limb *out, const limb *z) {$/;"	f	file:
+crpool	srp/t_misc.c	/^static unsigned char crpool[64];$/;"	v	file:
+cstr	srp/cstr.h	/^} cstr;$/;"	t	typeref:struct:cstr_st
+cstr_alloc	srp/cstr.c	/^cstr_alloc(cstr * str, int len)$/;"	f	file:
+cstr_alloc_st	srp/cstr.h	/^typedef struct cstr_alloc_st {$/;"	s
+cstr_allocator	srp/cstr.h	/^} cstr_allocator;$/;"	t	typeref:struct:cstr_alloc_st
+cstr_append	srp/cstr.c	/^cstr_append(cstr * str, const char * s)$/;"	f
+cstr_append_str	srp/cstr.c	/^cstr_append_str(cstr * dst, const cstr * src)$/;"	f
+cstr_appendn	srp/cstr.c	/^cstr_appendn(cstr * str, const char * s, int len)$/;"	f
+cstr_clear_free	srp/cstr.c	/^cstr_clear_free(cstr * str)$/;"	f
+cstr_copy	srp/cstr.c	/^cstr_copy(cstr * dst, const cstr * src)$/;"	f
+cstr_create	srp/cstr.c	/^cstr_create(const char * s)$/;"	f
+cstr_createn	srp/cstr.c	/^cstr_createn(const char * s, int len)$/;"	f
+cstr_dup	srp/cstr.c	/^cstr_dup(const cstr * str)$/;"	f
+cstr_dup_alloc	srp/cstr.c	/^cstr_dup_alloc(const cstr * str, cstr_allocator * alloc)$/;"	f
+cstr_empty	srp/cstr.c	/^cstr_empty(cstr * str)$/;"	f
+cstr_empty_string	srp/cstr.c	/^static char cstr_empty_string[] = { '\\0' };$/;"	v	file:
+cstr_free	srp/cstr.c	/^cstr_free(cstr * str)$/;"	f
+cstr_new	srp/cstr.c	/^cstr_new()$/;"	f
+cstr_new_alloc	srp/cstr.c	/^cstr_new_alloc(cstr_allocator * alloc)$/;"	f
+cstr_set	srp/cstr.c	/^cstr_set(cstr * str, const char * s)$/;"	f
+cstr_set_allocator	srp/cstr.c	/^cstr_set_allocator(cstr_allocator * alloc)$/;"	f
+cstr_set_length	srp/cstr.c	/^cstr_set_length(cstr * str, int len)$/;"	f
+cstr_setn	srp/cstr.c	/^cstr_setn(cstr * str, const char * s, int len)$/;"	f
+cstr_st	srp/cstr.h	/^typedef struct cstr_st {$/;"	s
+cstr_use	srp/cstr.c	/^cstr_use(cstr * str)$/;"	f
+currentConfigurationNum	PHKNetworkIP.cpp	/^int currentConfigurationNum = 1;$/;"	v
+currentDeviceType	PHKNetworkIP.cpp	/^deviceType currentDeviceType = deviceType_other;$/;"	v
+curve25519_add	ed25519-donna/curve25519-donna-32bit.h	/^curve25519_add(bignum25519 out, const bignum25519 a, const bignum25519 b) {$/;"	f
+curve25519_add_after_basic	ed25519-donna/curve25519-donna-32bit.h	/^curve25519_add_after_basic(bignum25519 out, const bignum25519 a, const bignum25519 b) {$/;"	f
+curve25519_add_reduce	ed25519-donna/curve25519-donna-32bit.h	/^curve25519_add_reduce(bignum25519 out, const bignum25519 a, const bignum25519 b) {$/;"	f
+curve25519_contract	ed25519-donna/curve25519-donna-32bit.h	/^curve25519_contract(unsigned char out[32], const bignum25519 in) {$/;"	f
+curve25519_copy	ed25519-donna/curve25519-donna-32bit.h	/^curve25519_copy(bignum25519 out, const bignum25519 in) {$/;"	f
+curve25519_donna	curve25519/curve25519-donna.c	/^curve25519_donna(u8 *mypublic, const u8 *secret, const u8 *basepoint) {$/;"	f
+curve25519_donna_h	curve25519/curve25519-donna.h	9;"	d
+curve25519_expand	ed25519-donna/curve25519-donna-32bit.h	/^curve25519_expand(bignum25519 out, const unsigned char in[32]) {$/;"	f
+curve25519_move_conditional_bytes	ed25519-donna/curve25519-donna-32bit.h	/^curve25519_move_conditional_bytes(uint8_t out[96], const uint8_t in[96], uint32_t flag) {$/;"	f
+curve25519_mul	ed25519-donna/curve25519-donna-32bit.h	/^curve25519_mul(bignum25519 out, const bignum25519 a, const bignum25519 b) {$/;"	f
+curve25519_mul_noinline	ed25519-donna/curve25519-donna-32bit.h	152;"	d
+curve25519_neg	ed25519-donna/curve25519-donna-32bit.h	/^curve25519_neg(bignum25519 out, const bignum25519 a) {$/;"	f
+curve25519_pow_two252m3	ed25519-donna/curve25519-donna-helpers.h	/^curve25519_pow_two252m3(bignum25519 two252m3, const bignum25519 z) {$/;"	f
+curve25519_pow_two5mtwo0_two250mtwo0	ed25519-donna/curve25519-donna-helpers.h	/^curve25519_pow_two5mtwo0_two250mtwo0(bignum25519 b) {$/;"	f
+curve25519_recip	ed25519-donna/curve25519-donna-helpers.h	/^curve25519_recip(bignum25519 out, const bignum25519 z) {$/;"	f
+curve25519_square	ed25519-donna/curve25519-donna-32bit.h	/^curve25519_square(bignum25519 out, const bignum25519 in) {$/;"	f
+curve25519_square_times	ed25519-donna/curve25519-donna-32bit.h	/^curve25519_square_times(bignum25519 out, const bignum25519 in, int count) {$/;"	f
+curve25519_sub	ed25519-donna/curve25519-donna-32bit.h	/^curve25519_sub(bignum25519 out, const bignum25519 a, const bignum25519 b) {$/;"	f
+curve25519_sub_after_basic	ed25519-donna/curve25519-donna-32bit.h	/^curve25519_sub_after_basic(bignum25519 out, const bignum25519 a, const bignum25519 b) {$/;"	f
+curve25519_sub_reduce	ed25519-donna/curve25519-donna-32bit.h	/^curve25519_sub_reduce(bignum25519 out, const bignum25519 a, const bignum25519 b) {$/;"	f
+curve25519_swap_conditional	ed25519-donna/curve25519-donna-32bit.h	/^curve25519_swap_conditional(bignum25519 a, bignum25519 b, uint32_t iswap) {$/;"	f
+curveBasePoint	PHKNetworkIP.cpp	/^const unsigned char curveBasePoint[] = { 0x09, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};$/;"	v
+curved25519_key	ed25519-donna/ed25519.h	/^typedef unsigned char curved25519_key[32];$/;"	t
+curved25519_scalarmult_basepoint	ed25519-donna/ed25519.c	/^ED25519_FN(curved25519_scalarmult_basepoint) (curved25519_key pk, const curved25519_key e) {$/;"	f
+data	PHKNetworkIP.h	/^    PHKNetworkMessageData data;$/;"	m	class:PHKNetworkMessage
+data	PHKNetworkIP.h	/^    PHKNetworkMessageData data;$/;"	m	class:PHKNetworkResponse
+data	PHKNetworkIP.h	/^    char *data = 0;$/;"	m	class:PHKNetworkMessageDataRecord
+data	srp/cstr.h	/^  char * data;	\/* Okay to access data and length fields directly *\/$/;"	m	struct:cstr_st
+data	srp/srp.h	/^  void * data;$/;"	m	struct:srp_meth_st
+data	srp/srp.h	/^  void * data;$/;"	m	struct:srp_server_lu_st
+data	srp/t_pwd.h	/^  unsigned char * data;$/;"	m	struct:t_num
+dataPtrForIndex	PHKNetworkIP.cpp	/^char *PHKNetworkMessageData::dataPtrForIndex(unsigned char index) {$/;"	f	class:PHKNetworkMessageData
+default_alloc	srp/cstr.c	/^static cstr_allocator * default_alloc = NULL;$/;"	v	file:
+default_engine	srp/t_math.c	/^static ENGINE * default_engine = NULL;$/;"	v	file:
+default_modexp	srp/t_math.c	/^static modexp_meth default_modexp = NULL;$/;"	v	file:
+default_secret_bits_cb	srp/srp.c	/^default_secret_bits_cb(int modsize)$/;"	f	file:
+desc	PHKAccessory.cpp	/^    char *desc;$/;"	m	struct:broadcastInfo	file:
+describe	PHKAccessory.cpp	/^string Accessory::describe() {$/;"	f	class:Accessory
+describe	PHKAccessory.cpp	/^string AccessorySet::describe() {$/;"	f	class:AccessorySet
+describe	PHKAccessory.cpp	/^string Service::describe() {$/;"	f	class:Service
+describe	PHKAccessory.cpp	/^string boolCharacteristics::describe() {$/;"	f	class:boolCharacteristics
+describe	PHKAccessory.cpp	/^string floatCharacteristics::describe() {$/;"	f	class:floatCharacteristics
+describe	PHKAccessory.cpp	/^string intCharacteristics::describe() {$/;"	f	class:intCharacteristics
+describe	PHKAccessory.cpp	/^string stringCharacteristics::describe() {$/;"	f	class:stringCharacteristics
+deviceIdentity	Configuration.h	16;"	d
+deviceName	Configuration.h	15;"	d
+devicePassword	Configuration.h	18;"	d
+deviceType	PHKNetworkIP.h	/^} deviceType;$/;"	t	typeref:enum:__anon2
+deviceType_alarmSystem	PHKNetworkIP.h	/^    deviceType_alarmSystem = 11,$/;"	e	enum:__anon2
+deviceType_bridge	PHKNetworkIP.h	/^    deviceType_bridge = 2,$/;"	e	enum:__anon2
+deviceType_door	PHKNetworkIP.h	/^    deviceType_door = 12,$/;"	e	enum:__anon2
+deviceType_doorLock	PHKNetworkIP.h	/^    deviceType_doorLock = 6,$/;"	e	enum:__anon2
+deviceType_fan	PHKNetworkIP.h	/^    deviceType_fan = 3,$/;"	e	enum:__anon2
+deviceType_garageDoorOpener	PHKNetworkIP.h	/^    deviceType_garageDoorOpener = 4,$/;"	e	enum:__anon2
+deviceType_lightBulb	PHKNetworkIP.h	/^    deviceType_lightBulb = 5,$/;"	e	enum:__anon2
+deviceType_other	PHKNetworkIP.h	/^    deviceType_other = 0,$/;"	e	enum:__anon2
+deviceType_outlet	PHKNetworkIP.h	/^    deviceType_outlet = 7,$/;"	e	enum:__anon2
+deviceType_programmableSwitch	PHKNetworkIP.h	/^    deviceType_programmableSwitch = 15,$/;"	e	enum:__anon2
+deviceType_sensor	PHKNetworkIP.h	/^    deviceType_sensor = 10,$/;"	e	enum:__anon2
+deviceType_switch	PHKNetworkIP.h	/^    deviceType_switch = 8,$/;"	e	enum:__anon2
+deviceType_thermostat	PHKNetworkIP.h	/^    deviceType_thermostat = 9,$/;"	e	enum:__anon2
+deviceType_window	PHKNetworkIP.h	/^    deviceType_window = 13,$/;"	e	enum:__anon2
+deviceType_windowCover	PHKNetworkIP.h	/^    deviceType_windowCover = 14,$/;"	e	enum:__anon2
+deviceUUID	Configuration.h	19;"	d
+devrand	srp/t_misc.c	/^  unsigned char devrand[20];$/;"	m	struct:__anon1	file:
+dictionaryWrap	PHKAccessory.cpp	/^inline string dictionaryWrap(string *key, string *value, unsigned short len) {$/;"	f
+directory	PHKNetworkIP.h	/^    char directory[20];$/;"	m	class:PHKNetworkMessage
+div_by_2_25	curve25519/curve25519-donna.c	/^div_by_2_25(const limb v)$/;"	f	file:
+div_by_2_26	curve25519/curve25519-donna.c	/^div_by_2_26(const limb v)$/;"	f	file:
+div_s32_by_2_25	curve25519/curve25519-donna.c	/^div_s32_by_2_25(const s32 v)$/;"	f	file:
+done	srp/t_truerand.c	/^  , done = 0$/;"	v	file:
+dontstop	srp/t_truerand.c	/^volatile int dontstop;$/;"	v
+ed25519_extsk	ed25519-donna/ed25519.c	/^ed25519_extsk(hash_512bits extsk, const ed25519_secret_key sk) {$/;"	f	file:
+ed25519_hash	ed25519-donna/ed25519-hash.h	/^ed25519_hash(uint8_t *hash, const uint8_t *in, size_t inlen) {$/;"	f
+ed25519_hash_context	ed25519-donna/ed25519-hash.h	/^typedef SHACTX ed25519_hash_context;$/;"	t
+ed25519_hash_final	ed25519-donna/ed25519-hash.h	/^ed25519_hash_final(ed25519_hash_context *ctx, uint8_t *hash) {$/;"	f
+ed25519_hash_init	ed25519-donna/ed25519-hash.h	/^ed25519_hash_init(ed25519_hash_context *ctx) {$/;"	f
+ed25519_hash_update	ed25519-donna/ed25519-hash.h	/^ed25519_hash_update(ed25519_hash_context *ctx, const uint8_t *in, size_t inlen) {$/;"	f
+ed25519_hram	ed25519-donna/ed25519.c	/^ed25519_hram(hash_512bits hram, const ed25519_signature RS, const ed25519_public_key pk, const unsigned char *m, size_t mlen) {$/;"	f	file:
+ed25519_public_key	ed25519-donna/ed25519.h	/^typedef unsigned char ed25519_public_key[32];$/;"	t
+ed25519_publickey	ed25519-donna/ed25519.c	/^ED25519_FN(ed25519_publickey) (const ed25519_secret_key sk, ed25519_public_key pk) {$/;"	f
+ed25519_randombytes_unsafe	ed25519-donna/ed25519-randombytes.h	/^ED25519_FN(ed25519_randombytes_unsafe) (void *p, size_t len) {$/;"	f
+ed25519_secret_key	ed25519-donna/ed25519.h	/^typedef unsigned char ed25519_secret_key[32];$/;"	t
+ed25519_sign	ed25519-donna/ed25519.c	/^ED25519_FN(ed25519_sign) (const unsigned char *m, size_t mlen, const ed25519_secret_key sk, const ed25519_public_key pk, ed25519_signature RS) {$/;"	f
+ed25519_sign_open	ed25519-donna/ed25519.c	/^ED25519_FN(ed25519_sign_open) (const unsigned char *m, size_t mlen, const ed25519_public_key pk, const ed25519_signature RS) {$/;"	f
+ed25519_sign_open_batch	ed25519-donna/ed25519-donna-batchverify.h	/^ED25519_FN(ed25519_sign_open_batch) (const unsigned char **m, size_t *mlen, const unsigned char **pk, const unsigned char **RS, size_t num, int *valid) {$/;"	f
+ed25519_signature	ed25519-donna/ed25519.h	/^typedef unsigned char ed25519_signature[64];$/;"	t
+ed25519_verify	ed25519-donna/ed25519-donna.h	/^ed25519_verify(const unsigned char *x, const unsigned char *y, size_t len) {$/;"	f
+entropy	srp/t_misc.c	/^static unsigned char entropy[32];$/;"	v	file:
+env	srp/t_truerand.c	/^static jmp_buf env;$/;"	v	file:
+envh	srp/t_misc.c	/^  unsigned char envh[SHA_DIGESTSIZE];$/;"	m	struct:__anon1	file:
+ex_data	srp/srp.h	/^  cstr * ex_data;$/;"	m	struct:srp_st
+ex_data	srp/t_client.h	/^  cstr * ex_data;$/;"	m	struct:t_client
+ex_data	srp/t_server.h	/^  cstr * ex_data;$/;"	m	struct:t_server
+expand256_modm	ed25519-donna/modm-donna-32bit.h	/^expand256_modm(bignum256modm out, const unsigned char *in, size_t len) {$/;"	f
+expand_raw256_modm	ed25519-donna/modm-donna-32bit.h	/^expand_raw256_modm(bignum256modm out, const unsigned char in[32]) {$/;"	f
+fanIdentify	Example Accessory Configuration/Fan+Light.cpp	/^void fanIdentify(bool oldValue, bool newValue) {$/;"	f
+fanSpeedVal	Accessory.cpp	/^int fanSpeedVal = 0;$/;"	v
+fanSpeedVal	Example Accessory Configuration/Fan+Light.cpp	/^int fanSpeedVal = 0;$/;"	v
+fcontract	curve25519/curve25519-donna.c	/^fcontract(u8 *output, limb *input) {$/;"	f	file:
+fdifference	curve25519/curve25519-donna.c	/^static void fdifference(limb *output, const limb *in) {$/;"	f	file:
+fexpand	curve25519/curve25519-donna.c	/^fexpand(limb *output, const u8 *input) {$/;"	f	file:
+final	poly1305-opt-master/poly1305.c	/^    unsigned char final;$/;"	m	struct:poly1305_state_internal_t	file:
+finish	srp/srp.h	/^  SRP_RESULT (_CDECL * finish)(SRP * srp);$/;"	m	struct:srp_meth_st
+finish	srp/srp.h	/^  SRP_RESULT (_CDECL * finish)(SRP_SERVER_LOOKUP * slu);$/;"	m	struct:srp_s_lu_meth_st
+flags	srp/srp.h	/^  int flags;$/;"	m	struct:srp_st
+floatCharacteristics	PHKAccessory.h	/^    floatCharacteristics(unsigned short _type, int _premission, float minVal, float maxVal, float step, unit charUnit): characteristics(_type, _premission), _minVal(minVal), _maxVal(maxVal), _step(step), _unit(charUnit) {}$/;"	f	class:floatCharacteristics
+floatCharacteristics	PHKAccessory.h	/^class floatCharacteristics: public characteristics {$/;"	c
+fmonty	curve25519/curve25519-donna.c	/^static void fmonty(limb *x2, limb *z2,  \/* output 2Q *\/$/;"	f	file:
+fmul	curve25519/curve25519-donna.c	/^fmul(limb *output, const limb *in, const limb *in2) {$/;"	f	file:
+fourP0	ed25519-donna/curve25519-donna-32bit.h	/^static const uint32_t fourP0      = 0x0fffffb4;$/;"	v
+fourP13579	ed25519-donna/curve25519-donna-32bit.h	/^static const uint32_t fourP13579  = 0x07fffffc;$/;"	v
+fourP2468	ed25519-donna/curve25519-donna-32bit.h	/^static const uint32_t fourP2468   = 0x0ffffffc;$/;"	v
+fproduct	curve25519/curve25519-donna.c	/^static void fproduct(limb *output, const limb *in2, const limb *in) {$/;"	f	file:
+freduce_coefficients	curve25519/curve25519-donna.c	/^static void freduce_coefficients(limb *output) {$/;"	f	file:
+freduce_degree	curve25519/curve25519-donna.c	/^static void freduce_degree(limb *output) {$/;"	f	file:
+free	srp/cstr.h	/^  void (_CDECL * free)(void * p, void * heap);$/;"	m	struct:cstr_alloc_st
+fscalar_product	curve25519/curve25519-donna.c	/^static void fscalar_product(limb *output, const limb *in, const limb scalar) {$/;"	f	file:
+fsh	srp/t_misc.c	/^  unsigned char fsh[SHA_DIGESTSIZE];$/;"	m	struct:__anon1	file:
+fsquare	curve25519/curve25519-donna.c	/^fsquare(limb *output, const limb *in) {$/;"	f	file:
+fsquare_inner	curve25519/curve25519-donna.c	/^static void fsquare_inner(limb *output, const limb *in) {$/;"	f	file:
+fstate	srp/t_pwd.h	/^typedef enum fstate {$/;"	g
+fsum	curve25519/curve25519-donna.c	/^static void fsum(limb *output, const limb *in) {$/;"	f	file:
+g	srp/t_client.h	/^  struct t_num g;$/;"	m	struct:t_client	typeref:struct:t_client::t_num
+g	srp/t_server.h	/^  struct t_num g;$/;"	m	struct:t_server	typeref:struct:t_server::t_num
+g_rng	srp/t_misc.c	/^static prng_state g_rng;$/;"	v	file:
+gbuf	srp/t_client.h	/^  unsigned char nbuf[MAXPARAMLEN], gbuf[MAXPARAMLEN], sbuf[MAXSALTLEN];$/;"	m	struct:t_client
+gbuf	srp/t_server.h	/^  unsigned char nbuf[MAXPARAMLEN], gbuf[MAXPARAMLEN], vbuf[MAXPARAMLEN];$/;"	m	struct:t_server
+ge25519	ed25519-donna/ed25519-donna.h	/^} ge25519;$/;"	t	typeref:struct:ge25519_t
+ge25519_add	ed25519-donna/ed25519-donna-impl-base.h	/^ge25519_add(ge25519 *r, const ge25519 *p,  const ge25519 *q) {$/;"	f
+ge25519_add_p1p1	ed25519-donna/ed25519-donna-impl-base.h	/^ge25519_add_p1p1(ge25519_p1p1 *r, const ge25519 *p, const ge25519 *q) {$/;"	f
+ge25519_double	ed25519-donna/ed25519-donna-impl-base.h	/^ge25519_double(ge25519 *r, const ge25519 *p) {$/;"	f
+ge25519_double_p1p1	ed25519-donna/ed25519-donna-impl-base.h	/^ge25519_double_p1p1(ge25519_p1p1 *r, const ge25519 *p) {$/;"	f
+ge25519_double_partial	ed25519-donna/ed25519-donna-impl-base.h	/^ge25519_double_partial(ge25519 *r, const ge25519 *p) {$/;"	f
+ge25519_double_scalarmult_vartime	ed25519-donna/ed25519-donna-impl-base.h	/^ge25519_double_scalarmult_vartime(ge25519 *r, const ge25519 *p1, const bignum256modm s1, const bignum256modm s2) {$/;"	f
+ge25519_full_to_pniels	ed25519-donna/ed25519-donna-impl-base.h	/^ge25519_full_to_pniels(ge25519_pniels *p, const ge25519 *r) {$/;"	f
+ge25519_is_neutral_vartime	ed25519-donna/ed25519-donna-batchverify.h	/^ge25519_is_neutral_vartime(const ge25519 *p) {$/;"	f
+ge25519_multi_scalarmult_vartime	ed25519-donna/ed25519-donna-batchverify.h	/^ge25519_multi_scalarmult_vartime(ge25519 *r, batch_heap *heap, size_t count) {$/;"	f
+ge25519_multi_scalarmult_vartime_final	ed25519-donna/ed25519-donna-batchverify.h	/^ge25519_multi_scalarmult_vartime_final(ge25519 *r, ge25519 *point, bignum256modm scalar) {$/;"	f
+ge25519_niels	ed25519-donna/ed25519-donna.h	/^} ge25519_niels;$/;"	t	typeref:struct:ge25519_niels_t
+ge25519_niels_t	ed25519-donna/ed25519-donna.h	/^typedef struct ge25519_niels_t {$/;"	s
+ge25519_nielsadd2	ed25519-donna/ed25519-donna-impl-base.h	/^ge25519_nielsadd2(ge25519 *r, const ge25519_niels *q) {$/;"	f
+ge25519_nielsadd2_p1p1	ed25519-donna/ed25519-donna-impl-base.h	/^ge25519_nielsadd2_p1p1(ge25519_p1p1 *r, const ge25519 *p, const ge25519_niels *q, unsigned char signbit) {$/;"	f
+ge25519_p1p1	ed25519-donna/ed25519-donna.h	/^} ge25519_p1p1;$/;"	t	typeref:struct:ge25519_p1p1_t
+ge25519_p1p1_t	ed25519-donna/ed25519-donna.h	/^typedef struct ge25519_p1p1_t {$/;"	s
+ge25519_p1p1_to_full	ed25519-donna/ed25519-donna-impl-base.h	/^ge25519_p1p1_to_full(ge25519 *r, const ge25519_p1p1 *p) {$/;"	f
+ge25519_p1p1_to_partial	ed25519-donna/ed25519-donna-impl-base.h	/^ge25519_p1p1_to_partial(ge25519 *r, const ge25519_p1p1 *p) {$/;"	f
+ge25519_pack	ed25519-donna/ed25519-donna-impl-base.h	/^ge25519_pack(unsigned char r[32], const ge25519 *p) {$/;"	f
+ge25519_pniels	ed25519-donna/ed25519-donna.h	/^} ge25519_pniels;$/;"	t	typeref:struct:ge25519_pniels_t
+ge25519_pniels_t	ed25519-donna/ed25519-donna.h	/^typedef struct ge25519_pniels_t {$/;"	s
+ge25519_pnielsadd	ed25519-donna/ed25519-donna-impl-base.h	/^ge25519_pnielsadd(ge25519_pniels *r, const ge25519 *p, const ge25519_pniels *q) {$/;"	f
+ge25519_pnielsadd_p1p1	ed25519-donna/ed25519-donna-impl-base.h	/^ge25519_pnielsadd_p1p1(ge25519_p1p1 *r, const ge25519 *p, const ge25519_pniels *q, unsigned char signbit) {$/;"	f
+ge25519_scalarmult_base_choose_niels	ed25519-donna/ed25519-donna-impl-base.h	/^ge25519_scalarmult_base_choose_niels(ge25519_niels *t, const uint8_t table[256][96], uint32_t pos, signed char b) {$/;"	f
+ge25519_scalarmult_base_niels	ed25519-donna/ed25519-donna-impl-base.h	/^ge25519_scalarmult_base_niels(ge25519 *r, const uint8_t basepoint_table[256][96], const bignum256modm s) {$/;"	f
+ge25519_t	ed25519-donna/ed25519-donna.h	/^typedef struct ge25519_t {$/;"	s
+ge25519_unpack_negative_vartime	ed25519-donna/ed25519-donna-impl-base.h	/^ge25519_unpack_negative_vartime(ge25519 *r, const unsigned char p[32]) {$/;"	f
+ge25519_windowb_equal	ed25519-donna/ed25519-donna-impl-base.h	/^ge25519_windowb_equal(uint32_t b, uint32_t c) {$/;"	f
+gen_b64	srp/t_pwd.h	/^  char * gen_b64;$/;"	m	struct:t_preconf
+genbuf	srp/t_conf.c	/^  cstr * genbuf;$/;"	m	struct:pre_struct	file:
+genbuf	srp/t_pwd.h	/^  cstr * genbuf;$/;"	m	struct:t_conf
+generator	PHKNetworkIP.cpp	/^const unsigned char generator[] = {0x05};$/;"	v
+generator	srp/srp.h	/^  BigInteger generator;$/;"	m	struct:srp_st
+generator	srp/t_pwd.h	/^  struct t_num generator;$/;"	m	struct:t_confent	typeref:struct:t_confent::t_num
+generator	srp/t_pwd.h	/^  struct t_num generator;$/;"	m	struct:t_preconf	typeref:struct:t_preconf::t_num
+genpub	srp/srp.h	/^  SRP_RESULT (_CDECL * genpub)(SRP * srp, cstr ** result);$/;"	m	struct:srp_meth_st
+getBinaryPtr	PHKNetworkIP.cpp	/^void PHKNetworkMessage::getBinaryPtr(char **buffer, int *contentLength) {$/;"	f	class:PHKNetworkMessage
+getBinaryPtr	PHKNetworkIP.cpp	/^void PHKNetworkResponse::getBinaryPtr(char **buffer, int *contentLength) {$/;"	f	class:PHKNetworkResponse
+getInstance	PHKAccessory.h	/^    static AccessorySet& getInstance() {$/;"	f	class:AccessorySet
+getSocketPortNumberV4	PHKNetworkIP.cpp	/^unsigned short getSocketPortNumberV4(int _socket) {$/;"	f
+getSocketPortNumberV6	PHKNetworkIP.cpp	/^unsigned short getSocketPortNumberV6(int _socket) {$/;"	f
+h	poly1305-opt-master/poly1305.c	/^    unsigned long h[5];$/;"	m	struct:poly1305_state_internal_t	file:
+handleAccessory	PHKAccessory.cpp	/^void handleAccessory(const char *request, unsigned int requestLen, char **reply, unsigned int *replyLen, connectionInfo *sender) {$/;"	f
+handleAccessoryRequest	PHKNetworkIP.cpp	/^void connectionInfo::handleAccessoryRequest() {$/;"	f	class:connectionInfo
+handleConnection	PHKNetworkIP.cpp	/^void PHKNetworkIP::handleConnection() const {$/;"	f	class:PHKNetworkIP
+handlePairSeup	PHKNetworkIP.cpp	/^void connectionInfo::handlePairSeup() {$/;"	f	class:connectionInfo
+handlePairVerify	PHKNetworkIP.cpp	/^void connectionInfo::handlePairVerify() {$/;"	f	class:connectionInfo
+hapJsonType	PHKAccessory.cpp	/^const char hapJsonType[] = "application\/hap+json";$/;"	v
+hash	srp/srp6_server.c	/^  SHACTX hash;$/;"	m	struct:server_meth_st	file:
+hash	srp/t_client.h	/^  SHA1_CTX hash, ckhash;$/;"	m	struct:t_client
+hash	srp/t_server.h	/^  SHA1_CTX oldhash, hash, oldckhash, ckhash;$/;"	m	struct:t_server
+hashSize	rfc6234-master/sha.h	/^    int hashSize;               \/* hash size of SHA being used *\/$/;"	m	struct:HKDFContext
+hashSize	rfc6234-master/sha.h	/^    int hashSize;               \/* hash size of SHA being used *\/$/;"	m	struct:HMACContext
+hash_512bits	ed25519-donna/ed25519-donna.h	/^typedef unsigned char hash_512bits[64];$/;"	t
+heap	ed25519-donna/ed25519-donna-batchverify.h	/^	heap_index_t heap[heap_batch_size];$/;"	m	struct:batch_heap_t
+heap	srp/cstr.h	/^  void * heap;$/;"	m	struct:cstr_alloc_st
+heap_batch_size	ed25519-donna/ed25519-donna-batchverify.h	6;"	d
+heap_build	ed25519-donna/ed25519-donna-batchverify.h	/^heap_build(batch_heap *heap, size_t count) {$/;"	f
+heap_extend	ed25519-donna/ed25519-donna-batchverify.h	/^heap_extend(batch_heap *heap, size_t new_count) {$/;"	f
+heap_get_top2	ed25519-donna/ed25519-donna-batchverify.h	/^heap_get_top2(batch_heap *heap, heap_index_t *max1, heap_index_t *max2, size_t limbsize) {$/;"	f
+heap_index_t	ed25519-donna/ed25519-donna-batchverify.h	/^typedef size_t heap_index_t;$/;"	t
+heap_insert_next	ed25519-donna/ed25519-donna-batchverify.h	/^heap_insert_next(batch_heap *heap) {$/;"	f
+heap_swap	ed25519-donna/ed25519-donna-batchverify.h	/^heap_swap(heap_index_t *heap, size_t a, size_t b) {$/;"	f
+heap_updated_root	ed25519-donna/ed25519-donna-batchverify.h	/^heap_updated_root(batch_heap *heap, size_t limbsize) {$/;"	f
+hexDigitToInt	srp/t_conv.c	/^hexDigitToInt(c)$/;"	f	file:
+hi	ed25519-donna/ed25519-donna-portable.h	/^				uint64_t lo, hi;$/;"	m	struct:uint128_t
+hi	ed25519-donna/ed25519-donna-portable.h	/^			uint64_t lo, hi;$/;"	m	struct:uint128_t
+hi128	ed25519-donna/ed25519-donna-portable.h	46;"	d
+hi128	ed25519-donna/ed25519-donna-portable.h	67;"	d
+hi128	ed25519-donna/ed25519-donna-portable.h	81;"	d
+hkdf	rfc6234-master/hkdf.c	/^int hkdf(const unsigned char *salt, int salt_len,$/;"	f
+hkdfExpand	rfc6234-master/hkdf.c	/^int hkdfExpand(const uint8_t prk[ ], int prk_len,$/;"	f
+hkdfExtract	rfc6234-master/hkdf.c	/^int hkdfExtract(const unsigned char *salt, int salt_len,$/;"	f
+hkdfFinalBits	rfc6234-master/hkdf.c	/^int hkdfFinalBits(HKDFContext *context, uint8_t ikm_bits,$/;"	f
+hkdfInput	rfc6234-master/hkdf.c	/^int hkdfInput(HKDFContext *context, const unsigned char *ikm,$/;"	f
+hkdfReset	rfc6234-master/hkdf.c	/^int hkdfReset(HKDFContext *context,$/;"	f
+hkdfResult	rfc6234-master/hkdf.c	/^int hkdfResult(HKDFContext *context,$/;"	f
+hmac	rfc6234-master/hmac.c	/^int hmac(const unsigned char *message_array, int length,$/;"	f
+hmacContext	rfc6234-master/sha.h	/^    HMACContext hmacContext;$/;"	m	struct:HKDFContext
+hmacFinalBits	rfc6234-master/hmac.c	/^int hmacFinalBits(HMACContext *context,$/;"	f
+hmacInput	rfc6234-master/hmac.c	/^int hmacInput(HMACContext *context, const unsigned char *text,$/;"	f
+hmacReset	rfc6234-master/hmac.c	/^int hmacReset(HMACContext *context,$/;"	f
+hmacResult	rfc6234-master/hmac.c	/^int hmacResult(HMACContext *context, uint8_t *digest)$/;"	f
+identifyFunction	PHKAccessory.h	/^typedef void (*identifyFunction)(bool oldValue, bool newValue);$/;"	t
+iid	PHKAccessory.h	/^    int iid;$/;"	m	class:characteristics
+index	PHKNetworkIP.h	/^    unsigned char index = 0;$/;"	m	class:PHKNetworkMessageDataRecord
+index	srp/t_pwd.h	/^  int index;$/;"	m	struct:t_confent
+index	srp/t_pwd.h	/^  int index;$/;"	m	struct:t_pwent
+init	srp/srp.h	/^  SRP_RESULT (_CDECL * init)(SRP * srp);$/;"	m	struct:srp_meth_st
+init	srp/srp.h	/^  SRP_RESULT (_CDECL * init)(SRP_SERVER_LOOKUP * slu);$/;"	m	struct:srp_s_lu_meth_st
+initAccessorySet	Accessory.cpp	/^void initAccessorySet() {$/;"	f
+initAccessorySet	Example Accessory Configuration/Fan+Light.cpp	/^void initAccessorySet() {$/;"	f
+initialized	srp/t_misc.c	/^static char initialized = 0;$/;"	v	file:
+inline	curve25519/curve25519-donna.c	53;"	d	file:
+inline	ed25519-donna/ed25519-donna-portable.h	12;"	d
+inline	ed25519-donna/ed25519-donna-portable.h	13;"	d
+instream	srp/t_pwd.h	/^  FILE * instream;$/;"	m	struct:t_conf
+instream	srp/t_pwd.h	/^  FILE * instream;$/;"	m	struct:t_pw
+int16_t	ed25519-donna/ed25519-donna-portable-identify.h	/^	typedef signed short int16_t;$/;"	t
+int2str	PHKNetworkIP.cpp	/^inline void int2str(int i, char *s) { sprintf(s,"%d",i); }$/;"	f
+int32_t	ed25519-donna/ed25519-donna-portable-identify.h	/^	typedef signed int int32_t;$/;"	t
+int64_t	ed25519-donna/ed25519-donna-portable-identify.h	/^	typedef signed __int64 int64_t;$/;"	t
+int8_t	ed25519-donna/ed25519-donna-portable-identify.h	/^	typedef signed char int8_t;$/;"	t
+intCharacteristics	PHKAccessory.h	/^    intCharacteristics(unsigned short _type, int _premission, int minVal, int maxVal, int step, unit charUnit): characteristics(_type, _premission), _minVal(minVal), _maxVal(maxVal), _step(step), _unit(charUnit) {$/;"	f	class:intCharacteristics
+intCharacteristics	PHKAccessory.h	/^class intCharacteristics: public characteristics {$/;"	c
+interrupt	srp/t_truerand.c	/^interrupt()$/;"	f	file:
+is_big_endian	PHKNetworkIP.cpp	/^int is_big_endian(void)$/;"	f
+isaacp_mix	ed25519-donna/ed25519-randombytes.h	/^isaacp_mix(isaacp_state *st) {$/;"	f
+isaacp_random	ed25519-donna/ed25519-randombytes.h	/^isaacp_random(isaacp_state *st, void *p, size_t len) {$/;"	f
+isaacp_state	ed25519-donna/ed25519-randombytes.h	/^} isaacp_state;$/;"	t	typeref:struct:isaacp_state_t
+isaacp_state_t	ed25519-donna/ed25519-randombytes.h	/^typedef struct isaacp_state_t {$/;"	s
+isaacp_step	ed25519-donna/ed25519-randombytes.h	15;"	d
+isatmost128bits256_modm_batch	ed25519-donna/modm-donna-32bit.h	/^isatmost128bits256_modm_batch(const bignum256modm a) {$/;"	f
+isone256_modm_batch	ed25519-donna/modm-donna-32bit.h	/^isone256_modm_batch(const bignum256modm a) {$/;"	f
+iszero256_modm_batch	ed25519-donna/modm-donna-32bit.h	/^iszero256_modm_batch(const bignum256modm a) {$/;"	f
+k	srp/srp6_server.c	/^  unsigned char k[RFC2945_KEY_LEN];$/;"	m	struct:server_meth_st	file:
+k_opad	rfc6234-master/sha.h	/^    unsigned char k_opad[SHA_BlockSize];$/;"	m	struct:HMACContext
+key	srp/srp.h	/^  BigInteger key;$/;"	m	struct:srp_st
+key	srp/srp.h	/^  SRP_RESULT (_CDECL * key)(SRP * srp, cstr ** result,$/;"	m	struct:srp_meth_st
+keystream	Chacha20/chacha20_simple.h	/^  uint32_t keystream[16];$/;"	m	struct:__anon9
+left	ed25519-donna/ed25519-randombytes.h	/^	size_t left;$/;"	m	struct:isaacp_state_t
+leftover	poly1305-opt-master/poly1305.c	/^    size_t leftover;$/;"	m	struct:poly1305_state_internal_t	file:
+len	srp/t_pwd.h	/^  int len;$/;"	m	struct:t_num
+length	PHKNetworkIP.h	/^    unsigned int length = 0;$/;"	m	class:PHKNetworkMessageDataRecord
+length	srp/cstr.h	/^  int length;$/;"	m	struct:cstr_st
+lengthForIndex	PHKNetworkIP.cpp	/^unsigned int PHKNetworkMessageData::lengthForIndex(unsigned char index) {$/;"	f	class:PHKNetworkMessageData
+library_initialized	srp/srp.c	/^static int library_initialized = 0;$/;"	v	file:
+lightIdentify	Accessory.cpp	/^void lightIdentify(bool oldValue, bool newValue) {$/;"	f
+lightIdentify	Example Accessory Configuration/Fan+Light.cpp	/^void lightIdentify(bool oldValue, bool newValue) {$/;"	f
+lightStength	Accessory.cpp	/^int lightStength = 0;$/;"	v
+lightStength	Example Accessory Configuration/Fan+Light.cpp	/^int lightStength = 0;$/;"	v
+limb	curve25519/curve25519-donna.c	/^typedef int64_t limb;$/;"	t	file:
+limb128bits	ed25519-donna/ed25519-donna-batchverify.h	/^static const size_t limb128bits = (128 + bignum256modm_bits_per_limb - 1) \/ bignum256modm_bits_per_limb;$/;"	v
+lo	ed25519-donna/ed25519-donna-portable.h	/^				uint64_t lo, hi;$/;"	m	struct:uint128_t
+lo	ed25519-donna/ed25519-donna-portable.h	/^			uint64_t lo, hi;$/;"	m	struct:uint128_t
+lo128	ed25519-donna/ed25519-donna-portable.h	45;"	d
+lo128	ed25519-donna/ed25519-donna-portable.h	66;"	d
+lo128	ed25519-donna/ed25519-donna-portable.h	80;"	d
+lookup	srp/srp.h	/^  SRP_RESULT (_CDECL * lookup)(SRP_SERVER_LOOKUP * slu, SRP * srp, cstr * username);$/;"	m	struct:srp_s_lu_meth_st
+lt256_modm_batch	ed25519-donna/modm-donna-32bit.h	/^lt256_modm_batch(const bignum256modm a, const bignum256modm b, size_t limbsize) {$/;"	f
+lt_modm	ed25519-donna/modm-donna-32bit.h	/^lt_modm(bignum256modm_element_t a, bignum256modm_element_t b) {$/;"	f
+lte256_modm_batch	ed25519-donna/modm-donna-32bit.h	/^lte256_modm_batch(const bignum256modm a, const bignum256modm b, size_t limbsize) {$/;"	f
+magic	srp/srp.h	/^  int magic;	\/* To distinguish client from server (and for sanity) *\/$/;"	m	struct:srp_st
+malloc_allocator	srp/cstr.c	/^static cstr_allocator malloc_allocator = { Cmalloc, Cfree, NULL };$/;"	v	file:
+malloc_allocator	srp/cstr.c	/^static cstr_allocator malloc_allocator = { malloc, free, NULL };$/;"	v	file:
+maxLen	PHKAccessory.h	/^    const unsigned short maxLen;$/;"	m	class:stringCharacteristics
+max_batch_size	ed25519-donna/ed25519-donna-batchverify.h	5;"	d
+meth	srp/srp.h	/^  SRP_METHOD * meth;$/;"	m	struct:srp_st
+meth	srp/srp.h	/^  SRP_SERVER_LOOKUP_METHOD * meth;$/;"	m	struct:srp_server_lu_st
+meth_data	srp/srp.h	/^  void * meth_data;$/;"	m	struct:srp_s_lu_meth_st
+meth_data	srp/srp.h	/^  void * meth_data;$/;"	m	struct:srp_st
+method	PHKNetworkIP.h	/^    char method[5];$/;"	m	class:PHKNetworkMessage
+mod_b64	srp/t_pwd.h	/^  char * mod_b64;$/;"	m	struct:t_preconf
+modbuf	srp/t_conf.c	/^  cstr * modbuf;$/;"	m	struct:pre_struct	file:
+modbuf	srp/t_pwd.h	/^  cstr * modbuf;$/;"	m	struct:t_conf
+modexp_meth	srp/t_math.c	/^typedef int (*modexp_meth)(BIGNUM *r, const BIGNUM *a, const BIGNUM *p,$/;"	t	file:
+modm_m	ed25519-donna/modm-donna-32bit.h	/^static const bignum256modm modm_m = {$/;"	v
+modm_mu	ed25519-donna/modm-donna-32bit.h	/^static const bignum256modm modm_mu = {$/;"	v
+modulus	srp/srp.h	/^  BigInteger modulus;$/;"	m	struct:srp_st
+modulus	srp/t_pwd.h	/^  struct t_num modulus;$/;"	m	struct:t_confent	typeref:struct:t_confent::t_num
+modulus	srp/t_pwd.h	/^  struct t_num modulus;$/;"	m	struct:t_preconf	typeref:struct:t_preconf::t_num
+modulusStr	PHKNetworkIP.cpp	/^const unsigned char modulusStr[] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xC9, 0x0F, 0xDA, 0xA2, 0x21, 0x68, 0xC2, 0x34, 0xC4, 0xC6, 0x62, 0x8B, 0x80, 0xDC, 0x1C, 0xD1, 0x29, 0x02, 0x4E, 0x08, 0x8A, 0x67, 0xCC, 0x74, 0x02, 0x0B, 0xBE, 0xA6, 0x3B, 0x13, 0x9B, 0x22, 0x51, 0x4A, 0x08, 0x79, 0x8E, 0x34, 0x04, 0xDD, 0xEF, 0x95, 0x19, 0xB3, 0xCD, 0x3A, 0x43, 0x1B, 0x30, 0x2B, 0x0A, 0x6D, 0xF2, 0x5F, 0x14, 0x37, 0x4F, 0xE1, 0x35, 0x6D, 0x6D, 0x51, 0xC2, 0x45, 0xE4, 0x85, 0xB5, 0x76, 0x62, 0x5E, 0x7E, 0xC6, 0xF4, 0x4C, 0x42, 0xE9, 0xA6, 0x37, 0xED, 0x6B, 0x0B, 0xFF, 0x5C, 0xB6, 0xF4, 0x06, 0xB7, 0xED, 0xEE, 0x38, 0x6B, 0xFB, 0x5A, 0x89, 0x9F, 0xA5, 0xAE, 0x9F, 0x24, 0x11, 0x7C, 0x4B, 0x1F, 0xE6, 0x49, 0x28, 0x66, 0x51, 0xEC, 0xE4, 0x5B, 0x3D, 0xC2, 0x00, 0x7C, 0xB8, 0xA1, 0x63, 0xBF, 0x05, 0x98, 0xDA, 0x48, 0x36, 0x1C, 0x55, 0xD3, 0x9A, 0x69, 0x16, 0x3F, 0xA8, 0xFD, 0x24, 0xCF, 0x5F, 0x83, 0x65, 0x5D, 0x23, 0xDC, 0xA3, 0xAD, 0x96, 0x1C, 0x62, 0xF3, 0x56, 0x20, 0x85, 0x52, 0xBB, 0x9E, 0xD5, 0x29, 0x07, 0x70, 0x96, 0x96, 0x6D, 0x67, 0x0C, 0x35, 0x4E, 0x4A, 0xBC, 0x98, 0x04, 0xF1, 0x74, 0x6C, 0x08, 0xCA, 0x18, 0x21, 0x7C, 0x32, 0x90, 0x5E, 0x46, 0x2E, 0x36, 0xCE, 0x3B, 0xE3, 0x9E, 0x77, 0x2C, 0x18, 0x0E, 0x86, 0x03, 0x9B, 0x27, 0x83, 0xA2, 0xEC, 0x07, 0xA2, 0x8F, 0xB5, 0xC5, 0x5D, 0xF0, 0x6F, 0x4C, 0x52, 0xC9, 0xDE, 0x2B, 0xCB, 0xF6, 0x95, 0x58, 0x17, 0x18, 0x39, 0x95, 0x49, 0x7C, 0xEA, 0x95, 0x6A, 0xE5, 0x15, 0xD2, 0x26, 0x18, 0x98, 0xFA, 0x05, 0x10, 0x15, 0x72, 0x8E, 0x5A, 0x8A, 0xAA, 0xC4, 0x2D, 0xAD, 0x33, 0x17, 0x0D, 0x04, 0x50, 0x7A, 0x33, 0xA8, 0x55, 0x21, 0xAB, 0xDF, 0x1C, 0xBA, 0x64, 0xEC, 0xFB, 0x85, 0x04, 0x58, 0xDB, 0xEF, 0x0A, 0x8A, 0xEA, 0x71, 0x57, 0x5D, 0x06, 0x0C, 0x7D, 0xB3, 0x97, 0x0F, 0x85, 0xA6, 0xE1, 0xE4, 0xC7, 0xAB, 0xF5, 0xAE, 0x8C, 0xDB, 0x09, 0x33, 0xD7, 0x1E, 0x8C, 0x94, 0xE0, 0x4A, 0x25, 0x61, 0x9D, 0xCE, 0xE3, 0xD2, 0x26, 0x1A, 0xD2, 0xEE, 0x6B, 0xF1, 0x2F, 0xFA, 0x06, 0xD9, 0x8A, 0x08, 0x64, 0xD8, 0x76, 0x02, 0x73, 0x3E, 0xC8, 0x6A, 0x64, 0x52, 0x1F, 0x2B, 0x18, 0x17, 0x7B, 0x20, 0x0C, 0xBB, 0xE1, 0x17, 0x57, 0x7A, 0x61, 0x5D, 0x6C, 0x77, 0x09, 0x88, 0xC0, 0xBA, 0xD9, 0x46, 0xE2, 0x08, 0xE2, 0x4F, 0xA0, 0x74, 0xE5, 0xAB, 0x31, 0x43, 0xDB, 0x5B, 0xFC, 0xE0, 0xFD, 0x10, 0x8E, 0x4B, 0x82, 0xD1, 0x20, 0xA9, 0x3A, 0xD2, 0xCA, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};$/;"	v
+mul256_modm	ed25519-donna/modm-donna-32bit.h	/^mul256_modm(bignum256modm r, const bignum256modm x, const bignum256modm y) {$/;"	f
+mul32x32_64	ed25519-donna/ed25519-donna-portable.h	10;"	d
+mul32x32_64	ed25519-donna/ed25519-donna-portable.h	3;"	d
+mul32x32_64	ed25519-donna/ed25519-donna-portable.h	9;"	d
+mul64x64_128	ed25519-donna/ed25519-donna-portable.h	38;"	d
+mul64x64_128	ed25519-donna/ed25519-donna-portable.h	59;"	d
+mul64x64_128	ed25519-donna/ed25519-donna-portable.h	73;"	d
+mutex	PHKNetworkIP.h	/^    pthread_mutex_t mutex;$/;"	m	class:connectionInfo
+n	srp/t_client.h	/^  struct t_num n;$/;"	m	struct:t_client	typeref:struct:t_client::t_num
+n	srp/t_server.h	/^  struct t_num n;$/;"	m	struct:t_server	typeref:struct:t_server::t_num
+name	srp/nsswitch.h	/^  char name[33];$/;"	m	struct:nsw
+name	srp/srp.h	/^  const char * name;$/;"	m	struct:srp_meth_st
+name	srp/srp.h	/^  const char * name;$/;"	m	struct:srp_s_lu_meth_st
+name	srp/t_pwd.h	/^  char * name;$/;"	m	struct:t_pwent
+nbuf	srp/t_client.h	/^  unsigned char nbuf[MAXPARAMLEN], gbuf[MAXPARAMLEN], sbuf[MAXSALTLEN];$/;"	m	struct:t_client
+nbuf	srp/t_server.h	/^  unsigned char nbuf[MAXPARAMLEN], gbuf[MAXPARAMLEN], vbuf[MAXPARAMLEN];$/;"	m	struct:t_server
+netServiceV4	PHKNetworkIP.cpp	/^DNSServiceRef netServiceV4, netServiceV6;$/;"	v
+netServiceV6	PHKNetworkIP.cpp	/^DNSServiceRef netServiceV4, netServiceV6;$/;"	v
+notifiable	PHKAccessory.h	/^    bool notifiable() { return premission&premission_notify; }$/;"	f	class:characteristics
+notificationList	PHKNetworkIP.h	/^    void *notificationList[numberOfNotifiableValue];$/;"	m	class:connectionInfo
+notify	PHKNetworkIP.h	/^    bool notify(void *target) {$/;"	f	class:connectionInfo
+nsw	srp/nsswitch.h	/^struct nsw$/;"	s
+nsw_type	srp/nsswitch.h	/^enum nsw_type$/;"	g
+numberOfAccessory	PHKAccessory.h	/^    short numberOfAccessory() {$/;"	f	class:AccessorySet
+numberOfCharacteristics	PHKAccessory.h	/^    virtual short numberOfCharacteristics() { return _characteristics.size(); }$/;"	f	class:Service
+numberOfClient	Configuration.h	28;"	d
+numberOfInstance	PHKAccessory.h	/^    int numberOfInstance = 0;$/;"	m	class:Accessory
+numberOfMsgRec	PHKNetworkIP.h	/^    unsigned long long numberOfMsgRec = 0;$/;"	m	class:connectionInfo
+numberOfMsgSend	PHKNetworkIP.h	/^    unsigned long long numberOfMsgSend = 0;$/;"	m	class:connectionInfo
+numberOfNotifiableValue	Configuration.h	34;"	d
+numberOfService	PHKAccessory.h	/^    short numberOfService() { return _services.size(); }$/;"	f	class:Accessory
+ocount	srp/t_truerand.c	/^static unsigned ocount;$/;"	v	file:
+ocount	srp/t_truerand.c	/^volatile unsigned long count, ocount, randbuf;$/;"	v
+oldckhash	srp/srp6_server.c	/^  SHACTX oldckhash;$/;"	m	struct:server_meth_st	file:
+oldckhash	srp/t_server.h	/^  SHA1_CTX oldhash, hash, oldckhash, ckhash;$/;"	m	struct:t_server
+oldhash	srp/srp6_server.c	/^  SHACTX oldhash;$/;"	m	struct:server_meth_st	file:
+oldhash	srp/t_server.h	/^  SHA1_CTX oldhash, hash, oldckhash, ckhash;$/;"	m	struct:t_server
+opaque	poly1305-opt-master/poly1305.h	/^        unsigned char opaque[136];$/;"	m	struct:poly1305_context
+operator =	PHKNetworkIP.cpp	/^PHKNetworkMessageData & PHKNetworkMessageData::operator=(const PHKNetworkMessageData &data) {$/;"	f	class:PHKNetworkMessageData
+operator =	PHKNetworkIP.cpp	/^PHKNetworkMessageDataRecord &PHKNetworkMessageDataRecord::operator=(const PHKNetworkMessageDataRecord& r) {$/;"	f	class:PHKNetworkMessageDataRecord
+orderc	srp/nsswitch.h	/^  int orderc;$/;"	m	struct:nsw
+orderl	srp/nsswitch.h	/^  enum nsw_type orderl[NSW_MAXORDER];$/;"	m	struct:nsw	typeref:enum:nsw::nsw_type
+outbuf	srp/t_truerand.c	/^char outbuf[1024], *bufp;$/;"	v
+outpos	srp/t_misc.c	/^static unsigned int outpos = 0;$/;"	v	file:
+p	srp/t_client.h	/^  struct t_num p;$/;"	m	struct:t_client	typeref:struct:t_client::t_num
+pad	poly1305-opt-master/poly1305.c	/^    unsigned long pad[4];$/;"	m	struct:poly1305_state_internal_t	file:
+pairingTlv8Type	PHKAccessory.cpp	/^const char pairingTlv8Type[] = "application\/pairing+tlv8";$/;"	v
+param_cb	srp/srp.h	/^  SRP_CLIENT_PARAM_VERIFY_CB param_cb;	\/* to verify params *\/$/;"	m	struct:srp_st
+params	srp/srp.h	/^  SRP_RESULT (_CDECL * params)(SRP * srp,$/;"	m	struct:srp_meth_st
+passwd	srp/srp.h	/^  SRP_RESULT (_CDECL * passwd)(SRP * srp,$/;"	m	struct:srp_meth_st
+password	srp/srp.h	/^  BigInteger password;$/;"	m	struct:srp_st
+password	srp/t_pwd.h	/^  struct t_num password;$/;"	m	struct:t_pwent	typeref:struct:t_pwent::t_num
+pbuf	srp/t_client.h	/^  unsigned char pbuf[MAXPARAMLEN], vbuf[MAXPARAMLEN];$/;"	m	struct:t_client
+pebuf	srp/t_pwd.h	/^  struct t_pwent pebuf;$/;"	m	struct:t_pw	typeref:struct:t_pw::t_pwent
+pid	srp/t_misc.c	/^  short pid;$/;"	m	struct:__anon1	file:
+points	ed25519-donna/ed25519-donna-batchverify.h	/^	ge25519 points[heap_batch_size];$/;"	m	struct:batch_heap_t
+poly1305_auth	Homekit_main.cpp	/^poly1305_auth(unsigned char mac[16], const unsigned char *m, size_t bytes, const unsigned char key[32]) {$/;"	f
+poly1305_block_size	poly1305-opt-master/poly1305.c	18;"	d	file:
+poly1305_blocks	poly1305-opt-master/poly1305.c	/^void poly1305_blocks(poly1305_state_internal_t *st, const unsigned char *m, size_t bytes)$/;"	f
+poly1305_context	poly1305-opt-master/poly1305.h	/^    typedef struct poly1305_context {$/;"	s
+poly1305_context	poly1305-opt-master/poly1305.h	/^    } poly1305_context;$/;"	t	typeref:struct:poly1305_context
+poly1305_finish	poly1305-opt-master/poly1305.c	/^void poly1305_finish(poly1305_context *ctx, unsigned char mac[16])$/;"	f
+poly1305_init	poly1305-opt-master/poly1305.c	/^void poly1305_init(poly1305_context *ctx, const unsigned char key[32])$/;"	f
+poly1305_power_on_self_test	Homekit_main.cpp	/^int poly1305_power_on_self_test() {$/;"	f
+poly1305_state	poly1305-opt-master/poly1305.h	/^    typedef struct poly1305_context poly1305_state;$/;"	t	typeref:struct:poly1305_context
+poly1305_state_internal_t	poly1305-opt-master/poly1305.c	/^typedef struct poly1305_state_internal_t {$/;"	s	file:
+poly1305_state_internal_t	poly1305-opt-master/poly1305.c	/^} poly1305_state_internal_t;$/;"	t	typeref:struct:poly1305_state_internal_t	file:
+poly1305_update	poly1305-opt-master/poly1305.c	/^void poly1305_update(poly1305_context *ctx, const unsigned char *m, size_t bytes)$/;"	f
+poly1305_verify	Homekit_main.cpp	/^bool poly1305_verify(const unsigned char *expected, const unsigned char *mac) {$/;"	f
+portNumber	PHKNetworkIP.cpp	60;"	d	file:
+ppid	srp/t_misc.c	/^  short ppid;$/;"	m	struct:__anon1	file:
+pre_params	srp/t_conf.c	/^} pre_params[] = {$/;"	v	typeref:struct:pre_struct	file:
+pre_struct	srp/t_conf.c	/^static struct pre_struct {$/;"	s	file:
+preconf	srp/t_conf.c	/^  struct t_preconf preconf;$/;"	m	struct:pre_struct	typeref:struct:pre_struct::t_preconf	file:
+premission	PHKAccessory.h	/^    const int premission;$/;"	m	class:characteristics
+premission_notify	PHKAccessory.h	/^    premission_notify = 1 << 2  \/\/Notify = Accessory will notice the controller$/;"	e	enum:__anon7
+premission_read	PHKAccessory.h	/^    premission_read = 1,$/;"	e	enum:__anon7
+premission_write	PHKAccessory.h	/^    premission_write = 1 << 1,$/;"	e	enum:__anon7
+preseed	srp/t_misc.c	/^} preseed;$/;"	v	typeref:struct:__anon1	file:
+prk	rfc6234-master/sha.h	/^    unsigned char prk[SHA_DIGESTSIZE];$/;"	m	struct:HKDFContext
+pubkey	srp/srp.h	/^  BigInteger pubkey;$/;"	m	struct:srp_st
+publicKey	PHKControllerRecord.h	/^    char publicKey[32];$/;"	m	struct:PHKKeyRecord
+pwbuf	srp/t_pwd.h	/^  cstr * pwbuf;$/;"	m	struct:t_pw
+pwinit	srp/t_pw.c	/^pwinit()$/;"	f	file:
+pwsetup	srp/t_pw.c	/^pwsetup(out, tpwd, tcnf)$/;"	f	file:
+r	ed25519-donna/ed25519-donna-batchverify.h	/^	unsigned char r[heap_batch_size][16]; \/* 128 bit random values *\/$/;"	m	struct:batch_heap_t
+r	poly1305-opt-master/poly1305.c	/^    unsigned long r[5];$/;"	m	struct:poly1305_state_internal_t	file:
+r	srp/srp6_server.c	/^  unsigned char r[RFC2945_RESP_LEN];$/;"	m	struct:server_meth_st	file:
+randbuf	srp/t_truerand.c	/^volatile unsigned long count, ocount, randbuf;$/;"	v
+randcnt	srp/t_misc.c	/^static unsigned long randcnt = 0;$/;"	v	file:
+randctxt	srp/t_misc.c	/^SHACTX randctxt;$/;"	v
+randout	srp/t_misc.c	/^static unsigned char randpool[SHA_DIGESTSIZE], randout[SHA_DIGESTSIZE];$/;"	v	file:
+randpool	srp/t_misc.c	/^static unsigned char randpool[SHA_DIGESTSIZE], randout[SHA_DIGESTSIZE];$/;"	v	file:
+rawData	PHKNetworkIP.cpp	/^void PHKNetworkMessageData::rawData(const char **dataPtr, unsigned short *len) {$/;"	f	class:PHKNetworkMessageData
+raw_n_truerand	srp/t_truerand.c	/^raw_n_truerand(n)$/;"	f
+raw_truerand	srp/t_truerand.c	/^raw_truerand() {$/;"	f
+raw_truerand	srp/t_truerand.c	/^raw_truerand()$/;"	f
+readIn	PHKControllerRecord.cpp	/^vector<PHKKeyRecord>readIn() {$/;"	f
+recordIndex	PHKNetworkIP.cpp	/^int PHKNetworkMessageData::recordIndex(unsigned char index) {$/;"	f	class:PHKNetworkMessageData
+records	PHKNetworkIP.h	/^    PHKNetworkMessageDataRecord records[10];$/;"	m	class:PHKNetworkMessageData
+reduce256_modm	ed25519-donna/modm-donna-32bit.h	/^reduce256_modm(bignum256modm r) {$/;"	f
+reduce_mask_25	ed25519-donna/curve25519-donna-32bit.h	/^static const uint32_t reduce_mask_25 = (1 << 25) - 1;$/;"	v
+reduce_mask_26	ed25519-donna/curve25519-donna-32bit.h	/^static const uint32_t reduce_mask_26 = (1 << 26) - 1;$/;"	v
+ref	srp/cstr.h	/^  int ref;	\/* Simple reference counter *\/$/;"	m	struct:cstr_st
+registerFail	PHKNetworkIP.cpp	/^void registerFail(DNSServiceRef sdRef, DNSRecordRef RecordRef, DNSServiceFlags flags, DNSServiceErrorType errorCode, void *context ) {$/;"	f
+removeAccessory	PHKAccessory.h	/^    bool removeAccessory(Accessory *acc) {$/;"	f	class:AccessorySet
+removeCharacteristics	PHKAccessory.h	/^    bool removeCharacteristics(characteristics *cha) {$/;"	f	class:Accessory
+removeNotify	PHKNetworkIP.h	/^    void removeNotify(void *target) {$/;"	f	class:connectionInfo
+removeService	PHKAccessory.h	/^    bool removeService(Service *ser) {$/;"	f	class:Accessory
+respond	srp/srp.h	/^  SRP_RESULT (_CDECL * respond)(SRP * srp, cstr ** proof);$/;"	m	struct:srp_meth_st
+responseCode	PHKNetworkIP.h	/^    unsigned short responseCode;$/;"	m	class:PHKNetworkResponse
+responseType	PHKNetworkIP.cpp	/^string PHKNetworkResponse::responseType() {$/;"	f	class:PHKNetworkResponse
+roulette	srp/t_truerand.c	/^roulette()$/;"	f	file:
+roulette	srp/t_truerand.c	/^static unsigned long roulette() {$/;"	f	file:
+s	srp/t_client.h	/^  struct t_num s;$/;"	m	struct:t_client	typeref:struct:t_client::t_num
+s	srp/t_server.h	/^  struct t_num s;$/;"	m	struct:t_server	typeref:struct:t_server::t_num
+s32	curve25519/curve25519-donna.c	/^typedef int32_t s32;$/;"	t	file:
+salt	srp/srp.h	/^  cstr * salt;$/;"	m	struct:srp_st
+salt	srp/t_pwd.h	/^  struct t_num salt;$/;"	m	struct:t_pwent	typeref:struct:t_pwent::t_num
+saltbuf	srp/t_pwd.h	/^  unsigned char saltbuf[SALTLEN];$/;"	m	struct:t_pw
+saltbuf	srp/t_server.h	/^  unsigned char saltbuf[MAXSALTLEN], bbuf[BLEN], Bbuf[MAXPARAMLEN];$/;"	m	struct:t_server
+saved_setarg	srp/setXXent.h	/^static SETARGTYPE saved_setarg;$/;"	v
+savepwent	srp/t_pw.c	/^savepwent(tpw, pwent)$/;"	f	file:
+sbuf	srp/t_client.h	/^  unsigned char nbuf[MAXPARAMLEN], gbuf[MAXPARAMLEN], sbuf[MAXSALTLEN];$/;"	m	struct:t_client
+scalars	ed25519-donna/ed25519-donna-batchverify.h	/^	bignum256modm scalars[heap_batch_size];$/;"	m	struct:batch_heap_t
+schedule	Chacha20/chacha20_simple.h	/^  uint32_t schedule[16];$/;"	m	struct:__anon9
+sec	srp/t_misc.c	/^  time_t sec;$/;"	m	struct:__anon1	file:
+secret	srp/srp.h	/^  BigInteger secret;$/;"	m	struct:srp_st
+sender	PHKAccessory.cpp	/^    void *sender;$/;"	m	struct:broadcastInfo	file:
+serialPort	PHKArduinoLightInterface.c	/^int serialPort = -1;$/;"	v
+server_meth_st	srp/srp6_server.c	/^struct server_meth_st {$/;"	s	file:
+serviceAtIndex	PHKAccessory.h	/^    Service *serviceAtIndex(int index) {$/;"	f	class:Accessory
+serviceID	PHKAccessory.h	/^    int serviceID, uuid;$/;"	m	class:Service
+serviceType_accessoryInfo	PHKAccessory.h	/^    serviceType_accessoryInfo      = 0x3E,$/;"	e	enum:__anon6
+serviceType_airQualitySensor	PHKAccessory.h	/^    serviceType_airQualitySensor   = 0x8C,$/;"	e	enum:__anon6
+serviceType_alarmSystem	PHKAccessory.h	/^    serviceType_alarmSystem        = 0x7E,$/;"	e	enum:__anon6
+serviceType_battery	PHKAccessory.h	/^    serviceType_battery            = 0x96,$/;"	e	enum:__anon6
+serviceType_bridgingState	PHKAccessory.h	/^    serviceType_bridgingState      = 0x62,$/;"	e	enum:__anon6
+serviceType_camera	PHKAccessory.h	/^    serviceType_camera             = 0x3F,$/;"	e	enum:__anon6
+serviceType_carbonDioxideSensor	PHKAccessory.h	/^    serviceType_carbonDioxideSensor= 0x97,$/;"	e	enum:__anon6
+serviceType_carbonMonoxideSensor	PHKAccessory.h	/^    serviceType_carbonMonoxideSensor = 0x7F,$/;"	e	enum:__anon6
+serviceType_charging	PHKAccessory.h	/^    serviceType_charging           = 0x8F,$/;"	e	enum:__anon6
+serviceType_contactSensor	PHKAccessory.h	/^    serviceType_contactSensor      = 0x80,$/;"	e	enum:__anon6
+serviceType_door	PHKAccessory.h	/^    serviceType_door               = 0x81,$/;"	e	enum:__anon6
+serviceType_fan	PHKAccessory.h	/^    serviceType_fan                = 0x40,$/;"	e	enum:__anon6
+serviceType_garageDoorOpener	PHKAccessory.h	/^    serviceType_garageDoorOpener   = 0x41,$/;"	e	enum:__anon6
+serviceType_humiditySensor	PHKAccessory.h	/^    serviceType_humiditySensor     = 0x82,$/;"	e	enum:__anon6
+serviceType_leakSensor	PHKAccessory.h	/^    serviceType_leakSensor         = 0x83,$/;"	e	enum:__anon6
+serviceType_lightBulb	PHKAccessory.h	/^    serviceType_lightBulb          = 0x43,$/;"	e	enum:__anon6
+serviceType_lightSensor	PHKAccessory.h	/^    serviceType_lightSensor        = 0x84,$/;"	e	enum:__anon6
+serviceType_lockManagement	PHKAccessory.h	/^    serviceType_lockManagement     = 0x44,$/;"	e	enum:__anon6
+serviceType_lockMechanism	PHKAccessory.h	/^    serviceType_lockMechanism      = 0x45,$/;"	e	enum:__anon6
+serviceType_microphone	PHKAccessory.h	/^    serviceType_microphone         = 0x46,$/;"	e	enum:__anon6
+serviceType_motionSensor	PHKAccessory.h	/^    serviceType_motionSensor       = 0x85,$/;"	e	enum:__anon6
+serviceType_occupancySensor	PHKAccessory.h	/^    serviceType_occupancySensor    = 0x86,$/;"	e	enum:__anon6
+serviceType_outlet	PHKAccessory.h	/^    serviceType_outlet             = 0x47,$/;"	e	enum:__anon6
+serviceType_programmableSwitch_stateful	PHKAccessory.h	/^    serviceType_programmableSwitch_stateful = 0x88,$/;"	e	enum:__anon6
+serviceType_programmableSwitch_stateless	PHKAccessory.h	/^    serviceType_programmableSwitch_stateless = 0x89,$/;"	e	enum:__anon6
+serviceType_securityAlarm	PHKAccessory.h	/^    serviceType_securityAlarm      = 0x8E,$/;"	e	enum:__anon6
+serviceType_smokeSensor	PHKAccessory.h	/^    serviceType_smokeSensor        = 0x87,$/;"	e	enum:__anon6
+serviceType_speaker	PHKAccessory.h	/^    serviceType_speaker            = 0x48,$/;"	e	enum:__anon6
+serviceType_switch	PHKAccessory.h	/^    serviceType_switch             = 0x49,$/;"	e	enum:__anon6
+serviceType_temperatureSensor	PHKAccessory.h	/^    serviceType_temperatureSensor  = 0x8A,$/;"	e	enum:__anon6
+serviceType_thermostat	PHKAccessory.h	/^    serviceType_thermostat         = 0x4A,$/;"	e	enum:__anon6
+serviceType_window	PHKAccessory.h	/^    serviceType_window             = 0x8B,$/;"	e	enum:__anon6
+serviceType_windowCover	PHKAccessory.h	/^    serviceType_windowCover        = 0x8C,$/;"	e	enum:__anon6
+session_key	srp/t_client.h	/^  unsigned char session_key[SESSION_KEY_LEN];$/;"	m	struct:t_client
+session_key	srp/t_server.h	/^  unsigned char session_key[SESSION_KEY_LEN];$/;"	m	struct:t_server
+session_response	srp/t_client.h	/^  unsigned char session_response[RESPONSE_LEN];$/;"	m	struct:t_client
+session_response	srp/t_server.h	/^  unsigned char session_response[RESPONSE_LEN];$/;"	m	struct:t_server
+setFanSpeed	PHKArduinoLightInterface.c	/^void setFanSpeed(int strengthLevel) {}$/;"	f
+setLightStrength	PHKArduinoLightInterface.c	/^void setLightStrength(int strengthLevel) {$/;"	f
+setValue	PHKAccessory.h	/^    virtual void setValue(string str) {$/;"	f	class:boolCharacteristics
+setValue	PHKAccessory.h	/^    virtual void setValue(string str) {$/;"	f	class:floatCharacteristics
+setValue	PHKAccessory.h	/^    virtual void setValue(string str) {$/;"	f	class:intCharacteristics
+setValue	PHKAccessory.h	/^    virtual void setValue(string str) {$/;"	f	class:stringCharacteristics
+setupPort	PHKArduinoLightInterface.c	/^void setupPort() {$/;"	f
+setupSocket	PHKNetworkIP.cpp	/^void PHKNetworkIP::setupSocket() {$/;"	f	class:PHKNetworkIP
+setupSocketV4	PHKNetworkIP.cpp	/^int setupSocketV4(unsigned int maximumConnection) {$/;"	f
+setupSocketV6	PHKNetworkIP.cpp	/^int setupSocketV6(unsigned int maximumConnection) {$/;"	f
+shaBadParam	rfc6234-master/sha.h	/^    shaBadParam         \/* passed a bad parameter *\/$/;"	e	enum:__anon10
+shaContext	rfc6234-master/sha.h	/^    SHACTX shaContext;     \/* SHA context *\/$/;"	m	struct:HMACContext
+shaInputTooLong	rfc6234-master/sha.h	/^    shaInputTooLong,    \/* input data too long *\/$/;"	e	enum:__anon10
+shaNull	rfc6234-master/sha.h	/^    shaNull,            \/* Null pointer parameter *\/$/;"	e	enum:__anon10
+shaStateError	rfc6234-master/sha.h	/^    shaStateError,      \/* called Input after FinalBits or Result *\/$/;"	e	enum:__anon10
+shaSuccess	rfc6234-master/sha.h	/^    shaSuccess = 0,$/;"	e	enum:__anon10
+shl128	ed25519-donna/ed25519-donna-portable.h	42;"	d
+shl128	ed25519-donna/ed25519-donna-portable.h	63;"	d
+shl128	ed25519-donna/ed25519-donna-portable.h	77;"	d
+shl128_pair	ed25519-donna/ed25519-donna-portable.h	40;"	d
+shl128_pair	ed25519-donna/ed25519-donna-portable.h	61;"	d
+shl128_pair	ed25519-donna/ed25519-donna-portable.h	75;"	d
+shr128	ed25519-donna/ed25519-donna-portable.h	41;"	d
+shr128	ed25519-donna/ed25519-donna-portable.h	62;"	d
+shr128	ed25519-donna/ed25519-donna-portable.h	76;"	d
+shr128_pair	ed25519-donna/ed25519-donna-portable.h	39;"	d
+shr128_pair	ed25519-donna/ed25519-donna-portable.h	60;"	d
+shr128_pair	ed25519-donna/ed25519-donna-portable.h	74;"	d
+sieve30	srp/t_conf.c	/^static int sieve30[] =$/;"	v	file:
+size	ed25519-donna/ed25519-donna-batchverify.h	/^	size_t size;$/;"	m	struct:batch_heap_t
+skipTillChar	PHKNetworkIP.cpp	/^const char *skipTillChar(const char *ptr, const char target) {$/;"	f
+slu	srp/srp.h	/^  SRP_SERVER_LOOKUP * slu;   \/* to look up users *\/$/;"	m	struct:srp_st
+slu_nop	srp/srp.c	/^slu_nop(SRP_SERVER_LOOKUP * slu)$/;"	f	file:
+slu_sys_lookup	srp/srp.c	/^slu_sys_lookup(SRP_SERVER_LOOKUP * slu, SRP * srp, cstr * username)$/;"	f	file:
+sophie_germain	srp/t_conf.c	/^sophie_germain(q, lo, hi)$/;"	f	file:
+srp6_server_auth	srp/srp6_server.c	/^srp6_server_auth(SRP * srp, const unsigned char * a, int alen)$/;"	f	file:
+srp6_server_finish	srp/srp6_server.c	/^srp6_server_finish(SRP * srp)$/;"	f	file:
+srp6_server_genpub	srp/srp6_server.c	/^srp6_server_genpub(SRP * srp, cstr ** result)$/;"	f	file:
+srp6_server_genpub_ex	srp/srp6_server.c	/^srp6_server_genpub_ex(SRP * srp, cstr ** result, BigInteger k)$/;"	f	file:
+srp6_server_init	srp/srp6_server.c	/^srp6_server_init(SRP * srp)$/;"	f	file:
+srp6_server_key	srp/srp6_server.c	/^srp6_server_key(SRP * srp, cstr ** result,$/;"	f	file:
+srp6_server_meth	srp/srp6_server.c	/^static SRP_METHOD srp6_server_meth = {$/;"	v	file:
+srp6_server_params	srp/srp6_server.c	/^srp6_server_params(SRP * srp, const unsigned char * modulus, int modlen,$/;"	f	file:
+srp6_server_passwd	srp/srp6_server.c	/^srp6_server_passwd(SRP * srp, const unsigned char * p, int plen)$/;"	f	file:
+srp6_server_respond	srp/srp6_server.c	/^srp6_server_respond(SRP * srp, cstr ** proof)$/;"	f	file:
+srp6_server_verify	srp/srp6_server.c	/^srp6_server_verify(SRP * srp, const unsigned char * proof, int prooflen)$/;"	f	file:
+srp6a_server_genpub	srp/srp6_server.c	/^srp6a_server_genpub(SRP * srp, cstr ** result)$/;"	f	file:
+srp6a_server_init	srp/srp6_server.c	/^srp6a_server_init(SRP * srp)$/;"	f	file:
+srp6a_server_meth	srp/srp6_server.c	/^static SRP_METHOD srp6a_server_meth = {$/;"	v	file:
+srp_meth_st	srp/srp.h	/^typedef struct srp_meth_st {$/;"	s
+srp_modulus_min_bits	srp/srp.c	/^static int srp_modulus_min_bits = SRP_DEFAULT_MIN_BITS;$/;"	v	file:
+srp_s_lu_meth_st	srp/srp.h	/^typedef struct srp_s_lu_meth_st {$/;"	s
+srp_s_lu_sys_meth	srp/srp.c	/^static struct srp_s_lu_meth_st srp_s_lu_sys_meth = {$/;"	v	typeref:struct:srp_s_lu_meth_st	file:
+srp_s_sys_lookup	srp/srp.c	/^static struct srp_server_lu_st srp_s_sys_lookup = {$/;"	v	typeref:struct:srp_server_lu_st	file:
+srp_sb_cb	srp/srp.c	/^static SRP_SECRET_BITS_CB srp_sb_cb = default_secret_bits_cb;$/;"	v	file:
+srp_server_lu_st	srp/srp.h	/^struct srp_server_lu_st {$/;"	s
+srp_st	srp/srp.h	/^struct srp_st {$/;"	s
+startIdentify	PHKArduinoLightInterface.c	/^void startIdentify() {$/;"	f
+state	ed25519-donna/ed25519-randombytes.h	/^	uint32_t state[256];$/;"	m	struct:isaacp_state_t
+state	srp/t_conf.c	/^  int state;	\/* 0 == uninitialized\/first time *\/$/;"	m	struct:pre_struct	file:
+state	srp/t_pwd.h	/^  FILE_STATE state;$/;"	m	struct:t_pw
+strchr	srp/t_defines.h	82;"	d
+stringCharacteristics	PHKAccessory.h	/^    stringCharacteristics(unsigned short _type, int _premission, unsigned short _maxLen): characteristics(_type, _premission), maxLen(_maxLen) {}$/;"	f	class:stringCharacteristics
+stringCharacteristics	PHKAccessory.h	/^class stringCharacteristics: public characteristics {$/;"	c
+strrchr	srp/t_defines.h	83;"	d
+sub256_modm_batch	ed25519-donna/modm-donna-32bit.h	/^sub256_modm_batch(bignum256modm out, const bignum256modm a, const bignum256modm b, size_t limbsize) {$/;"	f
+subSocket	PHKNetworkIP.h	/^    int subSocket = -1;$/;"	m	class:connectionInfo
+subsec	srp/t_misc.c	/^  time_t subsec;$/;"	m	struct:__anon1	file:
+swap_conditional	curve25519/curve25519-donna.c	/^swap_conditional(limb a[19], limb b[19], limb iswap) {$/;"	f	file:
+sysconf	srp/t_conf.c	/^static struct t_conf * sysconf = NULL;$/;"	v	typeref:struct:t_conf	file:
+syspw	srp/t_pw.c	/^static struct t_pw * syspw = NULL;$/;"	v	typeref:struct:t_pw	file:
+t	ed25519-donna/ed25519-donna.h	/^    bignum25519 x, y, z, t;$/;"	m	struct:ge25519_p1p1_t
+t	ed25519-donna/ed25519-donna.h	/^    bignum25519 x, y, z, t;$/;"	m	struct:ge25519_t
+t2d	ed25519-donna/ed25519-donna.h	/^    bignum25519 ysubx, xaddy, t2d;$/;"	m	struct:ge25519_niels_t
+t2d	ed25519-donna/ed25519-donna.h	/^    bignum25519 ysubx, xaddy, z, t2d;$/;"	m	struct:ge25519_pniels_t
+t_changepw	srp/t_pw.c	/^t_changepw(pwname, diff)$/;"	f
+t_client	srp/t_client.h	/^struct t_client {$/;"	s
+t_closeconf	srp/t_conf.c	/^t_closeconf(tc)$/;"	f
+t_closepw	srp/t_pw.c	/^t_closepw(tpw)$/;"	f
+t_cmpconfent	srp/t_conf.c	/^t_cmpconfent(cf1, cf2)$/;"	f
+t_conf	srp/t_pwd.h	/^struct t_conf {		\/* An open configuration file *\/$/;"	s
+t_confent	srp/t_pwd.h	/^struct t_confent {	\/* One configuration file entry (index, N, g) *\/$/;"	s
+t_cstrfromb64	srp/t_conv.c	/^t_cstrfromb64(dst, src)$/;"	f
+t_deletepw	srp/t_pw.c	/^t_deletepw(pwname, user)$/;"	f
+t_envhash	srp/t_misc.c	/^t_envhash(out)$/;"	f	file:
+t_fromb64	srp/t_conv.c	/^t_fromb64(dst, src)$/;"	f
+t_fromhex	srp/t_conv.c	/^t_fromhex(dst, src)$/;"	f
+t_fshash	srp/t_misc.c	/^t_fshash(out)$/;"	f	file:
+t_getconfbyindex	srp/t_conf.c	/^t_getconfbyindex(tc, index)$/;"	f
+t_getconfent	srp/t_conf.c	/^t_getconfent(tc)$/;"	f
+t_getconflast	srp/t_conf.c	/^t_getconflast(tc)$/;"	f
+t_getprecount	srp/t_conf.c	/^t_getprecount()$/;"	f
+t_getpreparam	srp/t_conf.c	/^t_getpreparam(idx)$/;"	f
+t_getpwbyname	srp/t_pw.c	/^t_getpwbyname(tpw, user)$/;"	f
+t_getpwent	srp/t_pw.c	/^t_getpwent(tpw)$/;"	f
+t_initrand	srp/t_misc.c	/^t_initrand()$/;"	f	file:
+t_isprime	srp/t_conf.c	/^t_isprime(x)$/;"	f
+t_makeconfent	srp/t_conf.c	/^t_makeconfent(tc, nsize)$/;"	f
+t_makeconfent_c	srp/t_conf.c	/^t_makeconfent_c(tc, nsize)$/;"	f
+t_makepwent	srp/t_pw.c	/^t_makepwent(tpw, user, pass, salt, confent)$/;"	f
+t_mgf1	srp/t_misc.c	/^t_mgf1(mask, masklen, seed, seedlen)$/;"	f
+t_newconfent	srp/t_conf.c	/^t_newconfent(tc)$/;"	f
+t_newpw	srp/t_pw.c	/^t_newpw()$/;"	f
+t_nextcstrfield	srp/t_read.c	/^t_nextcstrfield(fp, s)$/;"	f
+t_nextfield	srp/t_read.c	/^t_nextfield(fp, s, max)$/;"	f
+t_nextline	srp/t_read.c	/^t_nextline(fp)$/;"	f
+t_num	srp/t_pwd.h	/^struct t_num {	\/* Standard byte-oriented integer representation *\/$/;"	s
+t_openconf	srp/t_conf.c	/^t_openconf(fp)$/;"	f
+t_openconfbyname	srp/t_conf.c	/^t_openconfbyname(confname)$/;"	f
+t_openpw	srp/t_pw.c	/^t_openpw(fp)$/;"	f
+t_openpwbyname	srp/t_pw.c	/^t_openpwbyname(pwname)$/;"	f
+t_passwd	srp/t_pwd.h	/^struct t_passwd {$/;"	s
+t_preconf	srp/t_pwd.h	/^struct t_preconf {	\/* Structure returned by t_getpreparam() *\/$/;"	s
+t_putconfent	srp/t_conf.c	/^t_putconfent(ent, fp)$/;"	f
+t_putpwent	srp/t_pw.c	/^t_putpwent(ent, fp)$/;"	f
+t_pw	srp/t_pwd.h	/^struct t_pw {		\/* An open password file *\/$/;"	s
+t_pwcopy	srp/t_pw.c	/^t_pwcopy(pwdest, pwsrc, diff)$/;"	f	file:
+t_pwent	srp/t_pwd.h	/^struct t_pwent {	\/* A single password file entry *\/$/;"	s
+t_pwremove	srp/t_pw.c	/^t_pwremove(pwdest, pwsrc, user)$/;"	f	file:
+t_random	srp/t_misc.c	/^t_random(data, size)$/;"	f
+t_rewindconf	srp/t_conf.c	/^t_rewindconf(tc)$/;"	f
+t_rewindpw	srp/t_pw.c	/^t_rewindpw(tpw)$/;"	f
+t_server	srp/t_server.h	/^struct t_server {$/;"	s
+t_sessionkey	srp/t_misc.c	/^t_sessionkey(key, sk, sklen)$/;"	f
+t_stronginitrand	srp/t_misc.c	/^t_stronginitrand()$/;"	f
+t_tob64	srp/t_conv.c	/^t_tob64(dst, src, size)$/;"	f
+t_tob64cstr	srp/t_conv.c	/^t_tob64cstr(dst, src, sz)$/;"	f
+t_tohex	srp/t_conv.c	/^t_tohex(dst, src, size)$/;"	f
+t_tohexcstr	srp/t_conv.c	/^t_tohexcstr(dst, src, size)$/;"	f
+t_verifypw	srp/t_pw.c	/^t_verifypw(user, pass)$/;"	f
+tc	srp/t_pwd.h	/^  struct t_confent tc;$/;"	m	struct:t_passwd	typeref:struct:t_passwd::t_confent
+tcbuf	srp/t_pwd.h	/^  struct t_confent tcbuf;$/;"	m	struct:t_conf	typeref:struct:t_conf::t_confent
+tempStr	PHKNetworkIP.cpp	/^char tempStr[3073];$/;"	v
+thread	PHKNetworkIP.h	/^    pthread_t thread;$/;"	m	class:connectionInfo
+tick	srp/t_truerand.c	/^tick()$/;"	f	file:
+tp	srp/t_pwd.h	/^  struct t_pwent tp;$/;"	m	struct:t_passwd	typeref:struct:t_passwd::t_pwent
+tpass	srp/t_pw.c	/^static struct t_passwd tpass;$/;"	v	typeref:struct:t_passwd	file:
+trand1	srp/t_misc.c	/^  unsigned int trand1;$/;"	m	struct:__anon1	file:
+trand2	srp/t_misc.c	/^  unsigned int trand2;$/;"	m	struct:__anon1	file:
+trialdiv	srp/t_conf.c	/^trialdiv(x)$/;"	f	file:
+twoP0	ed25519-donna/curve25519-donna-32bit.h	/^static const uint32_t twoP0       = 0x07ffffda;$/;"	v
+twoP13579	ed25519-donna/curve25519-donna-32bit.h	/^static const uint32_t twoP13579   = 0x03fffffe;$/;"	v
+twoP2468	ed25519-donna/curve25519-donna-32bit.h	/^static const uint32_t twoP2468    = 0x07fffffe;$/;"	v
+type	PHKAccessory.h	/^    const unsigned short type;$/;"	m	class:characteristics
+type	PHKNetworkIP.h	/^    char type[40];$/;"	m	class:PHKNetworkMessage
+u	srp/srp.h	/^  BigInteger u;$/;"	m	struct:srp_st
+u8	curve25519/curve25519-donna.c	/^typedef uint8_t u8;$/;"	t	file:
+u8	curve25519/curve25519-donna.h	/^typedef uint8_t u8;$/;"	t
+uint128_t	ed25519-donna/ed25519-donna-portable.h	/^			typedef struct uint128_t {$/;"	s
+uint128_t	ed25519-donna/ed25519-donna-portable.h	/^			typedef unsigned __int128 uint128_t;$/;"	t
+uint128_t	ed25519-donna/ed25519-donna-portable.h	/^			typedef unsigned uint128_t __attribute__((mode(TI)));$/;"	t
+uint128_t	ed25519-donna/ed25519-donna-portable.h	/^			} uint128_t;$/;"	t	typeref:struct:uint128_t
+uint128_t	ed25519-donna/ed25519-donna-portable.h	/^		typedef struct uint128_t {$/;"	s
+uint128_t	ed25519-donna/ed25519-donna-portable.h	/^		typedef unsigned __int128 uint128_t;$/;"	t
+uint128_t	ed25519-donna/ed25519-donna-portable.h	/^		} uint128_t;$/;"	t	typeref:struct:uint128_t
+uint16_t	ed25519-donna/ed25519-donna-portable-identify.h	/^	typedef unsigned short uint16_t;$/;"	t
+uint32_t	ed25519-donna/ed25519-donna-portable-identify.h	/^	typedef unsigned int uint32_t;$/;"	t
+uint64_t	ed25519-donna/ed25519-donna-portable-identify.h	/^	typedef unsigned __int64 uint64_t;$/;"	t
+uint8_t	ed25519-donna/ed25519-donna-portable-identify.h	/^	typedef unsigned char uint8_t;$/;"	t
+unit	PHKAccessory.h	/^} unit;$/;"	t	typeref:enum:__anon8
+unit_arcDegree	PHKAccessory.h	/^    unit_arcDegree$/;"	e	enum:__anon8
+unit_celsius	PHKAccessory.h	/^    unit_celsius,$/;"	e	enum:__anon8
+unit_none	PHKAccessory.h	/^    unit_none = 0,$/;"	e	enum:__anon8
+unit_percentage	PHKAccessory.h	/^    unit_percentage,$/;"	e	enum:__anon8
+updateConfiguration	PHKNetworkIP.cpp	/^void updateConfiguration() {$/;"	f
+updateValueFromDeviceEnd	PHKAccessory.cpp	/^void updateValueFromDeviceEnd(characteristics *c, int aid, int iid, string value) {$/;"	f
+userbuf	srp/t_pwd.h	/^  char userbuf[MAXUSERLEN];$/;"	m	struct:t_pw
+username	srp/srp.h	/^  cstr * username;$/;"	m	struct:srp_st
+username	srp/t_client.h	/^  char username[MAXUSERLEN];$/;"	m	struct:t_client
+uuid	PHKAccessory.h	/^    int serviceID, uuid;$/;"	m	class:Service
+v	srp/t_client.h	/^  struct t_num v;$/;"	m	struct:t_client	typeref:struct:t_client::t_num
+v	srp/t_server.h	/^  struct t_num v;$/;"	m	struct:t_server	typeref:struct:t_server::t_num
+value	PHKAccessory.h	/^    virtual string value() {$/;"	f	class:boolCharacteristics
+value	PHKAccessory.h	/^    virtual string value() {$/;"	f	class:floatCharacteristics
+value	PHKAccessory.h	/^    virtual string value() {$/;"	f	class:intCharacteristics
+value	PHKAccessory.h	/^    virtual string value() {$/;"	f	class:stringCharacteristics
+valueChangeFunctionCall	PHKAccessory.h	/^    void (*valueChangeFunctionCall)(bool oldValue, bool newValue) = NULL;$/;"	m	class:boolCharacteristics
+valueChangeFunctionCall	PHKAccessory.h	/^    void (*valueChangeFunctionCall)(float oldValue, float newValue) = NULL;$/;"	m	class:floatCharacteristics
+valueChangeFunctionCall	PHKAccessory.h	/^    void (*valueChangeFunctionCall)(int oldValue, int newValue) = NULL;$/;"	m	class:intCharacteristics
+valueChangeFunctionCall	PHKAccessory.h	/^    void (*valueChangeFunctionCall)(string oldValue, string newValue) = NULL;$/;"	m	class:stringCharacteristics
+vbuf	srp/t_client.h	/^  unsigned char pbuf[MAXPARAMLEN], vbuf[MAXPARAMLEN];$/;"	m	struct:t_client
+vbuf	srp/t_server.h	/^  unsigned char nbuf[MAXPARAMLEN], gbuf[MAXPARAMLEN], vbuf[MAXPARAMLEN];$/;"	m	struct:t_server
+verifier	srp/srp.h	/^  BigInteger verifier;$/;"	m	struct:srp_st
+verify	srp/srp.h	/^  SRP_RESULT (_CDECL * verify)(SRP * srp,$/;"	m	struct:srp_meth_st
+volatile	srp/acconfig.h	31;"	d
+wrap	PHKAccessory.cpp	/^inline string wrap(const char *str) { return (string)"\\""+str+"\\""; }$/;"	f
+writable	PHKAccessory.h	/^    bool writable() { return premission&premission_write; }$/;"	f	class:characteristics
+x	ed25519-donna/ed25519-donna.h	/^    bignum25519 x, y, z, t;$/;"	m	struct:ge25519_p1p1_t
+x	ed25519-donna/ed25519-donna.h	/^    bignum25519 x, y, z, t;$/;"	m	struct:ge25519_t
+xaddy	ed25519-donna/ed25519-donna.h	/^    bignum25519 ysubx, xaddy, t2d;$/;"	m	struct:ge25519_niels_t
+xaddy	ed25519-donna/ed25519-donna.h	/^    bignum25519 ysubx, xaddy, z, t2d;$/;"	m	struct:ge25519_pniels_t
+y	ed25519-donna/ed25519-donna.h	/^    bignum25519 x, y, z, t;$/;"	m	struct:ge25519_p1p1_t
+y	ed25519-donna/ed25519-donna.h	/^    bignum25519 x, y, z, t;$/;"	m	struct:ge25519_t
+ysubx	ed25519-donna/ed25519-donna.h	/^    bignum25519 ysubx, xaddy, t2d;$/;"	m	struct:ge25519_niels_t
+ysubx	ed25519-donna/ed25519-donna.h	/^    bignum25519 ysubx, xaddy, z, t2d;$/;"	m	struct:ge25519_pniels_t
+z	ed25519-donna/ed25519-donna.h	/^    bignum25519 x, y, z, t;$/;"	m	struct:ge25519_p1p1_t
+z	ed25519-donna/ed25519-donna.h	/^    bignum25519 x, y, z, t;$/;"	m	struct:ge25519_t
+z	ed25519-donna/ed25519-donna.h	/^    bignum25519 ysubx, xaddy, z, t2d;$/;"	m	struct:ge25519_pniels_t
+~AccessorySet	PHKAccessory.h	/^    ~AccessorySet() {$/;"	f	class:AccessorySet
+~PHKNetworkIP	PHKNetworkIP.cpp	/^PHKNetworkIP::~PHKNetworkIP() {$/;"	f	class:PHKNetworkIP
+~PHKNetworkMessageDataRecord	PHKNetworkIP.cpp	/^PHKNetworkMessageDataRecord::~PHKNetworkMessageDataRecord() {$/;"	f	class:PHKNetworkMessageDataRecord

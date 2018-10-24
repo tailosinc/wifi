@@ -1,0 +1,93 @@
+# Driver interface for Host AP driver
+CONFIG_DRIVER_HOSTAP=y
+
+# Driver interface for wired authenticator
+CONFIG_DRIVER_WIRED=y
+
+# Driver interface for drivers using the nl80211 kernel interface
+CONFIG_DRIVER_NL80211=y
+
+
+# Driver interface for no driver (e.g., RADIUS server only)
+CONFIG_DRIVER_NONE=y
+
+# IEEE 802.11F/IAPP
+CONFIG_IAPP=y
+
+# WPA2/IEEE 802.11i RSN pre-authentication
+CONFIG_RSN_PREAUTH=y
+
+# PeerKey handshake for Station to Station Link (IEEE 802.11e DLS)
+CONFIG_PEERKEY=y
+
+# IEEE 802.11w (management frame protection)
+CONFIG_IEEE80211W=y
+
+# Integrated EAP server
+CONFIG_EAP=y
+
+# EAP Re-authentication Protocol (ERP) in integrated EAP server
+CONFIG_ERP=y
+
+# EAP-MD5 for the integrated EAP server
+CONFIG_EAP_MD5=y
+
+# EAP-TLS for the integrated EAP server
+CONFIG_EAP_TLS=y
+
+# EAP-MSCHAPv2 for the integrated EAP server
+CONFIG_EAP_MSCHAPV2=y
+
+# EAP-PEAP for the integrated EAP server
+CONFIG_EAP_PEAP=y
+
+# EAP-GTC for the integrated EAP server
+CONFIG_EAP_GTC=y
+
+# EAP-TTLS for the integrated EAP server
+CONFIG_EAP_TTLS=y
+
+
+# EAP-FAST for the integrated EAP server
+# Note: If OpenSSL is used as the TLS library, OpenSSL 1.0 or newer is needed
+# for EAP-FAST support. Older OpenSSL releases would need to be patched, e.g.,
+# with openssl-0.9.8x-tls-extensions.patch, to add the needed functions.
+CONFIG_EAP_FAST=y
+
+# PKCS#12 (PFX) support (used to read private key and certificate file from
+# a file that usually has extension .p12 or .pfx)
+CONFIG_PKCS12=y
+
+# RADIUS authentication server. This provides access to the integrated EAP
+# server from external hosts using RADIUS.
+CONFIG_RADIUS_SERVER=y
+
+# Build IPv6 support for RADIUS operations
+CONFIG_IPV6=y
+
+# openssl = OpenSSL (default)
+# gnutls = GnuTLS
+# internal = Internal TLSv1 implementation (experimental)
+# none = Empty template
+CONFIG_TLS=openssl
+
+# TLS-based EAP methods require at least TLS v1.0. Newer version of TLS (v1.1)
+# can be enabled to get a stronger construction of messages when block ciphers
+# are used.
+CONFIG_TLSV11=y
+
+# TLS-based EAP methods require at least TLS v1.0. Newer version of TLS (v1.2)
+# can be enabled to enable use of stronger crypto algorithms.
+#CONFIG_TLSV12=y
+
+# Enable SQLite database support in hlr_auc_gw, EAP-SIM DB, and eap_user_file
+CONFIG_SQLITE=y
+
+# Testing options
+# This can be used to enable some testing options (see also the example
+# configuration file) that are really useful only for testing clients that
+# connect to this hostapd. These options allow, for example, to drop a
+# certain percentage of probe requests or auth/(re)assoc frames.
+#
+CONFIG_TESTING_OPTIONS=y
+

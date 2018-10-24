@@ -1,0 +1,1813 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AP_KEEPALIVE_PERIOD	../porting/include/rsi_config.h	252;"	d
+AP_KEEPALIVE_TYPE	../porting/include/rsi_config.h	251;"	d
+AP_MODE	../porting/include/rsi_config.h	203;"	d
+AnetnnaReqBuf	../porting/include/rsi_global.h	/^    uint8     AnetnnaReqBuf[3];    $/;"	m	union:__anon183
+AntennaSelFrameSnd	../porting/include/rsi_global.h	/^    } AntennaSelFrameSnd;$/;"	m	union:__anon183	typeref:struct:__anon183::__anon184
+AntennaVal	../porting/include/rsi_global.h	/^        uint8    AntennaVal;                       \/\/@ uint8, Antenna value to set    $/;"	m	struct:__anon183::__anon184
+AutojoinkeyFrameSnd	../porting/include/rsi_global.h	/^  } AutojoinkeyFrameSnd;$/;"	m	union:__anon177	typeref:struct:__anon177::__anon178
+BIT	../porting/include/rsi_api.h	542;"	d
+BIT_TLS_RSA_WITH_AES_128_CBC_SHA	../porting/include/rsi_api.h	628;"	d
+BIT_TLS_RSA_WITH_AES_128_CBC_SHA256	../porting/include/rsi_api.h	626;"	d
+BIT_TLS_RSA_WITH_AES_128_CCM_8	../porting/include/rsi_api.h	629;"	d
+BIT_TLS_RSA_WITH_AES_256_CBC_SHA	../porting/include/rsi_api.h	627;"	d
+BIT_TLS_RSA_WITH_AES_256_CBC_SHA256	../porting/include/rsi_api.h	625;"	d
+BIT_TLS_RSA_WITH_AES_256_CCM_8	../porting/include/rsi_api.h	630;"	d
+BOARD_READY	../porting/include/rsi_api.h	69;"	d
+BOOL	../porting/include/rsi_common_types.h	/^typedef unsigned char           BOOL;$/;"	t
+BOOTLOADER_VERSION	../porting/include/rsi_config.h	69;"	d
+BOOTLOADER_VERSION_CHECK	../porting/include/rsi_config.h	70;"	d
+BOOTUP_OPTIONS_CHECKSUM_FAIL	../porting/include/rsi_api.h	84;"	d
+BOOTUP_OPTIONS_LAST_CONFIG_NOT_SAVED	../porting/include/rsi_api.h	83;"	d
+BT_DATA_TYPE	../porting/include/rsi_global.h	52;"	d
+BT_MGMT_TYPE	../porting/include/rsi_global.h	51;"	d
+BT_PORT_ID	../porting/source/rsi_nl_app.c	65;"	d	file:
+BYPASS_CARD_READY	../porting/include/rsi_config.h	61;"	d
+CC	../Makefile	/^CC = cc$/;"	m
+CERT_LEN	../porting/include/rsi_config.h	235;"	d
+CHECKSUM_FAILURE	../porting/include/rsi_api.h	87;"	d
+CHECKSUM_INVALID_ADDRESS	../porting/include/rsi_api.h	88;"	d
+CHECKSUM_SUCCESS	../porting/include/rsi_api.h	86;"	d
+CLIENT_MAC_ADDRESS	../porting/include/rsi_config.h	193;"	d
+CLIENT_MODE	../porting/include/rsi_config.h	200;"	d
+COUNTRY_CODE_LENGTH	../porting/include/rsi_global.h	353;"	d
+CertLen	../porting/include/rsi_global.h	/^  uint8   CertLen[2];$/;"	m	struct:cert_info_s
+CertType	../porting/include/rsi_global.h	/^  uint8   CertType;$/;"	m	struct:cert_info_s
+Chn_no	../porting/include/rsi_global.h	/^    uint8   Chn_no;                               \/\/@ channel number of connected AP $/;"	m	struct:__anon200::__anon269
+ClusterID	../porting/include/rsi_common_types.h	/^typedef uint16_t ClusterID;$/;"	t
+DATA_RX	../porting/include/rsi_global.h	42;"	d
+DATA_TRANSFER_TYPE	../porting/include/rsi_config.h	315;"	d
+DATA_TX	../porting/include/rsi_global.h	43;"	d
+DISABLE	../porting/include/rsi_global.h	71;"	d
+DNSMode	../porting/include/rsi_global.h	/^        uint8    DNSMode[2];$/;"	m	struct:__anon187::__anon188
+DNS_QRY_URL	../porting/include/rsi_config.h	379;"	d
+DNS_SERVER_NUM	../porting/include/rsi_config.h	380;"	d
+EAP_CERTIFICATE_TYPE	../porting/include/rsi_config.h	237;"	d
+EAP_METHOD	../porting/include/rsi_config.h	236;"	d
+EAP_OKC_ENABLE	../porting/include/rsi_config.h	242;"	d
+ENABLE	../porting/include/rsi_global.h	70;"	d
+ENABLE_USER_STORE_CONFIGURATION	../porting/include/rsi_config.h	465;"	d
+ENTERPRISE_MODE	../porting/include/rsi_config.h	202;"	d
+EOF_REACHED	../porting/include/rsi_api.h	82;"	d
+FEAT_AGGREGATION	../porting/include/rsi_api.h	546;"	d
+FEAT_DEV_TO_HOST_ULP_GPIO_1	../porting/include/rsi_api.h	549;"	d
+FEAT_EVK_HTTP_SERVER_PKT_SIZE	../porting/include/rsi_api.h	586;"	d
+FEAT_HTTP_SERVER_AUTHENTICATION	../porting/include/rsi_api.h	587;"	d
+FEAT_HTTP_SERVER_CREDENTIALS	../porting/include/rsi_api.h	588;"	d
+FEAT_LP_GPIO_BASED_HANDSHAKE	../porting/include/rsi_api.h	547;"	d
+FEAT_LTCP_ZERO_LISTEN_REQUEST_QUEUE	../porting/include/rsi_api.h	589;"	d
+FEAT_RF_SUPPY_VOL_3_3_VOLT	../porting/include/rsi_api.h	550;"	d
+FEAT_SECURITY_OPEN	../porting/include/rsi_api.h	544;"	d
+FEAT_SECURITY_PSK	../porting/include/rsi_api.h	545;"	d
+FEAT_SEL_DFS_CHANNEL_SUPPORT	../porting/include/rsi_api.h	579;"	d
+FEAT_SEL_DHCP_UNICAST	../porting/include/rsi_api.h	578;"	d
+FEAT_SEL_DISABLE_INTERNAL_WEB_SERVER	../porting/include/rsi_api.h	574;"	d
+FEAT_SEL_DISABLE_SUPP_BLACKLIST	../porting/include/rsi_api.h	582;"	d
+FEAT_SEL_GATEWAY_SKIP	../porting/include/rsi_api.h	573;"	d
+FEAT_SEL_HIDDEN_AP	../porting/include/rsi_api.h	576;"	d
+FEAT_SEL_INCLUDE_DNS	../porting/include/rsi_api.h	577;"	d
+FEAT_SEL_LED_SUPPORT	../porting/include/rsi_api.h	580;"	d
+FEAT_SEL_ROAM_MODE_WITH_DEAUTH	../porting/include/rsi_api.h	583;"	d
+FEAT_SEL_UART_HW_FLOW_CTRL	../porting/include/rsi_api.h	575;"	d
+FEAT_ULP_GPIO_BASED_HANDSHAKE	../porting/include/rsi_api.h	548;"	d
+FEAT_WAIT_ON_HOST	../porting/include/rsi_api.h	585;"	d
+FIPS_MODE_ENABLE	../porting/include/rsi_config.h	86;"	d
+FTP_COMMAND_CONNECT	../porting/include/rsi_api.h	635;"	d
+FTP_COMMAND_CREATE	../porting/include/rsi_api.h	634;"	d
+FTP_COMMAND_DESTROY	../porting/include/rsi_api.h	646;"	d
+FTP_COMMAND_DIRECTORY_CWD	../porting/include/rsi_api.h	638;"	d
+FTP_COMMAND_DIRECTORY_DELETE	../porting/include/rsi_api.h	637;"	d
+FTP_COMMAND_DIRECTORY_LIST	../porting/include/rsi_api.h	639;"	d
+FTP_COMMAND_DIRECTORY_MAKE	../porting/include/rsi_api.h	636;"	d
+FTP_COMMAND_DISCONNECT	../porting/include/rsi_api.h	645;"	d
+FTP_COMMAND_FILE_DELETE	../porting/include/rsi_api.h	643;"	d
+FTP_COMMAND_FILE_READ	../porting/include/rsi_api.h	640;"	d
+FTP_COMMAND_FILE_RENAME	../porting/include/rsi_api.h	644;"	d
+FTP_COMMAND_FILE_WRITE	../porting/include/rsi_api.h	641;"	d
+FTP_COMMAND_FILE_WRITE_CONTENT	../porting/include/rsi_api.h	642;"	d
+FWUP_SUCCESSFUL	../porting/include/rsi_api.h	81;"	d
+FW_UPGRADE	../porting/include/rsi_config.h	79;"	d
+FW_UP_PL	../porting/include/rsi_api.h	44;"	d
+FW_UP_REQ	../porting/include/rsi_api.h	45;"	d
+FeatselFrameSnd	../porting/include/rsi_global.h	/^    } FeatselFrameSnd;$/;"	m	union:__anon200::__anon206	typeref:struct:__anon200::__anon206::__anon207
+FwupgradationkeyFrameSnd	../porting/include/rsi_global.h	/^  } FwupgradationkeyFrameSnd;$/;"	m	union:__anon179	typeref:struct:__anon179::__anon180
+GENLMSG_DATA	../porting/include/rsi_nl_app.h	46;"	d
+GENLMSG_PAYLOAD	../porting/include/rsi_nl_app.h	47;"	d
+GET_SEND_LENGTH	../porting/include/rsi_nl_app.h	54;"	d
+GOIntent	../porting/include/rsi_global.h	/^        uint8    GOIntent[2];                     \/\/@ GO Intent Value 0-15 for P2p GO or client , 16 - Soft AP $/;"	m	struct:__anon185::__anon186
+GO_INTENT_VALUE	../porting/include/rsi_config.h	231;"	d
+GroupID	../porting/include/rsi_common_types.h	/^typedef uint16_t GroupID;$/;"	t
+HOST_INTERACTION_MODE	../porting/include/rsi_config.h	68;"	d
+HOST_INTERACT_REG_VALID	../porting/include/rsi_api.h	74;"	d
+HOST_INTF_REG_IN	../porting/include/rsi_api.h	68;"	d
+HOST_INTF_REG_OUT	../porting/include/rsi_api.h	67;"	d
+HTTP_BUFFER_LEN	../porting/include/rsi_global.h	960;"	d
+HostWebpageSnd_t	../porting/include/rsi_global.h	/^} HostWebpageSnd_t;$/;"	t	typeref:struct:__anon199
+HttpReqFrameSnd	../porting/include/rsi_global.h	/^    } HttpReqFrameSnd;$/;"	m	union:__anon200::__anon216	typeref:struct:__anon200::__anon216::__anon217
+HwFlowControlEnableFrameSnd	../porting/include/rsi_global.h	/^}HwFlowControlEnableFrameSnd;$/;"	m	union:__anon200::__anon212	typeref:struct:__anon200::__anon212::__anon213
+INNER_METHOD	../porting/include/rsi_config.h	238;"	d
+INT08	../porting/include/rsi_common_types.h	/^typedef signed char             INT08;$/;"	t
+INT16	../porting/include/rsi_common_types.h	/^typedef short                   INT16;$/;"	t
+INT32	../porting/include/rsi_common_types.h	/^typedef int       			INT32;$/;"	t
+INT64	../porting/include/rsi_common_types.h	/^typedef long long  int          INT64;$/;"	t
+INT8	../porting/include/rsi_common_types.h	/^typedef signed char             INT8;$/;"	t
+INVALID_OPTION	../porting/include/rsi_api.h	85;"	d
+IPV6_SUPPORT	../porting/include/rsi_config.h	280;"	d
+IP_VERSION_4	../porting/include/rsi_api.h	531;"	d
+IP_VERSION_6	../porting/include/rsi_api.h	532;"	d
+JSON_BUFFER_SIZE	../porting/include/rsi_global.h	495;"	d
+JSON_CHUNK_LEN	../porting/include/rsi_global.h	496;"	d
+JSON_FILENAME	../porting/include/rsi_config.h	391;"	d
+JSON_LOAD	../porting/include/rsi_config.h	390;"	d
+KEY_PASSWORD	../porting/include/rsi_config.h	241;"	d
+KeyPwd	../porting/include/rsi_global.h	/^  uint8   KeyPwd[128];$/;"	m	struct:cert_info_s
+LOADING_INITIATED	../porting/include/rsi_api.h	79;"	d
+MAX_CERT_SEND_SIZE	../porting/include/rsi_global.h	1561;"	d
+MAX_DNS_REPLY	../porting/include/rsi_global.h	994;"	d
+MAX_HOST_WEBPAGE_SEND_SIZE	../porting/include/rsi_global.h	844;"	d
+MAX_NO_OF_CLIENTS	../porting/include/rsi_config.h	250;"	d
+MAX_NO_OF_FIELDS	../porting/include/rsi_global.h	860;"	d
+MAX_POSSIBLE_CHANNEL	../porting/include/rsi_global.h	355;"	d
+MAX_POST_DATA_LENGTH	../porting/include/rsi_global.h	808;"	d
+MAX_RCV_SIZE	../porting/include/rsi_nl_app.h	49;"	d
+MAX_STA_SUPPORT	../porting/include/rsi_global.h	1436;"	d
+MAX_URL_LEN	../porting/include/rsi_global.h	775;"	d
+MAX_URL_LENGTH	../porting/include/rsi_global.h	807;"	d
+MAX_WEBPAGE_SEND_SIZE	../porting/include/rsi_global.h	820;"	d
+MDNS_DEINT	../porting/include/rsi_api.h	661;"	d
+MDNS_HOST_NAME	../porting/include/rsi_config.h	439;"	d
+MDNS_INIT	../porting/include/rsi_api.h	659;"	d
+MDNS_INIT_TTL	../porting/include/rsi_config.h	434;"	d
+MDNS_IP_VERSION	../porting/include/rsi_config.h	433;"	d
+MDNS_PTR_NAME	../porting/include/rsi_config.h	440;"	d
+MDNS_REGISTER_SERVICE	../porting/include/rsi_api.h	660;"	d
+MDNS_SRV_MORE	../porting/include/rsi_config.h	437;"	d
+MDNS_SRV_NAME	../porting/include/rsi_config.h	441;"	d
+MDNS_SRV_PORT	../porting/include/rsi_config.h	436;"	d
+MDNS_SRV_TTL	../porting/include/rsi_config.h	435;"	d
+MDNS_TXT_NAME	../porting/include/rsi_config.h	442;"	d
+MN_NUM_SOCKETS	../porting/include/rsi_global.h	1414;"	d
+MODE_FLAG	../porting/include/rsi_config.h	192;"	d
+MODULE_POWER_CYCLE	../porting/include/rsi_nl_app.h	/^  MODULE_POWER_CYCLE               = 0x01,$/;"	e	enum:__anon3
+NLA_DATA	../porting/include/rsi_nl_app.h	48;"	d
+NULL	../porting/include/rsi_global.h	39;"	d
+ODIR	../Makefile	/^ODIR            = obj$/;"	m
+P2P_DEVICE_NAME	../porting/include/rsi_config.h	229;"	d
+P2P_MODE	../porting/include/rsi_config.h	201;"	d
+P2P_OPER_CHANNEL	../porting/include/rsi_config.h	232;"	d
+PASSWORD	../porting/include/rsi_config.h	240;"	d
+PER_MODE	../porting/include/rsi_config.h	204;"	d
+PING_AVAIL	../porting/include/rsi_api.h	76;"	d
+PING_VALID	../porting/include/rsi_api.h	78;"	d
+PING_WRITE	../porting/include/rsi_api.h	73;"	d
+PLATFORM_PORTING_CORE_SRC	../Makefile	/^PLATFORM_PORTING_CORE_SRC= mfi_porting\/source\/$/;"	m
+PONG_AVAIL	../porting/include/rsi_api.h	75;"	d
+PONG_VALID	../porting/include/rsi_api.h	77;"	d
+PONG_WRITE	../porting/include/rsi_api.h	72;"	d
+PORT_ID	../porting/source/rsi_nl_app.c	70;"	d	file:
+PORT_ID	../porting/source/rsi_nl_app.c	72;"	d	file:
+PORT_ID	../porting/source/rsi_nl_app.c	74;"	d	file:
+POST_FIX_SSID	../porting/include/rsi_config.h	230;"	d
+PS_CONFIRM	../porting/include/rsi_api.h	680;"	d
+PS_CONTINUE	../porting/include/rsi_nl_app.h	/^  PS_CONTINUE                      = 0x03,$/;"	e	enum:__anon3
+PlatformApplyAirPlayPlayPassword	../Platform_src/PlatformApplyConfiguration.c	/^OSStatus PlatformApplyAirPlayPlayPassword( const char * const inPlayPassword )$/;"	f
+PlatformApplyName	../Platform_src/PlatformApplyConfiguration.c	/^OSStatus PlatformApplyName( const char * const inName )$/;"	f
+PlatformCryptoStrongRandomBytes	../Platform_src/PlatformRandomNumber.c	/^OSStatus PlatformCryptoStrongRandomBytes( void *inBuffer, size_t inByteCount )$/;"	f
+PlatformInitializemDNSResponder	../Platform_src/PlatformBonjour.c	/^OSStatus PlatformInitializemDNSResponder( void )$/;"	f
+PlatformJoinDestinationWiFiNetwork	../Platform_src/PlatformApplyConfiguration.c	/^OSStatus PlatformJoinDestinationWiFiNetwork( const char * const inSSID, const uint8_t * const inWiFiPSK, size_t inWiFiPSKLen )$/;"	f
+PlatformMFiAuthCopyCertificate	../Platform_src/PlatformMFiAuth.c	/^OSStatus PlatformMFiAuthCopyCertificate( uint8_t **outCertificatePtr, size_t *outCertificateLen )$/;"	f
+PlatformMFiAuthCreateSignature	../Platform_src/PlatformMFiAuth.c	/^OSStatus PlatformMFiAuthCreateSignature( const void *inDigestPtr,$/;"	f
+PlatformMFiAuthFinalize	../Platform_src/PlatformMFiAuth.c	/^void PlatformMFiAuthFinalize( void )$/;"	f
+PlatformMFiAuthInitialize	../Platform_src/PlatformMFiAuth.c	/^OSStatus PlatformMFiAuthInitialize( void )$/;"	f
+PlatformMayStopmDNSResponder	../Platform_src/PlatformBonjour.c	/^OSStatus PlatformMayStopmDNSResponder( void )$/;"	f
+PlatformSoftwareAccessPointStart	../Platform_src/PlatformSoftwareAccessPoint.c	/^OSStatus PlatformSoftwareAccessPointStart( const uint8_t *inIE, size_t inIELen )$/;"	f
+PlatformSoftwareAccessPointStop	../Platform_src/PlatformSoftwareAccessPoint.c	/^OSStatus PlatformSoftwareAccessPointStop( void )$/;"	f
+ProfileID	../porting/include/rsi_common_types.h	/^typedef uint16_t ProfileID;$/;"	t
+PskFrameSnd	../porting/include/rsi_global.h	/^  } PskFrameSnd;$/;"	m	union:__anon155	typeref:struct:__anon155::__anon156
+RECHECK_PASSWORD	../porting/include/rsi_config.h	92;"	d
+REGION_CODE	../porting/include/rsi_config.h	212;"	d
+REG_READ	../porting/include/rsi_api.h	70;"	d
+REG_WRITE	../porting/include/rsi_api.h	71;"	d
+RSI_ACTIVE_SCAN_DURATION	../porting/include/rsi_config.h	187;"	d
+RSI_ANTENNA_GAIN_2G	../porting/include/rsi_config.h	103;"	d
+RSI_ANTENNA_GAIN_5G	../porting/include/rsi_config.h	104;"	d
+RSI_AP_CHANNEL_NUM	../porting/include/rsi_config.h	247;"	d
+RSI_AP_SCANNED_MAX	../porting/include/rsi_global.h	178;"	d
+RSI_ASYNCHRONOUS_DATA_READ	../porting/include/rsi_api.h	604;"	d
+RSI_AUTO_IP_CFG	../porting/include/rsi_api.h	397;"	d
+RSI_AUTO_JOIN_KEY	../porting/include/rsi_config.h	98;"	d
+RSI_AUTO_JOIN_KEY_TYPE	../porting/include/rsi_config.h	97;"	d
+RSI_BAND	../porting/include/rsi_config.h	101;"	d
+RSI_BANDTIMEOUT	../porting/include/rsi_global.h	89;"	d
+RSI_BAND_2P4GHZ	../porting/include/rsi_api.h	387;"	d
+RSI_BAND_5GHZ	../porting/include/rsi_api.h	388;"	d
+RSI_BEACON_INTERVAL	../porting/include/rsi_config.h	246;"	d
+RSI_BG_SCAN_ENABLE	../porting/include/rsi_config.h	182;"	d
+RSI_BG_SCAN_PERIODICITY	../porting/include/rsi_config.h	186;"	d
+RSI_BG_SCAN_THRESHOLD	../porting/include/rsi_config.h	184;"	d
+RSI_BLTIMEOUT	../porting/include/rsi_global.h	87;"	d
+RSI_BOOT_BYPASS_SELECT	../porting/include/rsi_config.h	83;"	d
+RSI_BSSID_LEN	../porting/include/rsi_global.h	195;"	d
+RSI_BUFFER_FULL	../porting/include/rsi_api.h	93;"	d
+RSI_BUSY	../porting/include/rsi_api.h	91;"	d
+RSI_BYTES_2	../porting/include/rsi_global.h	207;"	d
+RSI_BYTES_3	../porting/include/rsi_global.h	206;"	d
+RSI_CETIMEOUT	../porting/include/rsi_global.h	129;"	d
+RSI_CGTIMEOUT	../porting/include/rsi_global.h	133;"	d
+RSI_CHECK_CRC	../porting/include/rsi_api.h	64;"	d
+RSI_CHECK_LOOP_COUNTER	../porting/include/rsi_api.h	106;"	d
+RSI_COEX_MODE	../porting/include/rsi_config.h	110;"	d
+RSI_CONCURRENTAP_IP_NETMASK	../porting/include/rsi_config.h	292;"	d
+RSI_CONCURRENT_AP_IP_ADDRESS	../porting/include/rsi_config.h	291;"	d
+RSI_CONCURRENT_AP_JOIN_SSID	../porting/include/rsi_config.h	253;"	d
+RSI_CONCURRENT_AP_PSK	../porting/include/rsi_config.h	254;"	d
+RSI_CONCURRENT_MODE	../porting/include/rsi_config.h	205;"	d
+RSI_CONFIGURE_ANTENNA	../porting/include/rsi_config.h	102;"	d
+RSI_COUNTRY_CODE	../porting/include/rsi_config.h	218;"	d
+RSI_CSTIMEOUT	../porting/include/rsi_global.h	131;"	d
+RSI_CUSTOM_FEATURE_BIT_MAP	../porting/include/rsi_config.h	116;"	d
+RSI_DATA_PKT_TYPE	../porting/include/rsi_global.h	199;"	d
+RSI_DATA_RATE	../porting/include/rsi_config.h	105;"	d
+RSI_DATA_RATE_1	../porting/include/rsi_api.h	454;"	d
+RSI_DATA_RATE_11	../porting/include/rsi_api.h	457;"	d
+RSI_DATA_RATE_12	../porting/include/rsi_api.h	460;"	d
+RSI_DATA_RATE_18	../porting/include/rsi_api.h	463;"	d
+RSI_DATA_RATE_2	../porting/include/rsi_api.h	455;"	d
+RSI_DATA_RATE_20	../porting/include/rsi_api.h	462;"	d
+RSI_DATA_RATE_54	../porting/include/rsi_api.h	461;"	d
+RSI_DATA_RATE_5P5	../porting/include/rsi_api.h	456;"	d
+RSI_DATA_RATE_6	../porting/include/rsi_api.h	458;"	d
+RSI_DATA_RATE_9	../porting/include/rsi_api.h	459;"	d
+RSI_DATA_RATE_AUTO	../porting/include/rsi_api.h	453;"	d
+RSI_DEBUG_ASSERTION_LEVEL	../porting/include/rsi_config.h	151;"	d
+RSI_DEBUG_ASSERTION_TYPE	../porting/include/rsi_config.h	150;"	d
+RSI_DEBUG_DEVICE	../porting/include/rsi_global.h	172;"	d
+RSI_DEBUG_PRINTS_ENABLE	../porting/include/rsi_config.h	149;"	d
+RSI_DEFAULT_IMAGE_SELECT	../porting/include/rsi_config.h	82;"	d
+RSI_DEFAULT_ROUTER_IPV6_ADDRESS	../porting/include/rsi_config.h	298;"	d
+RSI_DHCP_HOST_NAME	../porting/include/rsi_config.h	278;"	d
+RSI_DHCP_IP_MODE	../porting/include/rsi_api.h	393;"	d
+RSI_DISABLE_BOOT_BYPASS	../porting/include/rsi_api.h	58;"	d
+RSI_DISCONTIMEOUT	../porting/include/rsi_global.h	105;"	d
+RSI_DNS_CFG_MODE	../porting/include/rsi_config.h	374;"	d
+RSI_DNS_MODE_DISABLE	../porting/include/rsi_api.h	396;"	d
+RSI_DNS_MODE_ENABLE	../porting/include/rsi_api.h	395;"	d
+RSI_DPRINT	../porting/include/platform_specific.h	38;"	d
+RSI_DTIM_PERIOD	../porting/include/rsi_config.h	245;"	d
+RSI_DUAL_BAND	../porting/include/rsi_api.h	389;"	d
+RSI_EAP_FAST_PAC_CERTIFICATE	../porting/include/rsi_api.h	401;"	d
+RSI_EAP_TLS_CERTIFICATE	../porting/include/rsi_api.h	400;"	d
+RSI_ENABLE_BOOT_BYPASS	../porting/include/rsi_api.h	57;"	d
+RSI_ENABLE_REJOIN_PARAMS	../porting/include/rsi_config.h	159;"	d
+RSI_ENABLE_UPGRADATION_FROM_HOST	../porting/include/rsi_config.h	100;"	d
+RSI_ENABLE_UPGRADATION_FROM_HOST	../porting/include/rsi_config.h	91;"	d
+RSI_ENCRYPTION_AES	../porting/include/rsi_api.h	443;"	d
+RSI_ENCRYPTION_MODE	../porting/include/rsi_config.h	249;"	d
+RSI_ENCRYPTION_NONE	../porting/include/rsi_api.h	441;"	d
+RSI_ENCRYPTION_TKIP	../porting/include/rsi_api.h	442;"	d
+RSI_FAIL	../porting/include/rsi_api.h	92;"	d
+RSI_FALSE	../porting/include/platform_specific.h	36;"	d
+RSI_FALSE	../porting/include/rsi_global.h	37;"	d
+RSI_FEATSEL_TIMEOUT	../porting/include/rsi_global.h	145;"	d
+RSI_FEATURE_BIT_MAP	../porting/include/rsi_config.h	112;"	d
+RSI_FEAT_DHCP_HOST_NAME	../porting/include/rsi_api.h	394;"	d
+RSI_FEAT_SMTP_EXTENDED_HEADER	../porting/include/rsi_api.h	619;"	d
+RSI_FILL_PARAMETERS	../porting/include/rsi_app.h	99;"	d
+RSI_FRAME_CMD_RSP_LEN	../porting/include/rsi_global.h	185;"	d
+RSI_FRAME_DESC_LEN	../porting/include/rsi_global.h	184;"	d
+RSI_FTP_CHANGE_DIRECTORY_PATH	../porting/include/rsi_config.h	420;"	d
+RSI_FTP_CLIENT	../porting/include/rsi_config.h	415;"	d
+RSI_FTP_FILE_WRITE	../porting/include/rsi_config.h	422;"	d
+RSI_FTP_PASSWORD	../porting/include/rsi_config.h	418;"	d
+RSI_FTP_PATH	../porting/include/rsi_config.h	421;"	d
+RSI_FTP_SERVER_IP_ADDRESS	../porting/include/rsi_config.h	416;"	d
+RSI_FTP_SERVER_PORT	../porting/include/rsi_config.h	419;"	d
+RSI_FTP_USERNAME	../porting/include/rsi_config.h	417;"	d
+RSI_FWUPGRADATION_KEY	../porting/include/rsi_config.h	95;"	d
+RSI_FWUPTIMEOUT	../porting/include/rsi_global.h	83;"	d
+RSI_FWUP_OK	../porting/include/rsi_api.h	302;"	d
+RSI_FWUP_REQ	../porting/include/rsi_api.h	227;"	d
+RSI_FW_UP_SUCCESS	../porting/include/rsi_api.h	47;"	d
+RSI_GATEWAY	../porting/include/rsi_config.h	286;"	d
+RSI_GENERATE_PIN	../porting/include/rsi_config.h	178;"	d
+RSI_GENERATE_PMK	../porting/include/rsi_api.h	613;"	d
+RSI_GETHTTPTIMEOUT	../porting/include/rsi_global.h	139;"	d
+RSI_HOST_BOOTUP_OPTION	../porting/include/rsi_config.h	84;"	d
+RSI_HTTPS_SUPPORT	../porting/include/rsi_config.h	364;"	d
+RSI_HTTP_DATA	../porting/include/rsi_config.h	363;"	d
+RSI_HTTP_HOSTNAME	../porting/include/rsi_config.h	367;"	d
+RSI_HTTP_IP	../porting/include/rsi_config.h	361;"	d
+RSI_HTTP_IPV6	../porting/include/rsi_config.h	362;"	d
+RSI_HTTP_NULL_DELIMITER	../porting/include/rsi_api.h	608;"	d
+RSI_HTTP_PASSWORD	../porting/include/rsi_config.h	366;"	d
+RSI_HTTP_SERVER_PASSWORD	../porting/include/rsi_config.h	372;"	d
+RSI_HTTP_SERVER_PORT	../porting/include/rsi_config.h	368;"	d
+RSI_HTTP_SERVER_USERNAME	../porting/include/rsi_config.h	371;"	d
+RSI_HTTP_URL	../porting/include/rsi_config.h	360;"	d
+RSI_HTTP_USERNAME	../porting/include/rsi_config.h	365;"	d
+RSI_HT_CAPS_BIT_MAP	../porting/include/rsi_config.h	167;"	d
+RSI_IBSS_CREATOR	../porting/include/rsi_api.h	450;"	d
+RSI_IBSS_JOINER	../porting/include/rsi_api.h	449;"	d
+RSI_IBSS_OPEN_MODE	../porting/include/rsi_api.h	446;"	d
+RSI_IBSS_SEC_MODE	../porting/include/rsi_api.h	448;"	d
+RSI_ICMP_FROM_MODULE	../porting/include/rsi_config.h	282;"	d
+RSI_INFRASTRUCTURE_MODE	../porting/include/rsi_api.h	447;"	d
+RSI_INITTIMEOUT	../porting/include/rsi_global.h	91;"	d
+RSI_INSTANT_BG	../porting/include/rsi_config.h	183;"	d
+RSI_INTERFACE	../porting/include/rsi_config.h	33;"	d
+RSI_INTERRUPTS	../porting/include/rsi_global.h	63;"	d
+RSI_INTTYPE	../porting/include/rsi_api.h	/^enum RSI_INTTYPE { $/;"	g
+RSI_INT_CLR_REG_ADDR	../porting/include/rsi_api.h	134;"	d
+RSI_INT_MASK_REG_ADDR	../porting/include/rsi_api.h	133;"	d
+RSI_IN_SLEEP	../porting/include/rsi_api.h	94;"	d
+RSI_IPPTIMEOUT	../porting/include/rsi_global.h	113;"	d
+RSI_IPV6_CFG_MODE	../porting/include/rsi_config.h	279;"	d
+RSI_IPV6_PREFIX_LENGTH	../porting/include/rsi_config.h	295;"	d
+RSI_IP_ADD_LEN	../porting/include/rsi_global.h	196;"	d
+RSI_IP_CFG_MODE	../porting/include/rsi_config.h	277;"	d
+RSI_IP_VERSION	../porting/include/rsi_config.h	281;"	d
+RSI_IRQ_10	../porting/include/rsi_api.h	/^    RSI_IRQ_10               = 0x10,$/;"	e	enum:RSI_INTTYPE
+RSI_IRQ_40	../porting/include/rsi_api.h	/^    RSI_IRQ_40               = 0x40,$/;"	e	enum:RSI_INTTYPE
+RSI_IRQ_80	../porting/include/rsi_api.h	/^    RSI_IRQ_80               = 0x80,$/;"	e	enum:RSI_INTTYPE
+RSI_IRQ_ANY	../porting/include/rsi_api.h	/^    RSI_IRQ_ANY              = 0xff$/;"	e	enum:RSI_INTTYPE
+RSI_IRQ_BUFFEREMPTY	../porting/include/rsi_api.h	/^    RSI_IRQ_BUFFEREMPTY      = 0x02,$/;"	e	enum:RSI_INTTYPE
+RSI_IRQ_BUFFERFULL	../porting/include/rsi_api.h	/^    RSI_IRQ_BUFFERFULL       = 0x01,$/;"	e	enum:RSI_INTTYPE
+RSI_IRQ_DATAPACKET	../porting/include/rsi_api.h	/^    RSI_IRQ_DATAPACKET       = 0x08,$/;"	e	enum:RSI_INTTYPE
+RSI_IRQ_MGMTPACKET	../porting/include/rsi_api.h	/^    RSI_IRQ_MGMTPACKET       = 0x04,$/;"	e	enum:RSI_INTTYPE
+RSI_IRQ_NONE	../porting/include/rsi_api.h	/^    RSI_IRQ_NONE             = 0x00,$/;"	e	enum:RSI_INTTYPE
+RSI_IRQ_PWRMODE	../porting/include/rsi_api.h	/^    RSI_IRQ_PWRMODE          = 0x20,$/;"	e	enum:RSI_INTTYPE
+RSI_JOINTIMEOUT	../porting/include/rsi_global.h	103;"	d
+RSI_JOIN_FEAT_BIT_MAP	../porting/include/rsi_config.h	131;"	d
+RSI_JOIN_FEAT_LISTEN_INTERVAL_VALID	../porting/include/rsi_api.h	130;"	d
+RSI_JOIN_FEAT_STA_BG_ONLY_MODE_ENABLE	../porting/include/rsi_api.h	129;"	d
+RSI_JOIN_SSID	../porting/include/rsi_config.h	128;"	d
+RSI_JSON_MAX_CHUNK_LENGTH	../porting/include/rsi_global.h	497;"	d
+RSI_KEY_STORE	../porting/include/rsi_config.h	90;"	d
+RSI_LISTEN_INTERVAL	../porting/include/rsi_config.h	132;"	d
+RSI_LISTEN_INTERVAL_DTIM	../porting/include/rsi_config.h	137;"	d
+RSI_LITTLE_ENDIAN	../porting/include/rsi_global.h	55;"	d
+RSI_LOAD_DEFAULT	../porting/include/rsi_api.h	61;"	d
+RSI_LOAD_FWUPGRADATION_KEY	../porting/include/rsi_config.h	93;"	d
+RSI_LOAD_IMAGE_I_ACTIVE_LOW_FW	../porting/include/rsi_api.h	51;"	d
+RSI_LOAD_IMAGE_I_FW	../porting/include/rsi_api.h	50;"	d
+RSI_LOAD_IMAGE_TYPE	../porting/include/rsi_config.h	81;"	d
+RSI_LOOP_COUNT_SELECT_OPTION	../porting/include/rsi_api.h	105;"	d
+RSI_LOOP_COUNT_UPGRADE_CHUNK	../porting/include/rsi_api.h	103;"	d
+RSI_LOOP_COUNT_UPGRADE_IMAGE	../porting/include/rsi_api.h	99;"	d
+RSI_LOOP_COUNT_UPGRADE_REQ	../porting/include/rsi_api.h	102;"	d
+RSI_LOOP_COUNT_UPGRADE_STATUS	../porting/include/rsi_api.h	104;"	d
+RSI_LOOP_COUNT_WAKEUP_REQ	../porting/include/rsi_api.h	100;"	d
+RSI_LOOP_COUNT_WAKEUP_WAIT	../porting/include/rsi_api.h	101;"	d
+RSI_LP_MODE	../porting/include/rsi_api.h	120;"	d
+RSI_LTCP_ACCEPT	../porting/include/rsi_api.h	603;"	d
+RSI_MACADDRLEN	../porting/include/rsi_api.h	466;"	d
+RSI_MAC_ADDRESS	../porting/include/rsi_config.h	130;"	d
+RSI_MAC_ADD_LEN	../porting/include/rsi_global.h	197;"	d
+RSI_MAGIC_CODE	../porting/include/rsi_config.h	568;"	d
+RSI_MAXSOCKETS	../porting/include/rsi_global.h	167;"	d
+RSI_MAX_LTCP_CONNECTIONS	../porting/include/rsi_config.h	313;"	d
+RSI_MAX_PAYLOAD_SIZE	../porting/include/rsi_global.h	173;"	d
+RSI_MAX_WFD_DEV_CNT	../porting/include/rsi_global.h	179;"	d
+RSI_MDNS_SD	../porting/include/rsi_config.h	432;"	d
+RSI_MGMT_PKT_TYPE	../porting/include/rsi_global.h	198;"	d
+RSI_MODESEL_TIMEOUT	../porting/include/rsi_global.h	143;"	d
+RSI_MODE_11N_ENABLE	../porting/include/rsi_config.h	166;"	d
+RSI_MODE_32BIT	../porting/include/rsi_api.h	469;"	d
+RSI_MODE_8BIT	../porting/include/rsi_api.h	468;"	d
+RSI_MODULE_IPV6_ADDRESS	../porting/include/rsi_config.h	296;"	d
+RSI_MODULE_IP_ADDRESS	../porting/include/rsi_config.h	285;"	d
+RSI_MODULE_SOCKET_FIVE	../porting/include/rsi_config.h	339;"	d
+RSI_MODULE_SOCKET_FOUR	../porting/include/rsi_config.h	335;"	d
+RSI_MODULE_SOCKET_ONE	../porting/include/rsi_config.h	323;"	d
+RSI_MODULE_SOCKET_SEVEN	../porting/include/rsi_config.h	347;"	d
+RSI_MODULE_SOCKET_SIX	../porting/include/rsi_config.h	343;"	d
+RSI_MODULE_SOCKET_THREE	../porting/include/rsi_config.h	331;"	d
+RSI_MODULE_SOCKET_TWO	../porting/include/rsi_config.h	327;"	d
+RSI_MULTICAST_FILTER_ENABLE	../porting/include/rsi_config.h	196;"	d
+RSI_MULTICAST_GROUP_IPV4_ADDRESS	../porting/include/rsi_config.h	356;"	d
+RSI_MULTICAST_GROUP_IPV6_ADDRESS	../porting/include/rsi_config.h	357;"	d
+RSI_MULTICAST_JOIN	../porting/include/rsi_api.h	504;"	d
+RSI_MULTICAST_LEAVE	../porting/include/rsi_api.h	503;"	d
+RSI_MULTICAST_MAC_ADDRESS	../porting/include/rsi_config.h	198;"	d
+RSI_MULTICAST_MAC_ADD_BIT	../porting/include/rsi_api.h	507;"	d
+RSI_MULTICAST_MAC_CLEAR_ALL	../porting/include/rsi_api.h	509;"	d
+RSI_MULTICAST_MAC_CLEAR_BIT	../porting/include/rsi_api.h	508;"	d
+RSI_MULTICAST_MAC_CMD_TYPE	../porting/include/rsi_config.h	197;"	d
+RSI_MULTICAST_MAC_SET_ALL	../porting/include/rsi_api.h	510;"	d
+RSI_MULTICAST_MESSAGE_TYPE	../porting/include/rsi_config.h	355;"	d
+RSI_MULTICAST_SUPPORT	../porting/include/rsi_config.h	354;"	d
+RSI_MULTIPROBE	../porting/include/rsi_config.h	189;"	d
+RSI_NETMASK	../porting/include/rsi_config.h	288;"	d
+RSI_NL_HEAD_SIZE	../porting/include/rsi_nl_app.h	50;"	d
+RSI_NO_OF_CLIENTS_SUPPORTED	../porting/include/rsi_config.h	115;"	d
+RSI_NO_WLAN_MODE	../porting/include/rsi_config.h	74;"	d
+RSI_OPERMODE	../porting/include/rsi_config.h	111;"	d
+RSI_PASSIVE_SCAN_DURATION	../porting/include/rsi_config.h	188;"	d
+RSI_PER_BURST_MODE	../porting/include/rsi_api.h	494;"	d
+RSI_PER_CONTT_MODE	../porting/include/rsi_api.h	495;"	d
+RSI_PER_CONT_WAVE_MODE_DC	../porting/include/rsi_api.h	496;"	d
+RSI_PER_MODE_AGGR_COUNT	../porting/include/rsi_config.h	266;"	d
+RSI_PER_MODE_AGGR_ENABLE	../porting/include/rsi_config.h	265;"	d
+RSI_PER_MODE_CHANNEL	../porting/include/rsi_config.h	262;"	d
+RSI_PER_MODE_DELAY	../porting/include/rsi_config.h	268;"	d
+RSI_PER_MODE_LENGTH	../porting/include/rsi_config.h	260;"	d
+RSI_PER_MODE_MODE	../porting/include/rsi_config.h	261;"	d
+RSI_PER_MODE_NO_OF_PKTS	../porting/include/rsi_config.h	267;"	d
+RSI_PER_MODE_PER_CH_BW	../porting/include/rsi_config.h	264;"	d
+RSI_PER_MODE_POWER	../porting/include/rsi_config.h	258;"	d
+RSI_PER_MODE_RATE	../porting/include/rsi_config.h	259;"	d
+RSI_PER_MODE_RATE_FLAGS	../porting/include/rsi_config.h	263;"	d
+RSI_PER_MODE_SUPPORT	../porting/include/rsi_config.h	257;"	d
+RSI_PER_STATS	../porting/include/rsi_config.h	271;"	d
+RSI_PER_STATS_CHANNEL	../porting/include/rsi_config.h	272;"	d
+RSI_PING_DATA_SIZE	../porting/include/rsi_config.h	395;"	d
+RSI_PING_TARGET_IP	../porting/include/rsi_config.h	396;"	d
+RSI_PING_TARGET_IPV6	../porting/include/rsi_config.h	397;"	d
+RSI_PING_VERSION	../porting/include/rsi_config.h	394;"	d
+RSI_PMK	../porting/include/rsi_config.h	121;"	d
+RSI_PMK_FROM_HOST	../porting/include/rsi_api.h	612;"	d
+RSI_PMK_LEN	../porting/include/rsi_global.h	200;"	d
+RSI_POSTHTTPTIMEOUT	../porting/include/rsi_global.h	141;"	d
+RSI_POWER_LEVEL	../porting/include/rsi_config.h	106;"	d
+RSI_POWER_LEVEL_HIGH	../porting/include/rsi_api.h	126;"	d
+RSI_POWER_LEVEL_LOW	../porting/include/rsi_api.h	124;"	d
+RSI_POWER_LEVEL_MEDIUM	../porting/include/rsi_api.h	125;"	d
+RSI_POWER_MODE	../porting/include/rsi_config.h	134;"	d
+RSI_POWER_MODE_0	../porting/include/rsi_api.h	114;"	d
+RSI_POWER_MODE_1	../porting/include/rsi_api.h	115;"	d
+RSI_POWER_MODE_2	../porting/include/rsi_api.h	116;"	d
+RSI_POWER_MODE_3	../porting/include/rsi_api.h	117;"	d
+RSI_POWER_MODE_8	../porting/include/rsi_api.h	118;"	d
+RSI_POWER_MODE_9	../porting/include/rsi_api.h	119;"	d
+RSI_PRIMARY_DNS_IPV6_ADDRESS	../porting/include/rsi_config.h	377;"	d
+RSI_PRIMARY_DNS_IP_ADDRESS	../porting/include/rsi_config.h	375;"	d
+RSI_PSK	../porting/include/rsi_config.h	120;"	d
+RSI_PSK_FROM_HOST	../porting/include/rsi_api.h	611;"	d
+RSI_PSK_LEN	../porting/include/rsi_global.h	193;"	d
+RSI_PSK_SUPPORT	../porting/include/rsi_config.h	119;"	d
+RSI_PSK_TYPE	../porting/include/rsi_config.h	122;"	d
+RSI_PUF_ENABLE	../porting/include/rsi_config.h	640;"	d
+RSI_PWSAVE_TIMEOUT	../porting/include/rsi_global.h	149;"	d
+RSI_QBSSIDNWTIMEOUT	../porting/include/rsi_global.h	135;"	d
+RSI_QCSTIMEOUT	../porting/include/rsi_global.h	107;"	d
+RSI_QDNSTIMEOUT	../porting/include/rsi_global.h	123;"	d
+RSI_QDPTIMEOUT	../porting/include/rsi_global.h	109;"	d
+RSI_QFWVTIMEOUT	../porting/include/rsi_global.h	93;"	d
+RSI_QMACADDTIMEOUT	../porting/include/rsi_global.h	136;"	d
+RSI_QNPTIMEOUT	../porting/include/rsi_global.h	111;"	d
+RSI_RATE_1	../porting/include/rsi_api.h	472;"	d
+RSI_RATE_11	../porting/include/rsi_api.h	475;"	d
+RSI_RATE_12	../porting/include/rsi_api.h	478;"	d
+RSI_RATE_18	../porting/include/rsi_api.h	479;"	d
+RSI_RATE_2	../porting/include/rsi_api.h	473;"	d
+RSI_RATE_24	../porting/include/rsi_api.h	480;"	d
+RSI_RATE_36	../porting/include/rsi_api.h	481;"	d
+RSI_RATE_48	../porting/include/rsi_api.h	482;"	d
+RSI_RATE_54	../porting/include/rsi_api.h	483;"	d
+RSI_RATE_5_5	../porting/include/rsi_api.h	474;"	d
+RSI_RATE_6	../porting/include/rsi_api.h	476;"	d
+RSI_RATE_9	../porting/include/rsi_api.h	477;"	d
+RSI_RATE_MCS0	../porting/include/rsi_api.h	484;"	d
+RSI_RATE_MCS1	../porting/include/rsi_api.h	485;"	d
+RSI_RATE_MCS2	../porting/include/rsi_api.h	486;"	d
+RSI_RATE_MCS3	../porting/include/rsi_api.h	487;"	d
+RSI_RATE_MCS4	../porting/include/rsi_api.h	488;"	d
+RSI_RATE_MCS5	../porting/include/rsi_api.h	489;"	d
+RSI_RATE_MCS6	../porting/include/rsi_api.h	490;"	d
+RSI_RATE_MCS7	../porting/include/rsi_api.h	491;"	d
+RSI_RATE_MCS7_SG	../porting/include/rsi_api.h	492;"	d
+RSI_RAW_DATA_MAX_SEND_SIZE	../porting/include/rsi_global.h	177;"	d
+RSI_RECHECK_KEY_TYPE	../porting/include/rsi_config.h	89;"	d
+RSI_RECHECK_PMK	../porting/include/rsi_config.h	88;"	d
+RSI_RECVTIMEOUT	../porting/include/rsi_global.h	117;"	d
+RSI_REGREADTIMEOUT	../porting/include/rsi_global.h	121;"	d
+RSI_REJOIN_BEACON_MISSED_CNT	../porting/include/rsi_config.h	162;"	d
+RSI_REJOIN_FIRST_TIME_RETRY	../porting/include/rsi_config.h	163;"	d
+RSI_REJOIN_MAX_RETRY	../porting/include/rsi_config.h	160;"	d
+RSI_REJOIN_SCAN_INTERVAL	../porting/include/rsi_config.h	161;"	d
+RSI_REQ_ANTENNA_SEL	../porting/include/rsi_api.h	151;"	d
+RSI_REQ_APCONFIG	../porting/include/rsi_api.h	159;"	d
+RSI_REQ_AP_HT_CAPS	../porting/include/rsi_api.h	208;"	d
+RSI_REQ_BAND	../porting/include/rsi_api.h	141;"	d
+RSI_REQ_BG_SCAN	../porting/include/rsi_api.h	166;"	d
+RSI_REQ_CFG_ENABLE	../porting/include/rsi_api.h	156;"	d
+RSI_REQ_CFG_GET	../porting/include/rsi_api.h	157;"	d
+RSI_REQ_CFG_P2P	../porting/include/rsi_api.h	195;"	d
+RSI_REQ_CFG_SAVE	../porting/include/rsi_api.h	155;"	d
+RSI_REQ_CLEAR_FILES	../porting/include/rsi_api.h	181;"	d
+RSI_REQ_CONNECTION_STATUS	../porting/include/rsi_api.h	192;"	d
+RSI_REQ_CREATE_JSON	../porting/include/rsi_api.h	180;"	d
+RSI_REQ_DEBUG_PRINTS	../porting/include/rsi_api.h	161;"	d
+RSI_REQ_DISCONNECT	../porting/include/rsi_api.h	149;"	d
+RSI_REQ_DNS_QRY	../porting/include/rsi_api.h	190;"	d
+RSI_REQ_ERASE_FILE	../porting/include/rsi_api.h	182;"	d
+RSI_REQ_ERASE_JSON	../porting/include/rsi_api.h	183;"	d
+RSI_REQ_FEATSEL	../porting/include/rsi_api.h	153;"	d
+RSI_REQ_FTP	../porting/include/rsi_api.h	236;"	d
+RSI_REQ_FWVERSION_QUERY	../porting/include/rsi_api.h	193;"	d
+RSI_REQ_FW_UP_REQ	../porting/include/rsi_api.h	215;"	d
+RSI_REQ_GET_MAC_ADDR	../porting/include/rsi_api.h	194;"	d
+RSI_REQ_GET_WEBFIELDS	../porting/include/rsi_api.h	199;"	d
+RSI_REQ_GET_WEBPAGE	../porting/include/rsi_api.h	200;"	d
+RSI_REQ_GPIO_CONF	../porting/include/rsi_api.h	162;"	d
+RSI_REQ_HOST_PSK	../porting/include/rsi_api.h	184;"	d
+RSI_REQ_HOST_WEBPAGE	../porting/include/rsi_api.h	165;"	d
+RSI_REQ_HTTP_GET	../porting/include/rsi_api.h	201;"	d
+RSI_REQ_HTTP_POST	../porting/include/rsi_api.h	202;"	d
+RSI_REQ_INIT	../porting/include/rsi_api.h	142;"	d
+RSI_REQ_IPCONF6	../porting/include/rsi_api.h	170;"	d
+RSI_REQ_IPPARAM_CONFIG	../porting/include/rsi_api.h	187;"	d
+RSI_REQ_JOIN	../porting/include/rsi_api.h	144;"	d
+RSI_REQ_MDNS	../porting/include/rsi_api.h	242;"	d
+RSI_REQ_MULTICAST	../porting/include/rsi_api.h	185;"	d
+RSI_REQ_MULTICAST_FILTER	../porting/include/rsi_api.h	164;"	d
+RSI_REQ_OPERMODE	../porting/include/rsi_api.h	140;"	d
+RSI_REQ_PER_PARAMS	../porting/include/rsi_api.h	221;"	d
+RSI_REQ_PER_STATS	../porting/include/rsi_api.h	224;"	d
+RSI_REQ_PING_PACKET	../porting/include/rsi_api.h	163;"	d
+RSI_REQ_PWRMODE	../porting/include/rsi_api.h	145;"	d
+RSI_REQ_QUERY_GO_PARAMS	../porting/include/rsi_api.h	198;"	d
+RSI_REQ_QUERY_NETWORK_PARAMS	../porting/include/rsi_api.h	148;"	d
+RSI_REQ_REJOIN_PARAMS	../porting/include/rsi_api.h	167;"	d
+RSI_REQ_RF_CURRENT_CONFIG	../porting/include/rsi_api.h	230;"	d
+RSI_REQ_ROAM_PARAMS	../porting/include/rsi_api.h	205;"	d
+RSI_REQ_RSSI_QUERY	../porting/include/rsi_api.h	150;"	d
+RSI_REQ_SCAN	../porting/include/rsi_api.h	143;"	d
+RSI_REQ_SET_CERT	../porting/include/rsi_api.h	197;"	d
+RSI_REQ_SET_EAP_CFG	../porting/include/rsi_api.h	196;"	d
+RSI_REQ_SET_MAC_ADDR	../porting/include/rsi_api.h	147;"	d
+RSI_REQ_SET_REG_AP	../porting/include/rsi_api.h	186;"	d
+RSI_REQ_SET_REG_CODE	../porting/include/rsi_api.h	152;"	d
+RSI_REQ_SET_WEP_KEY	../porting/include/rsi_api.h	160;"	d
+RSI_REQ_SLEEP_TIMER	../porting/include/rsi_api.h	146;"	d
+RSI_REQ_SMTP	../porting/include/rsi_api.h	245;"	d
+RSI_REQ_SNMP_ENABLE	../porting/include/rsi_api.h	177;"	d
+RSI_REQ_SNMP_GET	../porting/include/rsi_api.h	173;"	d
+RSI_REQ_SNMP_GETNEXT	../porting/include/rsi_api.h	174;"	d
+RSI_REQ_SNMP_SET	../porting/include/rsi_api.h	175;"	d
+RSI_REQ_SNMP_TRAP	../porting/include/rsi_api.h	178;"	d
+RSI_REQ_SNR	../porting/include/rsi_api.h	154;"	d
+RSI_REQ_SNTP	../porting/include/rsi_api.h	239;"	d
+RSI_REQ_SOCKET_CLOSE	../porting/include/rsi_api.h	189;"	d
+RSI_REQ_SOCKET_CONFIG	../porting/include/rsi_api.h	233;"	d
+RSI_REQ_SOCKET_CREATE	../porting/include/rsi_api.h	188;"	d
+RSI_REQ_TCP_CONN_STATUS_QUERY	../porting/include/rsi_api.h	191;"	d
+RSI_REQ_USER_STORE_CFG	../porting/include/rsi_api.h	158;"	d
+RSI_REQ_WMM_PS	../porting/include/rsi_api.h	212;"	d
+RSI_REQ_WPS_METHOD	../porting/include/rsi_api.h	218;"	d
+RSI_RESET_LOOP_COUNTER	../porting/include/rsi_api.h	97;"	d
+RSI_RESPONSE_TIMEOUT	../porting/include/rsi_global.h	151;"	d
+RSI_RESP_WFD_DEV	../porting/include/rsi_api.h	331;"	d
+RSI_RF_CURRENT_CONFIG	../porting/include/rsi_config.h	222;"	d
+RSI_RF_RX_POWER	../porting/include/rsi_config.h	224;"	d
+RSI_RF_TX_POWER	../porting/include/rsi_config.h	223;"	d
+RSI_ROAMING_HYSTERISIS	../porting/include/rsi_config.h	156;"	d
+RSI_ROAMING_SUPPORT	../porting/include/rsi_config.h	154;"	d
+RSI_ROAMING_THRESHOLD	../porting/include/rsi_config.h	155;"	d
+RSI_RPS_HEADER	../porting/include/rsi_api.h	46;"	d
+RSI_RPS_PAYLOAD_LEN	../porting/include/rsi_global.h	694;"	d
+RSI_RSP_ANTENNA_SEL	../porting/include/rsi_api.h	261;"	d
+RSI_RSP_APCONFIG	../porting/include/rsi_api.h	270;"	d
+RSI_RSP_AP_HT_CAPS	../porting/include/rsi_api.h	338;"	d
+RSI_RSP_BAND	../porting/include/rsi_api.h	251;"	d
+RSI_RSP_BG_SCAN	../porting/include/rsi_api.h	277;"	d
+RSI_RSP_CARD_READY	../porting/include/rsi_api.h	249;"	d
+RSI_RSP_CFG_ENABLE	../porting/include/rsi_api.h	267;"	d
+RSI_RSP_CFG_GET	../porting/include/rsi_api.h	268;"	d
+RSI_RSP_CFG_P2P	../porting/include/rsi_api.h	314;"	d
+RSI_RSP_CFG_SAVE	../porting/include/rsi_api.h	266;"	d
+RSI_RSP_CLEAR_FILES	../porting/include/rsi_api.h	352;"	d
+RSI_RSP_CLIENT_CONNECTED	../porting/include/rsi_api.h	363;"	d
+RSI_RSP_CLIENT_DISCONNECTED	../porting/include/rsi_api.h	364;"	d
+RSI_RSP_CLOSE	../porting/include/rsi_api.h	308;"	d
+RSI_RSP_CONNECTION_STATUS	../porting/include/rsi_api.h	311;"	d
+RSI_RSP_CONN_ESTABLISH	../porting/include/rsi_api.h	332;"	d
+RSI_RSP_CREATE_JSON	../porting/include/rsi_api.h	351;"	d
+RSI_RSP_DATA_PACKET_ACK	../porting/include/rsi_api.h	361;"	d
+RSI_RSP_DATA_RECEIVE	../porting/include/rsi_api.h	248;"	d
+RSI_RSP_DEBUG_PRINTS	../porting/include/rsi_api.h	272;"	d
+RSI_RSP_DISCONNECT	../porting/include/rsi_api.h	259;"	d
+RSI_RSP_DNS_QRY	../porting/include/rsi_api.h	309;"	d
+RSI_RSP_DNS_SERVER	../porting/include/rsi_api.h	334;"	d
+RSI_RSP_ERASE_FILE	../porting/include/rsi_api.h	353;"	d
+RSI_RSP_ERASE_JSON	../porting/include/rsi_api.h	354;"	d
+RSI_RSP_FEATSEL	../porting/include/rsi_api.h	264;"	d
+RSI_RSP_FTP	../porting/include/rsi_api.h	373;"	d
+RSI_RSP_FWVERSION_QUERY	../porting/include/rsi_api.h	312;"	d
+RSI_RSP_FW_UP_REQ	../porting/include/rsi_api.h	344;"	d
+RSI_RSP_GET_WEBFIELDS	../porting/include/rsi_api.h	318;"	d
+RSI_RSP_GET_WEBPAGE	../porting/include/rsi_api.h	319;"	d
+RSI_RSP_GPIO_CONF	../porting/include/rsi_api.h	273;"	d
+RSI_RSP_HOST_PSK	../porting/include/rsi_api.h	300;"	d
+RSI_RSP_HOST_WEBPAGE	../porting/include/rsi_api.h	335;"	d
+RSI_RSP_HTTP_ABORT	../porting/include/rsi_api.h	323;"	d
+RSI_RSP_HTTP_CREDENTIALS	../porting/include/rsi_api.h	324;"	d
+RSI_RSP_HTTP_GET	../porting/include/rsi_api.h	320;"	d
+RSI_RSP_HTTP_POST	../porting/include/rsi_api.h	321;"	d
+RSI_RSP_INIT	../porting/include/rsi_api.h	252;"	d
+RSI_RSP_IPCHANGE_NOTIFY	../porting/include/rsi_api.h	299;"	d
+RSI_RSP_IPCONF6	../porting/include/rsi_api.h	290;"	d
+RSI_RSP_IPPARAM_CONFIG	../porting/include/rsi_api.h	306;"	d
+RSI_RSP_JOIN	../porting/include/rsi_api.h	254;"	d
+RSI_RSP_JSON_UPDATE	../porting/include/rsi_api.h	355;"	d
+RSI_RSP_MACADDRESS_SET	../porting/include/rsi_api.h	257;"	d
+RSI_RSP_MAC_QUERY	../porting/include/rsi_api.h	313;"	d
+RSI_RSP_MDNS	../porting/include/rsi_api.h	380;"	d
+RSI_RSP_MODULE_STATE	../porting/include/rsi_api.h	279;"	d
+RSI_RSP_MULTICAST	../porting/include/rsi_api.h	356;"	d
+RSI_RSP_MULTICAST_FILTER	../porting/include/rsi_api.h	276;"	d
+RSI_RSP_NETWORK_PARAMS	../porting/include/rsi_api.h	258;"	d
+RSI_RSP_NULL	../porting/include/rsi_api.h	305;"	d
+RSI_RSP_OPERMODE	../porting/include/rsi_api.h	250;"	d
+RSI_RSP_P2P_CONNREQ	../porting/include/rsi_api.h	275;"	d
+RSI_RSP_PER_PARAMS	../porting/include/rsi_api.h	350;"	d
+RSI_RSP_PER_STATS	../porting/include/rsi_api.h	293;"	d
+RSI_RSP_PING_PACKET	../porting/include/rsi_api.h	274;"	d
+RSI_RSP_PWRMODE	../porting/include/rsi_api.h	255;"	d
+RSI_RSP_QUERY_GO_PARAMS	../porting/include/rsi_api.h	317;"	d
+RSI_RSP_REJOIN_PARAMS	../porting/include/rsi_api.h	278;"	d
+RSI_RSP_REMOTE_TERMINATE	../porting/include/rsi_api.h	333;"	d
+RSI_RSP_RF_CURRENT_CONFIG	../porting/include/rsi_api.h	367;"	d
+RSI_RSP_ROAM_PARAMS	../porting/include/rsi_api.h	328;"	d
+RSI_RSP_RSSI_QUERY	../porting/include/rsi_api.h	260;"	d
+RSI_RSP_SCAN	../porting/include/rsi_api.h	253;"	d
+RSI_RSP_SENT_BYTES	../porting/include/rsi_api.h	322;"	d
+RSI_RSP_SET_CERT	../porting/include/rsi_api.h	316;"	d
+RSI_RSP_SET_EAP_CFG	../porting/include/rsi_api.h	315;"	d
+RSI_RSP_SET_REG_AP	../porting/include/rsi_api.h	301;"	d
+RSI_RSP_SET_REG_CODE	../porting/include/rsi_api.h	263;"	d
+RSI_RSP_SET_WEP_KEY	../porting/include/rsi_api.h	271;"	d
+RSI_RSP_SLEEP_TIMER	../porting/include/rsi_api.h	256;"	d
+RSI_RSP_SLP	../porting/include/rsi_api.h	358;"	d
+RSI_RSP_SMTP	../porting/include/rsi_api.h	383;"	d
+RSI_RSP_SNMP_ENABLE	../porting/include/rsi_api.h	286;"	d
+RSI_RSP_SNMP_GETNEXT_RSP	../porting/include/rsi_api.h	285;"	d
+RSI_RSP_SNMP_GET_RSP	../porting/include/rsi_api.h	284;"	d
+RSI_RSP_SNMP_TRAP	../porting/include/rsi_api.h	287;"	d
+RSI_RSP_SNR	../porting/include/rsi_api.h	265;"	d
+RSI_RSP_SNTP	../porting/include/rsi_api.h	376;"	d
+RSI_RSP_SNTP_SERVER	../porting/include/rsi_api.h	377;"	d
+RSI_RSP_SOCKET_CONFIG	../porting/include/rsi_api.h	370;"	d
+RSI_RSP_SOCKET_CREATE	../porting/include/rsi_api.h	307;"	d
+RSI_RSP_SOFT_RESET	../porting/include/rsi_api.h	262;"	d
+RSI_RSP_TCP_CONN_STATUS_QUERY	../porting/include/rsi_api.h	310;"	d
+RSI_RSP_TYPE_OFFSET	../porting/include/rsi_nl_app.h	53;"	d
+RSI_RSP_UART_FLOW_CONTROL	../porting/include/rsi_api.h	296;"	d
+RSI_RSP_ULP_NO_RAM_RET	../porting/include/rsi_api.h	280;"	d
+RSI_RSP_USER_STORE_CFG	../porting/include/rsi_api.h	269;"	d
+RSI_RSP_WKP	../porting/include/rsi_api.h	359;"	d
+RSI_RSP_WMM_PS	../porting/include/rsi_api.h	341;"	d
+RSI_RSP_WPS_METHOD	../porting/include/rsi_api.h	347;"	d
+RSI_RSSITIMEOUT	../porting/include/rsi_global.h	115;"	d
+RSI_RSSI_TOLERANCE_THRESHOLD	../porting/include/rsi_config.h	185;"	d
+RSI_RXDATA_OFFSET_TCP_V4	../porting/include/rsi_global.h	188;"	d
+RSI_RXDATA_OFFSET_TCP_V6	../porting/include/rsi_global.h	189;"	d
+RSI_RXDATA_OFFSET_UDP_V4	../porting/include/rsi_global.h	190;"	d
+RSI_RXDATA_OFFSET_UDP_V6	../porting/include/rsi_global.h	191;"	d
+RSI_RXPKT_HEAD_ROOM	../porting/include/platform_specific.h	37;"	d
+RSI_SCANTIMEOUT	../porting/include/rsi_global.h	97;"	d
+RSI_SCAN_CHANNEL	../porting/include/rsi_config.h	124;"	d
+RSI_SCAN_CHANNEL_BIT_MAP_2_4	../porting/include/rsi_config.h	126;"	d
+RSI_SCAN_CHANNEL_BIT_MAP_5	../porting/include/rsi_config.h	127;"	d
+RSI_SCAN_FEAT_BITMAP	../porting/include/rsi_config.h	125;"	d
+RSI_SCAN_SSID	../porting/include/rsi_config.h	123;"	d
+RSI_SECONDARY_DNS_IPV6_ADDRESS	../porting/include/rsi_config.h	378;"	d
+RSI_SECONDARY_DNS_IP_ADDRESS	../porting/include/rsi_config.h	376;"	d
+RSI_SECURITY_MODE	../porting/include/rsi_config.h	118;"	d
+RSI_SECURITY_NONE	../porting/include/rsi_api.h	434;"	d
+RSI_SECURITY_OPEN	../porting/include/rsi_api.h	436;"	d
+RSI_SECURITY_TYPE	../porting/include/rsi_config.h	248;"	d
+RSI_SECURITY_WPA1	../porting/include/rsi_api.h	437;"	d
+RSI_SECURITY_WPA2	../porting/include/rsi_api.h	438;"	d
+RSI_SELECT_IMAGE_I_BY_DEFAULT	../porting/include/rsi_api.h	54;"	d
+RSI_SLEEPTIMERTIMEOUT	../porting/include/rsi_global.h	99;"	d
+RSI_SLITIMEOUT	../porting/include/rsi_global.h	127;"	d
+RSI_SMATIMEOUT	../porting/include/rsi_global.h	95;"	d
+RSI_SMTP_AUTH_LOGIN	../porting/include/rsi_api.h	621;"	d
+RSI_SMTP_AUTH_PLAIN	../porting/include/rsi_api.h	620;"	d
+RSI_SMTP_AUTH_TYPE	../porting/include/rsi_config.h	451;"	d
+RSI_SMTP_CLIENT	../porting/include/rsi_config.h	445;"	d
+RSI_SMTP_CLIENT_PASSWORD	../porting/include/rsi_config.h	453;"	d
+RSI_SMTP_CLIENT_USERNAME	../porting/include/rsi_config.h	452;"	d
+RSI_SMTP_FEATURE	../porting/include/rsi_config.h	449;"	d
+RSI_SMTP_FROM_ADDRESS	../porting/include/rsi_config.h	454;"	d
+RSI_SMTP_IP_VERSION	../porting/include/rsi_config.h	446;"	d
+RSI_SMTP_LOCAL_DOMAIN	../porting/include/rsi_config.h	455;"	d
+RSI_SMTP_MAIL_BODY	../porting/include/rsi_config.h	458;"	d
+RSI_SMTP_MAIL_PRIORITY_HIGH	../porting/include/rsi_api.h	618;"	d
+RSI_SMTP_MAIL_PRIORITY_LOW	../porting/include/rsi_api.h	616;"	d
+RSI_SMTP_MAIL_PRIORITY_NORMAL	../porting/include/rsi_api.h	617;"	d
+RSI_SMTP_MAIL_RECIPIENT_ADDRESS	../porting/include/rsi_config.h	456;"	d
+RSI_SMTP_MAIL_SUBJECT_LINE	../porting/include/rsi_config.h	457;"	d
+RSI_SMTP_SERVER_IPV4_ADDRESS	../porting/include/rsi_config.h	447;"	d
+RSI_SMTP_SERVER_IPV6_ADDRESS	../porting/include/rsi_config.h	448;"	d
+RSI_SMTP_SERVER_PORT	../porting/include/rsi_config.h	450;"	d
+RSI_SNMP_COMMUNITY	../porting/include/rsi_config.h	408;"	d
+RSI_SNMP_ELAPSED_TIME	../porting/include/rsi_config.h	411;"	d
+RSI_SNMP_ENABLE	../porting/include/rsi_config.h	401;"	d
+RSI_SNMP_OBJECT_LIST_COUNT	../porting/include/rsi_config.h	412;"	d
+RSI_SNMP_OBJ_TYPE	../porting/include/rsi_config.h	402;"	d
+RSI_SNMP_OBJ_VALUE	../porting/include/rsi_config.h	403;"	d
+RSI_SNMP_TARGET_IPV6_ADDRESS	../porting/include/rsi_config.h	407;"	d
+RSI_SNMP_TARGET_IP_ADDRESS	../porting/include/rsi_config.h	406;"	d
+RSI_SNMP_TRAP_OID	../porting/include/rsi_config.h	410;"	d
+RSI_SNMP_TRAP_TYPE	../porting/include/rsi_config.h	409;"	d
+RSI_SNMP_VERSION	../porting/include/rsi_config.h	405;"	d
+RSI_SNTP_CLIENT	../porting/include/rsi_config.h	425;"	d
+RSI_SNTP_IP_VERSION	../porting/include/rsi_config.h	426;"	d
+RSI_SNTP_METHOD	../porting/include/rsi_config.h	429;"	d
+RSI_SNTP_SERVER_IPV6_ADDRESS	../porting/include/rsi_config.h	428;"	d
+RSI_SNTP_SERVER_IP_ADDRESS	../porting/include/rsi_config.h	427;"	d
+RSI_SOCKET_LUDP	../porting/include/rsi_api.h	412;"	d
+RSI_SOCKET_TCP_CLIENT	../porting/include/rsi_api.h	409;"	d
+RSI_SOCKET_TCP_SERVER	../porting/include/rsi_api.h	411;"	d
+RSI_SOCKET_TYPE	../porting/include/rsi_config.h	310;"	d
+RSI_SOCKET_UDP_CLIENT	../porting/include/rsi_api.h	410;"	d
+RSI_SOPTIMEOUT	../porting/include/rsi_global.h	119;"	d
+RSI_SPI	../porting/include/rsi_api.h	34;"	d
+RSI_SPI_INT_REG_ADDR	../porting/include/rsi_api.h	110;"	d
+RSI_SPI_MODE_REG_ADDR	../porting/include/rsi_api.h	111;"	d
+RSI_SSID_LEN	../porting/include/rsi_global.h	194;"	d
+RSI_SSL_CA_CERTIFICATE	../porting/include/rsi_api.h	404;"	d
+RSI_SSL_CLIENT_CERTIFICATE	../porting/include/rsi_api.h	402;"	d
+RSI_SSL_CLIENT_PRIVATE_KEY	../porting/include/rsi_api.h	403;"	d
+RSI_SSL_SERVER_CERTIFICATE	../porting/include/rsi_api.h	405;"	d
+RSI_SSL_SERVER_PRIVATE_KEY	../porting/include/rsi_api.h	406;"	d
+RSI_SSL_SUPPORT	../porting/include/rsi_api.h	594;"	d
+RSI_SSL_TLS_V_1	../porting/include/rsi_api.h	597;"	d
+RSI_SSL_TLS_V_1_2	../porting/include/rsi_api.h	598;"	d
+RSI_SSL_WEBS_SUPPORT	../porting/include/rsi_api.h	596;"	d
+RSI_START_TOKEN_TIMEOUT	../porting/include/rsi_global.h	125;"	d
+RSI_STATIC_IP_MODE	../porting/include/rsi_api.h	392;"	d
+RSI_STATUS_OFFSET	../porting/include/rsi_nl_app.h	51;"	d
+RSI_STORE_CONFIG	../porting/include/rsi_config.h	107;"	d
+RSI_STORE_IPV6_ENABLE	../porting/include/rsi_config.h	468;"	d
+RSI_STORE_PMK_SUPPORT	../porting/include/rsi_config.h	466;"	d
+RSI_STORE_WEP_KEY_SUPPORT	../porting/include/rsi_config.h	467;"	d
+RSI_SUCCESS	../porting/include/rsi_api.h	90;"	d
+RSI_SYNCHRONOUS_DATA_READ	../porting/include/rsi_api.h	602;"	d
+RSI_TARGET_IPV6_ADDRESS	../porting/include/rsi_config.h	297;"	d
+RSI_TARGET_IP_ADDRESS	../porting/include/rsi_config.h	287;"	d
+RSI_TARGET_SOCKET_FIVE	../porting/include/rsi_config.h	340;"	d
+RSI_TARGET_SOCKET_FOUR	../porting/include/rsi_config.h	336;"	d
+RSI_TARGET_SOCKET_ONE	../porting/include/rsi_config.h	324;"	d
+RSI_TARGET_SOCKET_SEVEN	../porting/include/rsi_config.h	348;"	d
+RSI_TARGET_SOCKET_SIX	../porting/include/rsi_config.h	344;"	d
+RSI_TARGET_SOCKET_THREE	../porting/include/rsi_config.h	332;"	d
+RSI_TARGET_SOCKET_TWO	../porting/include/rsi_config.h	328;"	d
+RSI_TCP_FRAME_HEADER_LEN	../porting/include/rsi_api.h	417;"	d
+RSI_TCP_HIGH_PERFORMANCE	../porting/include/rsi_api.h	599;"	d
+RSI_TCP_IP_BYPASS	../porting/include/rsi_config.h	77;"	d
+RSI_TCP_IP_FEATURE_BIT_MAP	../porting/include/rsi_config.h	113;"	d
+RSI_TCP_MAX_SEND_SIZE	../porting/include/rsi_global.h	175;"	d
+RSI_TCP_RECV_OFFSET	../porting/include/rsi_api.h	429;"	d
+RSI_TCP_RX_HIGH_PERFORMANCE_SOCKETS	../porting/include/rsi_config.h	308;"	d
+RSI_TCP_RX_ONLY_SOCKETS	../porting/include/rsi_config.h	305;"	d
+RSI_TCP_RX_WINDOW	../porting/include/rsi_api.h	605;"	d
+RSI_TCP_SEND_OFFSET	../porting/include/rsi_api.h	425;"	d
+RSI_TCP_TX_ONLY_SOCKETS	../porting/include/rsi_config.h	304;"	d
+RSI_TCP_V6_FRAME_HEADER_LEN	../porting/include/rsi_api.h	421;"	d
+RSI_TICKS_PER_SECOND	../porting/include/rsi_global.h	76;"	d
+RSI_TICKS_PER_SECOND	../porting/include/rsi_global.h	78;"	d
+RSI_TIMEVAL	../porting/include/rsi_config.h	139;"	d
+RSI_TOS	../porting/include/rsi_config.h	314;"	d
+RSI_TOTAL_SOCKETS	../porting/include/rsi_config.h	301;"	d
+RSI_TOTAL_TCP_SOCKETS	../porting/include/rsi_config.h	302;"	d
+RSI_TOTAL_UDP_SOCKETS	../porting/include/rsi_config.h	303;"	d
+RSI_TRUE	../porting/include/platform_specific.h	35;"	d
+RSI_TRUE	../porting/include/rsi_global.h	36;"	d
+RSI_TWOBYTE_STATUS_OFFSET	../porting/include/rsi_nl_app.h	52;"	d
+RSI_TXDATA_OFFSET_LUDP	../porting/include/rsi_global.h	192;"	d
+RSI_TXDATA_OFFSET_TCP	../porting/include/rsi_global.h	186;"	d
+RSI_TXDATA_OFFSET_UDP	../porting/include/rsi_global.h	187;"	d
+RSI_TX_POWER_DBM	../porting/include/rsi_config.h	225;"	d
+RSI_UART	../porting/include/rsi_api.h	35;"	d
+RSI_UART_DEVICE	../porting/include/rsi_config.h	58;"	d
+RSI_UART_DEVICE	../porting/include/rsi_config.h	60;"	d
+RSI_UDP_FRAME_HEADER_LEN	../porting/include/rsi_api.h	415;"	d
+RSI_UDP_MAX_SEND_SIZE	../porting/include/rsi_global.h	176;"	d
+RSI_UDP_RECV_OFFSET	../porting/include/rsi_api.h	427;"	d
+RSI_UDP_RX_ONLY_SOCKETS	../porting/include/rsi_config.h	307;"	d
+RSI_UDP_SEND_OFFSET	../porting/include/rsi_api.h	423;"	d
+RSI_UDP_TX_ONLY_SOCKETS	../porting/include/rsi_config.h	306;"	d
+RSI_UDP_V6_FRAME_HEADER_LEN	../porting/include/rsi_api.h	419;"	d
+RSI_ULP_MODE	../porting/include/rsi_config.h	136;"	d
+RSI_ULP_MODE_NO_RAM_RET	../porting/include/rsi_api.h	122;"	d
+RSI_ULP_MODE_WITH_RAM_RET	../porting/include/rsi_api.h	121;"	d
+RSI_UPGRADE_BL	../porting/include/rsi_api.h	40;"	d
+RSI_UPGRADE_IMAGE_I_FW	../porting/include/rsi_api.h	39;"	d
+RSI_UPGRADE_IMAGE_TYPE	../porting/include/rsi_config.h	80;"	d
+RSI_USB	../porting/include/rsi_api.h	36;"	d
+RSI_USE_HOST_WAKEUP_AS_INTERRUPT	../porting/include/rsi_config.h	65;"	d
+RSI_WEBSOCKET_MAX_SEND_SIZE	../porting/include/rsi_global.h	174;"	d
+RSI_WEBS_SUPPORT	../porting/include/rsi_api.h	595;"	d
+RSI_WEPKEY0	../porting/include/rsi_config.h	143;"	d
+RSI_WEPKEY1	../porting/include/rsi_config.h	144;"	d
+RSI_WEPKEY2	../porting/include/rsi_config.h	145;"	d
+RSI_WEPKEY3	../porting/include/rsi_config.h	146;"	d
+RSI_WEPKEYSTIMEOUT	../porting/include/rsi_global.h	101;"	d
+RSI_WEP_INDEX	../porting/include/rsi_config.h	142;"	d
+RSI_WHILE_LOOP	../porting/include/rsi_api.h	98;"	d
+RSI_WIFI_OPER_MODE	../porting/include/rsi_config.h	109;"	d
+RSI_WIRELESSFWUPTIMEOUT	../porting/include/rsi_global.h	85;"	d
+RSI_WMM_PS_SUPPORT	../porting/include/rsi_config.h	170;"	d
+RSI_WMM_PS_TYPE	../porting/include/rsi_config.h	171;"	d
+RSI_WMM_PS_UAPSD_BITMAP	../porting/include/rsi_config.h	173;"	d
+RSI_WMM_PS_WAKEUP_INTERVAL	../porting/include/rsi_config.h	172;"	d
+RSI_WPSRSPTIMEOUT	../porting/include/rsi_global.h	147;"	d
+RSI_WPS_METHOD	../porting/include/rsi_config.h	177;"	d
+RSI_WPS_PIN	../porting/include/rsi_config.h	179;"	d
+RSI_WPS_PIN_LEN	../porting/include/rsi_global.h	1193;"	d
+RSI_WPS_PIN_METHOD	../porting/include/rsi_api.h	500;"	d
+RSI_WPS_PUSH_METHOD	../porting/include/rsi_api.h	499;"	d
+RSI_WPS_SUPPORT	../porting/include/rsi_config.h	176;"	d
+RSI_ZB_STATUS	../porting/include/rsi_common_types.h	/^typedef unsigned char RSI_ZB_STATUS;$/;"	t
+RecheckkeyFrameSnd	../porting/include/rsi_global.h	/^  } RecheckkeyFrameSnd;$/;"	m	union:__anon175	typeref:struct:__anon175::__anon176
+RecvThreadBody	../porting/source/rsi_nl_app.c	/^void * RecvThreadBody(void * arg )$/;"	f
+SECURITY_MODE_MIXED	../porting/include/rsi_config.h	638;"	d
+SECURITY_MODE_OPEN	../porting/include/rsi_config.h	632;"	d
+SECURITY_MODE_WEP	../porting/include/rsi_config.h	635;"	d
+SECURITY_MODE_WPA	../porting/include/rsi_config.h	633;"	d
+SECURITY_MODE_WPA2	../porting/include/rsi_config.h	634;"	d
+SECURITY_MODE_WPA2_EAP	../porting/include/rsi_config.h	637;"	d
+SECURITY_MODE_WPA_EAP	../porting/include/rsi_config.h	636;"	d
+SEND_PSK_IN_JOIN	../porting/include/rsi_config.h	129;"	d
+SEND_RPS_FILE	../porting/include/rsi_api.h	80;"	d
+SENSOR_DATA_H	../porting/include/sensor_data.h	30;"	d
+SET_REGION_AP_FROM_USER	../porting/include/rsi_config.h	217;"	d
+SET_REGION_AP_SUPPORT	../porting/include/rsi_config.h	216;"	d
+SET_REGION_FROM_USER_OR_BEACON	../porting/include/rsi_config.h	211;"	d
+SET_REGION_SUPPORT	../porting/include/rsi_config.h	210;"	d
+SINT32	../porting/include/rsi_common_types.h	/^typedef long                    SINT32;$/;"	t
+SINT_32	../porting/include/rsi_common_types.h	/^typedef long                    SINT_32;$/;"	t
+SNMP_ANS1_COUNTER	../porting/include/rsi_api.h	518;"	d
+SNMP_ANS1_COUNTER64	../porting/include/rsi_api.h	522;"	d
+SNMP_ANS1_END_OF_MIB_VIEW	../porting/include/rsi_api.h	525;"	d
+SNMP_ANS1_GAUGE	../porting/include/rsi_api.h	519;"	d
+SNMP_ANS1_INTEGER	../porting/include/rsi_api.h	514;"	d
+SNMP_ANS1_IPV6_ADDRESS	../porting/include/rsi_api.h	521;"	d
+SNMP_ANS1_IP_ADDRESS	../porting/include/rsi_api.h	517;"	d
+SNMP_ANS1_NO_SUCH_INSTANCE	../porting/include/rsi_api.h	524;"	d
+SNMP_ANS1_NO_SUCH_OBJECT	../porting/include/rsi_api.h	523;"	d
+SNMP_ANS1_OBJECT_ID	../porting/include/rsi_api.h	516;"	d
+SNMP_ANS1_OCTET_STRING	../porting/include/rsi_api.h	515;"	d
+SNMP_ANS1_TIME_TICS	../porting/include/rsi_api.h	520;"	d
+SNMP_SUPPORT	../porting/include/rsi_config.h	400;"	d
+SNMP_TRAP_AUTH_FAILURE	../porting/include/rsi_api.h	538;"	d
+SNMP_TRAP_COLD_START	../porting/include/rsi_api.h	534;"	d
+SNMP_TRAP_EGP_NEIGHBOURLOSS	../porting/include/rsi_api.h	539;"	d
+SNMP_TRAP_LINK_DOWN	../porting/include/rsi_api.h	536;"	d
+SNMP_TRAP_LINK_UP	../porting/include/rsi_api.h	537;"	d
+SNMP_TRAP_USER_SPECIFIC	../porting/include/rsi_api.h	540;"	d
+SNMP_TRAP_WARM_START	../porting/include/rsi_api.h	535;"	d
+SNMP_VERSION_1	../porting/include/rsi_api.h	527;"	d
+SNMP_VERSION_2	../porting/include/rsi_api.h	528;"	d
+SNMP_VERSION_3	../porting/include/rsi_api.h	529;"	d
+SNTP_BROADCAST_MODE	../porting/include/rsi_api.h	655;"	d
+SNTP_COMMAND_CREATE	../porting/include/rsi_api.h	649;"	d
+SNTP_DELETE	../porting/include/rsi_api.h	653;"	d
+SNTP_GET_SERVER_ADDRESS	../porting/include/rsi_api.h	652;"	d
+SNTP_GET_TIME	../porting/include/rsi_api.h	650;"	d
+SNTP_GET_TIME_DATE	../porting/include/rsi_api.h	651;"	d
+SNTP_UNICAST_MODE	../porting/include/rsi_api.h	656;"	d
+SOCKET_BITMAP	../porting/include/rsi_config.h	319;"	d
+SOCKET_FEATURE	../porting/include/rsi_config.h	311;"	d
+SPI_INTERFACE	../porting/include/rsi_config.h	37;"	d
+SPI_INTERFACE	../porting/include/rsi_config.h	45;"	d
+SPI_INTERFACE	../porting/include/rsi_config.h	51;"	d
+SRCROOT	../Makefile	/^SRCROOT         = $(CURDIR)$/;"	m
+SSL_ALL_CIPHERS	../porting/include/rsi_api.h	624;"	d
+SSL_CIPHERS	../porting/include/rsi_config.h	312;"	d
+SentBytes	../porting/include/rsi_global.h	/^   uint8  SentBytes[4];$/;"	m	struct:__anon200::__anon264
+SleepTimerFrameSnd	../porting/include/rsi_global.h	/^    } SleepTimerFrameSnd;$/;"	m	union:__anon200::__anon214	typeref:struct:__anon200::__anon214::__anon215
+TCP_EVT_DNS_Query_Resp	../porting/include/rsi_global.h	/^typedef struct TCP_EVT_DNS_Query_Resp $/;"	s	struct:__anon200
+TCP_EVT_DNS_Query_Resp	../porting/include/rsi_global.h	/^}TCP_EVT_DNS_Query_Resp; $/;"	t	struct:__anon200	typeref:struct:__anon200::TCP_EVT_DNS_Query_Resp
+TCP_EVT_HTTP_Data_t	../porting/include/rsi_global.h	/^typedef struct TCP_EVT_HTTP_Data_t{$/;"	s	struct:__anon200
+TCP_IP_FEAT_BYPASS	../porting/include/rsi_api.h	553;"	d
+TCP_IP_FEAT_DHCPV4_CLIENT	../porting/include/rsi_api.h	555;"	d
+TCP_IP_FEAT_DHCPV4_SERVER	../porting/include/rsi_api.h	557;"	d
+TCP_IP_FEAT_DHCPV6_CLIENT	../porting/include/rsi_api.h	556;"	d
+TCP_IP_FEAT_DHCPV6_SERVER	../porting/include/rsi_api.h	558;"	d
+TCP_IP_FEAT_DNS_CLIENT	../porting/include/rsi_api.h	561;"	d
+TCP_IP_FEAT_FTP_CLIENT	../porting/include/rsi_api.h	566;"	d
+TCP_IP_FEAT_HTTPS_SERVER	../porting/include/rsi_api.h	565;"	d
+TCP_IP_FEAT_HTTP_CLIENT	../porting/include/rsi_api.h	560;"	d
+TCP_IP_FEAT_HTTP_SERVER	../porting/include/rsi_api.h	554;"	d
+TCP_IP_FEAT_ICMP	../porting/include/rsi_api.h	564;"	d
+TCP_IP_FEAT_JSON_OBJECTS	../porting/include/rsi_api.h	559;"	d
+TCP_IP_FEAT_MDNSD	../porting/include/rsi_api.h	569;"	d
+TCP_IP_FEAT_SMTP_CLIENT	../porting/include/rsi_api.h	570;"	d
+TCP_IP_FEAT_SNMP_AGENT	../porting/include/rsi_api.h	562;"	d
+TCP_IP_FEAT_SNTP_CLIENT	../porting/include/rsi_api.h	567;"	d
+TCP_IP_FEAT_SSL	../porting/include/rsi_api.h	563;"	d
+TCP_RETRANMISSIONS_COUNT	../porting/include/rsi_config.h	317;"	d
+TCP_RX_WINDOW_SIZE	../porting/include/rsi_config.h	320;"	d
+TRIGGER_AUTO_CONFIG	../porting/include/rsi_config.h	462;"	d
+TYPE	../porting/include/rsi_global.h	/^    uint8    TYPE;$/;"	m	struct:__anon155::__anon156
+TimeVal	../porting/include/rsi_global.h	/^        uint8   TimeVal[2];                       \/\/@ 2bytes, sleep timer value to set    $/;"	m	struct:__anon200::__anon214::__anon215
+UART_FLOW_CONTROL	../porting/include/rsi_config.h	72;"	d
+UART_INTERFACE	../porting/include/rsi_config.h	39;"	d
+UART_INTERFACE	../porting/include/rsi_config.h	43;"	d
+UART_INTERFACE	../porting/include/rsi_config.h	52;"	d
+UINT08	../porting/include/rsi_common_types.h	/^typedef unsigned char	          UINT08;$/;"	t
+UINT16	../porting/include/rsi_common_types.h	/^typedef unsigned short int      UINT16;$/;"	t
+UINT32	../porting/include/rsi_common_types.h	/^typedef unsigned int       UINT32;$/;"	t
+UINT64	../porting/include/rsi_common_types.h	/^typedef unsigned long long int  UINT64;$/;"	t
+UINT8	../porting/include/rsi_common_types.h	/^typedef unsigned char           UINT8;$/;"	t
+UPDATE_CONCURRENT_AP_JOIN_DONE	../porting/include/rsi_nl_app.h	/^  UPDATE_CONCURRENT_AP_JOIN_DONE   = 0x05,$/;"	e	enum:__anon3
+UPDATE_JOIN_DONE	../porting/include/rsi_nl_app.h	/^  UPDATE_JOIN_DONE                 = 0x02,$/;"	e	enum:__anon3
+USB_DUAL_ENUMERATION	../porting/include/rsi_config.h	71;"	d
+USB_INTERFACE	../porting/include/rsi_config.h	40;"	d
+USB_INTERFACE	../porting/include/rsi_config.h	46;"	d
+USB_INTERFACE	../porting/include/rsi_config.h	49;"	d
+USER_CFG_ANTENNA_SELECT	../porting/include/rsi_config.h	548;"	d
+USER_CFG_APCONFIG_BEACON_INTERVAL	../porting/include/rsi_config.h	538;"	d
+USER_CFG_APCONFIG_CHANNEL_NUM	../porting/include/rsi_config.h	533;"	d
+USER_CFG_APCONFIG_DTIM_PERIOD	../porting/include/rsi_config.h	539;"	d
+USER_CFG_APCONFIG_ENCRYP_MODE	../porting/include/rsi_config.h	536;"	d
+USER_CFG_APCONFIG_MAX_STA_SUPPORT	../porting/include/rsi_config.h	540;"	d
+USER_CFG_APCONFIG_PSK	../porting/include/rsi_config.h	537;"	d
+USER_CFG_APCONFIG_SECURITY_TYPE	../porting/include/rsi_config.h	535;"	d
+USER_CFG_APCONFIG_SSID	../porting/include/rsi_config.h	534;"	d
+USER_CFG_AP_KEEPALIVE_PERIOD	../porting/include/rsi_config.h	542;"	d
+USER_CFG_AP_KEEPALIVE_TYPE	../porting/include/rsi_config.h	541;"	d
+USER_CFG_BAND	../porting/include/rsi_config.h	480;"	d
+USER_CFG_BGSCAN_ACTIVE_SCAN_DURATION	../porting/include/rsi_config.h	575;"	d
+USER_CFG_BGSCAN_ENABLE	../porting/include/rsi_config.h	571;"	d
+USER_CFG_BGSCAN_MULTI_PROBE	../porting/include/rsi_config.h	577;"	d
+USER_CFG_BGSCAN_PASSIVE_SCAN_DURATION	../porting/include/rsi_config.h	576;"	d
+USER_CFG_BGSCAN_PERIODICITY	../porting/include/rsi_config.h	574;"	d
+USER_CFG_BGSCAN_RSSI_TOLERANCE_THRESHOLD	../porting/include/rsi_config.h	573;"	d
+USER_CFG_BGSCAN_THRESHOLD	../porting/include/rsi_config.h	572;"	d
+USER_CFG_CFG_ENABLE	../porting/include/rsi_config.h	470;"	d
+USER_CFG_CHANNEL_SECURITY_MODE	../porting/include/rsi_config.h	487;"	d
+USER_CFG_COEX_MODE	../porting/include/rsi_config.h	473;"	d
+USER_CFG_CUSTOM_FEATURE_BIT_MAP	../porting/include/rsi_config.h	478;"	d
+USER_CFG_DEVICE_NAME	../porting/include/rsi_config.h	524;"	d
+USER_CFG_DHCPV6_ENABLE	../porting/include/rsi_config.h	562;"	d
+USER_CFG_DHCP_ENABLE	../porting/include/rsi_config.h	509;"	d
+USER_CFG_EAP_METHOD	../porting/include/rsi_config.h	516;"	d
+USER_CFG_FEATURE_BIT_MAP	../porting/include/rsi_config.h	475;"	d
+USER_CFG_FIPS_BYPASS_MODE	../porting/include/rsi_config.h	599;"	d
+USER_CFG_GATEWAYV4_ADDRESS	../porting/include/rsi_config.h	512;"	d
+USER_CFG_GATEWAYV6_ADDRESS	../porting/include/rsi_config.h	565;"	d
+USER_CFG_GO_INTENT	../porting/include/rsi_config.h	523;"	d
+USER_CFG_HTTP_SERVER_CREDENTIALS_SUPPORT	../porting/include/rsi_config.h	625;"	d
+USER_CFG_HTTP_SERVER_PASSWORD	../porting/include/rsi_config.h	628;"	d
+USER_CFG_HTTP_SERVER_USERNAME	../porting/include/rsi_config.h	627;"	d
+USER_CFG_INNER_METHOD	../porting/include/rsi_config.h	517;"	d
+USER_CFG_IPV4_ADDRESS	../porting/include/rsi_config.h	510;"	d
+USER_CFG_IPV6_ADDRESS	../porting/include/rsi_config.h	564;"	d
+USER_CFG_JOIN_FEAT_BIT_MAP	../porting/include/rsi_config.h	489;"	d
+USER_CFG_JOIN_SSID	../porting/include/rsi_config.h	484;"	d
+USER_CFG_KEYS_RESTORE	../porting/include/rsi_config.h	600;"	d
+USER_CFG_LISTEN_INTERVAL	../porting/include/rsi_config.h	490;"	d
+USER_CFG_LISTEN_INTERVAL_DTIM	../porting/include/rsi_config.h	612;"	d
+USER_CFG_MODULE_MAC	../porting/include/rsi_config.h	547;"	d
+USER_CFG_MULTICAST_MAC_ADDRESS	../porting/include/rsi_config.h	605;"	d
+USER_CFG_MULTICAST_MAC_CMD_TYPE	../porting/include/rsi_config.h	604;"	d
+USER_CFG_MULTICAST_SUPPORT	../porting/include/rsi_config.h	602;"	d
+USER_CFG_NO_OF_CLIENTS_SUPPORTED	../porting/include/rsi_config.h	477;"	d
+USER_CFG_OPERATING_CHANNEL	../porting/include/rsi_config.h	525;"	d
+USER_CFG_OPERMODE	../porting/include/rsi_config.h	474;"	d
+USER_CFG_PASSWORD	../porting/include/rsi_config.h	519;"	d
+USER_CFG_PMK	../porting/include/rsi_config.h	495;"	d
+USER_CFG_POWER_MODE	../porting/include/rsi_config.h	610;"	d
+USER_CFG_POWER_MODE_SUPPORT	../porting/include/rsi_config.h	608;"	d
+USER_CFG_PREFIX_LENGTH	../porting/include/rsi_config.h	563;"	d
+USER_CFG_PSK	../porting/include/rsi_config.h	493;"	d
+USER_CFG_PSK_KEY	../porting/include/rsi_config.h	527;"	d
+USER_CFG_REGION_CODE	../porting/include/rsi_config.h	596;"	d
+USER_CFG_REGION_CODE_FROM_HOST	../porting/include/rsi_config.h	594;"	d
+USER_CFG_REGION_REQUEST_FROM_HOST	../porting/include/rsi_config.h	593;"	d
+USER_CFG_REJOIN_BEACON_MISSED_COUNT	../porting/include/rsi_config.h	589;"	d
+USER_CFG_REJOIN_FIRST_TIME_RETRY_ENABLE	../porting/include/rsi_config.h	590;"	d
+USER_CFG_REJOIN_MAX_RETRY_COUNT	../porting/include/rsi_config.h	587;"	d
+USER_CFG_REJOIN_SCAN_INTERVAL	../porting/include/rsi_config.h	588;"	d
+USER_CFG_ROAM_ENABLE	../porting/include/rsi_config.h	581;"	d
+USER_CFG_ROAM_HYSTERESIS	../porting/include/rsi_config.h	583;"	d
+USER_CFG_ROAM_THRESHOLD	../porting/include/rsi_config.h	582;"	d
+USER_CFG_SCAN_CHANN_NUM	../porting/include/rsi_config.h	500;"	d
+USER_CFG_SCAN_CHAN_BITMAP_STORED_2_4_GHZ	../porting/include/rsi_config.h	502;"	d
+USER_CFG_SCAN_FEAT_BITMAP	../porting/include/rsi_config.h	501;"	d
+USER_CFG_SCAN_SCAN_CHAN_BITMAP_STORED_5_GHZ	../porting/include/rsi_config.h	503;"	d
+USER_CFG_SCAN_SSID	../porting/include/rsi_config.h	499;"	d
+USER_CFG_SSID_POSTFIX	../porting/include/rsi_config.h	526;"	d
+USER_CFG_SUBNETMASKV4_ADDRESS	../porting/include/rsi_config.h	511;"	d
+USER_CFG_TCP_IP_FEATURE_BIT_MAP	../porting/include/rsi_config.h	476;"	d
+USER_CFG_TCP_STACK_USED	../porting/include/rsi_config.h	482;"	d
+USER_CFG_ULP_MODE	../porting/include/rsi_config.h	611;"	d
+USER_CFG_URATE	../porting/include/rsi_config.h	485;"	d
+USER_CFG_USER_IDENTITY	../porting/include/rsi_config.h	518;"	d
+USER_CFG_UTX_POWER	../porting/include/rsi_config.h	486;"	d
+USER_CFG_WEPKEY_INDEX	../porting/include/rsi_config.h	551;"	d
+USER_CFG_WEPKEY_KEY0	../porting/include/rsi_config.h	552;"	d
+USER_CFG_WEPKEY_KEY1	../porting/include/rsi_config.h	553;"	d
+USER_CFG_WEPKEY_KEY2	../porting/include/rsi_config.h	554;"	d
+USER_CFG_WEPKEY_KEY3	../porting/include/rsi_config.h	555;"	d
+USER_CFG_WLAN_OPERMODE	../porting/include/rsi_config.h	472;"	d
+USER_CFG_WMM_PS_ENABLE	../porting/include/rsi_config.h	617;"	d
+USER_CFG_WMM_PS_SUPPORT	../porting/include/rsi_config.h	615;"	d
+USER_CFG_WMM_PS_TYPE	../porting/include/rsi_config.h	618;"	d
+USER_CFG_WMM_PS_UAPSD_BITMAP	../porting/include/rsi_config.h	620;"	d
+USER_CFG_WMM_PS_WAKEUP_INTERVAL	../porting/include/rsi_config.h	619;"	d
+USER_IDENTITY	../porting/include/rsi_config.h	239;"	d
+WEBPAGE_BYPASS_SUPPORT	../porting/include/rsi_config.h	351;"	d
+WEBS_HOST_NAME	../porting/include/rsi_config.h	318;"	d
+WEBS_MAX_HOST_LEN	../porting/include/rsi_global.h	554;"	d
+WEBS_MAX_URL_LEN	../porting/include/rsi_global.h	553;"	d
+WEBS_RESOURCE_NAME	../porting/include/rsi_config.h	316;"	d
+WEB_PAGE_CLEAR_ALL_FILES	../porting/include/rsi_config.h	387;"	d
+WEB_PAGE_FILENAME	../porting/include/rsi_config.h	384;"	d
+WEB_PAGE_HAS_JSON	../porting/include/rsi_config.h	386;"	d
+WEB_PAGE_LENGTH	../porting/include/rsi_config.h	385;"	d
+WEB_PAGE_LOAD	../porting/include/rsi_config.h	383;"	d
+WFU_UPGRADE	../porting/include/rsi_config.h	78;"	d
+WKP_FROM_HOST	../porting/include/rsi_nl_app.h	/^  WKP_FROM_HOST                    = 0x04,$/;"	e	enum:__anon3
+WLAN_DATA_TYPE	../porting/include/rsi_global.h	48;"	d
+WLAN_MGMT_TYPE	../porting/include/rsi_global.h	47;"	d
+WLAN_PORT_ID	../porting/source/rsi_nl_app.c	63;"	d	file:
+WebpageSnd_t	../porting/include/rsi_global.h	/^} WebpageSnd_t;$/;"	t	typeref:struct:__anon196
+Webpage_info	../porting/include/rsi_global.h	/^    WebpageSnd_t    Webpage_info; $/;"	m	struct:__anon197::__anon198
+ZB_DATA_TYPE	../porting/include/rsi_global.h	50;"	d
+ZB_MGMT_TYPE	../porting/include/rsi_global.h	49;"	d
+ZB_PORT_ID	../porting/source/rsi_nl_app.c	64;"	d	file:
+_INITSTRUCT_H_	../porting/include/rsi_config.h	23;"	d
+_OBJS	../Makefile	/^_OBJS = $(patsubst %,$(ODIR)\/%,$(OBJS))$/;"	m
+_RSIAPPUTIL_H_	../porting/include/rsi_app_util.h	25;"	d
+_RSIDEFINES_H_	../porting/include/rsi_defines.h	2;"	d
+_RSIGLOBAL_H_	../porting/include/rsi_global.h	30;"	d
+_RSILIBUTIL_H_	../porting/include/rsi_lib_util.h	24;"	d
+_RSI_APP_CB_H	../porting/include/rsi_app.h	24;"	d
+_SPIAPI_H_	../porting/include/rsi_api.h	22;"	d
+_USER_STORE_CONFIG_H_	../porting/include/rsi_user_store_config_init.h	22;"	d
+__PLATFORM_SPECIFIC_H_	../porting/include/platform_specific.h	23;"	d
+__RSI_COMMON_TYPES_H	../porting/include/rsi_common_types.h	27;"	d
+__RSI_GNUSER_H_	../porting/include/rsi_nl_app.h	23;"	d
+aDomainName	../porting/include/rsi_global.h	/^        uint8    aDomainName[MAX_URL_LEN];        $/;"	m	struct:__anon191::__anon192
+aIPaddr	../porting/include/rsi_global.h	/^ }aIPaddr[MAX_DNS_REPLY]; $/;"	m	struct:__anon200::TCP_EVT_DNS_Query_Resp	typeref:union:__anon200::TCP_EVT_DNS_Query_Resp::__anon218
+abort_call	../porting/include/rsi_app.h	/^  uint8         abort_call;$/;"	m	struct:__anon5
+accelerometer_x	../porting/include/sensor_data.h	/^    int  accelerometer_x;$/;"	m	struct:app_data_s
+accelerometer_y	../porting/include/sensor_data.h	/^    int  accelerometer_y;$/;"	m	struct:app_data_s
+accelerometer_z	../porting/include/sensor_data.h	/^    int  accelerometer_z;$/;"	m	struct:app_data_s
+ack_flag	../porting/include/rsi_app.h	/^  volatile int  ack_flag;$/;"	m	struct:__anon5
+active_scan_duration	../porting/include/rsi_global.h	/^           uint8    active_scan_duration[2];         \/\/@ sctive scan duration$/;"	m	struct:__anon150::__anon151
+aggr_count	../porting/include/rsi_global.h	/^        uint8   aggr_count[2];                    \/\/@ uint8, per mode aggr_count$/;"	m	struct:__anon200::__anon221::__anon222
+aggr_enable	../porting/include/rsi_global.h	/^        uint8   aggr_enable[2];                   \/\/@ uint8, per mode aggr_enable$/;"	m	struct:__anon200::__anon221::__anon222
+ap_mac_addr	../porting/include/rsi_app.h	/^  uint8         ap_mac_addr[6];$/;"	m	struct:__anon5
+ap_name	../porting/include/rsi_global.h	/^    uint8   ap_name[16];$/;"	m	struct:__anon200::__anon246
+ap_ssid	../porting/include/rsi_global.h	/^    uint8    ap_ssid[RSI_SSID_LEN] ;$/;"	m	struct:__anon155::__anon156
+app_data_s	../porting/include/sensor_data.h	/^typedef struct app_data_s {$/;"	s
+app_data_t	../porting/include/sensor_data.h	/^} app_data_t;$/;"	t	typeref:struct:app_data_s
+assertion_level	../porting/include/rsi_global.h	/^    uint8     assertion_level[4];$/;"	m	struct:__anon138::__anon139
+assertion_type	../porting/include/rsi_global.h	/^    uint8     assertion_type[4];$/;"	m	struct:__anon138::__anon139
+bandFrameSnd	../porting/include/rsi_global.h	/^    } bandFrameSnd;$/;"	m	union:__anon200::__anon208	typeref:struct:__anon200::__anon208::__anon209
+bandVal	../porting/include/rsi_global.h	/^        uint8    bandVal;                         \/\/@ uint8, band value to set    $/;"	m	struct:__anon200::__anon208::__anon209
+bgscanFrameSnd	../porting/include/rsi_global.h	/^         } bgscanFrameSnd;$/;"	m	union:__anon150	typeref:struct:__anon150::__anon151
+bgscan_enable	../porting/include/rsi_global.h	/^           uint8    bgscan_enable[2];                \/\/@ enable or disable BG scan        $/;"	m	struct:__anon150::__anon151
+bgscan_periodicity	../porting/include/rsi_global.h	/^           uint8    bgscan_periodicity[2];           \/\/@ periodicity$/;"	m	struct:__anon150::__anon151
+bgscan_threshold	../porting/include/rsi_global.h	/^           uint8    bgscan_threshold[2];             \/\/@ bg scan threshold value$/;"	m	struct:__anon150::__anon151
+bssid	../porting/include/rsi_global.h	/^    uint8   bssid[6];                             \/\/@ BSSID of the P2p GO$/;"	m	struct:__anon271
+bssid	../porting/include/rsi_global.h	/^    uint8   bssid[RSI_BSSID_LEN];$/;"	m	struct:__anon200::__anon246
+buffer	../porting/include/rsi_global.h	/^        uint8  buffer[HTTP_BUFFER_LEN];           \/\/@ Username, Password,Hostname, IP address,url,header,data$/;"	m	struct:__anon200::__anon216::__anon217
+buffer	../porting/include/rsi_global.h	/^  uint8    buffer[1000];$/;"	m	struct:__anon200::rsi_mdns_t
+cert_info_s	../porting/include/rsi_global.h	/^struct cert_info_s$/;"	s
+cert_morechunks	../porting/include/platform_specific.h	/^  uint8                cert_morechunks;$/;"	m	struct:__anon2
+cfgEnableFrameSnd	../porting/include/rsi_global.h	/^    } cfgEnableFrameSnd;$/;"	m	union:__anon200::__anon210	typeref:struct:__anon200::__anon210::__anon211
+cfg_enable	../porting/include/rsi_global.h	/^        uint8    cfg_enable;                      \/\/@ uint8, config enable flag    $/;"	m	struct:__anon200::__anon210::__anon211
+channel	../porting/include/rsi_global.h	/^        uint8     channel[4];                             \/\/@ RF channel to scan, 0=All, 1-14 for 2.5GHz channels 1-14$/;"	m	struct:__anon145::__anon146
+channel	../porting/include/rsi_global.h	/^        uint8   channel[2];                       \/\/@ uint8, per mode channel$/;"	m	struct:__anon200::__anon221::__anon222
+channel_bit_map_2_4	../porting/include/rsi_global.h	/^        uint8     channel_bit_map_2_4[2];                 \/\/@ uint8[2], channel bit map for 2.4 Ghz$/;"	m	struct:__anon145::__anon146
+channel_bit_map_5	../porting/include/rsi_global.h	/^        uint8     channel_bit_map_5[4];                   \/\/@ uint8[4], channel bit map for 5 Ghz$/;"	m	struct:__anon145::__anon146
+channel_info	../porting/include/rsi_global.h	/^        }channel_info[MAX_POSSIBLE_CHANNEL];$/;"	m	struct:__anon142::__anon143	typeref:struct:__anon142::__anon143::__anon144
+channel_number	../porting/include/rsi_global.h	/^    uint8   channel_number[2];                    \/\/@ Operating channel of the GO $/;"	m	struct:__anon271
+checkbox_1	../porting/include/sensor_data.h	/^    int  checkbox_1;$/;"	m	struct:app_data_s
+checkbox_2	../porting/include/sensor_data.h	/^    int  checkbox_2;$/;"	m	struct:app_data_s
+clear	../porting/include/rsi_global.h	/^    uint8   clear;$/;"	m	struct:rsi_tfs_clear_files_s
+client_mac_addr	../porting/include/rsi_global.h	/^        uint8    client_mac_addr[6];                 \/\/@ client MAC address, Ignored\/Reserved in case of client mode$/;"	m	struct:__anon157
+cluster_id_t	../porting/include/rsi_common_types.h	/^typedef uint16_t cluster_id_t;$/;"	t
+command_type	../porting/include/rsi_global.h	/^  uint8    command_type;$/;"	m	struct:__anon200::rsi_mdns_t
+command_type	../porting/include/rsi_global.h	/^  uint8 command_type;$/;"	m	struct:__anon200::ftp_rsp_t
+command_type	../porting/include/rsi_global.h	/^  uint8 command_type;$/;"	m	struct:__anon200::mdns_rsp_t
+command_type	../porting/include/rsi_global.h	/^  uint8 command_type;$/;"	m	struct:__anon200::rsi_smtp_rsp_t
+command_type	../porting/include/rsi_global.h	/^  uint8 command_type;$/;"	m	struct:__anon200::rsi_sntp_rsp_t
+configP2pFrameSnd	../porting/include/rsi_global.h	/^    }configP2pFrameSnd;$/;"	m	union:__anon185	typeref:struct:__anon185::__anon186
+connType	../porting/include/rsi_global.h	/^    uint8   connType[2];                          \/\/@ 2 bytes, 0=AdHoc, 1=Infrastructure$/;"	m	struct:__anon200::__anon269
+country_code	../porting/include/rsi_global.h	/^        uint8     country_code[3];$/;"	m	struct:__anon142::__anon143
+current_len	../porting/include/rsi_global.h	/^    uint8   current_len[2];$/;"	m	struct:__anon196
+current_length	../porting/include/rsi_global.h	/^    uint8   current_length[2];$/;"	m	struct:rsi_jsonCreateObject_s
+custom_feature_bit_map	../porting/include/rsi_global.h	/^       uint8   custom_feature_bit_map[4]; $/;"	m	struct:__anon181::__anon182
+dPort	../porting/include/rsi_global.h	/^    uint8   dPort[2];$/;"	m	struct:__anon200::__anon265
+dPort	../porting/include/rsi_global.h	/^    uint8   dPort[2];$/;"	m	struct:__anon200::sock_info_query_t
+data	../porting/include/platform_specific.h	/^  uint8  *data;$/;"	m	struct:pkt_struct_s
+data	../porting/include/rsi_global.h	/^  uint8   data[1400];$/;"	m	struct:__anon200::TCP_EVT_HTTP_Data_t
+data	../porting/include/rsi_global.h	/^  uint8 data[1024];$/;"	m	struct:__anon200::ftp_rsp_t
+dataFrmLenAndQueue	../porting/include/rsi_global.h	/^        uint8   dataFrmLenAndQueue[2];                $/;"	m	struct:__anon200::__anon232::__anon233
+dataRate	../porting/include/rsi_global.h	/^           uint8    dataRate;                        \/\/@ data rate, 0=auto, 1=1Mbps, 2=2Mbps, 3=5.5Mbps, 4=11Mbps, 12=54Mbps$/;"	m	struct:__anon152::__anon153
+dataRate	../porting/include/rsi_global.h	/^    uint8   dataRate;                              \/\/@ data rate, 0=auto, 1=1Mbps, 2=2Mbps, 3=5.5Mbps, 4=11Mbps, 12=54Mbps$/;"	m	struct:__anon200::__anon247
+data_len	../porting/include/rsi_global.h	/^  uint8   data_len[4];$/;"	m	struct:__anon200::TCP_EVT_HTTP_Data_t
+debugFrameSnd	../porting/include/rsi_global.h	/^    } debugFrameSnd;$/;"	m	union:__anon138	typeref:struct:__anon138::__anon139
+defaultgw6	../porting/include/rsi_global.h	/^    uint8   defaultgw6[16];                       \/\/@ Router IPv6 address$/;"	m	struct:__anon200::__anon259
+defaultgw6	../porting/include/rsi_global.h	/^    uint8   defaultgw6[16];                       \/\/@ router ipv6 address$/;"	m	struct:__anon200::__anon269
+delay	../porting/include/rsi_global.h	/^        uint8   delay[4];                         \/\/@ uint8, per mode delay$/;"	m	struct:__anon200::__anon221::__anon222
+destIPaddr	../porting/include/rsi_global.h	/^    }destIPaddr;$/;"	m	struct:__anon200::__anon225::__anon227	typeref:union:__anon200::__anon225::__anon227::__anon228
+destIpaddr	../porting/include/rsi_global.h	/^      }destIpaddr;$/;"	m	struct:__anon200::sock_info_query_t	typeref:union:__anon200::sock_info_query_t::__anon267
+destIpaddr	../porting/include/rsi_global.h	/^    }destIpaddr;$/;"	m	struct:__anon162::__anon163	typeref:union:__anon162::__anon163::__anon164
+destPort	../porting/include/rsi_global.h	/^        uint8   destPort[2];$/;"	m	struct:__anon200::__anon225::__anon227
+destSocket	../porting/include/rsi_global.h	/^    uint8    destSocket[2];                     \/\/@ Port number of what we are connecting to$/;"	m	struct:__anon162::__anon163
+dest_ip	../porting/include/rsi_global.h	/^  }dest_ip;$/;"	m	struct:__anon200::__anon265	typeref:union:__anon200::__anon265::__anon266
+devCount	../porting/include/rsi_global.h	/^       uint8   devCount;$/;"	m	struct:__anon200::__anon245
+devInfo	../porting/include/rsi_global.h	/^    rsi_wfdDevInfo  devInfo;    $/;"	m	struct:__anon200::__anon244
+devName	../porting/include/rsi_global.h	/^    uint8   devName[32];                          \/\/@ Name the device found or left 32 bytes$/;"	m	struct:__anon200::__anon243
+devState	../porting/include/rsi_global.h	/^    uint8   devState;                             \/\/@ If New device  1; Device left 0$/;"	m	struct:__anon200::__anon243
+deviceName	../porting/include/rsi_global.h	/^        uint8    deviceName[64];                  \/\/@ name of the device$/;"	m	struct:__anon185::__anon186
+devtype	../porting/include/rsi_global.h	/^    uint8   devtype[2];                           \/\/@ Type of the device 1st byte inidcates primary device type;$/;"	m	struct:__anon200::__anon243
+dhcpMode	../porting/include/rsi_global.h	/^        uint8    dhcpMode;                           \/\/@ 0=Manual, 1=Use DHCP$/;"	m	struct:__anon158::__anon159
+dhcpMode	../porting/include/rsi_global.h	/^    uint8   dhcpMode;                             \/\/@ uint8, 0=Manual IP Configuration,1=DHCP$/;"	m	struct:__anon200::__anon269
+dnsQryFrameSnd	../porting/include/rsi_global.h	/^    }dnsQryFrameSnd;$/;"	m	union:__anon191	typeref:struct:__anon191::__anon192
+dnsServerFrameSnd	../porting/include/rsi_global.h	/^    }dnsServerFrameSnd;$/;"	m	union:__anon187	typeref:struct:__anon187::__anon188
+dst_ip_address	../porting/include/rsi_global.h	/^        }dst_ip_address;$/;"	m	struct:__anon285	typeref:union:__anon285::__anon286
+eapMethod	../porting/include/rsi_global.h	/^        uint8   eapMethod[32];                    \/\/@ EAP method$/;"	m	struct:__anon193::__anon194
+enable_instant_bgscan	../porting/include/rsi_global.h	/^           uint8    enable_instant_bgscan[2];        \/\/@ Is it instant bgscan or normal bgscan$/;"	m	struct:__anon150::__anon151
+error_code	../porting/include/rsi_app.h	/^  uint16        error_code;$/;"	m	struct:__anon5
+family_id	../porting/include/platform_specific.h	/^  int32                family_id;      \/\/! family id $/;"	m	struct:__anon2
+featsel_bitmapVal	../porting/include/rsi_global.h	/^        uint8    featsel_bitmapVal[4];            \/\/@ 4 bytes, feat select bitmap value to set    $/;"	m	struct:__anon200::__anon206::__anon207
+feature_bit_map	../porting/include/rsi_global.h	/^       uint8    feature_bit_map[4];                 \/\/@ BIT(0)-Open mode security, BIT(1)-PSK security, BIT(2) JSON objects$/;"	m	struct:__anon181::__anon182
+field_cnt	../porting/include/rsi_global.h	/^    uint8    field_cnt;$/;"	m	struct:__anon200::__anon202::__anon203
+field_index	../porting/include/rsi_global.h	/^  uint8   field_index;$/;"	m	struct:__anon200::__anon201
+field_st	../porting/include/rsi_global.h	/^    field_st_t   field_st[MAX_NO_OF_FIELDS];$/;"	m	struct:__anon200::__anon202::__anon203
+field_st_t	../porting/include/rsi_global.h	/^}field_st_t;$/;"	t	struct:__anon200	typeref:struct:__anon200::__anon201
+field_val	../porting/include/rsi_global.h	/^  uint8   field_val[64];    $/;"	m	struct:__anon200::__anon201
+filename	../porting/include/rsi_global.h	/^    char    filename[24];$/;"	m	struct:rsi_jsonCreateObject_s
+filename	../porting/include/rsi_global.h	/^    char    filename[24];$/;"	m	struct:rsi_tfs_erase_file_s
+filename	../porting/include/rsi_global.h	/^    uint8   filename[24];$/;"	m	struct:__anon196
+fipsModeFrameSnd	../porting/include/rsi_global.h	/^  } fipsModeFrameSnd;$/;"	m	union:__anon173	typeref:struct:__anon173::__anon174
+fips_mode_enable	../porting/include/rsi_global.h	/^    uint8 fips_mode_enable[4];$/;"	m	struct:__anon173::__anon174
+first_channel	../porting/include/rsi_global.h	/^            uint8   first_channel;$/;"	m	struct:__anon142::__anon143::__anon144
+frameDscDataSnd	../porting/include/rsi_global.h	/^ } frameDscDataSnd;$/;"	m	union:__anon200::__anon232	typeref:struct:__anon200::__anon232::__anon233
+frameDscMgmtRsp	../porting/include/rsi_global.h	/^    } frameDscMgmtRsp;$/;"	m	union:__anon200::__anon232	typeref:struct:__anon200::__anon232::__anon234
+fromIPaddr	../porting/include/rsi_global.h	/^  }fromIPaddr;$/;"	m	struct:__anon273	typeref:union:__anon273::__anon274
+fromIPaddr	../porting/include/rsi_global.h	/^  }fromIPaddr;$/;"	m	struct:__anon275	typeref:union:__anon275::__anon276
+fromIPaddr	../porting/include/rsi_global.h	/^  }fromIPaddr;$/;"	m	struct:__anon277	typeref:union:__anon277::__anon278
+fromIPaddr	../porting/include/rsi_global.h	/^  }fromIPaddr;$/;"	m	struct:__anon279	typeref:union:__anon279::__anon280
+fromPortNum	../porting/include/rsi_global.h	/^      uint8   fromPortNum[2];                     \/\/@ 2 bytes, port number of the device sending the data to us$/;"	m	struct:__anon275
+fromPortNum	../porting/include/rsi_global.h	/^      uint8   fromPortNum[2];                     \/\/@ 2 bytes, port number of the device sending the data to us$/;"	m	struct:__anon277
+fromPortNum	../porting/include/rsi_global.h	/^    uint8   fromPortNum[2];                       \/\/@ 2 bytes, port number of the device sending the data to us$/;"	m	struct:__anon273
+fromPortNum	../porting/include/rsi_global.h	/^    uint8   fromPortNum[2];                       \/\/@ 2 bytes, port number of the device sending the data to us$/;"	m	struct:__anon279
+fromPortNum	../porting/include/rsi_global.h	/^    uint8   fromPortNum[2];                       \/\/@ 2 bytes, remote port number $/;"	m	struct:__anon285
+ftp_rsp_t	../porting/include/rsi_global.h	/^typedef struct ftp_rsp_t$/;"	s	struct:__anon200
+fwversion	../porting/include/rsi_global.h	/^    uint8    fwversion[20];                       \/\/@ uint8[20], firmware version text string, x.y.z as 1.3.0$/;"	m	struct:__anon272
+g	../porting/include/rsi_nl_app.h	/^  struct genlmsghdr g;$/;"	m	struct:__anon4	typeref:struct:__anon4::genlmsghdr
+gain_2g	../porting/include/rsi_global.h	/^        uint8    gain_2g;                       \/\/@ uint8, Antenna 2G gain value    $/;"	m	struct:__anon183::__anon184
+gain_5g	../porting/include/rsi_global.h	/^        uint8    gain_5g;                       \/\/@ uint8, Antenna 5G gain value    $/;"	m	struct:__anon183::__anon184
+gateway	../porting/include/rsi_global.h	/^        uint8    gateway[4];                         \/\/@ IP address of default gateway if in manual mode$/;"	m	struct:__anon158::__anon159
+gateway	../porting/include/rsi_global.h	/^    uint8    gateway[4];                          \/\/@ Configured default gateway$/;"	m	struct:__anon200::__anon257
+gateway	../porting/include/rsi_global.h	/^    uint8   gateway[4];                           \/\/@ Configured default gateway$/;"	m	struct:__anon200::__anon258
+gateway	../porting/include/rsi_global.h	/^    uint8   gateway[4];                           \/\/@ uint8[4], Gateway address for the Module$/;"	m	struct:__anon200::__anon269
+gateway6	../porting/include/rsi_global.h	/^    uint8     gateway6[16];$/;"	m	struct:__anon160::__anon161
+generate_pin	../porting/include/rsi_global.h	/^    uint8   generate_pin[2];$/;"	m	struct:__anon200::__anon241::__anon242
+glbl_send_data	../porting/include/rsi_app.h	/^  uint8         glbl_send_data;$/;"	m	struct:__anon5
+go_sta_info_s	../porting/include/rsi_global.h	/^struct  go_sta_info_s$/;"	s	struct:__anon200
+group_address	../porting/include/rsi_global.h	/^          }group_address;$/;"	m	struct:__anon147::__anon148	typeref:union:__anon147::__anon148::__anon149
+has_json_data	../porting/include/rsi_global.h	/^    uint8   has_json_data;$/;"	m	struct:__anon196
+head	../porting/include/platform_specific.h	/^  pkt_struct_t *head;                  \/\/! queue head $/;"	m	struct:__anon1
+hostname	../porting/include/rsi_global.h	/^		    uint8    hostname[31];                       \/\/@ DHCP client host name$/;"	m	struct:__anon158::__anon159
+htCapsFrameSnd	../porting/include/rsi_global.h	/^  }htCapsFrameSnd;$/;"	m	union:__anon200::__anon237	typeref:struct:__anon200::__anon237::__anon238
+ht_caps_bitmap	../porting/include/rsi_global.h	/^    uint8    ht_caps_bitmap[2];$/;"	m	struct:__anon200::__anon237::__anon238
+http_port	../porting/include/rsi_global.h	/^        uint8  http_port[2];                         \/\/@ server port number$/;"	m	struct:__anon200::__anon216::__anon217
+https_enable	../porting/include/rsi_global.h	/^        uint8  https_enable[2];                   \/\/@ enable http features$/;"	m	struct:__anon200::__anon216::__anon217
+ibssChannel	../porting/include/rsi_global.h	/^    uint8   ibssChannel;                           \/\/@ rf channel number for Ad-Hoc (IBSS) mode$/;"	m	struct:__anon200::__anon247
+ibssMode	../porting/include/rsi_global.h	/^    uint8   ibssMode;                              \/\/@ Ad-Hoc Mode (IBSS), 0=Joiner, 1=Creator$/;"	m	struct:__anon200::__anon247
+innerMethod	../porting/include/rsi_global.h	/^        uint8   innerMethod[32];                  \/\/@ Inner method$/;"	m	struct:__anon193::__anon194
+int16	../porting/include/rsi_common_types.h	/^typedef short                   int16;$/;"	t
+int16_t	../porting/include/rsi_common_types.h	/^typedef short int16_t;$/;"	t
+int32	../porting/include/rsi_common_types.h	/^typedef long                    int32;$/;"	t
+int32_t	../porting/include/rsi_common_types.h	/^typedef int int32_t;$/;"	t
+int64	../porting/include/rsi_common_types.h	/^typedef long long  int int64;$/;"	t
+int8	../porting/include/rsi_common_types.h	/^typedef signed char             int8;$/;"	t
+int8_t	../porting/include/rsi_common_types.h	/^typedef signed char int8_t;$/;"	t
+interrupt_rcvd	../porting/include/platform_specific.h	/^  uint32               interrupt_rcvd;$/;"	m	struct:__anon2
+ioctl_sd	../porting/include/platform_specific.h	/^  int32                ioctl_sd;       \/\/! socket descriptor of ioctl $/;"	m	struct:__anon2
+ip_address	../porting/include/rsi_global.h	/^  }ip_address;$/;"	m	struct:__anon200::go_sta_info_s	typeref:union:__anon200::go_sta_info_s::__anon270
+ip_version	../porting/include/rsi_global.h	/^        uint8     ip_version[2];$/;"	m	struct:__anon147::__anon148
+ip_version	../porting/include/rsi_global.h	/^        uint8    ip_version[2];$/;"	m	struct:__anon187::__anon188
+ip_version	../porting/include/rsi_global.h	/^        uint8    ip_version[2];$/;"	m	struct:__anon191::__anon192
+ip_version	../porting/include/rsi_global.h	/^        uint8   ip_version[2];                    \/\/@ ip version 4 or 6$/;"	m	struct:__anon200::__anon225::__anon226
+ip_version	../porting/include/rsi_global.h	/^        uint8   ip_version[2];                    \/\/@ ip version 4 or 6$/;"	m	struct:__anon200::__anon225::__anon227
+ip_version	../porting/include/rsi_global.h	/^        uint8  ip_version[2];                     \/\/@ ip version 4 or 6$/;"	m	struct:__anon200::__anon216::__anon217
+ip_version	../porting/include/rsi_global.h	/^      uint8   ip_version[2];                      \/\/@ 2 bytes, the ip version of the ip address , 4 or 6$/;"	m	struct:__anon275
+ip_version	../porting/include/rsi_global.h	/^      uint8   ip_version[2];                      \/\/@ 2 bytes, the ip version of the ip address , 4 or 6$/;"	m	struct:__anon277
+ip_version	../porting/include/rsi_global.h	/^    uint8    ip_version[2];                     \/\/@ ip version4 or 6$/;"	m	struct:__anon162::__anon163
+ip_version	../porting/include/rsi_global.h	/^    uint8   ip_version[2];                        \/\/@ 2 bytes, the ip version of the ip address , 4 or 6$/;"	m	struct:__anon273
+ip_version	../porting/include/rsi_global.h	/^    uint8   ip_version[2];                        \/\/@ 2 bytes, the ip version of the ip address , 4 or 6$/;"	m	struct:__anon279
+ip_version	../porting/include/rsi_global.h	/^    uint8   ip_version[2];                       \/\/@ ip version 4 or 6  $/;"	m	struct:__anon200::__anon254
+ip_version	../porting/include/rsi_global.h	/^    uint8   ip_version[2];$/;"	m	struct:__anon285
+ip_version	../porting/include/rsi_global.h	/^   uint8   ip_version[2];                         \/\/@ IP version if the connected client$/;"	m	struct:__anon200::go_sta_info_s
+ip_version	../porting/include/rsi_global.h	/^  UINT8  ip_version;$/;"	m	struct:__anon200::rsi_sntp_server_rsp_t
+ip_version	../porting/include/rsi_global.h	/^  uint8      ip_version;$/;"	m	struct:__anon200::__anon229
+ip_version	../porting/include/rsi_global.h	/^  uint8 ip_version[2];$/;"	m	struct:__anon200::__anon265
+ip_version	../porting/include/rsi_global.h	/^ uint8   ip_version[2];$/;"	m	struct:__anon200::TCP_EVT_DNS_Query_Resp
+ipaddr	../porting/include/rsi_global.h	/^        uint8    ipaddr[4];                          \/\/@ IP address of this module if in manual mode$/;"	m	struct:__anon158::__anon159
+ipaddr	../porting/include/rsi_global.h	/^    uint8    ipaddr[4];                           \/\/@ Configured IP address$/;"	m	struct:__anon200::__anon257
+ipaddr	../porting/include/rsi_global.h	/^    uint8   ipaddr[4];                            \/\/@ Configured IP address$/;"	m	struct:__anon200::__anon258
+ipaddr	../porting/include/rsi_global.h	/^    uint8   ipaddr[4];                            \/\/@ uint8[4], Module IP Address$/;"	m	struct:__anon200::__anon269
+ipaddr6	../porting/include/rsi_global.h	/^    uint8     ipaddr6[16];$/;"	m	struct:__anon160::__anon161
+ipaddr6	../porting/include/rsi_global.h	/^    uint8   ipaddr6[16];                          \/\/@ Configured IPv address$/;"	m	struct:__anon200::__anon259
+ipconf6FrameSnd	../porting/include/rsi_global.h	/^  }ipconf6FrameSnd;$/;"	m	union:__anon160	typeref:struct:__anon160::__anon161
+ipparamFrameSnd	../porting/include/rsi_global.h	/^    } ipparamFrameSnd;$/;"	m	union:__anon158	typeref:struct:__anon158::__anon159
+ipv4_addr	../porting/include/rsi_global.h	/^      uint8   ipv4_addr[4];                      \/\/@ 4 bytes, Our (module) IPv4 Address$/;"	m	union:__anon200::__anon254::__anon255
+ipv4_address	../porting/include/rsi_global.h	/^             uint8      ipv4_address[4];$/;"	m	union:__anon147::__anon148::__anon149
+ipv4_address	../porting/include/rsi_global.h	/^          uint8   ipv4_address[RSI_IP_ADD_LEN];$/;"	m	union:__anon200::__anon225::__anon227::__anon228
+ipv4_address	../porting/include/rsi_global.h	/^        uint8    ipv4_address[4];       $/;"	m	union:__anon187::__anon188::__anon189
+ipv4_address	../porting/include/rsi_global.h	/^        uint8    ipv4_address[4];    $/;"	m	union:__anon187::__anon188::__anon190
+ipv4_address	../porting/include/rsi_global.h	/^        uint8   ipv4_address[4];                  \/\/@  remote IPv4 Address $/;"	m	union:__anon285::__anon286
+ipv4_address	../porting/include/rsi_global.h	/^        uint8   ipv4_address[4];                  \/\/@ 4 bytes, IPv4 Address of the device sending the data to us$/;"	m	union:__anon275::__anon276
+ipv4_address	../porting/include/rsi_global.h	/^        uint8   ipv4_address[4];$/;"	m	union:__anon200::sock_info_query_t::__anon267
+ipv4_address	../porting/include/rsi_global.h	/^       uint8   ipv4_address[4];                   \/\/@ 4 bytes, IPv4 Address of the device sending the data to us$/;"	m	union:__anon277::__anon278
+ipv4_address	../porting/include/rsi_global.h	/^       uint8   ipv4_address[4];                   \/\/@ 4 bytes, IPv4 Address of the device sending the data to us$/;"	m	union:__anon279::__anon280
+ipv4_address	../porting/include/rsi_global.h	/^      uint8     ipv4_address[4];$/;"	m	union:__anon162::__anon163::__anon164
+ipv4_address	../porting/include/rsi_global.h	/^      uint8   ipv4_address[4];                    \/\/@ 4 bytes, IPv4 Address of the device sending the data to us$/;"	m	union:__anon273::__anon274
+ipv4_address	../porting/include/rsi_global.h	/^    UINT8  ipv4_address[4];$/;"	m	union:__anon200::rsi_sntp_server_rsp_t::__anon268
+ipv4_address	../porting/include/rsi_global.h	/^    uint8   ipv4_address[4];                       \/\/@ secondary DNS IPv4$/;"	m	union:__anon282::__anon284
+ipv4_address	../porting/include/rsi_global.h	/^    uint8   ipv4_address[4];                      \/\/@ IPv4 Address of the Connected client$/;"	m	union:__anon200::go_sta_info_s::__anon270
+ipv4_address	../porting/include/rsi_global.h	/^    uint8   ipv4_address[4];                      \/\/@ IPv4 Address of the GO$/;"	m	struct:__anon271
+ipv4_address	../porting/include/rsi_global.h	/^    uint8   ipv4_address[4];$/;"	m	union:__anon200::__anon265::__anon266
+ipv4_address	../porting/include/rsi_global.h	/^   uint8   ipv4_address[4];$/;"	m	union:__anon200::TCP_EVT_DNS_Query_Resp::__anon218
+ipv4_address	../porting/include/rsi_global.h	/^  uint8   ipv4_address[4];                         \/\/@ primary DNS IPv4$/;"	m	union:__anon282::__anon283
+ipv6_Address	../porting/include/rsi_global.h	/^   uint8   ipv6_Address[16];$/;"	m	union:__anon200::TCP_EVT_DNS_Query_Resp::__anon218
+ipv6_addr	../porting/include/rsi_global.h	/^      uint8   ipv6_addr[16];                     \/\/@ 4 bytes, Our (module) IPv6 Address$/;"	m	union:__anon200::__anon254::__anon255
+ipv6_address	../porting/include/rsi_global.h	/^             uint8      ipv6_address[16];$/;"	m	union:__anon147::__anon148::__anon149
+ipv6_address	../porting/include/rsi_global.h	/^          uint8   ipv6_address[RSI_IP_ADD_LEN * 4];$/;"	m	union:__anon200::__anon225::__anon227::__anon228
+ipv6_address	../porting/include/rsi_global.h	/^        uint8    ipv6_address[16];       $/;"	m	union:__anon187::__anon188::__anon189
+ipv6_address	../porting/include/rsi_global.h	/^        uint8    ipv6_address[16];    $/;"	m	union:__anon187::__anon188::__anon190
+ipv6_address	../porting/include/rsi_global.h	/^        uint8   ipv6_address[16];                 \/\/@  remote IPv6 Address $/;"	m	union:__anon285::__anon286
+ipv6_address	../porting/include/rsi_global.h	/^        uint8   ipv6_address[16];                 \/\/@ 4 bytes, IPv6 Address of the device sending the data to us$/;"	m	union:__anon275::__anon276
+ipv6_address	../porting/include/rsi_global.h	/^        uint8   ipv6_address[16];$/;"	m	union:__anon200::sock_info_query_t::__anon267
+ipv6_address	../porting/include/rsi_global.h	/^       uint8   ipv6_address[16];                  \/\/@ 4 bytes, IPv6 Address of the device sending the data to us$/;"	m	union:__anon277::__anon278
+ipv6_address	../porting/include/rsi_global.h	/^       uint8   ipv6_address[16];                  \/\/@ 4 bytes, IPv6 Address of the device sending the data to us$/;"	m	union:__anon279::__anon280
+ipv6_address	../porting/include/rsi_global.h	/^      uint8     ipv6_address[16];$/;"	m	union:__anon162::__anon163::__anon164
+ipv6_address	../porting/include/rsi_global.h	/^      uint8   ipv6_address[16];                   \/\/@ 4 bytes, IPv6 Address of the device sending the data to us$/;"	m	union:__anon273::__anon274
+ipv6_address	../porting/include/rsi_global.h	/^    UINT8  ipv6_address[16];$/;"	m	union:__anon200::rsi_sntp_server_rsp_t::__anon268
+ipv6_address	../porting/include/rsi_global.h	/^    uint8   ipv6_address[16];                      \/\/@ secondary DNS IPv6$/;"	m	union:__anon282::__anon284
+ipv6_address	../porting/include/rsi_global.h	/^    uint8   ipv6_address[16];                     \/\/@ IPv6 Address of the Connected client$/;"	m	union:__anon200::go_sta_info_s::__anon270
+ipv6_address	../porting/include/rsi_global.h	/^    uint8   ipv6_address[16];                     \/\/@ IPv6 Address of the GO$/;"	m	struct:__anon271
+ipv6_address	../porting/include/rsi_global.h	/^    uint8   ipv6_address[16];$/;"	m	union:__anon200::__anon265::__anon266
+ipv6_address	../porting/include/rsi_global.h	/^  uint8   ipv6_address[16];                        \/\/@ primary DNS IPv6$/;"	m	union:__anon282::__anon283
+ipv6addr	../porting/include/rsi_global.h	/^    uint8   ipv6addr[16];                         \/\/@ modules ipv6 address$/;"	m	struct:__anon200::__anon269
+joinFrameSnd	../porting/include/rsi_global.h	/^    } joinFrameSnd;$/;"	m	union:__anon152	typeref:struct:__anon152::__anon153
+join_feature_bitmap	../porting/include/rsi_global.h	/^		   uint8    join_feature_bitmap;$/;"	m	struct:__anon152::__anon153
+json_buffer	../porting/include/rsi_app.h	/^  uint8         json_buffer[JSON_BUFFER_SIZE];$/;"	m	struct:__anon5
+json_data	../porting/include/rsi_global.h	/^    char    json_data[RSI_JSON_MAX_CHUNK_LENGTH];$/;"	m	struct:rsi_jsonCreateObject_s
+json_load_done	../porting/include/rsi_app.h	/^  uint8         json_load_done;$/;"	m	struct:__anon5
+key	../porting/include/rsi_global.h	/^    uint8    key[128]; \/*PMK\/EAP password*\/$/;"	m	struct:__anon175::__anon176
+key	../porting/include/rsi_global.h	/^    uint8    key[128]; \/*PMK\/EAP password*\/$/;"	m	struct:__anon177::__anon178
+key	../porting/include/rsi_global.h	/^    uint8    key[16]; \/*PMK\/EAP password*\/$/;"	m	struct:__anon179::__anon180
+key_store	../porting/include/rsi_global.h	/^    uint8    key_store;$/;"	m	struct:__anon175::__anon176
+length	../porting/include/rsi_global.h	/^        uint8   length[2];                        \/\/@ uint8, per mode length$/;"	m	struct:__anon200::__anon221::__anon222
+length	../porting/include/rsi_global.h	/^    uint8   length[4];                             \/\/@ Length of set request$/;"	m	struct:__anon200::__anon260
+length	../porting/include/rsi_global.h	/^  uint16 length;$/;"	m	struct:__anon200::ftp_rsp_t
+listen_interval	../porting/include/rsi_global.h	/^		   uint8 	listen_interval[4];$/;"	m	struct:__anon152::__anon153
+listen_interval_dtim	../porting/include/rsi_global.h	/^        uint8   listen_interval_dtim;$/;"	m	struct:__anon200::__anon219::__anon220
+mac	../porting/include/rsi_global.h	/^   uint8   mac[6];                                \/\/@ Mac Address of the connected client$/;"	m	struct:__anon200::go_sta_info_s
+macAddr	../porting/include/rsi_global.h	/^        uint8    macAddr[6];                      \/\/@ byte array, mac address$/;"	m	struct:__anon200::__anon204::__anon205
+macAddr	../porting/include/rsi_global.h	/^    uint8    macAddr[6];                          \/\/@ MAC address of this module$/;"	m	struct:__anon200::__anon257
+macAddr	../porting/include/rsi_global.h	/^    uint8   macAddr[6];                           \/\/@ MAC address of this module$/;"	m	struct:__anon200::__anon258
+macAddress	../porting/include/rsi_global.h	/^    uint8   macAddress[6];                        \/\/@ Mac address of the device $/;"	m	struct:__anon200::__anon243
+macAddress	../porting/include/rsi_global.h	/^    uint8   macAddress[6];$/;"	m	struct:__anon200::__anon250
+macAddress	../porting/include/rsi_global.h	/^  uint8   macAddress[6];$/;"	m	struct:__anon200::__anon249
+mac_addr	../porting/include/platform_specific.h	/^  uint8                mac_addr[6];$/;"	m	struct:__anon2
+mac_addr	../porting/include/rsi_app.h	/^  uint8         mac_addr[6];$/;"	m	struct:__anon5
+mac_addr	../porting/include/rsi_global.h	/^    uint8   mac_addr[6];                          \/\/@ Mac address$/;"	m	struct:__anon200::__anon269
+mac_addr	../porting/include/rsi_global.h	/^    uint8 mac_addr[6]; $/;"	m	struct:__anon154
+max_count	../porting/include/rsi_global.h	/^    uint8     max_count[2];$/;"	m	struct:__anon162::__anon163
+max_tx_power	../porting/include/rsi_global.h	/^            uint8   max_tx_power;$/;"	m	struct:__anon142::__anon143::__anon144
+mdns_init	../porting/include/rsi_global.h	/^    mdns_init_t      mdns_init;$/;"	m	union:__anon200::rsi_mdns_t::__anon231
+mdns_init_t	../porting/include/rsi_global.h	/^} mdns_init_t;$/;"	t	struct:__anon200	typeref:struct:__anon200::__anon229
+mdns_reg_srv	../porting/include/rsi_global.h	/^    mdns_reg_srv_t   mdns_reg_srv;     $/;"	m	union:__anon200::rsi_mdns_t::__anon231
+mdns_reg_srv_t	../porting/include/rsi_global.h	/^} mdns_reg_srv_t;$/;"	t	struct:__anon200	typeref:struct:__anon200::__anon230
+mdns_rsp_t	../porting/include/rsi_global.h	/^typedef struct mdns_rsp_t$/;"	s	struct:__anon200
+mdns_struct	../porting/include/rsi_global.h	/^  } mdns_struct;$/;"	m	struct:__anon200::rsi_mdns_t	typeref:union:__anon200::rsi_mdns_t::__anon231
+mgmtFrmDscRspStatus	../porting/include/rsi_global.h	/^        uint8   mgmtFrmDscRspStatus;$/;"	m	struct:__anon200::__anon232::__anon234
+mgmtFrmLenAndQueue	../porting/include/rsi_global.h	/^        uint8   mgmtFrmLenAndQueue[2];            $/;"	m	struct:__anon200::__anon232::__anon234
+mgmtRespType	../porting/include/rsi_global.h	/^        uint8   mgmtRespType;                $/;"	m	struct:__anon200::__anon232::__anon234
+mode	../porting/include/rsi_global.h	/^        uint8   mode[2];                          \/\/@ uint8, per mode mode$/;"	m	struct:__anon200::__anon221::__anon222
+mode	../porting/include/rsi_global.h	/^    uint8     mode[2];$/;"	m	struct:__anon160::__anon161
+mode_11n_enable	../porting/include/rsi_global.h	/^    uint8    mode_11n_enable[2];$/;"	m	struct:__anon200::__anon237::__anon238
+mode_flag	../porting/include/rsi_global.h	/^        uint8    mode_flag[2];                       \/\/@ 0- Module in Client mode, 1- AP mode$/;"	m	struct:__anon157
+moduleIPaddr	../porting/include/rsi_global.h	/^  }moduleIPaddr;$/;"	m	struct:__anon200::__anon254	typeref:union:__anon200::__anon254::__anon255
+moduleSocket	../porting/include/rsi_global.h	/^    uint8    moduleSocket[2];                   \/\/@ Our local module port number$/;"	m	struct:__anon162::__anon163
+moduleSocket	../porting/include/rsi_global.h	/^    uint8   moduleSocket[2];                     \/\/@ 2 bytes, Port number of our local socket$/;"	m	struct:__anon200::__anon254
+more	../porting/include/rsi_global.h	/^  uint8      more;$/;"	m	struct:__anon200::__anon230
+more	../porting/include/rsi_global.h	/^  uint8   more[4]; $/;"	m	struct:__anon200::TCP_EVT_HTTP_Data_t
+more	../porting/include/rsi_global.h	/^  uint8 more;$/;"	m	struct:__anon200::ftp_rsp_t
+more_chunks	../porting/include/rsi_global.h	/^    uint8   more_chunks;$/;"	m	struct:__anon199
+more_chunks	../porting/include/rsi_global.h	/^  uint8   more_chunks;$/;"	m	struct:cert_info_s
+mss	../porting/include/rsi_global.h	/^    uint8   mss[2];                               \/\/@ 2 bytes, remote peer MSS size $/;"	m	struct:__anon285
+mss	../porting/include/rsi_global.h	/^  uint8   mss[2];                                \/\/@ 2 bytes, Remote peer MSS size$/;"	m	struct:__anon200::__anon254
+multi_probe	../porting/include/rsi_global.h	/^           uint8    multi_probe;                     \/\/@ multi probe$/;"	m	struct:__anon150::__anon151
+multicastFrameSnd	../porting/include/rsi_global.h	/^         }multicastFrameSnd;$/;"	m	union:__anon147	typeref:struct:__anon147::__anon148
+mutex1	../porting/include/platform_specific.h	/^  pthread_mutex_t      mutex1;$/;"	m	struct:__anon2
+n	../porting/include/rsi_nl_app.h	/^  struct nlmsghdr n;$/;"	m	struct:__anon4	typeref:struct:__anon4::nlmsghdr
+netmask	../porting/include/rsi_global.h	/^        uint8    netmask[4];                         \/\/@ Netmask used if in manual mode$/;"	m	struct:__anon158::__anon159
+netmask	../porting/include/rsi_global.h	/^    uint8    netmask[4];                          \/\/@ Configured netmask$/;"	m	struct:__anon200::__anon257
+netmask	../porting/include/rsi_global.h	/^    uint8   netmask[4];                           \/\/@ Configured netmask$/;"	m	struct:__anon200::__anon258
+next	../porting/include/platform_specific.h	/^  struct pkt_struct_s *next;$/;"	m	struct:pkt_struct_s	typeref:struct:pkt_struct_s::pkt_struct_s
+nl_sd	../porting/include/platform_specific.h	/^  int32                nl_sd;          \/\/! netlink socket descriptor $/;"	m	struct:__anon2
+no_of_channels	../porting/include/rsi_global.h	/^            uint8   no_of_channels;$/;"	m	struct:__anon142::__anon143::__anon144
+no_of_pkts	../porting/include/rsi_global.h	/^        uint8   no_of_pkts[2];                    \/\/@ uint8, per mode no_of_pkts$/;"	m	struct:__anon200::__anon221::__anon222
+no_of_rules	../porting/include/rsi_global.h	/^        uint8     no_of_rules[4];$/;"	m	struct:__anon142::__anon143
+num_open_socks	../porting/include/rsi_global.h	/^    uint8   num_open_socks[2];                    \/\/@ number of sockets opened$/;"	m	struct:__anon200::__anon269
+num_rcvd_packets	../porting/include/platform_specific.h	/^  uint32               num_rcvd_packets;$/;"	m	struct:__anon2
+nwType	../porting/include/rsi_global.h	/^    uint8   nwType;                                \/\/@ network type, 0=Ad-Hoc (IBSS), 1=Infrastructure$/;"	m	struct:__anon200::__anon247
+object_id	../porting/include/rsi_global.h	/^    uint8   object_id[32];                         \/\/@ Object id  $/;"	m	struct:__anon200::__anon260
+offset	../porting/include/rsi_global.h	/^  uint8   offset[4];$/;"	m	struct:__anon200::TCP_EVT_HTTP_Data_t
+okc_enable	../porting/include/rsi_global.h	/^        int8    okc_enable[4];                    \/\/@Opportunistic Key Caching enable$/;"	m	struct:__anon193::__anon194
+operChannel	../porting/include/rsi_global.h	/^        uint8    operChannel[2];                  \/\/@ In which channel we are operating after becomes Group owner$/;"	m	struct:__anon185::__anon186
+operModeFrameSnd	../porting/include/rsi_global.h	/^    } operModeFrameSnd;$/;"	m	union:__anon181	typeref:struct:__anon181::__anon182
+operState	../porting/include/rsi_global.h	/^    uint8   operState;    $/;"	m	struct:__anon200::__anon251
+oper_mode	../porting/include/rsi_global.h	/^       uint8    oper_mode[4];                       \/\/@ operating mode 0-client, 1-p2p, 2-EAP, 6-AP, 8-PER$/;"	m	struct:__anon181::__anon182
+packet_info	../porting/include/rsi_global.h	/^  uint8 packet_info[4];$/;"	m	struct:rsi_fw_up_frm_host_s
+padding	../porting/include/rsi_global.h	/^        uint8    padding[14];                     \/\/@ Unused, set to 0x00$/;"	m	struct:__anon200::__anon232::__anon233
+padding	../porting/include/rsi_global.h	/^        uint8   padding[9];                       \/\/@ Unused , set to 0x00$/;"	m	struct:__anon200::__anon232::__anon234
+padding	../porting/include/rsi_global.h	/^        uint8   padding[RSI_MAX_PAYLOAD_SIZE];    $/;"	m	struct:__anon200::__anon225::__anon226
+padding	../porting/include/rsi_global.h	/^    uint8   padding[4];$/;"	m	struct:__anon200::__anon248
+padding1	../porting/include/rsi_global.h	/^        uint8   padding1[3];$/;"	m	struct:__anon200::__anon232::__anon234
+passive_scan_duration	../porting/include/rsi_global.h	/^           uint8    passive_scan_duration[2];        \/\/@ passive scan duration$/;"	m	struct:__anon150::__anon151
+password	../porting/include/rsi_global.h	/^        uint8   password[128];                    \/\/@ Password    $/;"	m	struct:__anon193::__anon194
+payload	../porting/include/rsi_global.h	/^  uint8 payload[RSI_RPS_PAYLOAD_LEN];$/;"	m	struct:rsi_fw_up_frm_host_s
+pending_cmd_type	../porting/include/platform_specific.h	/^  uint8                pending_cmd_type;$/;"	m	struct:__anon2
+pending_pkt_count	../porting/include/platform_specific.h	/^  uint16 pending_pkt_count;            \/\/! pending packets in the queue$/;"	m	struct:__anon1
+perModeFrameSnd	../porting/include/rsi_global.h	/^    } perModeFrameSnd;$/;"	m	union:__anon200::__anon221	typeref:struct:__anon200::__anon221::__anon222
+perStatsFrameSnd	../porting/include/rsi_global.h	/^    } perStatsFrameSnd;$/;"	m	union:__anon200::__anon223	typeref:struct:__anon200::__anon223::__anon224
+per_ch_bw	../porting/include/rsi_global.h	/^        uint8   per_ch_bw[2];                     \/\/@ uint8, per mode per_ch_bw$/;"	m	struct:__anon200::__anon221::__anon222
+per_cont_mode_state	../porting/include/rsi_app.h	/^  int8          per_cont_mode_state;$/;"	m	struct:__anon5
+per_mode_enable	../porting/include/rsi_global.h	/^        uint8   per_mode_enable[2];               \/\/@ uint8, enable\/disable per mode$/;"	m	struct:__anon200::__anon221::__anon222
+per_stats_channel	../porting/include/rsi_global.h	/^      uint8 per_stats_channel[2];$/;"	m	struct:__anon200::__anon223::__anon224
+per_stats_enable	../porting/include/rsi_global.h	/^      uint8 per_stats_enable[2];$/;"	m	struct:__anon200::__anon223::__anon224
+pkt_pending	../porting/include/rsi_app.h	/^  volatile      uint32 pkt_pending;$/;"	m	struct:__anon5
+pkt_queue_t	../porting/include/platform_specific.h	/^}pkt_queue_t;$/;"	t	typeref:struct:__anon1
+pkt_struct_s	../porting/include/platform_specific.h	/^typedef struct pkt_struct_s$/;"	s
+pkt_struct_t	../porting/include/platform_specific.h	/^}pkt_struct_t;$/;"	t	typeref:struct:pkt_struct_s
+port	../porting/include/rsi_global.h	/^  uint8      port[2];$/;"	m	struct:__anon200::__anon230
+port_number	../porting/include/rsi_global.h	/^        uint8    port_number[2];                   \/\/@ 2bytes, socket descriptor to close$/;"	m	struct:__anon167::__anon168
+post_content_length	../porting/include/rsi_global.h	/^   uint8   post_content_length[2];$/;"	m	struct:__anon195
+post_data	../porting/include/rsi_global.h	/^   uint8   post_data[MAX_POST_DATA_LENGTH];$/;"	m	struct:__anon195
+power	../porting/include/rsi_global.h	/^        uint8   power[2];                         \/\/@ uint8, per mode power$/;"	m	struct:__anon200::__anon221::__anon222
+powerFrameSnd	../porting/include/rsi_global.h	/^    } powerFrameSnd;$/;"	m	union:__anon200::__anon219	typeref:struct:__anon200::__anon219::__anon220
+powerLevel	../porting/include/rsi_global.h	/^           uint8    powerLevel;                      \/\/@ transmit power level, 0=low (6-9dBm), 1=medium (10-14dBm, 2=high (15-17dBm)$/;"	m	struct:__anon152::__anon153
+powerLevel	../porting/include/rsi_global.h	/^    uint8   powerLevel;                            \/\/@ transmit power level, 0=low (6-9dBm), 1=medium (10-14dBm, 2=high (15-17dBm)$/;"	m	struct:__anon200::__anon247
+powerVal	../porting/include/rsi_global.h	/^        uint8   powerVal;                         \/\/@ uint8, power value to set$/;"	m	struct:__anon200::__anon219::__anon220
+power_save_enable	../porting/include/rsi_app.h	/^  uint16        power_save_enable;$/;"	m	struct:__anon5
+prefixLength	../porting/include/rsi_global.h	/^    uint8     prefixLength[2];$/;"	m	struct:__anon160::__anon161
+prefixLength	../porting/include/rsi_global.h	/^    uint8   prefixLength[2];                      \/\/@ prefix length$/;"	m	struct:__anon200::__anon259
+prefix_length	../porting/include/rsi_global.h	/^    uint8   prefix_length[2];                     \/\/@ prefix length for ipv6 address$/;"	m	struct:__anon200::__anon269
+primary_dns_ip	../porting/include/rsi_global.h	/^    }primary_dns_ip;$/;"	m	struct:__anon187::__anon188	typeref:union:__anon187::__anon188::__anon189
+primary_dns_ip	../porting/include/rsi_global.h	/^ }primary_dns_ip;$/;"	m	struct:__anon282	typeref:union:__anon282::__anon283
+profile_id_t	../porting/include/rsi_common_types.h	/^typedef uint16_t profile_id_t;$/;"	t
+protocol	../porting/include/rsi_global.h	/^  uint8    protocol;                      $/;"	m	struct:__anon165
+ps_descparam	../porting/include/rsi_app.h	/^  uint8         ps_descparam[16];   $/;"	m	struct:__anon5
+ps_ok_to_send	../porting/include/rsi_app.h	/^  uint16        ps_ok_to_send;$/;"	m	struct:__anon5
+ps_pkt_pending	../porting/include/rsi_app.h	/^  void *        ps_pkt_pending;   $/;"	m	struct:__anon5
+ps_size_param	../porting/include/rsi_app.h	/^  uint16        ps_size_param;$/;"	m	struct:__anon5
+psk	../porting/include/rsi_global.h	/^           uint8    psk[RSI_PSK_LEN];                \/\/@ pre-shared key, 63-byte string , last charecter is NULL$/;"	m	struct:__anon152::__anon153
+psk	../porting/include/rsi_global.h	/^        uint8    psk[64];                         \/\/@ PSK of the device $/;"	m	struct:__anon185::__anon186
+psk	../porting/include/rsi_global.h	/^    uint8   psk[64];                              \/\/@ PSK $/;"	m	struct:__anon200::__anon269
+psk	../porting/include/rsi_global.h	/^    uint8   psk[64];                              \/\/@ PSK of the GO$/;"	m	struct:__anon271
+psk	../porting/include/rsi_global.h	/^    uint8   psk[RSI_PSK_LEN];                      \/\/@ pre-shared key, 32-byte string$/;"	m	struct:__anon200::__anon247
+psk_or_pmk	../porting/include/rsi_global.h	/^    uint8    psk_or_pmk[RSI_PSK_LEN];$/;"	m	struct:__anon155::__anon156
+queryLtcpConnStatusFrameSnd	../porting/include/rsi_global.h	/^    } queryLtcpConnStatusFrameSnd;$/;"	m	union:__anon169	typeref:struct:__anon169::__anon170
+querySentBytesCountFrameSnd	../porting/include/rsi_global.h	/^    } querySentBytesCountFrameSnd;$/;"	m	union:__anon171	typeref:struct:__anon171::__anon172
+radio_selection	../porting/include/sensor_data.h	/^    int  radio_selection;$/;"	m	struct:app_data_s
+rate	../porting/include/rsi_global.h	/^        uint8   rate[4];                          \/\/@ uint8, per mode rate$/;"	m	struct:__anon200::__anon221::__anon222
+rate_flags	../porting/include/rsi_global.h	/^        uint8   rate_flags[2];                    \/\/@ uint8, per mode rate_flags$/;"	m	struct:__anon200::__anon221::__anon222
+rcv_queue	../porting/include/platform_specific.h	/^  pkt_queue_t          rcv_queue;$/;"	m	struct:__anon2
+rcvd_data_pkt_count	../porting/include/rsi_app.h	/^  uint32        rcvd_data_pkt_count;$/;"	m	struct:__anon5
+read_packet_buffer	../porting/include/rsi_app.h	/^  uint8         read_packet_buffer[RSI_MAX_PAYLOAD_SIZE];$/;"	m	struct:__anon5
+recvBufLen	../porting/include/rsi_global.h	/^      uint8   recvBufLen[4];                      \/\/@ 4 bytes, length of data received$/;"	m	struct:__anon275
+recvBufLen	../porting/include/rsi_global.h	/^      uint8   recvBufLen[4];                      \/\/@ 4 bytes, length of payload data received$/;"	m	struct:__anon277
+recvBufLen	../porting/include/rsi_global.h	/^    uint8   recvBufLen[4];                        \/\/@ 4 bytes, length of data received$/;"	m	struct:__anon273
+recvBufLen	../porting/include/rsi_global.h	/^    uint8   recvBufLen[4];                        \/\/@ 4 bytes, length of payload data received$/;"	m	struct:__anon279
+recvDataBuf	../porting/include/rsi_global.h	/^    uint8    recvDataBuf[RSI_MAX_PAYLOAD_SIZE];   \/\/@ uint8, buffer with received data$/;"	m	struct:__anon273
+recvDataBuf	../porting/include/rsi_global.h	/^    uint8   recvDataBuf[RSI_MAX_PAYLOAD_SIZE];    \/\/@ uint8, buffer with received data$/;"	m	struct:__anon275
+recvDataBuf	../porting/include/rsi_global.h	/^    uint8   recvDataBuf[RSI_MAX_PAYLOAD_SIZE];    \/\/@ uint8, buffer with received data$/;"	m	struct:__anon277
+recvDataBuf	../porting/include/rsi_global.h	/^    uint8   recvDataBuf[RSI_MAX_PAYLOAD_SIZE];    \/\/@ uint8, buffer with received data$/;"	m	struct:__anon279
+recvDataOffsetBuf	../porting/include/rsi_global.h	/^    uint8    recvDataOffsetBuf[RSI_RXDATA_OFFSET_UDP_V4]; $/;"	m	struct:__anon273
+recvDataOffsetBuf	../porting/include/rsi_global.h	/^    uint8   recvDataOffsetBuf[RSI_RXDATA_OFFSET_TCP_V4]; \/\/@ uint8, empty offset buffer, 26 for TCP$/;"	m	struct:__anon277
+recvDataOffsetBuf	../porting/include/rsi_global.h	/^    uint8   recvDataOffsetBuf[RSI_RXDATA_OFFSET_TCP_V6]; \/\/@ uint8, empty offset buffer, 26 for TCP$/;"	m	struct:__anon279
+recvDataOffsetBuf	../porting/include/rsi_global.h	/^    uint8   recvDataOffsetBuf[RSI_RXDATA_OFFSET_UDP_V6];$/;"	m	struct:__anon275
+recvDataOffsetSize	../porting/include/rsi_global.h	/^      uint8   recvDataOffsetSize[2];              \/\/@ 2 bytes, offset of data from start of buffer$/;"	m	struct:__anon275
+recvDataOffsetSize	../porting/include/rsi_global.h	/^      uint8   recvDataOffsetSize[2];              \/\/@ 2 bytes, offset of data from start of buffer$/;"	m	struct:__anon277
+recvDataOffsetSize	../porting/include/rsi_global.h	/^    uint8   recvDataOffsetSize[2];                \/\/@ 2 bytes, offset of data from start of buffer$/;"	m	struct:__anon273
+recvDataOffsetSize	../porting/include/rsi_global.h	/^    uint8   recvDataOffsetSize[2];                \/\/@ 2 bytes, offset of data from start of buffer$/;"	m	struct:__anon279
+recvSocket	../porting/include/rsi_global.h	/^      uint8   recvSocket[2];                      \/\/@ 2 bytes, the socket number associated with this read event$/;"	m	struct:__anon275
+recvSocket	../porting/include/rsi_global.h	/^      uint8   recvSocket[2];                      \/\/@ 2 bytes, the socket number associated with this read event$/;"	m	struct:__anon277
+recvSocket	../porting/include/rsi_global.h	/^    uint8   recvSocket[2];                        \/\/@ 2 bytes, the socket number associated with this read event$/;"	m	struct:__anon273
+recvSocket	../porting/include/rsi_global.h	/^    uint8   recvSocket[2];                        \/\/@ 2 bytes, the socket number associated with this read event$/;"	m	struct:__anon279
+region_code	../porting/include/rsi_global.h	/^        uint8     region_code;$/;"	m	struct:__anon140::__anon141
+region_code	../porting/include/rsi_global.h	/^  uint8 region_code;$/;"	m	struct:__anon200::__anon262
+req_Type	../porting/include/rsi_global.h	/^        uint8     req_Type[2]; $/;"	m	struct:__anon147::__anon148
+request_type	../porting/include/rsi_global.h	/^   uint8   request_type;$/;"	m	struct:__anon195
+reserved	../porting/include/rsi_global.h	/^        uint8     reserved[5];                            \/\/@ uint8[6], reserved fields$/;"	m	struct:__anon145::__anon146
+reserved	../porting/include/rsi_global.h	/^    uint8   reserved;$/;"	m	struct:__anon200::__anon246
+reserved	../porting/include/rsi_global.h	/^    uint8   reserved;$/;"	m	struct:__anon200::__anon247
+reserved	../porting/include/rsi_global.h	/^    uint8   reserved[2];$/;"	m	struct:__anon200::__anon246
+reserved1	../porting/include/rsi_global.h	/^           uint8    reserved1;                       \/\/@ reserved bytes:Can be used for security Type$/;"	m	struct:__anon152::__anon153
+reserved2	../porting/include/rsi_global.h	/^           uint8    reserved2[2];                    \/\/@ reserved bytes$/;"	m	struct:__anon152::__anon153
+rfChannel	../porting/include/rsi_global.h	/^    uint8   rfChannel;                             \/\/@ rf channel to us, 0=scan for all$/;"	m	struct:__anon200::__anon246
+roamParamsFrameSnd	../porting/include/rsi_global.h	/^   }roamParamsFrameSnd;$/;"	m	union:__anon200::__anon235	typeref:struct:__anon200::__anon235::__anon236
+roam_enable	../porting/include/rsi_global.h	/^       uint8   roam_enable[4];$/;"	m	struct:__anon200::__anon235::__anon236
+roam_hysteresis	../porting/include/rsi_global.h	/^       uint8   roam_hysteresis[4];$/;"	m	struct:__anon200::__anon235::__anon236
+roam_threshold	../porting/include/rsi_global.h	/^       uint8   roam_threshold[4];$/;"	m	struct:__anon200::__anon235::__anon236
+rsi_LtcpConnStatusFrameRcv	../porting/include/rsi_global.h	/^} rsi_LtcpConnStatusFrameRcv;$/;"	t	struct:__anon200	typeref:struct:__anon200::__anon265
+rsi_alloc_and_init_cmdbuff	../porting/source/rsi_nl_app.c	/^uint8 *rsi_alloc_and_init_cmdbuff(uint8 *Desc, uint8 *payload, uint16 payload_size)$/;"	f
+rsi_app_cb_t	../porting/include/rsi_app.h	/^}rsi_app_cb_t;$/;"	t	typeref:struct:__anon5
+rsi_beacon_missed_count	../porting/include/rsi_global.h	/^      uint8    rsi_beacon_missed_count[4];$/;"	m	struct:__anon200::rsi_rejoin_params_s
+rsi_boot_insn	../porting/source/rsi_linux_apis.c	/^int16 rsi_boot_insn(uint8 type, uint16* data)$/;"	f
+rsi_buffer_isFull	../porting/source/rsi_linux_apis.c	/^int32 rsi_buffer_isFull(void)$/;"	f
+rsi_buildFrameDescriptor	../porting/source/rsi_linux_apis.c	/^void rsi_buildFrameDescriptor(rsi_uFrameDsc *uFrameDscFrame, uint8 *cmd)$/;"	f
+rsi_bytes2R_to_uint16	../porting/source/rsi_lib_util.c	/^uint16 rsi_bytes2R_to_uint16(uint8 *dBuf)$/;"	f
+rsi_bytes4R_to_uint32	../porting/source/rsi_lib_util.c	/^uint32 rsi_bytes4R_to_uint32(uint8 *dBuf)$/;"	f
+rsi_conStatusFrameRcv	../porting/include/rsi_global.h	/^} rsi_conStatusFrameRcv;$/;"	t	struct:__anon200	typeref:struct:__anon200::__anon263
+rsi_create_nl_socket	../porting/source/rsi_nl_app.c	/^static int32 rsi_create_nl_socket(int32 protocol, int32 groups)$/;"	f	file:
+rsi_dequeue_from_rcv_q	../porting/source/rsi_nl_app.c	/^pkt_struct_t *rsi_dequeue_from_rcv_q(void)$/;"	f
+rsi_disassoc_t	../porting/include/rsi_global.h	/^}rsi_disassoc_t;$/;"	t	typeref:struct:__anon157
+rsi_dnsserverResponse	../porting/include/rsi_global.h	/^}rsi_dnsserverResponse;$/;"	t	typeref:struct:__anon282
+rsi_enqueue_to_rcv_q	../porting/source/rsi_nl_app.c	/^void rsi_enqueue_to_rcv_q(pkt_struct_t *Pkt)$/;"	f
+rsi_execute_cmd	../porting/source/rsi_linux_apis.c	/^int16 rsi_execute_cmd(uint8 *descparam, uint8 *payloadparam, uint16 size_param)$/;"	f
+rsi_fill_genl_nl_hdrs_for_cmd	../porting/source/rsi_nl_app.c	/^void rsi_fill_genl_nl_hdrs_for_cmd(void)$/;"	f
+rsi_first_time_retry_enable	../porting/include/rsi_global.h	/^      uint8   rsi_first_time_retry_enable[4];$/;"	m	struct:__anon200::rsi_rejoin_params_s
+rsi_frameCmdAPconf	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdAPconf[RSI_BYTES_3] = {0x6E, 0x40, 0x24};$/;"	v
+rsi_frameCmdAntSel	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdAntSel[RSI_BYTES_3] = {0x03, 0x40, 0x1B};$/;"	v
+rsi_frameCmdBGScan	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdBGScan[RSI_BYTES_3] = {0x0F, 0x40, 0x6a };    $/;"	v
+rsi_frameCmdBand	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdBand[RSI_BYTES_3] = {0x01,  0x40, 0x11};$/;"	v
+rsi_frameCmdBootInsn	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdBootInsn[RSI_BYTES_3] = {0x00,  0x00, 0xFF};$/;"	v
+rsi_frameCmdCert	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdCert[RSI_BYTES_3] = {0x00, 0x40, 0x4D};$/;"	v
+rsi_frameCmdCfgEnable	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdCfgEnable[RSI_BYTES_3] = {0x01,  0x40, 0x21};$/;"	v
+rsi_frameCmdCfgGet	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdCfgGet[RSI_BYTES_3] = {0x00, 0x40, 0x22};$/;"	v
+rsi_frameCmdCfgSave	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdCfgSave[RSI_BYTES_3] = {0x00, 0x40, 0x20};$/;"	v
+rsi_frameCmdConnStatus	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdConnStatus[RSI_BYTES_3] = {0x00, 0x40, 0x48};    $/;"	v
+rsi_frameCmdDebug	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdDebug[RSI_BYTES_3] = {0x08,  0x40, 0x26};$/;"	v
+rsi_frameCmdDisconnect	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdDisconnect[RSI_BYTES_3] = {0x08, 0x40, 0x19};    $/;"	v
+rsi_frameCmdDnsQuery	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdDnsQuery[RSI_BYTES_3] = {0x5E , 0x40 , 0x44 }; $/;"	v
+rsi_frameCmdDnsServer	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdDnsServer[RSI_BYTES_3] = {0X24, 0x40, 0X55};$/;"	v
+rsi_frameCmdFeatsel	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdFeatsel[RSI_BYTES_3] = {0x04,  0x40, 0x1E};$/;"	v
+rsi_frameCmdGpioconf	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdGpioconf[RSI_BYTES_3]={0x04, 0x40, 0x28};$/;"	v
+rsi_frameCmdHtCaps	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdHtCaps[RSI_BYTES_3] = {0x04, 0x40, 0x6D};$/;"	v
+rsi_frameCmdIPconf6	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdIPconf6[RSI_BYTES_3] = {0x24, 0x40, 0x90};$/;"	v
+rsi_frameCmdInit	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdInit[RSI_BYTES_3] = {0x00, 0x40, 0x12};$/;"	v
+rsi_frameCmdIpparam	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdIpparam[RSI_BYTES_3] = {0x2C, 0x40, 0x41};    $/;"	v
+rsi_frameCmdJSONCreate	../porting/source/rsi_api.c	/^const uint8  rsi_frameCmdJSONCreate[RSI_BYTES_3]        = { 0x1C, 0x44, 0x9C};$/;"	v
+rsi_frameCmdJSONEraseFile	../porting/source/rsi_api.c	/^const uint8  rsi_frameCmdJSONEraseFile[RSI_BYTES_3]     = { 0x18, 0x40, 0x9B};$/;"	v
+rsi_frameCmdJoin	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdJoin[RSI_BYTES_3] = {0x6F, 0x40, 0x14 };$/;"	v
+rsi_frameCmdLtcpConnStatus	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdLtcpConnStatus[RSI_BYTES_3] = {0x2, 0x40, 0x46};$/;"	v
+rsi_frameCmdMcastFilter	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdMcastFilter[RSI_BYTES_3] = {0x02, 0x40, 0x40};$/;"	v
+rsi_frameCmdMulticast	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdMulticast[RSI_BYTES_3] = {0x14, 0x40, 0xB1};$/;"	v
+rsi_frameCmdOperMode	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdOperMode[RSI_BYTES_3] = {0x10,  0x40, 0x10};$/;"	v
+rsi_frameCmdP2pConfig	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdP2pConfig[RSI_BYTES_3] = {0xC4, 0x40, 0x4B};$/;"	v
+rsi_frameCmdPerMode	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdPerMode[RSI_BYTES_3] = {0x1c, 0x40, 0x7c};$/;"	v
+rsi_frameCmdPerStats	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdPerStats[RSI_BYTES_3] = {0x4, 0x40, 0xA2};$/;"	v
+rsi_frameCmdPingRequest	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdPingRequest[RSI_BYTES_3]={0x14, 0x40, 0x29};$/;"	v
+rsi_frameCmdPower	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdPower[RSI_BYTES_3] = {0x03, 0x40, 0x15 };    $/;"	v
+rsi_frameCmdPsk	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdPsk[RSI_BYTES_3] = {0x63, 0x40, 0xa5 };$/;"	v
+rsi_frameCmdQryFwVer	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdQryFwVer[RSI_BYTES_3] = {0x00, 0x40, 0x49};    $/;"	v
+rsi_frameCmdQryGoParms	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdQryGoParms[RSI_BYTES_3] = {0x00, 0x40, 0x4E};$/;"	v
+rsi_frameCmdQryMacAddress	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdQryMacAddress[RSI_BYTES_3]= {0x00 , 0x40, 0x4A};$/;"	v
+rsi_frameCmdQryNetParms	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdQryNetParms[RSI_BYTES_3] = {0x00, 0x40, 0x18};    $/;"	v
+rsi_frameCmdRFCurConfig	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdRFCurConfig[RSI_BYTES_3] = {0x04, 0x40, 0xAD};$/;"	v
+rsi_frameCmdRecv	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdRecv[RSI_BYTES_3] = {0x00, 0x50, 0x00};    $/;"	v
+rsi_frameCmdRejoinParams	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdRejoinParams[RSI_BYTES_3] = {0x10, 0x40, 0x6F};$/;"	v
+rsi_frameCmdReset	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdReset[RSI_BYTES_3] = {0x00, 0x40, 0x1C};$/;"	v
+rsi_frameCmdRoamParams	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdRoamParams[RSI_BYTES_3] = {0x0C, 0x40, 0x7B};$/;"	v
+rsi_frameCmdRssi	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdRssi[RSI_BYTES_3] = {0x00, 0x40, 0x3A}; $/;"	v
+rsi_frameCmdScan	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdScan[RSI_BYTES_3] = {0x32, 0x40, 0x13 };    $/;"	v
+rsi_frameCmdSend	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdSend[RSI_BYTES_3] = {0x00, 0x50, 0x00};     $/;"	v
+rsi_frameCmdSentBytesCount	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdSentBytesCount[RSI_BYTES_3] = {0x2, 0x40, 0xB2};$/;"	v
+rsi_frameCmdSetEap	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdSetEap[RSI_BYTES_3]    = {0x04, 0x41, 0x4C};$/;"	v
+rsi_frameCmdSetMacAddr	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdSetMacAddr[RSI_BYTES_3] = {0x06, 0x40, 0x17};    $/;"	v
+rsi_frameCmdSleepTimer	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdSleepTimer[RSI_BYTES_3] = {0x02, 0x40, 0x16};   $/;"	v
+rsi_frameCmdSnmpEnable	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdSnmpEnable[RSI_BYTES_3] = {0x01, 0x40, 0x85};$/;"	v
+rsi_frameCmdSnmpGetNextRsp	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdSnmpGetNextRsp[RSI_BYTES_3] = {0xCC, 0x40, 0x84};$/;"	v
+rsi_frameCmdSnmpGetRsp	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdSnmpGetRsp[RSI_BYTES_3] = {0xCC, 0x40, 0x83};$/;"	v
+rsi_frameCmdSnr	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdSnr[RSI_BYTES_3] = {0x00, 0x40, 0x1F};$/;"	v
+rsi_frameCmdSocket	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdSocket[RSI_BYTES_3] = {0x89, 0x40, 0x42};    $/;"	v
+rsi_frameCmdSocketClose	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdSocketClose[RSI_BYTES_3] = {0x04, 0x40, 0x43};    $/;"	v
+rsi_frameCmdUartFlowControl	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdUartFlowControl[RSI_BYTES_3] = {0x01, 0x40, 0xA4};$/;"	v
+rsi_frameCmdUpdateInfo	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdUpdateInfo[RSI_BYTES_3] = {0x00,  0x00, 0xE1};$/;"	v
+rsi_frameCmdUrlRsp	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdUrlRsp[RSI_BYTES_3] = {0x05, 0x44, 0x56};$/;"	v
+rsi_frameCmdUserStoreCfg	../porting/source/rsi_api.c	/^const uint8	  rsi_frameCmdUserStoreCfg[RSI_BYTES_3]     = {0x6b, 0x44, 0x23};$/;"	v
+rsi_frameCmdWebFields	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdWebFields[RSI_BYTES_3] = {0xA8, 0x42, 0x4F};$/;"	v
+rsi_frameCmdWebpageClearFiles	../porting/source/rsi_api.c	/^const uint8  rsi_frameCmdWebpageClearFiles[RSI_BYTES_3] = { 0x01, 0x40, 0x7F};$/;"	v
+rsi_frameCmdWebpageEraseFile	../porting/source/rsi_api.c	/^const uint8  rsi_frameCmdWebpageEraseFile[RSI_BYTES_3]  = { 0x18, 0x40, 0x9A};$/;"	v
+rsi_frameCmdWepkey	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdWepkey[RSI_BYTES_3] = {0x82, 0x40, 0x25};$/;"	v
+rsi_frameCmdWirelessFwUpgrade	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdWirelessFwUpgrade[RSI_BYTES_3] = {0x00, 0x40, 0x59};$/;"	v
+rsi_frameCmdWmmPs	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdWmmPs[RSI_BYTES_3] = {0x09, 0x40, 0x97};$/;"	v
+rsi_frameCmdWpsMethod	../porting/source/rsi_api.c	/^const uint8   rsi_frameCmdWpsMethod[RSI_BYTES_3] = {0x0C, 0x40, 0x72};$/;"	v
+rsi_frameSetRegion	../porting/source/rsi_api.c	/^const uint8   rsi_frameSetRegion[RSI_BYTES_3]           = {0x02, 0x40, 0x1D};$/;"	v
+rsi_frameSetRegionAp	../porting/source/rsi_api.c	/^const uint8   rsi_frameSetRegionAp[RSI_BYTES_3] = {0x50, 0x40, 0xBD};$/;"	v
+rsi_frameSocketConfig	../porting/source/rsi_api.c	/^const uint8   rsi_frameSocketConfig[RSI_BYTES_3] = {0x8, 0x40, 0xA7};$/;"	v
+rsi_free	../porting/include/rsi_defines.h	17;"	d
+rsi_ftp_rsp_t	../porting/include/rsi_global.h	/^}rsi_ftp_rsp_t;$/;"	t	struct:__anon200	typeref:struct:__anon200::ftp_rsp_t
+rsi_fw_up_frm_host_s	../porting/include/rsi_global.h	/^typedef struct rsi_fw_up_frm_host_s{$/;"	s
+rsi_fw_up_t	../porting/include/rsi_global.h	/^}rsi_fw_up_t;$/;"	t	typeref:struct:rsi_fw_up_frm_host_s
+rsi_get_family_id	../porting/source/rsi_nl_app.c	/^int32 rsi_get_family_id(int32 sd)$/;"	f
+rsi_glbl_genl_nl_hdr	../porting/include/platform_specific.h	/^  uint8                rsi_glbl_genl_nl_hdr[20];$/;"	m	struct:__anon2
+rsi_initResponse	../porting/include/rsi_global.h	/^}rsi_initResponse;$/;"	t	struct:__anon200	typeref:struct:__anon200::__anon249
+rsi_ioctl_send_req	../porting/source/rsi_ioctl_app.c	/^int32 rsi_ioctl_send_req(int32 sockfd, uint8 *buf, int32 buf_len, int32 req_type)$/;"	f
+rsi_ipconf6FrameRcv	../porting/include/rsi_global.h	/^} rsi_ipconf6FrameRcv;$/;"	t	struct:__anon200	typeref:struct:__anon200::__anon259
+rsi_ipparamFrameRcv	../porting/include/rsi_global.h	/^} rsi_ipparamFrameRcv;$/;"	t	struct:__anon200	typeref:struct:__anon200::__anon257
+rsi_irq_clear_pending	../porting/source/rsi_hal_mcu_interrupt.c	/^void rsi_irq_clear_pending(void)$/;"	f
+rsi_irq_disable	../porting/source/rsi_hal_mcu_interrupt.c	/^void rsi_irq_disable(void)$/;"	f
+rsi_irq_enable	../porting/source/rsi_hal_mcu_interrupt.c	/^void rsi_irq_enable(void)$/;"	f
+rsi_irq_start	../porting/source/rsi_hal_mcu_interrupt.c	/^void rsi_irq_start(void)$/;"	f
+rsi_irq_status	../porting/source/rsi_hal_mcu_interrupt.c	/^uint8 rsi_irq_status(void)$/;"	f
+rsi_joinInfo	../porting/include/rsi_global.h	/^} rsi_joinInfo;$/;"	t	struct:__anon200	typeref:struct:__anon200::__anon247
+rsi_joinResponse	../porting/include/rsi_global.h	/^}rsi_joinResponse;$/;"	t	struct:__anon200	typeref:struct:__anon200::__anon251
+rsi_jsonCreateObject_s	../porting/include/rsi_global.h	/^typedef struct rsi_jsonCreateObject_s$/;"	s
+rsi_jsonCreateObject_t	../porting/include/rsi_global.h	/^} rsi_jsonCreateObject_t;$/;"	t	typeref:struct:rsi_jsonCreateObject_s
+rsi_linux_app_cb_t	../porting/include/platform_specific.h	/^}rsi_linux_app_cb_t;$/;"	t	typeref:struct:__anon2
+rsi_malloc	../porting/include/rsi_defines.h	16;"	d
+rsi_max_try	../porting/include/rsi_global.h	/^      uint8   rsi_max_try[4];$/;"	m	struct:__anon200::rsi_rejoin_params_s
+rsi_mdns_rsp_t	../porting/include/rsi_global.h	/^}rsi_mdns_rsp_t;$/;"	t	struct:__anon200	typeref:struct:__anon200::mdns_rsp_t
+rsi_mdns_t	../porting/include/rsi_global.h	/^typedef struct rsi_mdns_t $/;"	s	struct:__anon200
+rsi_mdns_t	../porting/include/rsi_global.h	/^} rsi_mdns_t;$/;"	t	struct:__anon200	typeref:struct:__anon200::rsi_mdns_t
+rsi_mgmtRspList	../porting/source/rsi_api.c	/^const uint8   rsi_mgmtRspList[] = {0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x64}; $/;"	v
+rsi_nlPkt_t	../porting/include/rsi_nl_app.h	/^} rsi_nlPkt_t;$/;"	t	typeref:struct:__anon4
+rsi_nl_socket_init	../porting/source/rsi_nl_app.c	/^int32 rsi_nl_socket_init(void)$/;"	f
+rsi_pwstate	../porting/include/platform_specific.h	/^  rsi_powerstate       rsi_pwstate;$/;"	m	struct:__anon2
+rsi_qryFwversionFrameRcv	../porting/include/rsi_global.h	/^} rsi_qryFwversionFrameRcv;$/;"	t	typeref:struct:__anon272
+rsi_qryGOParamsFrameRcv	../porting/include/rsi_global.h	/^}rsi_qryGOParamsFrameRcv;$/;"	t	typeref:struct:__anon271
+rsi_qryMacFrameRcv	../porting/include/rsi_global.h	/^}rsi_qryMacFrameRcv;$/;"	t	struct:__anon200	typeref:struct:__anon200::__anon250
+rsi_qryNetParmsFrameRcv	../porting/include/rsi_global.h	/^} rsi_qryNetParmsFrameRcv;$/;"	t	struct:__anon200	typeref:struct:__anon200::__anon269
+rsi_recvFrameTcp	../porting/include/rsi_global.h	/^} rsi_recvFrameTcp;$/;"	t	typeref:struct:__anon277
+rsi_recvFrameTcp6	../porting/include/rsi_global.h	/^} rsi_recvFrameTcp6;$/;"	t	typeref:struct:__anon279
+rsi_recvFrameUdp	../porting/include/rsi_global.h	/^} rsi_recvFrameUdp;$/;"	t	typeref:struct:__anon273
+rsi_recvFrameUdp6	../porting/include/rsi_global.h	/^} rsi_recvFrameUdp6;$/;"	t	typeref:struct:__anon275
+rsi_recvIpChange	../porting/include/rsi_global.h	/^} rsi_recvIpChange;$/;"	t	struct:__anon200	typeref:struct:__anon200::__anon258
+rsi_recvLtcpEst	../porting/include/rsi_global.h	/^} rsi_recvLtcpEst;$/;"	t	typeref:struct:__anon285
+rsi_recvRemTerm	../porting/include/rsi_global.h	/^} rsi_recvRemTerm;$/;"	t	typeref:struct:__anon281
+rsi_rejoin_params_s	../porting/include/rsi_global.h	/^typedef struct rsi_rejoin_params_s{$/;"	s	struct:__anon200
+rsi_rejoin_params_t	../porting/include/rsi_global.h	/^} rsi_rejoin_params_t;$/;"	t	struct:__anon200	typeref:struct:__anon200::rsi_rejoin_params_s
+rsi_rssiFrameRcv	../porting/include/rsi_global.h	/^} rsi_rssiFrameRcv;$/;"	t	struct:__anon200	typeref:struct:__anon200::__anon252
+rsi_scanInfo	../porting/include/rsi_global.h	/^} rsi_scanInfo;$/;"	t	struct:__anon200	typeref:struct:__anon200::__anon246
+rsi_scanResponse	../porting/include/rsi_global.h	/^} rsi_scanResponse;$/;"	t	struct:__anon200	typeref:struct:__anon200::__anon248
+rsi_scan_interval	../porting/include/rsi_global.h	/^      uint8    rsi_scan_interval[4];$/;"	m	struct:__anon200::rsi_rejoin_params_s
+rsi_send_usr_cmd	../porting/source/rsi_nl_app.c	/^int16 rsi_send_usr_cmd(uint8 *buff, uint16 bufLen)$/;"	f
+rsi_sendto_fd	../porting/source/rsi_nl_app.c	/^int32 rsi_sendto_fd(int32 s, const uint8 *buf, int32 bufLen)$/;"	f
+rsi_sentBytesRsp	../porting/include/rsi_global.h	/^} rsi_sentBytesRsp;$/;"	t	struct:__anon200	typeref:struct:__anon200::__anon264
+rsi_sleepack	../porting/source/rsi_api.c	/^const uint8   rsi_sleepack[RSI_BYTES_3] = {0x00, 0x40, 0xDE}; $/;"	v
+rsi_smtp_rsp_t	../porting/include/rsi_global.h	/^typedef struct rsi_smtp_rsp_t$/;"	s	struct:__anon200
+rsi_smtp_rsp_t	../porting/include/rsi_global.h	/^}rsi_smtp_rsp_t;$/;"	t	struct:__anon200	typeref:struct:__anon200::rsi_smtp_rsp_t
+rsi_snmp_set	../porting/include/rsi_global.h	/^} rsi_snmp_set;$/;"	t	struct:__anon200	typeref:struct:__anon200::__anon260
+rsi_snrFrameRcv	../porting/include/rsi_global.h	/^} rsi_snrFrameRcv;$/;"	t	struct:__anon200	typeref:struct:__anon200::__anon253
+rsi_sntp_rsp_t	../porting/include/rsi_global.h	/^typedef struct rsi_sntp_rsp_t$/;"	s	struct:__anon200
+rsi_sntp_rsp_t	../porting/include/rsi_global.h	/^}rsi_sntp_rsp_t;$/;"	t	struct:__anon200	typeref:struct:__anon200::rsi_sntp_rsp_t
+rsi_sntp_server_rsp_t	../porting/include/rsi_global.h	/^typedef struct rsi_sntp_server_rsp_t$/;"	s	struct:__anon200
+rsi_sntp_server_rsp_t	../porting/include/rsi_global.h	/^}rsi_sntp_server_rsp_t;$/;"	t	struct:__anon200	typeref:struct:__anon200::rsi_sntp_server_rsp_t
+rsi_socketCloseFrameRcv	../porting/include/rsi_global.h	/^} rsi_socketCloseFrameRcv;$/;"	t	struct:__anon200	typeref:struct:__anon200::__anon256
+rsi_socketFrameRcv	../porting/include/rsi_global.h	/^} rsi_socketFrameRcv;$/;"	t	struct:__anon200	typeref:struct:__anon200::__anon254
+rsi_sockets	../porting/include/rsi_global.h	/^} rsi_sockets;$/;"	t	typeref:struct:__anon166
+rsi_socketsStr	../porting/include/rsi_global.h	/^} rsi_socketsStr;$/;"	t	typeref:struct:__anon165
+rsi_status	../porting/include/platform_specific.h	/^  volatile int16       rsi_status;$/;"	m	struct:__anon2
+rsi_tfs_clear_files_s	../porting/include/rsi_global.h	/^typedef struct rsi_tfs_clear_files_s$/;"	s
+rsi_tfs_clear_files_t	../porting/include/rsi_global.h	/^} rsi_tfs_clear_files_t;$/;"	t	typeref:struct:rsi_tfs_clear_files_s
+rsi_tfs_erase_file_s	../porting/include/rsi_global.h	/^typedef struct rsi_tfs_erase_file_s$/;"	s
+rsi_tfs_erase_file_t	../porting/include/rsi_global.h	/^} rsi_tfs_erase_file_t;$/;"	t	typeref:struct:rsi_tfs_erase_file_s
+rsi_uAntenna	../porting/include/rsi_global.h	/^} rsi_uAntenna;$/;"	t	typeref:union:__anon183
+rsi_uBand	../porting/include/rsi_global.h	/^} rsi_uBand;$/;"	t	struct:__anon200	typeref:union:__anon200::__anon208
+rsi_uCfgEnable	../porting/include/rsi_global.h	/^} rsi_uCfgEnable;$/;"	t	struct:__anon200	typeref:union:__anon200::__anon210
+rsi_uConfigP2p	../porting/include/rsi_global.h	/^}rsi_uConfigP2p;$/;"	t	typeref:union:__anon185
+rsi_uConnected_station_t	../porting/include/rsi_global.h	/^}rsi_uConnected_station_t;$/;"	t	typeref:struct:__anon154
+rsi_uDebug	../porting/include/rsi_global.h	/^} rsi_uDebug;$/;"	t	typeref:union:__anon138
+rsi_uDnsQry	../porting/include/rsi_global.h	/^}rsi_uDnsQry;$/;"	t	typeref:union:__anon191
+rsi_uDnsServer	../porting/include/rsi_global.h	/^}rsi_uDnsServer;$/;"	t	typeref:union:__anon187
+rsi_uFeatsel	../porting/include/rsi_global.h	/^} rsi_uFeatsel;$/;"	t	struct:__anon200	typeref:union:__anon200::__anon206
+rsi_uFipsMode	../porting/include/rsi_global.h	/^} rsi_uFipsMode;$/;"	t	typeref:union:__anon173
+rsi_uFrameDsc	../porting/include/rsi_global.h	/^} rsi_uFrameDsc;$/;"	t	struct:__anon200	typeref:union:__anon200::__anon232
+rsi_uHtCaps	../porting/include/rsi_global.h	/^}rsi_uHtCaps;$/;"	t	struct:__anon200	typeref:union:__anon200::__anon237
+rsi_uHttpReq	../porting/include/rsi_global.h	/^} rsi_uHttpReq;$/;"	t	struct:__anon200	typeref:union:__anon200::__anon216
+rsi_uHttpRsp	../porting/include/rsi_global.h	/^} rsi_uHttpRsp;$/;"	t	struct:__anon200	typeref:struct:__anon200::TCP_EVT_HTTP_Data_t
+rsi_uHwFlowControl	../porting/include/rsi_global.h	/^}rsi_uHwFlowControl;$/;"	t	struct:__anon200	typeref:union:__anon200::__anon212
+rsi_uIPconf6	../porting/include/rsi_global.h	/^}rsi_uIPconf6;$/;"	t	typeref:union:__anon160
+rsi_uIpparam	../porting/include/rsi_global.h	/^} rsi_uIpparam;$/;"	t	typeref:union:__anon158
+rsi_uJoin	../porting/include/rsi_global.h	/^} rsi_uJoin;$/;"	t	typeref:union:__anon152
+rsi_uMulticast	../porting/include/rsi_global.h	/^}rsi_uMulticast;$/;"	t	typeref:union:__anon147
+rsi_uOperMode	../porting/include/rsi_global.h	/^} rsi_uOperMode;$/;"	t	typeref:union:__anon181
+rsi_uPerMode	../porting/include/rsi_global.h	/^}rsi_uPerMode;$/;"	t	struct:__anon200	typeref:union:__anon200::__anon221
+rsi_uPerStats	../porting/include/rsi_global.h	/^}rsi_uPerStats;$/;"	t	struct:__anon200	typeref:union:__anon200::__anon223
+rsi_uPower	../porting/include/rsi_global.h	/^} rsi_uPower;$/;"	t	struct:__anon200	typeref:union:__anon200::__anon219
+rsi_uPsk	../porting/include/rsi_global.h	/^} rsi_uPsk;$/;"	t	typeref:union:__anon155
+rsi_uQueryLtcpConnStatus	../porting/include/rsi_global.h	/^ } rsi_uQueryLtcpConnStatus;$/;"	t	typeref:union:__anon169
+rsi_uQuerySentBytesCount	../porting/include/rsi_global.h	/^ } rsi_uQuerySentBytesCount;$/;"	t	typeref:union:__anon171
+rsi_uRoamParams	../porting/include/rsi_global.h	/^}rsi_uRoamParams;$/;"	t	struct:__anon200	typeref:union:__anon200::__anon235
+rsi_uScan	../porting/include/rsi_global.h	/^} rsi_uScan;$/;"	t	typeref:union:__anon145
+rsi_uSend	../porting/include/rsi_global.h	/^} rsi_uSend;$/;"	t	struct:__anon200	typeref:union:__anon200::__anon225
+rsi_uSetEap	../porting/include/rsi_global.h	/^}rsi_uSetEap;$/;"	t	typeref:union:__anon193
+rsi_uSetMacAddr	../porting/include/rsi_global.h	/^} rsi_uSetMacAddr;$/;"	t	struct:__anon200	typeref:union:__anon200::__anon204
+rsi_uSetRegionRsp	../porting/include/rsi_global.h	/^}rsi_uSetRegionRsp;$/;"	t	struct:__anon200	typeref:struct:__anon200::__anon262
+rsi_uSleepTimer	../porting/include/rsi_global.h	/^} rsi_uSleepTimer;$/;"	t	struct:__anon200	typeref:union:__anon200::__anon214
+rsi_uSocket	../porting/include/rsi_global.h	/^} rsi_uSocket;$/;"	t	typeref:union:__anon162
+rsi_uSocketClose	../porting/include/rsi_global.h	/^} rsi_uSocketClose;$/;"	t	typeref:union:__anon167
+rsi_uWebFields	../porting/include/rsi_global.h	/^}rsi_uWebFields;$/;"	t	struct:__anon200	typeref:union:__anon200::__anon202
+rsi_uWebServer	../porting/include/rsi_global.h	/^}rsi_uWebServer;$/;"	t	typeref:union:__anon197
+rsi_uWmmPs	../porting/include/rsi_global.h	/^}rsi_uWmmPs;$/;"	t	struct:__anon200	typeref:union:__anon200::__anon239
+rsi_uWpsMethod	../porting/include/rsi_global.h	/^}rsi_uWpsMethod;$/;"	t	struct:__anon200	typeref:union:__anon200::__anon241
+rsi_uautojoin_key	../porting/include/rsi_global.h	/^} rsi_uautojoin_key;$/;"	t	typeref:union:__anon177
+rsi_ubgScan	../porting/include/rsi_global.h	/^} rsi_ubgScan;$/;"	t	typeref:union:__anon150
+rsi_ufwupgradation_key	../porting/include/rsi_global.h	/^} rsi_ufwupgradation_key;$/;"	t	typeref:union:__anon179
+rsi_uint16_to_2bytes	../porting/source/rsi_lib_util.c	/^void rsi_uint16_to_2bytes(uint8 *dBuf, uint16 val)$/;"	f
+rsi_uint32_to_4bytes	../porting/source/rsi_lib_util.c	/^void rsi_uint32_to_4bytes(uint8 *dBuf, uint32 val)$/;"	f
+rsi_update_info	../porting/source/rsi_linux_apis.c	/^int16 rsi_update_info(uint8 type)$/;"	f
+rsi_urecheck_key	../porting/include/rsi_global.h	/^} rsi_urecheck_key;$/;"	t	typeref:union:__anon175
+rsi_urlReqFrameRcv	../porting/include/rsi_global.h	/^}rsi_urlReqFrameRcv; $/;"	t	typeref:struct:__anon195
+rsi_usetregion	../porting/include/rsi_global.h	/^}rsi_usetregion;$/;"	t	typeref:union:__anon140
+rsi_usetregion_ap_t	../porting/include/rsi_global.h	/^}rsi_usetregion_ap_t;$/;"	t	typeref:union:__anon142
+rsi_wfdDevInfo	../porting/include/rsi_global.h	/^}rsi_wfdDevInfo;$/;"	t	struct:__anon200	typeref:struct:__anon200::__anon243
+rsi_wfdDevResponse	../porting/include/rsi_global.h	/^} rsi_wfdDevResponse;$/;"	t	struct:__anon200	typeref:struct:__anon200::__anon245
+rsi_wfdDevRsp	../porting/include/rsi_global.h	/^}rsi_wfdDevRsp;$/;"	t	struct:__anon200	typeref:struct:__anon200::__anon244
+rsi_wpsMethodFrameRcv	../porting/include/rsi_global.h	/^}rsi_wpsMethodFrameRcv;$/;"	t	struct:__anon200	typeref:struct:__anon200::__anon261
+rssiVal	../porting/include/rsi_global.h	/^    uint8   rssiVal;                               \/\/@ absolute value of RSSI$/;"	m	struct:__anon200::__anon246
+rssiVal	../porting/include/rsi_global.h	/^    uint8   rssiVal[2];                           \/\/@ uint8, RSSI value for the device the module is currently connected to$/;"	m	struct:__anon200::__anon252
+rssi_tolerance_threshold	../porting/include/rsi_global.h	/^           uint8    rssi_tolerance_threshold[2];     \/\/@ tolerance threshold$/;"	m	struct:__anon150::__anon151
+rx_window_size	../porting/include/rsi_global.h	/^    uint8     rx_window_size;$/;"	m	struct:__anon162::__anon163
+sPort	../porting/include/rsi_global.h	/^    uint8   sPort[2];$/;"	m	struct:__anon200::sock_info_query_t
+scanCount	../porting/include/rsi_global.h	/^    uint8   scanCount[4];                          \/\/@ 4 bytes, number of access points found$/;"	m	struct:__anon200::__anon248
+scanFrameSnd	../porting/include/rsi_global.h	/^    } scanFrameSnd;$/;"	m	union:__anon145	typeref:struct:__anon145::__anon146
+scan_feature_bitmap	../porting/include/rsi_global.h	/^        uint8     scan_feature_bitmap;                    \/\/@ uint8 , scan_feature_bitmap$/;"	m	struct:__anon145::__anon146
+sec_type	../porting/include/rsi_global.h	/^    uint8   sec_type;$/;"	m	struct:__anon200::__anon269
+secondary_dns_ip	../porting/include/rsi_global.h	/^    }secondary_dns_ip;$/;"	m	struct:__anon187::__anon188	typeref:union:__anon187::__anon188::__anon190
+secondary_dns_ip	../porting/include/rsi_global.h	/^ }secondary_dns_ip;$/;"	m	struct:__anon282	typeref:union:__anon282::__anon284
+securityMode	../porting/include/rsi_global.h	/^    uint8   securityMode;                          \/\/@ security mode, 0=open, 1=wpa1, 2=wpa2, 3=wep$/;"	m	struct:__anon200::__anon246
+securityType	../porting/include/rsi_global.h	/^           uint8    securityType;                    \/\/@ 0- Open, 1-WPA, 2-WPA2,6-MIXED_MODE$/;"	m	struct:__anon152::__anon153
+securityType	../porting/include/rsi_global.h	/^    uint8   securityType;                          \/\/@ security type, 0=Open, 1=WPA1, 2=WPA2, 3=WEP$/;"	m	struct:__anon200::__anon247
+sendBufLen	../porting/include/rsi_global.h	/^        uint8   sendBufLen[4];                    \/\/@ length of the data to be sent$/;"	m	struct:__anon200::__anon225::__anon226
+sendBufLen	../porting/include/rsi_global.h	/^        uint8   sendBufLen[4];                    \/\/@ length of the data to be sent$/;"	m	struct:__anon200::__anon225::__anon227
+sendDataBuf	../porting/include/rsi_global.h	/^        uint8   sendDataBuf[RSI_MAX_PAYLOAD_SIZE];            $/;"	m	struct:__anon200::__anon225::__anon227
+sendDataOffsetBuf	../porting/include/rsi_global.h	/^        uint8   sendDataOffsetBuf[RSI_TXDATA_OFFSET_LUDP];    $/;"	m	struct:__anon200::__anon225::__anon227
+sendDataOffsetSize	../porting/include/rsi_global.h	/^        uint8   sendDataOffsetSize[2];            \/\/@ Data Offset, TCP=44, UDP=32$/;"	m	struct:__anon200::__anon225::__anon227
+sendDataOffsetSize	../porting/include/rsi_global.h	/^        uint8   sendDataOffsetSize[2];            \/\/@ Data Offset, TCP=46, UDP=34$/;"	m	struct:__anon200::__anon225::__anon226
+sendFrameLudpSnd	../porting/include/rsi_global.h	/^    } sendFrameLudpSnd;$/;"	m	union:__anon200::__anon225	typeref:struct:__anon200::__anon225::__anon227
+sendFrameSnd	../porting/include/rsi_global.h	/^    } sendFrameSnd;$/;"	m	union:__anon200::__anon225	typeref:struct:__anon200::__anon225::__anon226
+send_buffer	../porting/include/rsi_app.h	/^  uint8         send_buffer[RSI_MAX_PAYLOAD_SIZE];$/;"	m	struct:__anon5
+sensor_data	../porting/include/rsi_app.h	/^  app_data_t    sensor_data;$/;"	m	struct:__anon5
+sentBytescnt	../porting/include/rsi_global.h	/^    uint8   sentBytescnt[4];                          \/\/@ 4 bytes, sent bytes count$/;"	m	struct:__anon281
+sentBytescnt	../porting/include/rsi_global.h	/^    uint8   sentBytescnt[4];                      \/\/@ 4 bytes, sent bytes count$/;"	m	struct:__anon200::__anon256
+server_ip_address	../porting/include/rsi_global.h	/^  }server_ip_address;$/;"	m	struct:__anon200::rsi_sntp_server_rsp_t	typeref:union:__anon200::rsi_sntp_server_rsp_t::__anon268
+setEapFrameSnd	../porting/include/rsi_global.h	/^    }setEapFrameSnd;$/;"	m	union:__anon193	typeref:struct:__anon193::__anon194
+setMacAddrBuf	../porting/include/rsi_global.h	/^    uint8   setMacAddrBuf[6];                    $/;"	m	union:__anon200::__anon204
+setMacAddrFrameSnd	../porting/include/rsi_global.h	/^    } setMacAddrFrameSnd;$/;"	m	union:__anon200::__anon204	typeref:struct:__anon200::__anon204::__anon205
+setRegionApFrameSnd	../porting/include/rsi_global.h	/^    }setRegionApFrameSnd;$/;"	m	union:__anon142	typeref:struct:__anon142::__anon143
+setRegionFrameSnd	../porting/include/rsi_global.h	/^        }setRegionFrameSnd;$/;"	m	union:__anon140	typeref:struct:__anon140::__anon141
+set_chunks	../porting/include/platform_specific.h	/^  struct SET_CHUNK_S   set_chunks;$/;"	m	struct:__anon2	typeref:struct:__anon2::SET_CHUNK_S
+set_chunks	../porting/include/rsi_app.h	/^  struct        SET_CHUNK_S set_chunks;$/;"	m	struct:__anon5	typeref:struct:__anon5::SET_CHUNK_S
+setregion_code_from_user_cmd	../porting/include/rsi_global.h	/^        uint8     setregion_code_from_user_cmd;$/;"	m	struct:__anon140::__anon141
+setregion_code_from_user_cmd	../porting/include/rsi_global.h	/^        uint8     setregion_code_from_user_cmd;$/;"	m	struct:__anon142::__anon143
+sint32	../porting/include/rsi_common_types.h	/^typedef int sint32, sint_32;$/;"	t
+sint_32	../porting/include/rsi_common_types.h	/^typedef int sint32, sint_32;$/;"	t
+snr	../porting/include/rsi_global.h	/^    uint8   snr;$/;"	m	struct:__anon200::__anon246
+snrVal	../porting/include/rsi_global.h	/^    uint8   snrVal;                               \/\/@ uint8, RSSI value for the device the module is currently connected to$/;"	m	struct:__anon200::__anon253
+sntp_method	../porting/include/rsi_global.h	/^  UINT8  sntp_method;$/;"	m	struct:__anon200::rsi_sntp_server_rsp_t
+sock_handle	../porting/include/rsi_global.h	/^   uint8  sock_handle[2];$/;"	m	struct:__anon200::__anon264
+sock_id	../porting/include/rsi_global.h	/^    uint8   sock_id[2];                           \/\/@ 2 bytes, socket handle $/;"	m	struct:__anon285
+sock_id	../porting/include/rsi_global.h	/^    uint8   sock_id[2];$/;"	m	struct:__anon200::sock_info_query_t
+sock_info_query_t	../porting/include/rsi_global.h	/^typedef struct sock_info_query_t$/;"	s	struct:__anon200
+sock_info_query_t	../porting/include/rsi_global.h	/^}sock_info_query_t;$/;"	t	struct:__anon200	typeref:struct:__anon200::sock_info_query_t
+sock_type	../porting/include/rsi_global.h	/^    uint8   sock_type[2];$/;"	m	struct:__anon200::sock_info_query_t
+socket	../porting/include/rsi_global.h	/^    uint8   socket[2];                                \/\/@ uint8, socket handle for the terminated connection$/;"	m	struct:__anon281
+socketCloseFrameSnd	../porting/include/rsi_global.h	/^    } socketCloseFrameSnd;$/;"	m	union:__anon167	typeref:struct:__anon167::__anon168
+socketDescriptor	../porting/include/rsi_global.h	/^        uint8    socketDescriptor[2];                $/;"	m	struct:__anon167::__anon168
+socketDescriptor	../porting/include/rsi_global.h	/^        uint8   socketDescriptor[2];              \/\/@ socket descriptor of the already opened socket connection$/;"	m	struct:__anon200::__anon225::__anon226
+socketDescriptor	../porting/include/rsi_global.h	/^        uint8   socketDescriptor[2];              \/\/@ socket descriptor of the already opened socket connection$/;"	m	struct:__anon200::__anon225::__anon227
+socketDescriptor	../porting/include/rsi_global.h	/^       uint8    socketDescriptor[2];              \/\/@ 2bytes, socket descriptor for LTCP socket$/;"	m	struct:__anon169::__anon170
+socketDescriptor	../porting/include/rsi_global.h	/^       uint8    socketDescriptor[2];              \/\/@ 2bytes, socket descriptor$/;"	m	struct:__anon171::__anon172
+socketDescriptor	../porting/include/rsi_global.h	/^    uint8   socketDescriptor[2];                 \/\/@ uinr16, socket descriptor, like a file handle, usually 0x00$/;"	m	struct:__anon200::__anon254
+socketDescriptor	../porting/include/rsi_global.h	/^    uint8   socketDescriptor[2];$/;"	m	struct:__anon200::__anon265
+socketDsc	../porting/include/rsi_global.h	/^    uint8   socketDsc[2];                         \/\/@ 2 bytes, socket that was closed$/;"	m	struct:__anon200::__anon256
+socketFrameSnd	../porting/include/rsi_global.h	/^  } socketFrameSnd;$/;"	m	union:__anon162	typeref:struct:__anon162::__anon163
+socketType	../porting/include/rsi_global.h	/^    uint8    socketType[2];                     \/\/@ 0=TCP Client, 1=UDP Client, 2=TCP Server (Listening TCP)$/;"	m	struct:__anon162::__anon163
+socketType	../porting/include/rsi_global.h	/^    uint8   socketType[2];                       \/\/@ 2 bytes, type of socket created$/;"	m	struct:__anon200::__anon254
+socket_bitmap	../porting/include/rsi_global.h	/^    uint8     socket_bitmap;$/;"	m	struct:__anon162::__anon163
+socket_info	../porting/include/rsi_global.h	/^    sock_info_query_t   socket_info[MN_NUM_SOCKETS];    $/;"	m	struct:__anon200::__anon269
+socketsArray	../porting/include/rsi_global.h	/^    rsi_socketsStr      socketsArray[RSI_MAXSOCKETS+1];        $/;"	m	struct:__anon166
+socketsStrArray	../porting/include/rsi_app.h	/^  volatile      rsi_sockets   socketsStrArray;  $/;"	m	struct:__anon5
+srcPortNum	../porting/include/rsi_global.h	/^	uint8  srcPortNum[2];$/;"	m	struct:__anon285
+ssid	../porting/include/rsi_global.h	/^           uint8    ssid[RSI_SSID_LEN];              \/\/@ ssid of access point to join to, 34-byte string$/;"	m	struct:__anon152::__anon153
+ssid	../porting/include/rsi_global.h	/^        uint8     ssid[RSI_SSID_LEN];                     \/\/@ uint8[34], ssid to scan         $/;"	m	struct:__anon145::__anon146
+ssid	../porting/include/rsi_global.h	/^    uint8   ssid[RSI_SSID_LEN];                    \/\/@ 32-byte ssid of scanned access point$/;"	m	struct:__anon200::__anon246
+ssid	../porting/include/rsi_global.h	/^    uint8   ssid[RSI_SSID_LEN];                    \/\/@ ssid of access point to join to, 32-byte string$/;"	m	struct:__anon200::__anon247
+ssid	../porting/include/rsi_global.h	/^    uint8   ssid[RSI_SSID_LEN];                   \/\/@ SSID of the P2p GO$/;"	m	struct:__anon271
+ssid	../porting/include/rsi_global.h	/^    uint8   ssid[RSI_SSID_LEN];                   \/\/@ uint8[32], SSID of connected access point$/;"	m	struct:__anon200::__anon269
+ssidPostFix	../porting/include/rsi_global.h	/^        uint8    ssidPostFix[64];                 \/\/@ Postfix SSID$/;"	m	struct:__anon185::__anon186
+ssid_len	../porting/include/rsi_global.h	/^           uint8    ssid_len;$/;"	m	struct:__anon152::__anon153
+ssl_bitmap	../porting/include/rsi_global.h	/^    uint8     ssl_bitmap;$/;"	m	struct:__anon162::__anon163
+ssl_ciphers	../porting/include/rsi_global.h	/^    uint8     ssl_ciphers;$/;"	m	struct:__anon162::__anon163
+sta_count	../porting/include/rsi_global.h	/^    uint8   sta_count[2];                         \/\/@ Number of stations Connected to GO$/;"	m	struct:__anon271
+sta_info	../porting/include/rsi_global.h	/^    struct  go_sta_info_s sta_info[MAX_STA_SUPPORT];$/;"	m	struct:__anon271	typeref:struct:__anon271::go_sta_info_s
+state	../porting/include/rsi_global.h	/^    uint8   state[2];                             \/\/@ 2 bytes, connection state, 0=Not Connected, 1=Connected$/;"	m	struct:__anon200::__anon263
+stations_connected	../porting/include/rsi_app.h	/^  rsi_uConnected_station_t stations_connected[RSI_NO_OF_CLIENTS_SUPPORTED];$/;"	m	struct:__anon5
+strScanInfo	../porting/include/rsi_global.h	/^    rsi_scanInfo    strScanInfo[RSI_AP_SCANNED_MAX];    $/;"	m	struct:__anon200::__anon248
+strWfdDevInfo	../porting/include/rsi_global.h	/^       rsi_wfdDevInfo   strWfdDevInfo[RSI_MAX_WFD_DEV_CNT];    $/;"	m	struct:__anon200::__anon245
+subnetMask	../porting/include/rsi_global.h	/^    uint8   subnetMask[4];                        \/\/@ uint8[4], Module Subnet Mask$/;"	m	struct:__anon200::__anon269
+tail	../porting/include/platform_specific.h	/^  pkt_struct_t *tail;                  \/\/! queue tail$/;"	m	struct:__anon1
+tcp_ip_feature_bit_map	../porting/include/rsi_global.h	/^       uint8    tcp_ip_feature_bit_map[4];          \/\/@ BIT(0)-tcp\/ip bypass, BIT(1)-HTTP server,BIT(2)-DHCPV4 client, $/;"	m	struct:__anon181::__anon182
+tcp_retry_count	../porting/include/rsi_global.h	/^    uint8     tcp_retry_count;$/;"	m	struct:__anon162::__anon163
+tcp_stack_used	../porting/include/rsi_global.h	/^    uint8   tcp_stack_used;                       \/\/@ BIT(0) =1 - ipv4, BIT(1)=2 - ipv6, BIT(0) & BIT(1)=3 - BOTH$/;"	m	struct:__anon200::__anon269
+temperature	../porting/include/sensor_data.h	/^    int  temperature;$/;"	m	struct:app_data_s
+tos	../porting/include/rsi_global.h	/^    uint8     tos[4];$/;"	m	struct:__anon162::__anon163
+total_len	../porting/include/rsi_global.h	/^    uint8   total_len[2];$/;"	m	struct:__anon196
+total_len	../porting/include/rsi_global.h	/^    uint8   total_len[4];$/;"	m	struct:__anon199
+total_len	../porting/include/rsi_global.h	/^  uint8   total_len[2];$/;"	m	struct:cert_info_s
+total_length	../porting/include/rsi_global.h	/^    uint8   total_length[2];$/;"	m	struct:rsi_jsonCreateObject_s
+ttl	../porting/include/rsi_global.h	/^  uint8      ttl[2];$/;"	m	struct:__anon200::__anon229
+ttl	../porting/include/rsi_global.h	/^  uint8      ttl[2];$/;"	m	struct:__anon200::__anon230
+ttyfd	../porting/include/platform_specific.h	/^  int                  ttyfd;        $/;"	m	struct:__anon2
+type	../porting/include/rsi_global.h	/^    uint8    type; \/*0- PMK 1- EAP password*\/$/;"	m	struct:__anon175::__anon176
+type	../porting/include/rsi_global.h	/^    uint8    type[2]; \/*0- PMK 1- EAP password*\/$/;"	m	struct:__anon177::__anon178
+uAutojoinKeyBuf	../porting/include/rsi_global.h	/^  uint8 uAutojoinKeyBuf[2 + 128];$/;"	m	union:__anon177
+uBandBuf	../porting/include/rsi_global.h	/^    uint8    uBandBuf;                        $/;"	m	union:__anon200::__anon208
+uCmdRspFrame	../porting/include/rsi_app.h	/^  rsi_uCmdRsp   *uCmdRspFrame;$/;"	m	struct:__anon5
+uConfigP2pBuf	../porting/include/rsi_global.h	/^    uint8    uConfigP2pBuf[196];$/;"	m	union:__anon185
+uDNSServerNumber	../porting/include/rsi_global.h	/^        uint8    uDNSServerNumber[2];            $/;"	m	struct:__anon191::__anon192
+uDebugBuf	../porting/include/rsi_global.h	/^    uint8                 uDebugBuf[8];            \/\/@ byte format to send to the spi interface,8 bytes$/;"	m	union:__anon138
+uDnsBuf	../porting/include/rsi_global.h	/^    uint8       uDnsBuf[36];$/;"	m	union:__anon187
+uDnsQryBuf	../porting/include/rsi_global.h	/^    uint8    uDnsQryBuf[MAX_URL_LEN + 4];$/;"	m	union:__anon191
+uFeatselBuf	../porting/include/rsi_global.h	/^    uint8   uFeatselBuf[4];                    $/;"	m	union:__anon200::__anon206
+uFipsModeBuf	../porting/include/rsi_global.h	/^  uint8         uFipsModeBuf[4];        $/;"	m	union:__anon173
+uFrmDscBuf	../porting/include/rsi_global.h	/^    uint8   uFrmDscBuf[RSI_FRAME_DESC_LEN];       \/\/@ byte format for spi interface, 16 bytes$/;"	m	union:__anon200::__anon232
+uFwupgradationKeyBuf	../porting/include/rsi_global.h	/^  uint8 uFwupgradationKeyBuf[16];$/;"	m	union:__anon179
+uHtCapsBuf	../porting/include/rsi_global.h	/^  uint8   uHtCapsBuf[4];$/;"	m	union:__anon200::__anon237
+uHttpReqBuf	../porting/include/rsi_global.h	/^    uint8   uHttpReqBuf[HTTP_BUFFER_LEN + 6];$/;"	m	union:__anon200::__anon216
+uHwFlowControlEnableBuf	../porting/include/rsi_global.h	/^  uint8 uHwFlowControlEnableBuf;$/;"	m	union:__anon200::__anon212
+uIPCount	../porting/include/rsi_global.h	/^ uint8   uIPCount[2];  $/;"	m	struct:__anon200::TCP_EVT_DNS_Query_Resp
+uIpconf6Buf	../porting/include/rsi_global.h	/^   uint8 uIpconf6Buf[36];$/;"	m	union:__anon160
+uIpparamBuf	../porting/include/rsi_global.h	/^    uint8                    uIpparamBuf[44];        $/;"	m	union:__anon158
+uJoinBuf	../porting/include/rsi_global.h	/^    uint8    uJoinBuf[RSI_SSID_LEN + RSI_PSK_LEN + 8];            $/;"	m	union:__anon152
+uLtcpConnStatusBuf	../porting/include/rsi_global.h	/^    uint8                 uLtcpConnStatusBuf[2];                    $/;"	m	union:__anon169
+uMulticastBuf	../porting/include/rsi_global.h	/^        uint8     uMulticastBuf[20];$/;"	m	union:__anon147
+uNetworkType	../porting/include/rsi_global.h	/^    uint8   uNetworkType;$/;"	m	struct:__anon200::__anon246
+uOperModeBuf	../porting/include/rsi_global.h	/^    uint8    uOperModeBuf[16];                $/;"	m	union:__anon181
+uPerModeBuf	../porting/include/rsi_global.h	/^    uint8   uPerModeBuf[28];         $/;"	m	union:__anon200::__anon221
+uPerStatsBuf	../porting/include/rsi_global.h	/^    uint8   uPerStatsBuf[4];         $/;"	m	union:__anon200::__anon223
+uPowerBuf	../porting/include/rsi_global.h	/^    uint8   uPowerBuf[3];         $/;"	m	union:__anon200::__anon219
+uPskBuf	../porting/include/rsi_global.h	/^  uint8 uPskBuf[1 + RSI_PSK_LEN + RSI_SSID_LEN];$/;"	m	union:__anon155
+uRecheckKeyBuf	../porting/include/rsi_global.h	/^  uint8 uRecheckKeyBuf[2 + 128];$/;"	m	union:__anon175
+uRoamParamsBuf	../porting/include/rsi_global.h	/^ uint8   uRoamParamsBuf[12];$/;"	m	union:__anon200::__anon235
+uScanBuf	../porting/include/rsi_global.h	/^    uint8                 uScanBuf[RSI_SSID_LEN + 16];    \/\/@ byte format to send to the spi interface, 48 bytes$/;"	m	union:__anon145
+uSendBuf	../porting/include/rsi_global.h	/^    uint8   uSendBuf[RSI_MAX_PAYLOAD_SIZE];        $/;"	m	union:__anon200::__anon225
+uSendFrame	../porting/include/rsi_app.h	/^  rsi_uSend     uSendFrame;   $/;"	m	struct:__anon5
+uSentBytesStatusBuf	../porting/include/rsi_global.h	/^    uint8                 uSentBytesStatusBuf[2];                    $/;"	m	union:__anon171
+uSetEapBuf	../porting/include/rsi_global.h	/^    uint8   uSetEapBuf[256 + 4];$/;"	m	union:__anon193
+uSleepTimerBuf	../porting/include/rsi_global.h	/^    uint8   uSleepTimerBuf[2];                        $/;"	m	union:__anon200::__anon214
+uSocketBuf	../porting/include/rsi_global.h	/^    uint8                    uSocketBuf[137];        \/\/@ 24 bytes, byte format to send to spi$/;"	m	union:__anon162
+uSocketCloseBuf	../porting/include/rsi_global.h	/^    uint8                 uSocketCloseBuf[2];      \/\/@ byte format to send to the spi interface, 2 bytes$/;"	m	union:__anon167
+uWebFieldBuf	../porting/include/rsi_global.h	/^  uint8   uWebFieldBuf[680];                      \/\/@ byte format to send to the spi interface, 680 bytes $/;"	m	union:__anon200::__anon202
+uWebServBuf	../porting/include/rsi_global.h	/^    uint8     uWebServBuf[1024 + 2 + 2 + 1 + 24]; \/\/@ byte format to send to the spi interface, 1026 bytes $/;"	m	union:__anon197
+uWmmPsBuf	../porting/include/rsi_global.h	/^   uint8  uWmmPsBuf[9];$/;"	m	union:__anon200::__anon239
+uWpsMethodBuf	../porting/include/rsi_global.h	/^  uint8   uWpsMethodBuf[12];$/;"	m	union:__anon200::__anon241
+uart_hw_flowcontrol_enable	../porting/include/rsi_global.h	/^  uint8 uart_hw_flowcontrol_enable;$/;"	m	struct:__anon200::__anon212::__anon213
+ubgScanBuf	../porting/include/rsi_global.h	/^     uint8           ubgScanBuf[15];$/;"	m	union:__anon150
+ucfgEnableBuf	../porting/include/rsi_global.h	/^    uint8   ucfgEnableBuf;                        $/;"	m	union:__anon200::__anon210
+udp_sock_flag	../porting/include/platform_specific.h	/^  uint8                udp_sock_flag;$/;"	m	struct:__anon2
+uint16	../porting/include/rsi_common_types.h	/^typedef unsigned short          uint16;$/;"	t
+uint16_t	../porting/include/rsi_common_types.h	/^typedef unsigned short uint16_t;$/;"	t
+uint32	../porting/include/rsi_common_types.h	/^typedef unsigned int            uint32;$/;"	t
+uint32_t	../porting/include/rsi_common_types.h	/^typedef unsigned int uint32_t;$/;"	t
+uint64	../porting/include/rsi_common_types.h	/^typedef unsigned long long int uint64;$/;"	t
+uint8	../porting/include/rsi_common_types.h	/^typedef unsigned char           uint8;$/;"	t
+uint8_t	../porting/include/rsi_common_types.h	/^typedef unsigned char uint8_t;$/;"	t
+ulp_mode_enable	../porting/include/rsi_global.h	/^        uint8   ulp_mode_enable;$/;"	m	struct:__anon200::__anon219::__anon220
+url_length	../porting/include/rsi_global.h	/^   uint8   url_length;$/;"	m	struct:__anon195
+url_name	../porting/include/rsi_global.h	/^   uint8   url_name[MAX_URL_LENGTH];$/;"	m	struct:__anon195
+userIdentity	../porting/include/rsi_global.h	/^        uint8   userIdentity[64];                 \/\/@ user name$/;"	m	struct:__anon193::__anon194
+usetRegionApBuf	../porting/include/rsi_global.h	/^        uint8 usetRegionApBuf[80];$/;"	m	union:__anon142
+usetRegionBuf	../porting/include/rsi_global.h	/^        uint8 usetRegionBuf[2];$/;"	m	union:__anon140
+value	../porting/include/rsi_global.h	/^    uint8   value[152];                            \/\/@ value to be set$/;"	m	struct:__anon200::__anon260
+vap_id	../porting/include/rsi_global.h	/^       uint8  vap_id;$/;"	m	struct:__anon152::__anon153
+webFieldsFrameSnd	../porting/include/rsi_global.h	/^  }webFieldsFrameSnd;$/;"	m	union:__anon200::__anon202	typeref:struct:__anon200::__anon202::__anon203
+webServFrameSnd	../porting/include/rsi_global.h	/^    }webServFrameSnd;$/;"	m	union:__anon197	typeref:struct:__anon197::__anon198
+webpage	../porting/include/rsi_global.h	/^    uint8   webpage[MAX_HOST_WEBPAGE_SEND_SIZE];$/;"	m	struct:__anon199
+webpage	../porting/include/rsi_global.h	/^    uint8   webpage[MAX_WEBPAGE_SEND_SIZE];$/;"	m	struct:__anon196
+webpage_load_done	../porting/include/rsi_app.h	/^  uint8         webpage_load_done;$/;"	m	struct:__anon5
+webpage_morechunks	../porting/include/platform_specific.h	/^  uint8                webpage_morechunks;$/;"	m	struct:__anon2
+webpage_morechunks	../porting/include/rsi_app.h	/^  uint8         webpage_morechunks;$/;"	m	struct:__anon5
+webs_host_name	../porting/include/rsi_global.h	/^    uint8     webs_host_name[WEBS_MAX_HOST_LEN];$/;"	m	struct:__anon162::__anon163
+webs_resource_name	../porting/include/rsi_global.h	/^    uint8     webs_resource_name[WEBS_MAX_URL_LEN];$/;"	m	struct:__anon162::__anon163
+wfdDevData	../porting/include/platform_specific.h	/^  rsi_wfdDevResponse   wfdDevData;$/;"	m	struct:__anon2
+wfd_dev_found	../porting/include/platform_specific.h	/^  volatile uint8       wfd_dev_found;$/;"	m	struct:__anon2
+window_size	../porting/include/rsi_global.h	/^    uint8   window_size[4];                       \/\/@ 4 bytes, remote peer Window size$/;"	m	struct:__anon285
+window_size	../porting/include/rsi_global.h	/^  uint8   window_size[4];                        \/\/@ 4 bytes, Remote peer Window size$/;"	m	struct:__anon200::__anon254
+wlanState	../porting/include/rsi_global.h	/^    uint8   wlanState;                            \/\/@ uint8, 0=NOT Connected, 1=Connected$/;"	m	struct:__anon200::__anon269
+wmmPsFrameSnd	../porting/include/rsi_global.h	/^   }wmmPsFrameSnd;$/;"	m	union:__anon200::__anon239	typeref:struct:__anon200::__anon239::__anon240
+wmm_ps_enable	../porting/include/rsi_global.h	/^    uint8   wmm_ps_enable[2];$/;"	m	struct:__anon200::__anon239::__anon240
+wmm_ps_type	../porting/include/rsi_global.h	/^    uint8   wmm_ps_type[2];$/;"	m	struct:__anon200::__anon239::__anon240
+wmm_ps_uapsd_bitmap	../porting/include/rsi_global.h	/^    uint8   wmm_ps_uapsd_bitmap; $/;"	m	struct:__anon200::__anon239::__anon240
+wmm_ps_wakeup_interval	../porting/include/rsi_global.h	/^    uint8   wmm_ps_wakeup_interval[4];$/;"	m	struct:__anon200::__anon239::__anon240
+wpsMethodFrameSnd	../porting/include/rsi_global.h	/^  }wpsMethodFrameSnd;$/;"	m	union:__anon200::__anon241	typeref:struct:__anon200::__anon241::__anon242
+wps_method	../porting/include/rsi_global.h	/^    uint8   wps_method[2];$/;"	m	struct:__anon200::__anon241::__anon242
+wps_pin	../porting/include/rsi_global.h	/^    uint8   wps_pin[RSI_WPS_PIN_LEN];$/;"	m	struct:__anon200::__anon241::__anon242
+wps_pin	../porting/include/rsi_global.h	/^    uint8   wps_pin[RSI_WPS_PIN_LEN];$/;"	m	struct:__anon200::__anon261
+write_packet_buffer	../porting/include/rsi_app.h	/^  uint8         write_packet_buffer[RSI_MAX_PAYLOAD_SIZE];$/;"	m	struct:__anon5

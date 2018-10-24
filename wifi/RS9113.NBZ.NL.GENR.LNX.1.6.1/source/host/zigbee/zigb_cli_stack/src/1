@@ -1,0 +1,154 @@
+make: Warning: File `Makefile' has modification time 3230 s in the future
+/bin/rm -f  main.o rsi_zigb_linux_apis.o rsi_apis.o rsi_zigb_frame_desc.o rsi_zigb_api.o rsi_zigb_app_cb_handler.o rsi_zigb_utility.o rsi_nlink_main.o rsi_nl_app.o  rsi_wsc_zigb_app  core *~
+/bin/rm -f main.o
+gcc -g -Os -Wall -fno-strict-aliasing -I./ -I/work/colibri-2.6-kernel/include/ -I ../inc -DENABLE_DEBUG_PRINTS -DRSI_DEBUG_PRINT -DZB_DEBUG -DLINUX_PLATFORM -D ZB_ENABLE -D RSI_ENABLE_DEBUG_PRINT -lrt  -o main.o  -c main.c
+In file included from main.c:10:0:
+../inc/rsi_frame.h:8:0: warning: "rsi_malloc" redefined [enabled by default]
+In file included from main.c:1:0:
+../inc/platform_specific.h:60:0: note: this is the location of the previous definition
+In file included from main.c:10:0:
+../inc/rsi_frame.h:9:0: warning: "rsi_free" redefined [enabled by default]
+In file included from main.c:1:0:
+../inc/platform_specific.h:61:0: note: this is the location of the previous definition
+main.c: In function ‘send_response’:
+main.c:113:6: warning: unused variable ‘SockWrite’ [-Wunused-variable]
+main.c: In function ‘get_string’:
+main.c:305:2: warning: ‘gets’ is deprecated (declared at /usr/include/stdio.h:640) [-Wdeprecated-declarations]
+main.c: In function ‘cmd_setdebugmask’:
+main.c:398:2: warning: format ‘%X’ expects argument of type ‘unsigned int’, but argument 2 has type ‘long unsigned int’ [-Wformat]
+main.c: In function ‘udp_send_handler’:
+main.c:712:4: warning: pointer targets in passing argument 8 of ‘rsi_zigb_app_send_data’ differ in signedness [-Wpointer-sign]
+In file included from main.c:5:0:
+../inc/rsi_zigb_api.h:975:9: note: expected ‘uint8_t *’ but argument is of type ‘char *’
+main.c:693:6: warning: variable ‘ret’ set but not used [-Wunused-but-set-variable]
+main.c: In function ‘cmd_get_short_addr_for_specified_ieee_addr’:
+main.c:860:12: warning: assignment makes pointer from integer without a cast [enabled by default]
+main.c: In function ‘cmd_get_ieee_addr_for_specified_short_addr’:
+main.c:884:12: warning: assignment makes pointer from integer without a cast [enabled by default]
+main.c:885:2: warning: passing argument 1 of ‘rsi_zigb_get_ieee_addr_for_specified_short_addr’ makes integer from pointer without a cast [enabled by default]
+In file included from main.c:5:0:
+../inc/rsi_zigb_api.h:885:9: note: expected ‘uint16_t’ but argument is of type ‘uint16_t *’
+main.c: In function ‘cmd_send_data’:
+main.c:907:3: warning: ‘return’ with no value, in function returning non-void [-Wreturn-type]
+main.c:911:3: warning: implicit declaration of function ‘rsi_os_printf’ [-Wimplicit-function-declaration]
+main.c: In function ‘handle_zigbee_commands’:
+main.c:1331:6: warning: variable ‘ret’ set but not used [-Wunused-but-set-variable]
+main.c: In function ‘response_thread_handler’:
+main.c:1393:14: warning: unused variable ‘rsi_status’ [-Wunused-variable]
+main.c:1393:10: warning: variable ‘ret’ set but not used [-Wunused-but-set-variable]
+main.c: In function ‘handle_interactive_mode’:
+main.c:1430:6: warning: variable ‘count’ set but not used [-Wunused-but-set-variable]
+main.c: In function ‘main_thread_run’:
+main.c:1452:16: warning: unused variable ‘time_val’ [-Wunused-variable]
+main.c:1451:37: warning: unused variable ‘time_diff’ [-Wunused-variable]
+main.c:1451:28: warning: unused variable ‘end_time’ [-Wunused-variable]
+main.c:1450:16: warning: unused variable ‘rsi_status’ [-Wunused-variable]
+main.c:1449:12: warning: variable ‘ret_status’ set but not used [-Wunused-but-set-variable]
+main.c: In function ‘main’:
+main.c:1581:8: warning: unused variable ‘message1’ [-Wunused-variable]
+main.c:1580:12: warning: unused variable ‘thread1’ [-Wunused-variable]
+main.c:1579:6: warning: variable ‘baud_rate’ set but not used [-Wunused-but-set-variable]
+main.c:1578:15: warning: unused variable ‘rc1’ [-Wunused-variable]
+main.c:1575:8: warning: unused variable ‘f_ptr’ [-Wunused-variable]
+main.c: In function ‘main_thread_run’:
+main.c:1508:1: warning: control reaches end of non-void function [-Wreturn-type]
+main.c: In function ‘cmd_start_rout’:
+main.c:1258:1: warning: control reaches end of non-void function [-Wreturn-type]
+main.c: In function ‘cmd_start_coord’:
+main.c:1206:1: warning: control reaches end of non-void function [-Wreturn-type]
+main.c: In function ‘udp_send_handler’:
+main.c:726:1: warning: control reaches end of non-void function [-Wreturn-type]
+main.c: In function ‘cmd_get_dmsg’:
+main.c:623:1: warning: control reaches end of non-void function [-Wreturn-type]
+/bin/rm -f rsi_zigb_linux_apis.o
+gcc -g -Os -Wall -fno-strict-aliasing -I./ -I/work/colibri-2.6-kernel/include/ -I ../inc -DENABLE_DEBUG_PRINTS -DRSI_DEBUG_PRINT -DZB_DEBUG -DLINUX_PLATFORM -D ZB_ENABLE -D RSI_ENABLE_DEBUG_PRINT -lrt  -o rsi_zigb_linux_apis.o  -c rsi_zigb_linux_apis.c
+rsi_zigb_linux_apis.c: In function ‘rsi_zigb_execute_cmd’:
+rsi_zigb_linux_apis.c:64:5: warning: implicit declaration of function ‘rsi_serial_frame_write’ [-Wimplicit-function-declaration]
+/bin/rm -f rsi_apis.o
+gcc -g -Os -Wall -fno-strict-aliasing -I./ -I/work/colibri-2.6-kernel/include/ -I ../inc -DENABLE_DEBUG_PRINTS -DRSI_DEBUG_PRINT -DZB_DEBUG -DLINUX_PLATFORM -D ZB_ENABLE -D RSI_ENABLE_DEBUG_PRINT -lrt  -o rsi_apis.o  -c rsi_apis.c
+In file included from rsi_apis.c:7:0:
+../inc/platform_specific.h:60:0: warning: "rsi_malloc" redefined [enabled by default]
+In file included from rsi_apis.c:2:0:
+../inc/rsi_frame.h:8:0: note: this is the location of the previous definition
+In file included from rsi_apis.c:7:0:
+../inc/platform_specific.h:61:0: warning: "rsi_free" redefined [enabled by default]
+In file included from rsi_apis.c:2:0:
+../inc/rsi_frame.h:9:0: note: this is the location of the previous definition
+rsi_apis.c: In function ‘rsi_serial_frame_write’:
+rsi_apis.c:107:3: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘long unsigned int’ [-Wformat]
+rsi_apis.c:108:3: warning: implicit declaration of function ‘DebugDumpBytes’ [-Wimplicit-function-declaration]
+rsi_apis.c:113:3: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘long unsigned int’ [-Wformat]
+rsi_apis.c:113:3: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘long unsigned int’ [-Wformat]
+rsi_apis.c:97:11: warning: unused variable ‘ii’ [-Wunused-variable]
+rsi_apis.c: In function ‘rsi_zigb_app_frame_process’:
+rsi_apis.c:576:6: warning: implicit declaration of function ‘log_and_print_info’ [-Wimplicit-function-declaration]
+rsi_apis.c:582:8: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘long unsigned int’ [-Wformat]
+rsi_apis.c:594:4: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘long unsigned int’ [-Wformat]
+rsi_apis.c:600:4: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘long unsigned int’ [-Wformat]
+rsi_apis.c:609:3: warning: implicit declaration of function ‘rsi_os_printf’ [-Wimplicit-function-declaration]
+rsi_apis.c:554:6: warning: unused variable ‘i’ [-Wunused-variable]
+/bin/rm -f rsi_zigb_frame_desc.o
+gcc -g -Os -Wall -fno-strict-aliasing -I./ -I/work/colibri-2.6-kernel/include/ -I ../inc -DENABLE_DEBUG_PRINTS -DRSI_DEBUG_PRINT -DZB_DEBUG -DLINUX_PLATFORM -D ZB_ENABLE -D RSI_ENABLE_DEBUG_PRINT -lrt  -o rsi_zigb_frame_desc.o  -c rsi_zigb_frame_desc.c
+/bin/rm -f rsi_zigb_api.o
+gcc -g -Os -Wall -fno-strict-aliasing -I./ -I/work/colibri-2.6-kernel/include/ -I ../inc -DENABLE_DEBUG_PRINTS -DRSI_DEBUG_PRINT -DZB_DEBUG -DLINUX_PLATFORM -D ZB_ENABLE -D RSI_ENABLE_DEBUG_PRINT -lrt  -o rsi_zigb_api.o  -c rsi_zigb_api.c
+rsi_zigb_api.c: In function ‘rsi_change_heart_beat_report’:
+rsi_zigb_api.c:94:2: warning: pointer targets in passing argument 2 of ‘rsi_zigb_execute_cmd’ differ in signedness [-Wpointer-sign]
+In file included from rsi_zigb_api.c:28:0:
+../inc/rsi_zigb_api.h:848:9: note: expected ‘uint8_t *’ but argument is of type ‘int8_t *’
+rsi_zigb_api.c:91:10: warning: variable ‘ret_val’ set but not used [-Wunused-but-set-variable]
+/bin/rm -f rsi_zigb_app_cb_handler.o
+gcc -g -Os -Wall -fno-strict-aliasing -I./ -I/work/colibri-2.6-kernel/include/ -I ../inc -DENABLE_DEBUG_PRINTS -DRSI_DEBUG_PRINT -DZB_DEBUG -DLINUX_PLATFORM -D ZB_ENABLE -D RSI_ENABLE_DEBUG_PRINT -lrt  -o rsi_zigb_app_cb_handler.o  -c rsi_zigb_app_cb_handler.c
+rsi_zigb_app_cb_handler.c: In function ‘rsi_zigb_app_energy_scan_result_handler’:
+rsi_zigb_app_cb_handler.c:154:3: warning: implicit declaration of function ‘strcat’ [-Wimplicit-function-declaration]
+rsi_zigb_app_cb_handler.c:154:3: warning: incompatible implicit declaration of built-in function ‘strcat’ [enabled by default]
+rsi_zigb_app_cb_handler.c: In function ‘rsi_zigb_app_network_found_handler’:
+rsi_zigb_app_cb_handler.c:187:3: warning: incompatible implicit declaration of built-in function ‘strcat’ [enabled by default]
+rsi_zigb_app_cb_handler.c: In function ‘rsi_zigb_app_incoming_many_to_one_route_req_handler’:
+rsi_zigb_app_cb_handler.c:251:2: warning: incompatible implicit declaration of built-in function ‘strcat’ [enabled by default]
+rsi_zigb_app_cb_handler.c:258:3: warning: array subscript has type ‘char’ [-Wchar-subscripts]
+rsi_zigb_app_cb_handler.c: In function ‘rsi_zigb_app_handle_data_indication’:
+rsi_zigb_app_cb_handler.c:378:4: warning: implicit declaration of function ‘rsi_os_printf’ [-Wimplicit-function-declaration]
+rsi_zigb_app_cb_handler.c: In function ‘rsi_zigb_app_handle_data_confirmation’:
+rsi_zigb_app_cb_handler.c:421:10: warning: unused variable ‘ret’ [-Wunused-variable]
+rsi_zigb_app_cb_handler.c: In function ‘log_and_print_info’:
+rsi_zigb_app_cb_handler.c:473:2: warning: implicit declaration of function ‘memset’ [-Wimplicit-function-declaration]
+rsi_zigb_app_cb_handler.c:473:2: warning: incompatible implicit declaration of built-in function ‘memset’ [enabled by default]
+rsi_zigb_app_cb_handler.c:469:7: warning: unused variable ‘temp_buffer1’ [-Wunused-variable]
+rsi_zigb_app_cb_handler.c: In function ‘rsi_zigb_app_cb_handler’:
+rsi_zigb_app_cb_handler.c:704:9: warning: incompatible implicit declaration of built-in function ‘memset’ [enabled by default]
+rsi_zigb_app_cb_handler.c:705:9: warning: implicit declaration of function ‘memcpy’ [-Wimplicit-function-declaration]
+rsi_zigb_app_cb_handler.c:705:9: warning: incompatible implicit declaration of built-in function ‘memcpy’ [enabled by default]
+rsi_zigb_app_cb_handler.c:715:14: warning: unused variable ‘temp_string’ [-Wunused-variable]
+rsi_zigb_app_cb_handler.c:756:10: warning: too many arguments for format [-Wformat-extra-args]
+rsi_zigb_app_cb_handler.c:760:11: warning: incompatible implicit declaration of built-in function ‘strcat’ [enabled by default]
+rsi_zigb_app_cb_handler.c:775:9: warning: incompatible implicit declaration of built-in function ‘strcat’ [enabled by default]
+rsi_zigb_app_cb_handler.c:839:9: warning: incompatible implicit declaration of built-in function ‘memset’ [enabled by default]
+rsi_zigb_app_cb_handler.c:840:9: warning: incompatible implicit declaration of built-in function ‘memcpy’ [enabled by default]
+rsi_zigb_app_cb_handler.c:888:6: warning: implicit declaration of function ‘sleep’ [-Wimplicit-function-declaration]
+/bin/rm -f rsi_zigb_utility.o
+gcc -g -Os -Wall -fno-strict-aliasing -I./ -I/work/colibri-2.6-kernel/include/ -I ../inc -DENABLE_DEBUG_PRINTS -DRSI_DEBUG_PRINT -DZB_DEBUG -DLINUX_PLATFORM -D ZB_ENABLE -D RSI_ENABLE_DEBUG_PRINT -lrt  -o rsi_zigb_utility.o  -c rsi_zigb_utility.c
+/bin/rm -f rsi_nlink_main.o
+gcc -g -Os -Wall -fno-strict-aliasing -I./ -I/work/colibri-2.6-kernel/include/ -I ../inc -DENABLE_DEBUG_PRINTS -DRSI_DEBUG_PRINT -DZB_DEBUG -DLINUX_PLATFORM -D ZB_ENABLE -D RSI_ENABLE_DEBUG_PRINT -lrt  -o rsi_nlink_main.o  -c rsi_nlink_main.c
+rsi_nlink_main.c:21:1: error: unknown type name ‘sem_t’
+rsi_nlink_main.c:22:1: error: unknown type name ‘sem_t’
+rsi_nlink_main.c: In function ‘rsi_zigb_framework_init’:
+rsi_nlink_main.c:68:3: warning: implicit declaration of function ‘rsi_platform_based_init’ [-Wimplicit-function-declaration]
+rsi_nlink_main.c:69:3: warning: implicit declaration of function ‘rsi_queues_init’ [-Wimplicit-function-declaration]
+rsi_nlink_main.c: In function ‘zigb_read_pkt_thread’:
+rsi_nlink_main.c:132:5: warning: passing argument 1 of ‘rsi_enqueue_to_rcv_q’ from incompatible pointer type [enabled by default]
+In file included from rsi_nlink_main.c:2:0:
+../inc/rsi_nl_app.h:89:6: note: expected ‘struct pkt_struct_t *’ but argument is of type ‘struct rsi_pkt_t *’
+rsi_nlink_main.c:133:5: warning: implicit declaration of function ‘sem_post’ [-Wimplicit-function-declaration]
+rsi_nlink_main.c:84:9: warning: unused variable ‘s’ [-Wunused-variable]
+rsi_nlink_main.c:81:11: warning: unused variable ‘fromAddrLen’ [-Wunused-variable]
+rsi_nlink_main.c: At top level:
+rsi_nlink_main.c:151:6: warning: conflicting types for ‘rsi_queues_init’ [enabled by default]
+rsi_nlink_main.c:69:3: note: previous implicit declaration of ‘rsi_queues_init’ was here
+rsi_nlink_main.c:182:6: warning: conflicting types for ‘rsi_platform_based_init’ [enabled by default]
+rsi_nlink_main.c:68:3: note: previous implicit declaration of ‘rsi_platform_based_init’ was here
+rsi_nlink_main.c: In function ‘rsi_platform_based_init’:
+rsi_nlink_main.c:189:3: warning: implicit declaration of function ‘rsi_os_printf’ [-Wimplicit-function-declaration]
+rsi_nlink_main.c: At top level:
+rsi_nlink_main.c:198:6: warning: conflicting types for ‘rsi_os_printf’ [enabled by default]
+rsi_nlink_main.c:189:3: note: previous implicit declaration of ‘rsi_os_printf’ was here
+make: *** [rsi_nlink_main.o] Error 1
